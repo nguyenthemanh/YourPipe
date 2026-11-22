@@ -28,6 +28,24 @@
 
 ---
 
+## Cài sẵn / Prebuilt
+
+Tải bản đã build rồi cài, không cần mở DevEco Studio.
+
+**[YourPipe-0.7.0.hap](https://github.com/nguyenthemanh/YourPipe/releases/latest/download/YourPipe-0.7.0.hap)** · HarmonyOS arm64 · `com.talon.yourpipe` · 0.7.0
+
+```text
+hdc install -r YourPipe-0.7.0.hap
+```
+
+Bật tùy chọn nhà phát triển trên máy. Đây là bản ký debug: nếu máy báo lỗi chữ ký, UDID chưa nằm trong hồ sơ ký, khi đó hãy build và ký bằng DevEco của bạn.
+
+**EN:** Download the prebuilt HAP above and install it with `hdc`. Debug-signed. Turn on Developer options.
+**中文：** 下载上方已构建的 HAP，用 `hdc` 安装。调试签名，请先打开开发者选项。
+**日本語：** 上のビルド済み HAP をダウンロードし、`hdc` でインストールします。デバッグ署名です。開発者オプションを有効にしてください。
+
+---
+
 ## English
 
 **Improved fork** of [Ember5843/YourPipe](https://github.com/Ember5843/YourPipe), with Vietnamese added to the original. **YourPipe** is a YouTube client for **OpenHarmony / HarmonyOS**. It extracts streams inside the app and plays them with native **MPV** (vendored libmpv + FFmpeg), not a WebView.
