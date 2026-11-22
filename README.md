@@ -14,6 +14,14 @@
 
 > Unofficial client. **Not affiliated with YouTube or Google.**
 
+**Bản cải tiến** của tác giả gốc [Ember5843/YourPipe](https://github.com/Ember5843/YourPipe). Bản này thêm tiếng Việt so với bản gốc.
+
+**Improved fork** of [Ember5843/YourPipe](https://github.com/Ember5843/YourPipe). Vietnamese UI is added on top of the original.
+
+**改进版**，原作者：[Ember5843/YourPipe](https://github.com/Ember5843/YourPipe)。在原版基础上新增越南语界面。
+
+**改良版**。原作者：[Ember5843/YourPipe](https://github.com/Ember5843/YourPipe)。オリジナルにベトナム語表示を追加。
+
 [English](#english) · [中文](#中文) · [日本語](#日本語)
 
 </div>
@@ -22,7 +30,7 @@
 
 ## English
 
-**YourPipe** is a YouTube client for **OpenHarmony / HarmonyOS**. It extracts streams inside the app and plays them with native **MPV** (vendored libmpv + FFmpeg), not a WebView.
+**Improved fork** of [Ember5843/YourPipe](https://github.com/Ember5843/YourPipe), with Vietnamese added to the original. **YourPipe** is a YouTube client for **OpenHarmony / HarmonyOS**. It extracts streams inside the app and plays them with native **MPV** (vendored libmpv + FFmpeg), not a WebView.
 
 - Home, search, channels, playlists, subscriptions, and favorites
 - Native MPV playback, background audio, and offline downloads
@@ -36,7 +44,7 @@ Open this folder in DevEco Studio, sync OHPM, configure Signing Configs, then ru
 
 ## 中文
 
-**YourPipe** 是面向 **OpenHarmony / HarmonyOS** 的 YouTube 客户端。应用在本地解析流，并通过原生 **MPV**（内置 libmpv + FFmpeg）播放，而不是 WebView。
+本仓库是原作者 [Ember5843/YourPipe](https://github.com/Ember5843/YourPipe) 的**改进版**，在原版之上**新增越南语**。**YourPipe** 是面向 **OpenHarmony / HarmonyOS** 的 YouTube 客户端。应用在本地解析流，并通过原生 **MPV**（内置 libmpv + FFmpeg）播放，而不是 WebView。
 
 - 首页、搜索、频道、播放列表、订阅与收藏
 - 原生 MPV 播放、后台音频、离线下载
@@ -50,7 +58,7 @@ Open this folder in DevEco Studio, sync OHPM, configure Signing Configs, then ru
 
 ## 日本語
 
-**YourPipe** は **OpenHarmony / HarmonyOS** 向けの YouTube クライアントです。アプリ内でストリームを取り出し、WebView ではなくネイティブ **MPV**（同梱の libmpv + FFmpeg）で再生します。
+本リポジトリは原作者 [Ember5843/YourPipe](https://github.com/Ember5843/YourPipe) の**改良版**で、オリジナルに**ベトナム語**を追加しています。**YourPipe** は **OpenHarmony / HarmonyOS** 向けの YouTube クライアントです。アプリ内でストリームを取り出し、WebView ではなくネイティブ **MPV**（同梱の libmpv + FFmpeg）で再生します。
 
 - ホーム、検索、チャンネル、再生リスト、登録チャンネル、お気に入り
 - ネイティブ MPV 再生、バックグラウンド音声、オフラインダウンロード
