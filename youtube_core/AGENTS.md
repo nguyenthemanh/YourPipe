@@ -1,0 +1,560 @@
+# youtube_core/AGENTS.md
+
+> YouTube extraction HAR. Pure logic — no UI, no `AppStorage`, no
+> `mediaservice` imports. Resolves YouTube IDs to playable streams via
+> configured player clients, runs the cipher (native JSVM + PipePipe
+> remote), parses HLS, runs **SABR/UMP sessions**, dual-rail auth
+> (Cookie/WEB + OAuth/TV), and optional app HTTP proxy. Durable
+> architecture only — no changelogs.
+
+## 1. Public surface (`youtube_core/Index.ets`)
+显式命名导出（无 `export *`），名单 = entry / mediaservice 的实际消费面；
+新增跨模块符号必须在 `Index.ets` 登记。按组分块，以文件内注释为准：
+extractor（模型 + 异常层次 + 评论 + HLS 解析 + `ItagItem`）、sabr/identity（opt-in/debug
+路径）、cipher（`YoutubeJavaScriptPlayerManager`）、model/localization、
+network（含 `YOUTUBE_COOKIE_STORAGE_NAME`）、auth（含 `AUTH_STORAGE_NAME`
+与 `AuthExpiredError` / `isAuthRejectionResponse`）、
+service（`YoutubeApi` 的高层函数）、`YTCoreLogger`。
+
+## 2. Layout
+```
+youtube_core/src/main/
+  ets/
+    extractor/
+      YouTubeExtractor.ets             — main extraction flow
+      CommentsExtractor.ets            — comments/replies (CommentsBackend 窄接口)
+      LiveChatExtractor.ets            — YouTube 直播聊天/实时评论（只读；
+                                         /next conversationBar → live_chat 轮询）
+      PlayabilityChecker.ets           — playability 状态判定（无状态静态方法）
+      VideoInfo.ets, StreamInfo.ets, ItagInfo.ets
+      HlsManifestParser.ets            — HLS m3u8 parser
+      SubtitleTranslate.ets            — server-side tlang track build (P0)
+      PlayerResponseTypes.ets          — player_response JSON shapes
+      YouTubeExceptions.ets            — extraction errors
+      CommentItem.ets
+      cipher/
+        PipePipeApiDecoder.ets         — sig decode via PipePipe API
+        YoutubeJavaScriptPlayerManager — local JSVM + prewarm + fallback
+        ApiConfig.ets
+      clients/
+        ConfiguredPlayerClient.ets     — sole stream player (mweb/safari/vr/tv)
+        ClientTypes.ets
+      sabr/
+        YoutubeSabrInfo.ets            — bootstrap from player response
+        YoutubeSabrSession.ets         — UMP POST session + segment fetch (executor)
+        YoutubeSabrStreamState.ets     — local track progress + seek (delegates
+                                         cookie/contexts/poToken to the epoch)
+        SabrServerEpoch.ets            — server-owned epoch state (url/rn/redirect/
+                                         backoff/cookie/contexts/poToken/budgets)
+        policy/
+          SabrSessionPolicy.ets        — action types + policy context + budgets
+          BuiltinSabrSessionPolicy.ets — response → action-chain decisions
+        YoutubeSabrRequestBuilder.ets
+        UmpReader.ets, UmpStreamReader.ets, SabrProto.ets, SabrResponseDecoder.ets
+        SabrMediaSegment.ets, SabrMediaHeader.ets, SabrDecodedResponse.ets
+        SabrMp4SegmentIndex.ets, SabrBufferedRange.ets
+        SabrPoTokenProvider.ets        — interface (impl lives in entry)
+        SabrInfoReloader.ets           — re-probe interface (impl lives in entry)
+        SabrProtocolException.ets      — typed `kind` error (no string matching)
+      identity/
+        SessionIdentity.ets            — visitorData + client + playerPoToken
+        SessionIdentityManager.ets     — pin/invalidate + SessionPoTokenHook
+      itag/
+        ItagItem.ets, MediaFormat.ets
+    auth/
+      AuthSessionManager.ets           — dual-rail session lifecycle
+      CookieAuthCredential.ets
+      SapisidHashUtil.ets              — SAPISIDHASH for WEB rail
+      WebRailHeaders.ets               — shared WEB-rail header assembly
+                                         (Cookie/X-Origin/DNT/Authorization)
+      SmartTubeAuthProbe.ets           — OAuth device-code (TV rail)
+      DebugAuthConstants.ets           — OAuth client/device constants
+      AuthModels.ets                   — AuthRail, status, token types
+      AuthExpiredError.ets             — typed 401 / UNAUTHENTICATED error
+    network/
+      YouTubeHttpClient.ets
+      HttpDownloader.ets
+      CookieJar.ets
+      HttpProxyOptions.ets             — injected from entry NetworkProxyConfig
+      Socks5Bridge.ets                 — loopback egress bridge → SOCKS5 / credentialed HTTP upstream
+    service/
+      YoutubeApi.ets
+    model/
+      Localization, ContentCountry, DeliveryType, ClientsConstants,
+      SearchContentFilter, YoutubePlayerClientConfig
+    common/
+      VideoModel, SearchResultModel, Utils, YoutubeParsingHelper,
+      WebClientVersionResolver, YoutubeSearchQueryHandlerFactory,
+      YTCoreLogger, ProtoUtil
+  cpp/
+    CMakeLists.txt                     — native module `yourpipe_cipher`
+    cipher_jsvm_napi.cpp               — JSVM n/sig decode NAPI
+    ejs_bundle.generated.h             — embedded player JS helpers
+    types/libyourpipe_cipher/          — NAPI types package
+```
+
+## 3. Extractor flow (playback-critical path)
+1. **Resolve video ID** from URL or ID string.
+2. **Client selection** via `YoutubePlayerClientConfig` (single client):
+   - internal allow-list: `mweb` | `web_safari` | `visionos` | `android_vr` | `tv_downgraded` | `tv_samsung`
+   - **per-state configurable** (entry Options → 播放端点 →
+     `setConfiguredClients(guest, auth)`): guest allow-list `visionos|mweb`
+     (default `visionos` — pot-free GAPIS endpoint
+     `youtubei.googleapis.com`, no sts/pot; `mweb` stays selectable for SABR
+     debugging), signed-in allow-list `tv_downgraded|mweb` (default
+     `mweb` SABR; `tv_downgraded` stays the token-free direct-URL option);
+     direct clients resolve to direct adaptiveFormats URLs. `applyAuthDefault` / `resetToAuthDefault` pick the
+     configured value for the current auth state (entry 侧统一经
+     `AuthStateHelper.reconcilePlaybackClient`). `web_safari`, `android_vr`,
+     and `tv_samsung` are unreachable in product (no UI; internal keys kept
+     for dormant debug pinning only). The explicit pin (`setYoutubePlayerClient`)
+     survives per-extraction `applyAuthDefault` but is DORMANT — the settings
+     UI goes through the per-state config, not the pin.
+   - `tv_downgraded` + Bearer doubles as the **restricted / OAuth recovery**
+     path (skipped when the selected client already is tv_downgraded)
+   - **Upstream reference (PipePipe origin/main, checked 2026-10)**: the
+     extractor allow-list is `mweb|visionos|tv_downgraded|tv_samsung` with
+     `visionos` as the invalid-value fallback, and PipePipeClient narrows the
+     user-visible set further — **logged-in may only use `mweb`**, logged-out
+     may use `mweb|visionos|tv_samsung` with `visionos` as the default.
+     YourPipe deliberately diverges on two points: `tv_downgraded` stays
+     selectable while signed in (token-free direct URLs = the fallback when
+     SABR is unavailable), and the guest product set is `visionos|mweb`
+     with `visionos` as the default — `tv_samsung` was removed from the guest
+     UI. Re-check upstream before changing either default — the guest default
+     is the product's primary playback path.
+   - **One-shot extraction override** (`setExtractionClientOverride` /
+     `clearExtractionClientOverride`): entry's SABR → `tv_downgraded` endpoint
+     fallback switches the client for exactly one extraction without touching
+     the configured per-state client or the `explicitOverride` pin.
+3. **Critical path only** (`extractVideoStreams`):
+   - STS: process cache → prewarm decoder metadata → watch HTML → remote latest-player
+   - one stream `POST www.youtube.com/youtubei/v1/player?prettyPrint=false`
+     (no `$fields` projection; `$fields=microformat,playabilityStatus,
+     storyboards,videoDetails` applies only to the deferred WEB metadata
+     player)
+   - mweb starts with cached/hardcoded WEB client version; dynamic resolve
+     (`WebClientVersionResolver` / `sw.js`) runs on empty-`streamingData` recovery
+   - `buildAndCacheStreams`:
+     - `mweb` + VOD + `serverAbrStreamingUrl` → **SABR** streams (`deliveryMethod: SABR`)
+     - else adaptiveFormats (not `formats[]`), skip for TV client+LIVE (`tv_downgraded`|`tv_samsung`, PipePipe isTvClient)
+     - visionos with zero streams + no HLS → ANDROID `reel/reel_item_watch`
+       muxed `formats[]` fallback (PipePipe fetchAndroidReelMuxedFormats, but
+       deferred: fired only when the primary path is empty, not per extraction)
+      - HLS only when: post-live | live+TV client | `web_safari`;
+        live HLS masters are background-parsed into per-variant quality
+        streams (variant `bitrate` carries BANDWIDTH/AVERAGE-BANDWIDTH; audio-only
+        STREAM-INF entries without RESOLUTION whose CODECS resolves to no
+        video codec are classified into `audioStreams` with their bitrate — mediaservice attaches the top one
+        as an mpv external audio file; the quality menu fills in when ready and a switch
+        restarts at the live edge on the new variant URL)
+     - `dashMpdUrl` always empty
+   - n/sig decode via local JSVM (`yourpipe_cipher` / manager READY), else PipePipe remote API
+4. **Deferred enrichment** (`fetchPlaybackExtras`, after source commit):
+   - WEB metadata `/player` (no streamingData)
+   - `/next` (related, likes, chapters)
+   - RYD dislikes
+5. Comments and channel profile fetch are UI-driven and must not race stream extract.
+6. **Live chat (read-only)**: `LiveChatExtractor` implements
+   `LiveChatBackend` on top of `YouTubeExtractor`. The initial continuation
+   comes from the WEB `/next` `contents.twoColumnWatchNextResults.conversationBar.liveChatRenderer.continuations[0].reloadContinuationData`
+   (same `/next` shape as comments). Polling POSTs
+   `youtubei/v1/live_chat/get_live_chat?prettyPrint=false` with the WEB
+   desktop context + pinned `visitorData`; `currentPlayerState.playerOffsetMs`
+   is only sent for replay (`>= 0`). Parse `continuationContents.liveChatContinuation.actions`
+   text/paid/membership items and the next `timedContinuationData` /
+   `invalidationContinuationData` (`timeoutMs`). Entry owns cadence/lifecycle
+   (`LiveChatPanel`); never let a hidden tab keep polling.
+   This path is **read-only** — no send/vote APIs.
+
+## 4. SABR / UMP
+- **Bootstrap**: `YoutubeSabrInfo` from player response (`serverAbrStreamingUrl` + formats).
+- **Session**: `YoutubeSabrSession` POSTs UMP, parses with `UmpReader` /
+  `SabrResponseDecoder` / `SabrProto`, caches segments, applies PoToken when
+  protected (via `SabrPoTokenProvider` implemented in entry). Init segments
+  arrive through the UMP stream like any other segment (PipePipe playback
+  parity — the server's init segment is ingested from the response; an init
+  request pumps the session, no special path): a pot-bound HTTP Range GET for
+  init was tried and reverted because googlevideo rejects it (HTTP 403 → the
+  whole SABR session fails to start), so do NOT revive `fetchInitializationData`
+  / `resolveSabrFormatUrls` without a device test proving the range GET is
+  accepted. Unreachable googlevideo hosts rotate across
+  `mn`/`mvi` candidates with `rn` preserved (DNS retry 2×500ms first);
+  continuous backoff / no-progress budgets (30s each, media arrival resets)
+  end empty loops with a typed `kind='network'` error. UMP response
+  body bytes are reported as they arrive (per `dataReceive` chunk) through
+  `setSabrNetworkTrafficSink` (wired by mediaservice to its proxy traffic
+  meter for the stats UI). `abortInFlightPost(reason)` is the
+  network-handover lever (wired by entry through mediaservice
+  `sabrSessionStore.abortAllInFlightPosts`): aborts only the in-flight UMP
+  POST so a stale connection fails fast on a default-network switch — the
+  session stays open, no policy/epoch state changes, and the existing
+  catch/retry paths re-POST on the new network.
+- **Consumers**: `mediaservice` `sabrSessionStore` / `SabrTrackBuffer` lease the
+  session and serve loopback DASH/range to MPV. Do not invent a second UMP client.
+- **Session identity** (`identity/SessionIdentityManager`): one visitorData is
+  pinned per app session — prefer the prewarmed watch-page value, else the
+  first player-response value; once the entry PoToken generator completes a
+  home page bootstrap it pins the bootstrap visitorData (PipePipe parity: the
+  mweb pot path runs on the home page identity). PoToken mints and the mweb
+  /player request are anchored on this value. `invalidate()` marks the
+  identity dead; the next re-pin prefers the fresh player-response value over
+  the prewarmed one so attestation rotation actually lands on a new identity.
+  Mechanism: `invalidate()` sets `invalidatedSinceLastPin`; the next
+  `getSessionVisitorData` pin then prefers the fresh player-response
+  visitorData over the prewarmed value (`SessionIdentityManager` +
+  `YoutubeJavaScriptPlayerManager`). Never log the value.
+- **UMP request headers** mirror PipePipe `buildRequestHeaders`
+  (`YoutubeSabrSession.buildSabrHeaders`): one constant shape for every
+  profile — `Content-Type: application/x-protobuf` + `Accept:
+  application/vnd.yt-ump` + `Accept-Encoding: identity` + UA (WEB UA when
+  `profile==='web'`, MWEB UA otherwise). **No**
+  `Origin`/`Referer`/`Accept-Language`/`X-Goog-Visitor-Id`, and **no**
+  `Cookie` or `Authorization` on UMP POSTs (login is bound through the
+  /player request, never on the UMP rail).
+- **Streaming UMP decode** (PipePipe `SabrStreamingResponseReader` parity): the
+  UMP reply is decoded **while it downloads** — `HttpDownloader.postBinaryStreaming`
+  hands every `dataReceive` chunk to `UmpStreamReader`, which pulls complete
+  UMP parts out of the byte stream (a part header or payload split across
+  chunks is held until the rest arrives), and `SabrPartProcessor` assembles the
+  media segments and hands each finished segment to the session's segment
+  cache immediately. Consequences:
+  - the player can start on the first segment instead of waiting for the whole
+    response, and a 4K reply is never held whole (the old buffered path kept
+    the response **and** a second copy of the media in the segment assembly);
+  - a segment whose byte count disagrees with its header's `contentLength` is
+    **withheld** — the response-level integrity check then re-POSTs for a
+    clean batch, so a truncated segment never reaches the player;
+  - a truncated reply (the stream ended mid-part) is reported as the
+    `truncated-ump-response` integrity issue and is recoverable;
+  - the format initialization metadata is delivered to the stream state as
+    soon as its UMP part arrives, because the init segment's SIDX parse needs
+    its index range before the init segment shows up;
+  - `SabrDecodedResponse.segmentCount` is the authoritative "media arrived"
+    signal — in the streaming path the segments are not retained in
+    `decoded.segments`.
+  The buffered path (`sabrDecodeBody` / `umpReadAll`) stays for the offline
+  downloader and the unit tests.
+- **Request URL params**: `alr=yes` and `cpn` are append-if-missing (an
+  existing value in the serverAbr URL wins), `rn` is replace-or-append and
+  **0-based** (`rn = String(requestNumber)`, so `rn=0` for the first POST).
+- **UMP request body** (`YoutubeSabrRequestBuilder`, mirrors PipePipe
+  `YoutubeSabrRequestHelper.buildMediaRequest`): field 1 = clientAbrState,
+  2 = formatId per selected track, 3 = bufferedRange, 4 = playerTimeMs,
+  5 = ustreamerConfig (base64), 16/17 = preferred audio/video formats,
+  19 = streamerContext (1 = clientInfo, 2 = poToken, 3 = playbackCookie,
+  5 = active sabrContexts, 6 = unsent context types).
+  Inside clientAbrState the fields that matter for playback quality are
+  **18/19/21** (video size), **23** (bandwidth estimate — the measured
+  downlink throughput, EWMA-smoothed per PipePipe `updateBandwidthEstimate`
+  and kept on `YoutubeSabrStreamState`; the static `(audio+video)*2` bitrate
+  sum is only the fallback), **28** (playerTimeMs), **34/35** (flags /
+  playbackRate), **40** (enabled track types: 1 = audio only, 2 = video
+  only), **46** (DRC — the selected audio track is a dynamic-range-control
+  rendition; parsed from the player response's `adaptiveFormats[].isDrc`
+  and never sent for a plain track) and **69** (audio track id).
+- **Media integrity** (PipePipe `getIntegrityIssues` /
+  `MAX_INCOMPLETE_MEDIA_RESPONSES=3`): every decoded UMP response is checked
+  (duplicate-media-header / missing-media / length-mismatch vs
+  `contentLength` / missing-media-end / media-without-header /
+  media-end-without-header). A response with recoverable issues is **never
+  ingested or cached** — the pump re-POSTs up to 3 times, then throws;
+  non-recoverable issues throw immediately. This also keeps bare media
+  headers of a bad response from advancing the advertised buffered range.
+- **Protection state machine** (policy layer, PipePipe origin/main): responses
+  are decided by `BuiltinSabrSessionPolicy` → action chains, executed by
+  `YoutubeSabrSession`. No-media + status>=3 (attestation required) fails
+  immediately (`kind='attestation_required'`). status==2 (pending) rotates
+  first **with or without media** (PipePipe parity — a pending response can
+  carry the demanded segment): `ROTATE_IDENTITY` (budget 3: invalidate
+  identity → re-probe via `reprobeSabrInfo` → visitorData must change → epoch
+  reset; local progress (FormatProgress + segment cache) lives in
+  `YoutubeSabrStreamState` outside the epoch, and `executeRotateIdentity`
+  only calls `epoch.resetServerState()` (cookie/contexts/poToken cleared),
+  so progress survives untouched and the fresh epoch still advertises the
+  cached range); with media a successful
+  rotation retries the fetch loop and the preserved segmentCache delivers.
+  No-media pending falls through `APPLY_PO_TOKEN` (force-refresh budget 2,
+  resets when media arrives) → `RELOAD_PLAYER` (only once the refresh budget
+  is spent) → FAIL. The pending counter increments only on no-media pending
+  responses; three consecutive fail regardless. All budgets live in
+  `policy/SabrSessionPolicy.ets` (`SABR_MAX_*`).
+- **BotGuard attestation bootstrap** (PipePipe parity): the initial
+  attestation challenge is bound to the home page session's `EVENT_ID` and
+  embedded in the page HTML (`window.ytAtN`). Parse the bootstrap only from
+  the `https://www.youtube.com` home fetch (login cookies or anonymous
+  `PREF=hl=en&gl=US`): `ytcfg.set` calls yield `EVENT_ID`,
+  `VISITOR_DATA`/`EOM_VISITOR_DATA`, `DATASYNC_ID`, WEB clientVersion and the
+  `html5_generate_content_po_token` / `html5_generate_session_po_token`
+  experiment flags that select CONTENT / SESSION binding. Never mint from
+  out-of-band `/att/get` challenges — retired; their tokens are rejected at
+  the ~1min protection boundary (status 2 → 3). The
+  BotGuard JS must set `window.yt.config_.EVENT_ID` before running the VM and
+  call `vm.a(...)` with the 9-argument signature (`program`, callback, `true`,
+  interaction element, no-op, `[[], []]`, `undefined`, `false`,
+  `loggerFunctions[5]` — see
+  `entry/src/main/resources/rawfile/sabr_po_token.js`); a stale signature
+  produces tokens the server rejects mid-playback. A forced mint must discard
+  the old bootstrap/minter (`invalidate()`) before rebuilding.
+- **Backoff is session-owned**: the UMP server backoff applies to EVERY
+  response — media-carrying ones included (PipePipe `updateBackoff`) — and a
+  server backoff above 30s is fatal. The deadline (epoch `backoffUntilMs`) is
+  honored before every POST and is **not** cleared by seek, hole/policy
+  recovery, or local stall resets; it clears when the server stops demanding
+  it, or an identity rotation starts a new epoch. An empty response without a
+  PoToken mints one immediately instead of waiting out the backoff
+  empty-handed.
+- **Player reload** (`RELOAD_PLAYER` action): a `RELOAD_PLAYER_RESPONSE` part
+  means the server's streaming URL / ustreamer config expired on a long watch.
+  The part's echo token is decoded (`SabrDecodedResponse.reloadToken`,
+  `decodeReloadToken`) and must be sent back in the re-probe /player body
+  (`playbackContext.reloadPlaybackContext.reloadPlaybackParams.token`, PipePipe
+  `appendReloadPlaybackContext`), threaded
+  `SabrControlAction.token` → `SabrInfoReloader.reloadSabrInfo(info, reason,
+  reloadToken)` → entry serialized reprobe → `reprobeSabrInfo(videoId,
+  reloadToken)` → `fetchSelectedStreamPlayer` → `ClientFetchContext.
+  reloadPlaybackToken` → `ConfiguredPlayerClient`; a missing echo token still
+  re-probes, only the body field is omitted. The decision and execution live
+  in the PUMP phase (`BuiltinSabrSessionPolicy.evaluatePump` →
+  `[reload_player, fail('reload_exhausted')]` chain), not the fetch phase, so
+  background read-ahead pumps and fetch cache-hit paths honor it too, and it
+  runs after ingest — a media-carrying reload response is still cached, and
+  that response's own media does not re-arm `epoch.reloads` (PipePipe's
+  return-before-reset parity). The session calls its `SabrInfoReloader` (wired
+  by entry through `sabrSessionStore.setInfoReloader`, backed by
+  `YouTubeExtractor.reprobeSabrInfo` serialized through the extraction chain),
+  swaps in the new bootstrap (URL + host-rotation candidates, redirect/token
+  budgets and server contexts cleared, integrity streak reset) and resumes in
+  place — `requestNumber > 0` is kept so the next POST is a follow-up on the
+  new URL, never a restart. Bounded by `SABR_MAX_RELOADS_PER_SESSION`; a
+  visitorData change clears the PoToken and re-mints before resuming (a failed
+  re-mint is terminal, never a reuse of the old token). If no reloader is
+  wired or the budget is spent, reload fails.
+- **Identity rotation re-probe**: `reprobeSabrInfo(videoId)` re-resolves the
+  STS, re-fetches the mweb stream player, and rebuilds the bootstrap via
+  `buildSabrInfo` — the fresh player-response visitorData is pinned through
+  the normal `getSessionVisitorData` path (post-invalidation it wins over
+  the prewarmed value), and the /player request picks up a PoToken bound to
+  the new identity via `SessionIdentityManager.getPlayerPoToken(...)` →
+  `SessionPoTokenHook.getPlayerPoToken(..., videoId)`, capped call-side by
+  `PLAYER_PO_TOKEN_TIMEOUT_MS` in `ConfiguredPlayerClient`.
+- **Context updates**: `SABR_CONTEXT_UPDATE` (57) / `SABR_CONTEXT_SENDING_POLICY`
+  (59) parts are absorbed into the epoch and echoed back via streamerContext
+  field 5 (active contexts). Sending-policy fields follow PipePipe
+  `ingestContextSendingPolicy`: field 1 = activate, field 2 = deactivate,
+  field 3 = dispose (drop from active set and stored contexts); values may be
+  single or packed varints. Context types the server sent that are **not** in
+  the active set yet are reported in streamerContext field 6
+  (`getUnsentSabrContextTypes`, PipePipe parity) — without that the server
+  cannot tell the client is holding them, and a later activate policy would
+  never turn them into an echoed context.
+- **PoToken minting**: entry pre-initializes the BotGuard runtime at app
+  startup (`warmRuntime` on the pinned visitorData), so a mid-playback mint is
+  only `mintIdentifier`. The session mints lazily: on an empty response
+  without a token, on a protection boundary, and as a background warmup when
+  media arrives with status>=2 and no token. Mint is bounded by a 30s timeout
+  + circuit breaker in the entry provider.
+- **Session pot on the player request**: every non-TV Innertube /player request
+  (mweb / web_safari / android_vr — PipePipe `prepareSessionPoTokenPlayerRequest`
+  skips only TVHTML5; `visionos` hits the GAPIS endpoint and is pot-free by
+  design) carries `context.client.visitorData` in the body
+  (identity-layer value; the request headers stay Content-Type / UA /
+  Client-Name / Client-Version only) and, when the BotGuard runtime is
+  already warm,
+  `serviceIntegrityDimensions.poToken` — sourced through
+  `SessionIdentityManager.setPlayerPoTokenHook` (entry provider, 5s cap; the
+  binding follows the home page experiment flags: content binding mints per
+  videoId, session binding reuses the pre-minted session token; when
+  the BotGuard runtime is cold it attempts ONE bounded cold mint under the
+  same 5s cap instead of skipping — an un-potted android_vr response 403s on
+  googlevideo — and falls back to skipping on timeout). tv_downgraded requests
+  stay entirely token-free (PipePipe parity). The UMP streamerContext
+  carries the separate per-video pot (content binding = `videoId`, ~91B).
+  Identity invalidation clears all three caches (UMP, dash, player) and
+  invalidates the generator's bootstrap so the next mint re-fetches the home
+  page.
+
+## 5. Player clients
+- `ConfiguredPlayerClient` — **sole** stream player path (PipePipe shape).
+  All keys POST `www.youtube.com/youtubei/v1/player` with
+  `playbackContext.signatureTimestamp` + client-specific UA / Client-Name.
+- **`visionos` is the exception** (PipePipe `fetchVisionOsJsonPlayer` /
+  `prepareJsonBuilder`): POST `youtubei.googleapis.com/youtubei/v1/player?prettyPrint=false&t=<12 random chars>&id=<videoId>`,
+  body = `context.client{clientName/clientVersion/clientScreen=WATCH/
+  platform=MOBILE/deviceMake/deviceModel/osName/osVersion/hl/gl/
+  utcOffsetMinutes=0/[visitorData]}` + `context.request{internalExperimentFlags,
+  useSsl}` + `context.user{lockedSafetyMode}` — **no** playbackContext/
+  signatureTimestamp/pot; headers = Content-Type + visionOS UA +
+  `X-Goog-Api-Format-Version: 2` only.
+- **Live classification** (`resolveIsLive` / `resolveIsPostLive`) follows
+  PipePipe `setStreamType`: `videoDetails.isLive` is the primary LIVE signal,
+  `isPostLiveDvr` marks DVR replays, microformat `isLiveNow` and
+  `liveStreamability`+HLS are fallbacks. Never rely on microformat alone —
+  visionos GAPIS responses carry no microformat block (a running live was
+  misclassified as post-live and sent down the DASH path → infinite buffer).
+  The anonymous MWEB HLS helper only fires when the selected client's
+  response lacks `hlsManifestUrl`.
+- Auth attachment is **rail-aware** (PipePipe `addLoggedInHeaders`):
+  when a cookie credential exists, Cookie/SAPISIDHASH attaches to any client
+  (TVHTML5/`tv_downgraded` included); OAuth Bearer is only the TV fallback
+  for cookie-less OAuth-only sessions. The two rails never mix on the same
+  request — never stuff Bearer into Cookie fields or Cookie into Bearer
+  headers.
+- **Player request body must mirror PipePipe's NORMAL path exactly**
+  (`createJsonPlayerBody` / `fetchConfiguredJsonPlayer` +
+  `prepareSessionPoTokenPlayerRequest`): `context.client{utcOffsetMinutes,
+  timeZone, hl, gl, userAgent, clientName, clientVersion, [visitorData],
+  [VR device fields]}` + `playbackContext.contentPlaybackContext{
+  html5Preference, signatureTimestamp}` + `cpn/videoId/contentCheckOk/
+  racyCheckOk` + `serviceIntegrityDimensions.poToken` (session pot).
+  **Never** send `platform`, `context.request`, `context.user`, or
+  `referer/vis/splay/lactMilliseconds` — those exist only in PipePipe's
+  reload-only probe body (`createPlayerBody`), not the normal path.
+- Player request headers: `Content-Type: application/json`, `User-Agent`,
+  `X-YouTube-Client-Name`, `X-YouTube-Client-Version` only — **no
+  Origin/Referer** (PipePipe `getJsonPlayerResponseAsync` does not add
+  them, `tv_downgraded` included);
+  Cookie/X-Origin/DNT/Authorization only when logged in.
+- WEB metadata `/player?$fields=...` and `/next` share the WEB desktop
+  body (`buildDesktopWebPayload` = PipePipe `prepareDesktopJsonBuilder` +
+  videoId/contentCheckOk/racyCheckOk); neither request carries a session
+  pot or visitorData — `fetchWebMetadataPlayerResponse` sends only
+  `buildDesktopWebPayload` + `webDesktopApiHeaders()`; `/next` stays
+  anonymous (PipePipe does not pot-decorate it).
+
+## 6. Auth (dual-rail)
+```
+AuthSession (credentials may coexist)
+├── web rail: Cookie + SAPISIDHASH → WEB browse / most players
+└── tv  rail: Bearer (+ optional pageId) → TV browse / tv_downgraded player
+
+Priority when both present:
+  user-data / home: WEB first → else TV → else kiosk
+  playback:        Cookie/OAuth → tv_downgraded → else anonymous visionos
+
+Fine-grained toggles: useAuthForUserData, useAuthForPlayback, master authEnabled
+```
+- `AuthSessionManager.init(context)` — bootstraps storage; called from entry.
+- `setAuthStateChangeListener` — single-slot static hook fired after any
+  credential-state change is persisted (`signOut` / `saveToken` /
+  `saveCookieCredential` / OAuth `invalid_grant` clear / server-cleared
+  SID-family cookies). Entry wires it to `AuthStateHelper.refresh()` right
+  after `init`, so internal invalidation paths also refresh `authStatus`,
+  run credential-fingerprint detection, and reset visitorData/PoToken caches.
+- Prefer `getWebAuthorizationHeader` / `getTvAuthorizationHeader` at call sites.
+- Credential-state changes (login/logout/rail switch) must reset the pinned
+  session identity + PoToken caches (PipePipe LocalDomPoTokenProvider
+  credential-bound isolation): entry `AuthStateHelper.refresh()` does this via
+  a credential-rail fingerprint → `resetSessionVisitorData()` +
+  `SabrWebViewPoTokenProvider.resetForAuthChange()`.
+- `SmartTubeAuthProbe` — OAuth **device-code** sign-in (entry `DeviceQrLoginPage`).
+- Cookie WebView login is entry-owned (`WebViewLoginPage`); this module stores credentials.
+- **Expiry detection / repair**:
+  - `AuthExpiredError` + `isAuthRejectionResponse` (401, or Innertube error
+    `code 16` / `status UNAUTHENTICATED`): thrown by `YoutubeApi` browse
+    POSTs only when auth was attached (`withAuth`); anonymous responses keep
+    returning the error body as before.
+  - `mergeAccountSetCookies` merges account-cookie rotations from
+    youtube.com `Set-Cookie` back into the stored `CookieAuthCredential`
+    (registered as the `HttpDownloader` Set-Cookie observer at `init`);
+    a server-cleared SID/SAPISID-family cookie marks the web rail rejected.
+  - OAuth `invalid_grant` on refresh clears the persisted refresh token.
+  - `noteAuthRejection(rail, reason)` / `consumeAuthRejectionNotice()` —
+    one-shot in-memory notice consumed by entry to show the re-login
+    banner. Never log cookie/token values.
+- `DebugAuthConstants` holds OAuth client/device URLs used by the device flow;
+  do not scatter new hard-coded OAuth secrets elsewhere.
+
+## 7. Network
+- `YouTubeHttpClient` — wraps `@ohos.net.http` with cookie persistence via
+  `CookieJar`. Sets the right `Origin` / `Referer` for YouTube.
+- `HttpProxyOptions.setProvider` — only way this module sees app proxy config;
+  entry `NetworkProxyConfig` injects it. Do not read system proxy ad hoc.
+- `HttpDownloader` — used by entry `DownloadManager` to save streams.
+  `setSetCookieObserver` (registered by `AuthSessionManager.init`) reports
+  every response's `Set-Cookie` for account-credential repair. Buffered
+  `request()` runs an API 22 `HttpInterceptorChain` per attempt: a
+  REDIRECTION interceptor strips Cookie/Authorization when a redirect
+  leaves the YouTube host family (auth-header leak guard; local
+  `isYoutubeHostUrl` copy — importing the auth one would be circular),
+  and a FINAL_RESPONSE interceptor fires the Set-Cookie observer.
+  Interceptors do NOT apply to `requestInStream`, so
+  `postBinary`/`postBinaryStreamOnce` keep the manual observer call.
+- `Socks5Bridge` — loopback egress bridge (127.0.0.1 micro HTTP proxy →
+  socks5 or credentialed-http upstream). Netstack socks5 is **version-gated**
+  in `HttpDownloader.applyProxyToOptions`: on API 26+ runtimes it uses the
+  native `usingSocks5Proxy` (`Socks5DnsStrategy.PROXY_MODE`, proxy-side DNS;
+  the field/enum are @since 26 and set dynamically under
+  compatibleSdkVersion 6.1.0(23)); below 26 it points `usingProxy` at
+  `127.0.0.1:{bridgePort}` (`socks5LocalPort` snapshot field). ArkWeb
+  `ProxyController`, RCP `createTunnel`, and MPV's `http_proxy` env always go
+  through the bridge — entry starts/stops it independently. The upstream SOCKS5 handshake is **hand-rolled
+  in the bridge** (RFC 1928 CONNECT + optional RFC 1929 username/password auth
+  over a plain direct TCPSocket, ATYP=domain → proxy-side DNS, 15s budget) —
+  it must NOT go back to netstack's socket-level `socket.ProxyTypes.SOCKS5`:
+  that layer establishes the tunnel yet corrupts/resets the byte stream (TLS
+  fatal alert / CONN_RESET through the tunnel; netstack logs "remove socks5
+  udp header failed"). HTTP-upstream mode (`start(..., 'http')`) serves
+  credentialed HTTP proxies for ArkWeb (`insertProxyRule` accepts no
+  userinfo): CONNECT is translated into an upstream `CONNECT` +
+  `Proxy-Authorization: Basic` (bounded 8KB head read, 2xx required, a 407
+  throws `HttpUpstreamError` with `authFailed=true` and is never retried),
+  and absolute-URI plain requests are forwarded in absolute-form with the
+  same injected auth header. Self-heals: a server `error` event schedules bounded
+  re-listens (1s/2s/4s, generation-guarded); tunnel connects retry once
+  except for handshake auth failures (`SocksHandshakeError.authFailed` /
+  `HttpUpstreamError.authFailed`). `getPort()` reports a
+  last-known-good port: it is NOT cleared during the self-heal re-listen
+  window, so proxy consumers keep routing at the dead loopback port and fail
+  fast (connect-refused) instead of silently going direct. When self-heal
+  ultimately fails (re-listen failure or restart budget exhausted) the bridge
+  blows its fuse (`blowFuse`): the port is STILL kept, the server socket is
+  closed, pending heal timers are cancelled, and the single-slot
+  `setFailureListener` hook fires (entry surfaces "proxy unavailable" /
+  re-applies); `isFuseBlown()` exposes the state. Re-listens use `port: 0`
+  (a fresh ephemeral port each time); after a successful self-heal
+  re-listen whose port differs from the previous one, the single-slot
+  `setPortChangeListener` hook fires so entry can re-point the app-level
+  proxy / WebView override at the new port (mediaservice `RangeProxy` follows
+  `getPort()` lazily on its own). Only a real `stop()` (user
+  disabled/changed the proxy, or initial listen failed) clears the port to 0
+  and resets the fuse; a new `start()` does the same via its internal stop.
+
+## 8. Native cipher (`yourpipe_cipher`)
+- Built from `youtube_core/src/main/cpp` as NAPI module `yourpipe_cipher`.
+- `YoutubeJavaScriptPlayerManager` loads `libyourpipe_cipher.so` for local
+  n/sig decode when the player JS / STS path is READY; otherwise falls back
+  to PipePipe remote API.
+- Entry may call `startAppPrewarm(context)` at launch so first play is warm.
+- Startup metadata (STS `signatureTimestamp` + WEB `clientVersion`) is
+  persisted beside the player JS disk cache (TTL'd) so a cold start can
+  prepare the JSVM without watch/sw.js fetches; a background watch fetch
+  still verifies and captures visitorData for session pinning.
+
+## 9. Logger injection
+- `YTCoreLogger.setSink((level, tag, message) => ...)` is wired in
+  `EntryAbility.onCreate`. Do not call `console.log` / `hilog` directly.
+
+## 10. Conventions
+- **No `AppStorage.get` calls.** Pass context-dependent data via
+  `setProvider` hooks (proxy, sinks) or function arguments.
+- **No `mediaservice` imports.** This module is upstream of `mediaservice`.
+- **No direct stream URLs without going through the extractor.** Add a
+  client in `extractor/clients/` if a stream is missing — do not bypass.
+- **`Index.ets` exports are static references.** No top-level mutable state.
+- **Logger**: use `YTCoreLogger` (which goes to the sink), not `console.log`.
+- **SABR**: keep UMP protocol here; keep loopback serve/lease in mediaservice;
+  keep PoToken WebView in entry.
+
+## 11. Do not
+- Call `AppStorage.get` from this module.
+- Import `mediaservice` or `entry` — wrong dependency direction.
+- Bypass the extractor to fetch a stream directly. Add or fix a client
+  in `extractor/clients/` instead.
+- Claim SABR is “bootstrap only” or reintroduce a parallel UMP client.
+- Mix WEB Cookie rail with TV Bearer rail on the same request.
+- Scatter OAuth client secrets outside `DebugAuthConstants` / session manager.
+- Commit `Crash_*.dmp`, `.cxx/`, `build/`, `.hvigor/` artifacts.
+- Add top-level mutable state in `Index.ets`; export factories or
+  `getInstance()` accessors instead.
+- Put changelogs or commit-specific notes into this file.

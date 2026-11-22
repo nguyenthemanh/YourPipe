@@ -1,0 +1,44 @@
+{
+  "apiType": "stageMode",
+  "buildOption": {
+    "resOptions": {
+      "copyCodeResource": {
+        "enable": false
+      }
+    }
+    // [DISABLED] P3 ASR worker（AsrStreamingWorker.ets 保留，重新启用时恢复注册）:
+    // "sourceOption": { "workers": ["./src/main/ets/workers/AsrStreamingWorker.ets"] }
+  },
+  "buildOptionSet": [
+    {
+      "name": "release",
+      "arkOptions": {
+        "obfuscation": {
+          "ruleOptions": {
+            "enable": false,
+            "files": [
+              "./obfuscation-rules.txt"
+            ]
+          }
+        }
+      }
+    },
+  ],
+  "targets": [
+    {
+      "name": "default",
+      "source": {
+        "abilities": [
+          {
+            "name": "EntryAbility",
+            //"icon": "$media:new_icon",  // 新图标资源
+            "label": "$string:new_app_name" // 新名称资源
+          }
+        ]
+      }
+    },
+    {
+      "name": "ohosTest",
+    }
+  ]
+}

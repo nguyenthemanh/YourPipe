@@ -1,0 +1,450 @@
+import { http } from '@kit.NetworkKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import { PlaybackSectionTitle } from '../../common/components/PlaybackSectionTitle';
+import { PlaybackToggleRow } from '../../common/components/PlaybackToggleRow';
+import { PlaybackSelectRow } from '../../common/components/PlaybackSelectRow';
+import { SECTION_CARD_RADIUS } from '../../common/components/MediaCardTokens';
+import { NetworkProxyConfig, NetworkProxyStatus } from '../../common/NetworkProxyConfig';
+import { UIConfig } from '../../common/AppState';
+import { HttpDownloader } from 'youtube_core';
+import { SelectOption } from 'mediaservice';
+import { AppLog } from '../../common/AppLog';
+
+const logger = AppLog.getInstance('OptionsNetworkPage');
+
+interface OptionsNetworkPageParams {
+  themeColor: ResourceColor;
+  onConfigChanged: (cfg: NetworkProxyConfig) => void;
+}
+
+@Component
+export struct OptionsNetworkPage {
+  @StorageProp('themePrimaryColor') themePrimary: string = '#E53935';
+  @StorageLink('uiConfig') uiConfig: UIConfig = new UIConfig();
+  @StorageLink('networkProxyConfig') networkProxyConfig: NetworkProxyConfig = new NetworkProxyConfig();
+  @StorageLink('networkProxyStatus') proxyStatus: NetworkProxyStatus = new NetworkProxyStatus();
+
+  @Prop params: OptionsNetworkPageParams = {
+    themeColor: '#E53935',
+    onConfigChanged: () => {}
+  };
+
+  @State private testing: boolean = false;
+  @State private testMessage: ResourceStr = '';
+
+  /** 重新应用配置（重启本地桥接、复位熔断）。 */
+  private async restartProxy(): Promise<void> {
+    if (this.testing) {
+      return;
+    }
+    this.testing = true;
+    try {
+      this.persist();
+      await NetworkProxyConfig.awaitReady();
+      const status = NetworkProxyConfig.publishStatus();
+      status.lastApplyAtMs = Date.now();
+      this.testMessage = $r('app.string.yt_proxy_restart_done');
+    } catch (e) {
+      logger.warn(`proxy restart failed: ${(e as Error).message}`);
+      this.testMessage = $r('app.string.yt_proxy_test_failed');
+    } finally {
+      this.testing = false;
+    }
+  }
+
+  /** 状态条文案：把「代理到底通没通」摆在明面上，而不是只靠一次测试按钮。 */
+  private getStatusText(): ResourceStr {
+    const status = this.proxyStatus;
+    if (!this.networkProxyConfig.enabled) {
+      return $r('app.string.yt_proxy_status_off');
+    }
+    if (status.bridgeFuseBlown) {
+      return $r('app.string.yt_proxy_status_fuse');
+    }
+    if (!status.lastApplyOk) {
+      return $r('app.string.yt_proxy_status_failed');
+    }
+    if (status.bridgeRunning && status.bridgePort > 0) {
+      return $r('app.string.yt_proxy_status_ready', status.bridgePort);
+    }
+    return $r('app.string.yt_proxy_status_direct');
+  }
+
+  private getStatusColor(): ResourceColor {
+    const status = this.proxyStatus;
+    if (!this.networkProxyConfig.enabled) {
+      return $r('app.color.yourtube_text_quaternary');
+    }
+    if (status.bridgeFuseBlown || !status.lastApplyOk) {
+      return $r('app.color.yourtube_error');
+    }
+    return $r('app.color.yourtube_text_secondary');
+  }
+
+  /** 需要提示用户手动重启的条件：桥接熔断 / 上次应用失败。 */
+  private needRestart(): boolean {
+    const status = this.proxyStatus;
+    return this.networkProxyConfig.enabled && (status.bridgeFuseBlown || !status.lastApplyOk);
+  }
+
+  private persist(): void {
+    NetworkProxyConfig.save(this.networkProxyConfig);
+    NetworkProxyConfig.applySystemAndProviders(this.networkProxyConfig)
+      .catch((e: Error) => logger.warn(`apply proxy on persist failed: ${e.message}`));
+    this.params.onConfigChanged(this.networkProxyConfig);
+  }
+
+  private getProxyKindOptions(): SelectOption[] {
+    return [
+      { value: $r('app.string.yt_proxy_type_http') } as SelectOption,
+      { value: $r('app.string.yt_proxy_type_socks5') } as SelectOption
+    ];
+  }
+
+  /**
+   * 二次探测：HTTPS 经代理时 407 发生在 CONNECT 阶段，netstack 只抛通用接收
+   * 错误（实测 code=2300056 "Failed to receive data from the peer"，消息不含
+   * 407），无法区分"密码错了"和"代理挂了"。带认证的 HTTP 代理追加一个纯
+   * HTTP 请求——absolute-form 路径下 407 会作为正常响应码返回，可精确判定。
+   */
+  private async probeHttpProxyAuthFailure(): Promise<boolean> {
+    if (this.networkProxyConfig.kind !== 'http' || this.networkProxyConfig.username.length === 0) {
+      return false;
+    }
+    const probeUrl = 'http://www.gstatic.com/generate_204';
+    const req = http.createHttp();
+    try {
+      const options: http.HttpRequestOptions = {
+        method: http.RequestMethod.GET,
+        connectTimeout: 8000,
+        readTimeout: 8000,
+        usingCache: false
+      };
+      HttpDownloader.applyProxyToOptions(options, probeUrl);
+      const response = await req.request(probeUrl, options);
+      logger.info(`proxy auth probe status=${response.responseCode}`);
+      return response.responseCode === 407;
+    } catch (e) {
+      const err = e as BusinessError;
+      logger.warn(`proxy auth probe failed: code=${err.code} msg=${err.message}`);
+      return false;
+    } finally {
+      req.destroy();
+    }
+  }
+
+  private async runProxyTest(): Promise<void> {
+    if (this.testing) {
+      return;
+    }
+    if (!this.networkProxyConfig.enabled) {
+      this.testMessage = $r('app.string.yt_proxy_test_disabled');
+      return;
+    }
+    if (!this.networkProxyConfig.isReady()) {
+      this.testMessage = $r('app.string.yt_proxy_incomplete');
+      return;
+    }
+    this.testing = true;
+    this.testMessage = $r('app.string.yt_proxy_testing');
+    this.persist();
+    // 等代理配置完全落地（socks5 时等桥 listen 完成）再测，保证测的是新配置。
+    await NetworkProxyConfig.awaitReady();
+    const testUrl = 'https://www.youtube.com/generate_204';
+    const req = http.createHttp();
+    const startedAt = Date.now();
+    try {
+      const options: http.HttpRequestOptions = {
+        method: http.RequestMethod.GET,
+        connectTimeout: 10000,
+        readTimeout: 10000,
+        usingCache: false
+      };
+      HttpDownloader.applyProxyToOptions(options, testUrl);
+      const response = await req.request(testUrl, options);
+      const elapsed = Date.now() - startedAt;
+      logger.info(`proxy test status=${response.responseCode} elapsed=${elapsed}ms`);
+      if (response.responseCode >= 200 && response.responseCode < 400) {
+        this.testMessage = $r('app.string.yt_proxy_test_ok');
+        NetworkProxyConfig.recordTestResult(true);
+      } else if (response.responseCode === 407) {
+        this.testMessage = $r('app.string.yt_proxy_test_auth_failed');
+        NetworkProxyConfig.recordTestResult(false);
+      } else {
+        this.testMessage = $r('app.string.yt_proxy_test_http_error');
+        NetworkProxyConfig.recordTestResult(false);
+      }
+    } catch (e) {
+      const err = e as BusinessError;
+      logger.warn(`proxy test failed: code=${err.code} msg=${err.message}`);
+      const msg = err.message || '';
+      if (msg.includes('407') || await this.probeHttpProxyAuthFailure()) {
+        this.testMessage = $r('app.string.yt_proxy_test_auth_failed');
+      } else {
+        this.testMessage = $r('app.string.yt_proxy_test_failed');
+      }
+      NetworkProxyConfig.recordTestResult(false);
+    } finally {
+      req.destroy();
+      this.testing = false;
+    }
+  }
+
+  build() {
+    Column() {
+      List({ space: 6 }) {
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_option_network') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItemGroup() {
+          ListItem() {
+            PlaybackToggleRow({
+              title: $r('app.string.yt_proxy_enable'),
+              subtitle: $r('app.string.yt_proxy_enable_subtitle'),
+              isOn: this.networkProxyConfig.enabled,
+              themeColor: this.params.themeColor,
+              transparentBackground: true,
+              onChange: (val: boolean) => {
+                this.networkProxyConfig.enabled = val;
+                this.testMessage = '';
+                this.persist();
+              }
+            })
+          }
+        }
+        .backgroundColor($r('app.color.yourtube_bg_surface_muted'))
+        .borderRadius(SECTION_CARD_RADIUS)
+        .clip(true)
+
+        // 常驻状态条：代理是否真的通、桥接是否活着，一眼可见。
+        ListItemGroup() {
+          ListItem() {
+            Column({ space: 6 }) {
+              Row() {
+                Text($r('app.string.yt_proxy_status_title'))
+                  .fontSize(14)
+                  .fontColor($r('app.color.yourtube_text_primary'))
+                Blank()
+                Text(this.getStatusText())
+                  .fontSize(13)
+                  .fontColor(this.getStatusColor())
+              }
+              .width('100%')
+
+              if (this.needRestart()) {
+                Button($r('app.string.yt_proxy_restart'))
+                  .height(36)
+                  .fontSize(14)
+                  .fontColor(Color.White)
+                  .backgroundColor(this.themePrimary)
+                  .borderRadius(18)
+                  .width('100%')
+                  .enabled(!this.testing)
+                  .onClick(() => {
+                    this.restartProxy();
+                  })
+              }
+            }
+            .width('100%')
+            .padding({ top: 14, bottom: 14, left: 16, right: 16 })
+          }
+        }
+        .backgroundColor($r('app.color.yourtube_bg_surface_muted'))
+        .borderRadius(SECTION_CARD_RADIUS)
+        .clip(true)
+
+        ListItemGroup() {
+          ListItem() {
+            PlaybackSelectRow({
+              title: $r('app.string.yt_proxy_type'),
+              options: this.getProxyKindOptions(),
+              selectedIndex: this.networkProxyConfig.kind === 'socks5' ? 1 : 0,
+              fontColor: this.params.themeColor,
+              transparentBackground: true,
+              onChange: (index: number) => {
+                this.networkProxyConfig.kind = index === 1 ? 'socks5' : 'http';
+                this.testMessage = '';
+                this.persist();
+              }
+            })
+          }
+        }
+        .backgroundColor($r('app.color.yourtube_bg_surface_muted'))
+        .borderRadius(SECTION_CARD_RADIUS)
+        .clip(true)
+
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_proxy_server') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItemGroup() {
+          ListItem() {
+            TextInput({
+              text: this.networkProxyConfig.host,
+              placeholder: $r('app.string.yt_proxy_host')
+            })
+              .width('100%')
+              .height(56)
+              .fontSize(15)
+              .fontColor($r('app.color.yourtube_text_primary'))
+              .padding({ left: 16, right: 16 })
+              .backgroundColor(Color.Transparent)
+              .onChange((v: string) => {
+                this.networkProxyConfig.host = v.trim();
+                this.testMessage = '';
+              })
+              .onSubmit(() => {
+                this.persist();
+              })
+          }
+
+          ListItem() {
+            TextInput({
+              text: `${this.networkProxyConfig.port}`,
+              placeholder: $r('app.string.yt_proxy_port')
+            })
+              .width('100%')
+              .height(56)
+              .fontSize(15)
+              .fontColor($r('app.color.yourtube_text_primary'))
+              .padding({ left: 16, right: 16 })
+              .type(InputType.Number)
+              .backgroundColor(Color.Transparent)
+              .onChange((v: string) => {
+                const n = parseInt(v, 10);
+                if (Number.isFinite(n)) {
+                  this.networkProxyConfig.port = Math.max(1, Math.min(65535, n));
+                }
+                this.testMessage = '';
+              })
+              .onSubmit(() => {
+                this.persist();
+              })
+          }
+        }
+        .backgroundColor($r('app.color.yourtube_bg_surface_muted'))
+        .borderRadius(SECTION_CARD_RADIUS)
+        .clip(true)
+        .divider({ strokeWidth: 1, color: $r('app.color.yourtube_divider'), startMargin: 16, endMargin: 16 })
+
+        // 地址格式示例：降低第一次配置代理的门槛。
+        ListItem() {
+          Text($r('app.string.yt_proxy_example_hint'))
+            .fontSize(12)
+            .fontColor($r('app.color.yourtube_text_quaternary'))
+            .width('100%')
+            .padding({ left: 4, right: 4, top: 8 })
+        }
+
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_proxy_auth_optional') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItemGroup() {
+          ListItem() {
+            TextInput({
+              text: this.networkProxyConfig.username,
+              placeholder: $r('app.string.yt_proxy_username')
+            })
+              .width('100%')
+              .height(56)
+              .fontSize(15)
+              .fontColor($r('app.color.yourtube_text_primary'))
+              .padding({ left: 16, right: 16 })
+              .backgroundColor(Color.Transparent)
+              .onChange((v: string) => {
+                this.networkProxyConfig.username = v;
+                this.testMessage = '';
+              })
+              .onSubmit(() => {
+                this.persist();
+              })
+          }
+
+          ListItem() {
+            TextInput({
+              text: this.networkProxyConfig.password,
+              placeholder: $r('app.string.yt_proxy_password')
+            })
+              .width('100%')
+              .height(56)
+              .fontSize(15)
+              .fontColor($r('app.color.yourtube_text_primary'))
+              .padding({ left: 16, right: 16 })
+              .type(InputType.Password)
+              .backgroundColor(Color.Transparent)
+              .onChange((v: string) => {
+                this.networkProxyConfig.password = v;
+                this.testMessage = '';
+              })
+              .onSubmit(() => {
+                this.persist();
+              })
+          }
+        }
+        .backgroundColor($r('app.color.yourtube_bg_surface_muted'))
+        .borderRadius(SECTION_CARD_RADIUS)
+        .clip(true)
+        .divider({ strokeWidth: 1, color: $r('app.color.yourtube_divider'), startMargin: 16, endMargin: 16 })
+
+        ListItem() {
+          Button(this.testing ? $r('app.string.yt_proxy_testing') : $r('app.string.yt_proxy_test'))
+            .width('100%')
+            .height(48)
+            .fontSize(16)
+            .backgroundColor(this.themePrimary)
+            .fontColor(Color.White)
+            .borderRadius(16)
+            .enabled(!this.testing)
+            .onClick(() => {
+              this.persist();
+              this.runProxyTest();
+            })
+        }
+        .padding({ left: 0, right: 0, top: 8 })
+
+        if (!(typeof this.testMessage === 'string' && this.testMessage.length === 0)) {
+          ListItem() {
+            Text(this.testMessage)
+              .fontSize(13)
+              .fontColor($r('app.color.yourtube_text_quaternary'))
+              .width('100%')
+              .padding({ left: 4, right: 4 })
+          }
+        }
+
+        ListItem() {
+          Text($r('app.string.yt_proxy_loopback_note'))
+            .fontSize(12)
+            .fontColor($r('app.color.yourtube_text_quaternary'))
+            .width('100%')
+            .padding({ left: 4, right: 4, top: 8, bottom: 16 })
+        }
+
+        ListItem() {
+          Column().height(24)
+        }
+      }
+      .width('100%')
+      .layoutWeight(1)
+      .padding({ left: 16, right: 16, top: 8, bottom: 12 })
+      .edgeEffect(EdgeEffect.Spring)
+      .alignListItem(ListItemAlign.Start)
+      .scrollBar(BarState.Off)
+    }
+    .width('100%')
+    .height('100%')
+    .backgroundColor(Color.Transparent)
+    .onAppear(() => {
+      // 打开设置页就刷新一次状态镜像：桥接可能在上次离开后熔断过。
+      NetworkProxyConfig.publishStatus();
+    })
+    .onDisAppear(() => {
+      this.persist();
+    })
+  }
+}

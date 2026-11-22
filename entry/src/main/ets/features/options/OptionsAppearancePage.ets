@@ -1,0 +1,233 @@
+import { SelectOption } from 'mediaservice';
+import { PlaybackSectionTitle } from '../../common/components/PlaybackSectionTitle';
+import { PlaybackSelectRow } from '../../common/components/PlaybackSelectRow';
+import { PlaybackToggleRow } from '../../common/components/PlaybackToggleRow';
+import { SECTION_CARD_RADIUS } from '../../common/components/MediaCardTokens';
+import { UIConfig, YourtubeDarkMode } from '../../common/AppState';
+import { ColorPresetItem, COLOR_PRESETS, ThemeManager } from '../../common/ThemeManager';
+
+/** 网格卡片密度档位（与 UIConfig.homeGridDensity 取值一一对应）。 */
+const GRID_DENSITY_VALUES: string[] = ['auto', 'compact', 'cozy'];
+
+interface OptionsAppearancePageParams {
+  themeColor: ResourceColor;
+  applyDarkModeSelection: (mode: YourtubeDarkMode) => void;
+  updateUiConfig: (updater: (cfg: UIConfig) => void) => void;
+  /** 首页内容相关设置变更后重载首页信息流（首页条目集合本身变了）。 */
+  refreshHomeFeed: () => void;
+}
+
+@Component
+export struct OptionsAppearancePage {
+  @StorageLink('uiConfig') uiConfig: UIConfig = new UIConfig();
+  @StorageProp('themePrimaryColor') themePrimary: string = COLOR_PRESETS[0].primary;
+
+  @Prop params: OptionsAppearancePageParams = {
+    themeColor: '#E53935',
+    applyDarkModeSelection: () => {},
+    updateUiConfig: () => {},
+    refreshHomeFeed: () => {}
+  };
+
+  private getDarkModeOptions(): SelectOption[] {
+    return [
+      $r('app.string.yt_dark_mode_system'),
+      $r('app.string.yt_dark_mode_light'),
+      $r('app.string.yt_dark_mode_dark')
+    ].map(label => ({ value: label } as SelectOption));
+  }
+
+  private getDarkModeIndex(): number {
+    return [YourtubeDarkMode.SYSTEM, YourtubeDarkMode.LIGHT, YourtubeDarkMode.DARK]
+      .indexOf(this.uiConfig.darkMode);
+  }
+
+  private getGridDensityOptions(): SelectOption[] {
+    return [
+      $r('app.string.yt_density_auto'),
+      $r('app.string.yt_density_compact'),
+      $r('app.string.yt_density_cozy')
+    ].map(label => ({ value: label } as SelectOption));
+  }
+
+  private getGridDensityIndex(): number {
+    const index: number = GRID_DENSITY_VALUES.indexOf(this.uiConfig.homeGridDensity);
+    return index >= 0 ? index : 0;
+  }
+
+  private applyColorPreset(preset: ColorPresetItem): void {
+    this.params.updateUiConfig(cfg => { cfg.colorPreset = preset.id; });
+    ThemeManager.apply(preset.id);
+  }
+
+  @Builder
+  ColorSwatch(preset: ColorPresetItem) {
+    Stack() {
+      Circle({ width: 36, height: 36 })
+        .fill(preset.primary)
+
+      if (this.uiConfig.colorPreset === preset.id) {
+        SymbolGlyph($r('sys.symbol.checkmark'))
+          .fontSize(18)
+          .fontColor([Color.White])
+      }
+    }
+    .width(44)
+    .height(44)
+    .borderRadius(22)
+    .border(this.uiConfig.colorPreset === preset.id
+      ? { width: 2, color: preset.primary, style: BorderStyle.Solid }
+      : { width: 0 })
+    .padding(this.uiConfig.colorPreset === preset.id ? 2 : 4)
+    .onClick(() => {
+      this.applyColorPreset(preset);
+    })
+  }
+
+  build() {
+    Column() {
+      List({ space: 6 }) {
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_dark_mode_title') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItemGroup() {
+          ListItem() {
+            PlaybackSelectRow({
+              title: $r('app.string.yt_dark_mode_title'),
+              options: this.getDarkModeOptions(),
+              selectedIndex: this.getDarkModeIndex(),
+              fontColor: this.params.themeColor,
+              transparentBackground: true,
+              onChange: (index: number) => {
+                const mode = [YourtubeDarkMode.SYSTEM, YourtubeDarkMode.LIGHT, YourtubeDarkMode.DARK][index];
+                this.params.applyDarkModeSelection(mode);
+              }
+            })
+          }
+        }
+        .backgroundColor($r('app.color.yourtube_bg_surface_muted'))
+        .borderRadius(SECTION_CARD_RADIUS)
+        .clip(true)
+
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_appearance_theme_color') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItemGroup() {
+          ListItem() {
+            Column({ space: 12 }) {
+              Row() {
+                Text($r('app.string.yt_label_current'))
+                  .fontSize(13)
+                  .fontColor($r('app.color.yourtube_text_secondary'))
+                  .layoutWeight(1)
+
+                Text(ThemeManager.getPreset(this.uiConfig.colorPreset).displayName)
+                  .fontSize(13)
+                  .fontColor(this.themePrimary)
+                  .fontWeight(FontWeight.Medium)
+              }
+              .width('100%')
+
+              Flex({ wrap: FlexWrap.Wrap, justifyContent: FlexAlign.SpaceBetween }) {
+                ForEach(COLOR_PRESETS, (preset: ColorPresetItem) => {
+                  this.ColorSwatch(preset)
+                }, (preset: ColorPresetItem) => preset.id)
+              }
+              .width('100%')
+            }
+            .width('100%')
+            .padding({ left: 16, right: 16, top: 12, bottom: 12 })
+          }
+        }
+        .backgroundColor($r('app.color.yourtube_bg_surface_muted'))
+        .borderRadius(SECTION_CARD_RADIUS)
+        .clip(true)
+
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_setting_home_layout') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItemGroup() {
+          ListItem() {
+            PlaybackToggleRow({
+              title: $r('app.string.yt_layout_grid'),
+              subtitle: this.uiConfig.homeLayoutMode === 'grid'
+                ? $r('app.string.yt_layout_card_mode') : $r('app.string.yt_layout_list_mode'),
+              isOn: this.uiConfig.homeLayoutMode === 'grid',
+              themeColor: this.params.themeColor,
+              transparentBackground: true,
+              onChange: (val: boolean) => {
+                this.params.updateUiConfig(cfg => { cfg.homeLayoutMode = val ? 'grid' : 'list'; });
+              }
+            })
+          }
+        }
+        .backgroundColor($r('app.color.yourtube_bg_surface_muted'))
+        .borderRadius(SECTION_CARD_RADIUS)
+        .clip(true)
+
+        // 卡片密度（紧凑/自动/宽松 = 网格列数 +1/0/-1），仅卡片模式下有意义
+        if (this.uiConfig.homeLayoutMode === 'grid') {
+          ListItemGroup() {
+            ListItem() {
+              PlaybackSelectRow({
+                title: $r('app.string.yt_setting_card_density'),
+                options: this.getGridDensityOptions(),
+                selectedIndex: this.getGridDensityIndex(),
+                fontColor: this.params.themeColor,
+                transparentBackground: true,
+                onChange: (index: number) => {
+                  const density: string = GRID_DENSITY_VALUES[index];
+                  this.params.updateUiConfig(cfg => { cfg.homeGridDensity = density; });
+                }
+              })
+            }
+          }
+          .backgroundColor($r('app.color.yourtube_bg_surface_muted'))
+          .borderRadius(SECTION_CARD_RADIUS)
+          .clip(true)
+        }
+
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_section_animation') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItemGroup() {
+          ListItem() {
+            PlaybackToggleRow({
+              title: $r('app.string.yt_option_interface_animation'),
+              subtitle: $r('app.string.yt_option_interface_animation_subtitle'),
+              isOn: this.uiConfig.isAnimation,
+              themeColor: this.params.themeColor,
+              transparentBackground: true,
+              onChange: (val: boolean) => {
+                this.params.updateUiConfig(cfg => { cfg.isAnimation = val; });
+              }
+            })
+          }
+        }
+        .backgroundColor($r('app.color.yourtube_bg_surface_muted'))
+        .borderRadius(SECTION_CARD_RADIUS)
+        .clip(true)
+        // 原「Shorts」分组（悬浮球开关 + 首页显示短视频）随全屏 Shorts 模式
+        // 一起下线：短视频现在是**首页标题栏的一个切换维度**（长视频 / 短视频），
+        // 不需要设置项。组件代码保留在 features/shorts/，要恢复就把分组放回。
+      }
+      .width('100%')
+      .layoutWeight(1)
+      .padding({ left: 16, right: 16, bottom: 12 })
+      .edgeEffect(EdgeEffect.Spring)
+      .alignListItem(ListItemAlign.Start)
+      .scrollBar(BarState.Off)
+    }
+    .width('100%')
+    .height('100%')
+    .backgroundColor(Color.Transparent)
+  }
+}

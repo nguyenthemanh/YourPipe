@@ -1,0 +1,84 @@
+import { DeliveryMethod } from '../model/DeliveryType';
+import { YoutubeSabrInfo } from './sabr/YoutubeSabrInfo';
+
+/**
+ * 流信息
+ * 对应 Python: StreamInfo dataclass
+ */
+export interface StreamInfo {
+  url: string;
+  /** When false, url is a session reference (SABR), not a progressive media URL. */
+  isUrl?: boolean;
+  itag: number | undefined;
+  mimeType: string | undefined;
+  qualityLabel: string | undefined;
+  audioQuality: string | undefined;
+  bitrate: number | undefined;
+  contentLength: number | undefined;
+  hasVideo: boolean;
+  hasAudio: boolean;
+  deliveryMethod: DeliveryMethod | undefined;
+  kind: string | undefined;
+  sourceClient: string | undefined;
+  container: string | undefined;
+  codecs: string | undefined;
+  initRange: StreamRange | undefined;
+  indexRange: StreamRange | undefined;
+  approxDurationMs: number | undefined;
+  durationMs: number | undefined;
+  isLive: boolean | undefined;
+  isOtf: boolean | undefined;
+  audioLanguage: string | undefined;
+  audioTrackId: string | undefined;
+  audioTrackName: string | undefined;
+  audioTrackType: string | undefined;
+  audioChannels: number | undefined;
+  audioSampleRate: number | undefined;
+  videoFps: number | undefined;
+  codec: string | undefined;
+  width: number | undefined;
+  height: number | undefined;
+  /** SABR bootstrap attached to SABR streams (PipePipe deliveryMethodInfo). */
+  sabrInfo?: YoutubeSabrInfo;
+}
+
+/**
+ * 流范围
+ */
+export interface StreamRange {
+  start: number;
+  end: number;
+}
+
+/**
+ * 流类型枚举
+ */
+export type StreamKind =
+  | 'progressive'
+  | 'video_only'
+  | 'audio_only'
+  | 'manifest_hls'
+  | 'manifest_dash'
+  | 'sabr';
+
+/**
+ * Check if two streams have equal stats (itag, codec, resolution).
+ * Ported from org.schabi.newpipe.extractor.stream.Stream.equalStats
+ */
+export function equalStats(a: StreamInfo, b: StreamInfo): boolean {
+  if (a.itag !== b.itag) return false;
+  if (a.codec !== b.codec) return false;
+  if (a.width !== b.width) return false;
+  if (a.height !== b.height) return false;
+  // 不同语言的音频流（audioTrackId 不同）不应被视为相同
+  if (a.audioTrackId !== b.audioTrackId) return false;
+  return true;
+}
+
+/**
+ * Check if a list of streams already contains a similar stream.
+ * Ported from org.schabi.newpipe.extractor.stream.Stream.containSimilarStream
+ */
+export function containSimilarStream(stream: StreamInfo, list: StreamInfo[]): boolean {
+  return list.some(other => equalStats(stream, other));
+}

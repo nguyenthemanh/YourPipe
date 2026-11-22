@@ -1,0 +1,83 @@
+/node_modules
+/oh_modules
+/local.properties
+/.idea
+**/build
+/.hvigor
+.cxx
+/.clangd
+/.clang-format
+/.clang-tidy
+**/.test
+/.appanalyzer
+**/oh_modules
+
+# Documents & configs (not part of app code)
+CLAUDE.md
+.mcp.json
+.deveco/plans/
+
+# AI platform configs (local-only, not shared)
+.agents/
+.claude/
+.codex/
+.codex-tmp/
+.codebuddy/
+.cursor/
+.deveco/
+.kimi-code/
+.opencode/
+.qoder/
+.trae/
+.trae-cn/
+.zcode/
+
+# Trellis workflow (local-only, not shared)
+.trellis/
+
+# Local artifacts
+.cache/
+Crash_*.dmp
+**/Crash_*.dmp
+de_fix*.ps1
+/proxy-test-forwarder.py
+# tools directory: keep .py scripts, ignore generated reports
+tools/*.txt
+tools/*.ps1
+!tools/*.py
+
+# Secrets / signing — never commit
+**/agconnect-services.json
+/build-profile.json5
+build-profile.local.json5
+**/local.properties
+**/*.p12
+**/*.p7b
+**/*.cer
+**/*.jks
+**/*.keystore
+keys/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Machine-local signing material (never commit)
+/signing-backup/
+
+# CodeGraph index (local tooling artifact, rebuilt via `codegraph sync`)
+.codegraph/
+
+# Local research/capture/scratch notes (never commit)
+/wb-req/
+/backups/
+/youtube-research/
+/介绍图/
+/audio-only-log.txt
+/runlog-*.txt
+/*-analysis.md
+/*-design.md
+/youtube-network-capture.json
+/yt-browser-*.json
+/.commandcode/

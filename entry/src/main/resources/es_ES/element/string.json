@@ -1,0 +1,4142 @@
+{
+    "string": [
+        {
+            "name": "module_desc",
+            "value": "module description"
+        },
+        {
+            "name": "EntryAbility_desc",
+            "value": "description"
+        },
+        {
+            "name": "EntryAbility_label",
+            "value": "label"
+        },
+        {
+            "name": "HOME_EXIT_TOAST",
+            "value": "Vuelve a presionar para salir"
+        },
+        {
+            "name": "LIVING_LEFT_TEXT",
+            "value": "Total de "
+        },
+        {
+            "name": "LIVING_RIGHT_TEXT",
+            "value": " comentarios"
+        },
+        {
+            "name": "LIVING_WRITE",
+            "value": "Escribir un comentario"
+        },
+        {
+            "name": "number_of_viewers",
+            "value": "738.600 espectadores"
+        },
+        {
+            "name": "store_name",
+            "value": "Sala de transmisión oficial"
+        },
+        {
+            "name": "yt_tab_home",
+            "value": "Inicio"
+        },
+        {
+            "name": "yt_tab_playlists",
+            "value": "Listas de reproducción"
+        },
+        {
+            "name": "yt_tab_subscriptions",
+            "value": "Suscripciones"
+        },
+        {
+            "name": "yt_tab_favorites",
+            "value": "Favoritos"
+        },
+        {
+            "name": "yt_tab_local",
+            "value": "Local"
+        },
+        {
+            "name": "yt_option_title",
+            "value": "Opciones"
+        },
+        {
+            "name": "yt_option_group_settings",
+            "value": "Configuración"
+        },
+        {
+            "name": "yt_option_group_general",
+            "value": "General"
+        },
+        {
+            "name": "yt_option_group_personalization",
+            "value": "Personalización"
+        },
+        {
+            "name": "yt_option_group_others",
+            "value": "Otros"
+        },
+        {
+            "name": "yt_option_language",
+            "value": "Idioma"
+        },
+        {
+            "name": "yt_option_color",
+            "value": "Color"
+        },
+        {
+            "name": "yt_option_color_subtitle",
+            "value": "Colores de tema y acento"
+        },
+        {
+            "name": "yt_option_appearance",
+            "value": "Apariencia"
+        },
+        {
+            "name": "yt_dark_mode_title",
+            "value": "Modo oscuro"
+        },
+        {
+            "name": "yt_dark_mode_system",
+            "value": "Seguir sistema"
+        },
+        {
+            "name": "yt_dark_mode_system_subtitle",
+            "value": "Cambiar automáticamente según la configuración del sistema"
+        },
+        {
+            "name": "yt_dark_mode_light",
+            "value": "Tema claro"
+        },
+        {
+            "name": "yt_dark_mode_light_subtitle",
+            "value": "Usar siempre tema claro"
+        },
+        {
+            "name": "yt_dark_mode_dark",
+            "value": "Tema oscuro"
+        },
+        {
+            "name": "yt_dark_mode_dark_subtitle",
+            "value": "Usar siempre tema oscuro"
+        },
+        {
+            "name": "yt_option_log",
+            "value": "Registros"
+        },
+        {
+            "name": "yt_option_log_subtitle",
+            "value": "Ver registros recientes"
+        },
+        {
+            "name": "yt_action_close",
+            "value": "Cerrar"
+        },
+        {
+            "name": "yt_log_title",
+            "value": "Registros"
+        },
+        {
+            "name": "yt_log_enable",
+            "value": "Habilitar registro"
+        },
+        {
+            "name": "yt_log_enable_subtitle",
+            "value": "Capturar registros al iniciar"
+        },
+        {
+            "name": "yt_log_disabled_hint",
+            "value": "El registro está deshabilitado\nActiva el interruptor de arriba para comenzar"
+        },
+        {
+            "name": "yt_log_empty",
+            "value": "Sin registros"
+        },
+        {
+            "name": "yt_log_session_active",
+            "value": "Grabando"
+        },
+        {
+            "name": "yt_log_session_saved",
+            "value": "Guardado"
+        },
+        {
+            "name": "yt_log_no_sessions",
+            "value": "Sin sesiones de registro"
+        },
+        {
+            "name": "yt_log_delete_all_confirm",
+            "value": "¿Eliminar todos los registros?"
+        },
+        {
+            "name": "yt_log_delete_confirm_yes",
+            "value": "Eliminar"
+        },
+        {
+            "name": "yt_log_delete_confirm_no",
+            "value": "Cancelar"
+        },
+        {
+            "name": "yt_option_about",
+            "value": "Acerca de"
+        },
+        {
+            "name": "yt_option_about_subtitle",
+            "value": "Versión y créditos"
+        },
+        {
+            "name": "yt_option_in_development",
+            "value": "En desarrollo"
+        },
+        {
+            "name": "yt_option_in_development_color",
+            "value": "Las opciones de tema de color se mostrarán aquí"
+        },
+        {
+            "name": "yt_lang_follow_system",
+            "value": "Seguir sistema"
+        },
+        {
+            "name": "yt_lang_simplified",
+            "value": "Chino (simplificado)"
+        },
+        {
+            "name": "yt_lang_simplified_subtitle",
+            "value": "简体中文"
+        },
+        {
+            "name": "yt_lang_traditional_hk",
+            "value": "Chino (tradicional, Hong Kong)"
+        },
+        {
+            "name": "yt_lang_traditional_hk_subtitle",
+            "value": "繁體中文（香港）"
+        },
+        {
+            "name": "yt_lang_traditional_tw",
+            "value": "Chino (tradicional, Taiwán)"
+        },
+        {
+            "name": "yt_lang_traditional_tw_subtitle",
+            "value": "繁體中文（台灣）"
+        },
+        {
+            "name": "yt_lang_english",
+            "value": "Inglés"
+        },
+        {
+            "name": "yt_lang_english_subtitle",
+            "value": "English"
+        },
+        {
+            "name": "internet_reason",
+            "value": "Solicitar datos de red"
+        },
+        {
+            "name": "reason_background",
+            "value": "Mantener el video en ejecucion en segundo plano"
+        },
+        {
+            "name": "video_name0",
+            "value": "@Cat"
+        },
+        {
+            "name": "video_name1",
+            "value": "@Mountaineer"
+        },
+        {
+            "name": "video_name2",
+            "value": "@Nice To Meet You"
+        },
+        {
+            "name": "video_name3",
+            "value": "@Tick"
+        },
+        {
+            "name": "video_name4",
+            "value": "@Faery"
+        },
+        {
+            "name": "video_description0",
+            "value": "#1 #Video local #Mundo colorido, la vida no es solo lo inmediato, sino también poesía y distancia"
+        },
+        {
+            "name": "video_description1",
+            "value": "#2 #Video en línea #Sueño"
+        },
+        {
+            "name": "video_description3",
+            "value": "#4 #Video en línea #Mundo colorido, la vida no es solo lo inmediato, sino también poesía y distancia"
+        },
+        {
+            "name": "video_description4",
+            "value": "#5 #Video en línea #Mundo colorido, la vida no es solo lo inmediato, sino también poesía y distancia"
+        },
+        {
+            "name": "yt_section_language_region",
+            "value": "Idioma y región"
+        },
+        {
+            "name": "yt_section_playback",
+            "value": "Reproducción"
+        },
+        {
+            "name": "yt_section_language",
+            "value": "Configuración de idioma"
+        },
+        {
+            "name": "yt_section_content_translation",
+            "value": "Traducción de contenido"
+        },
+        {
+            "name": "yt_setting_translation_language",
+            "value": "Traducir a"
+        },
+        {
+            "name": "yt_follow_app_language",
+            "value": "Seguir idioma de la app"
+        },
+        {
+            "name": "yt_setting_subtitle_translate_language",
+            "value": "Traducir subtítulos automáticamente a"
+        },
+        {
+            "name": "yt_follow_translation_language",
+            "value": "Seguir idioma de traducción"
+        },
+        {
+            "name": "yt_setting_ui_language",
+            "value": "Idioma de la app"
+        },
+        {
+            "name": "yt_setting_content_language",
+            "value": "Idioma del contenido"
+        },
+        {
+            "name": "yt_setting_content_region",
+            "value": "Región del contenido"
+        },
+        {
+            "name": "yt_section_video",
+            "value": "Configuración de video"
+        },
+        {
+            "name": "yt_setting_default_quality",
+            "value": "Calidad de video predeterminada"
+        },
+        {
+            "name": "yt_setting_live_quality_cap",
+            "value": "Límite de calidad en vivo"
+        },
+        {
+            "name": "yt_setting_show_high_res",
+            "value": "Mostrar alta resolución (1440p / 4K)"
+        },
+        {
+            "name": "yt_setting_show_high_res_subtitle",
+            "value": "Mostrar opción 4K en el selector de calidad, requiere alto rendimiento"
+        },
+        {
+            "name": "yt_setting_video_codec",
+            "value": "Códec de video"
+        },
+        {
+            "name": "yt_section_audio",
+            "value": "Configuración de audio"
+        },
+        {
+            "name": "yt_setting_audio_quality",
+            "value": "Calidad de audio máxima"
+        },
+        {
+            "name": "yt_section_decoder",
+            "value": "Configuración del decodificador"
+        },
+        {
+            "name": "yt_setting_hwdec_mode",
+            "value": "Modo de decodificación por hardware"
+        },
+        {
+            "name": "yt_setting_decoder_fallback",
+            "value": "Retroceso del decodificador"
+        },
+        {
+            "name": "yt_setting_decoder_fallback_subtitle",
+            "value": "Retroceder automáticamente a decodificación por software si falla el hardware"
+        },
+        {
+            "name": "yt_section_buffer",
+            "value": "Estrategia de búfer"
+        },
+        {
+            "name": "yt_setting_readahead",
+            "value": "Duración del búfer anticipado"
+        },
+        {
+            "name": "yt_setting_cache_pause",
+            "value": "Tiempo de espera por búfer insuficiente"
+        },
+        {
+            "name": "yt_setting_max_back_bytes",
+            "value": "Tamaño del búfer hacia atrás (no recargar al retroceder)"
+        },
+        {
+            "name": "yt_quality_best",
+            "value": "Mejor calidad"
+        },
+        {
+            "name": "yt_quality_auto",
+            "value": "Automático"
+        },
+        {
+            "name": "yt_codec_h264_first",
+            "value": "Automático (H.264 prioritario)"
+        },
+        {
+            "name": "yt_codec_force_h264",
+            "value": "Forzar H.264"
+        },
+        {
+            "name": "yt_audio_high",
+            "value": "Máxima (≈256 kbps AAC)"
+        },
+        {
+            "name": "yt_audio_medium",
+            "value": "Media (≈128 kbps AAC)"
+        },
+        {
+            "name": "yt_audio_low",
+            "value": "Ahorro de datos (≈48 kbps)"
+        },
+        {
+            "name": "yt_hwdec_auto",
+            "value": "Automático (recomendado)"
+        },
+        {
+            "name": "yt_hwdec_auto_safe",
+            "value": "Forzar hardware"
+        },
+        {
+            "name": "yt_hwdec_no",
+            "value": "Solo software"
+        },
+        {
+            "name": "yt_recommended_suffix",
+            "value": " (recomendado)"
+        },
+        {
+            "name": "yt_unit_seconds",
+            "value": "s"
+        },
+        {
+            "name": "yt_unit_mb",
+            "value": "MB"
+        },
+        {
+            "name": "yt_placeholder_search",
+            "value": "Buscar..."
+        },
+        {
+            "name": "yt_action_favorite",
+            "value": "Añadir a favoritos"
+        },
+        {
+            "name": "yt_action_unfavorite",
+            "value": "Quitar de favoritos"
+        },
+        {
+            "name": "yt_action_subscribe",
+            "value": "Suscribirse"
+        },
+        {
+            "name": "yt_action_unsubscribe",
+            "value": "Cancelar suscripción"
+        },
+        {
+            "name": "yt_action_share",
+            "value": "Compartir"
+        },
+        {
+            "name": "yt_action_retry",
+            "value": "Reintentar"
+        },
+        {
+            "name": "yt_action_cancel",
+            "value": "Cancelar"
+        },
+        {
+            "name": "yt_action_confirm",
+            "value": "Confirmar"
+        },
+        {
+            "name": "yt_action_delete",
+            "value": "Eliminar"
+        },
+        {
+            "name": "yt_action_clear",
+            "value": "Vaciar"
+        },
+        {
+            "name": "yt_action_view_author",
+            "value": "Ver autor"
+        },
+        {
+            "name": "yt_action_clear_all",
+            "value": "Vaciar todo"
+        },
+        {
+            "name": "yt_search_youtube",
+            "value": "Buscar en YouTube"
+        },
+        {
+            "name": "yt_search_youtube_music",
+            "value": "Buscar en YouTube Music"
+        },
+        {
+            "name": "yt_filter_all",
+            "value": "Todo"
+        },
+        {
+            "name": "yt_filter_videos",
+            "value": "Videos"
+        },
+        {
+            "name": "yt_filter_channels",
+            "value": "Canales"
+        },
+        {
+            "name": "yt_filter_playlists",
+            "value": "Listas"
+        },
+        {
+            "name": "yt_filter_songs",
+            "value": "Canciones"
+        },
+        {
+            "name": "yt_filter_albums",
+            "value": "Álbumes"
+        },
+        {
+            "name": "yt_search_history",
+            "value": "Historial de búsqueda"
+        },
+        {
+            "name": "yt_action_clear_search_history",
+            "value": "Vaciar historial de búsqueda"
+        },
+        {
+            "name": "yt_empty_no_search_history",
+            "value": "Sin historial de búsqueda"
+        },
+        {
+            "name": "yt_search_no_results",
+            "value": "No se encontraron resultados"
+        },
+        {
+            "name": "yt_error_search_failed",
+            "value": "Error en la búsqueda, inténtalo más tarde"
+        },
+        {
+            "name": "yt_dialog_delete_search_record",
+            "value": "Eliminar registro de búsqueda"
+        },
+        {
+            "name": "yt_confirm_clear_search_history",
+            "value": "¿Vaciar todo el historial de búsqueda?"
+        },
+        {
+            "name": "yt_toast_cleared",
+            "value": "Vaciado"
+        },
+        {
+            "name": "yt_placeholder_search_content",
+            "value": "Buscar contenido"
+        },
+        {
+            "name": "yt_empty_no_content",
+            "value": "Sin contenido"
+        },
+        {
+            "name": "yt_error_invalid_video",
+            "value": "Sin información de video válida"
+        },
+        {
+            "name": "yt_dialog_select_quality",
+            "value": "Seleccionar calidad"
+        },
+        {
+            "name": "yt_label_video_track",
+            "value": "Pista de video"
+        },
+        {
+            "name": "yt_warn_high_resolution",
+            "value": "Esta resolución supera 1440p, puede causar problemas de rendimiento en algunos dispositivos"
+        },
+        {
+            "name": "yt_label_audio_quality",
+            "value": "Calidad de audio"
+        },
+        {
+            "name": "yt_player_syncing_buffer",
+            "value": "Sincronizando búfer de doble pista..."
+        },
+        {
+            "name": "yt_error_playback_failed",
+            "value": "Error de reproducción"
+        },
+        {
+            "name": "yt_error_load_video_info",
+            "value": "No se pudo obtener la información del video"
+        },
+        {
+            "name": "yt_error_load_video",
+            "value": "No se pudo cargar el video"
+        },
+        {
+            "name": "yt_error_load_exception",
+            "value": "Ocurrió un error al cargar"
+        },
+        {
+            "name": "yt_error_unknown",
+            "value": "Error desconocido"
+        },
+        {
+            "name": "yt_error_invalid_video_id",
+            "value": "ID de video inválido"
+        },
+        {
+            "name": "yt_error_play_error_retry",
+            "value": "Error de reproducción, por favor reintenta"
+        },
+        {
+            "name": "yt_empty_no_comments",
+            "value": "Sin comentarios"
+        },
+        {
+            "name": "yt_label_pinned",
+            "value": "Fijado"
+        },
+        {
+            "name": "yt_error_load_comments",
+            "value": "No se pudieron cargar los comentarios"
+        },
+        {
+            "name": "yt_label_reply",
+            "value": "Responder"
+        },
+        {
+            "name": "yt_error_load_replies",
+            "value": "No se pudieron cargar las respuestas"
+        },
+        {
+            "name": "yt_label_like",
+            "value": "Me gusta"
+        },
+        {
+            "name": "yt_translate_action",
+            "value": "Traducir"
+        },
+        {
+            "name": "yt_show_original",
+            "value": "Mostrar original"
+        },
+        {
+            "name": "yt_translating",
+            "value": "Traduciendo…"
+        },
+        {
+            "name": "yt_translate_failed",
+            "value": "Error de traducción, toca para reintentar"
+        },
+        {
+            "name": "yt_label_dislike",
+            "value": "No me gusta"
+        },
+        {
+            "name": "yt_tab_videos",
+            "value": "Videos"
+        },
+        {
+            "name": "yt_tab_shorts",
+            "value": "Shorts"
+        },
+        {
+            "name": "yt_tab_live",
+            "value": "En vivo"
+        },
+        {
+            "name": "yt_tab_about",
+            "value": "Acerca de"
+        },
+        {
+            "name": "yt_empty_no_videos",
+            "value": "Sin videos"
+        },
+        {
+            "name": "yt_empty_no_shorts",
+            "value": "Sin Shorts"
+        },
+        {
+            "name": "yt_empty_no_live",
+            "value": "Sin transmisiones"
+        },
+        {
+            "name": "yt_channel_info",
+            "value": "Información del canal"
+        },
+        {
+            "name": "yt_channel_id",
+            "value": "ID del canal"
+        },
+        {
+            "name": "yt_channel_subscribers",
+            "value": "Suscriptores"
+        },
+        {
+            "name": "yt_channel_video_count",
+            "value": "Cantidad de videos"
+        },
+        {
+            "name": "yt_channel_description",
+            "value": "Descripción"
+        },
+        {
+            "name": "yt_error_load_user_videos",
+            "value": "No se pudieron cargar los videos del usuario"
+        },
+        {
+            "name": "yt_error_load_shorts",
+            "value": "No se pudieron cargar los Shorts"
+        },
+        {
+            "name": "yt_error_load_live",
+            "value": "No se pudieron cargar las transmisiones"
+        },
+        {
+            "name": "yt_label_user",
+            "value": "Usuario"
+        },
+        {
+            "name": "yt_local_history",
+            "value": "Historial de reproducción"
+        },
+        {
+            "name": "yt_dialog_clear_history",
+            "value": "Vaciar historial"
+        },
+        {
+            "name": "yt_confirm_clear_history",
+            "value": "¿Vaciar todo el historial de reproducción?"
+        },
+        {
+            "name": "yt_empty_no_history",
+            "value": "Sin historial de reproducción"
+        },
+        {
+            "name": "yt_empty_history_hint",
+            "value": "Los videos vistos aparecerán aquí"
+        },
+        {
+            "name": "yt_time_just_now",
+            "value": "Justo ahora"
+        },
+        {
+            "name": "yt_action_delete_record",
+            "value": "Eliminar registro"
+        },
+        {
+            "name": "yt_action_remove_from_queue",
+            "value": "Quitar de la cola"
+        },
+        {
+            "name": "yt_sub_manage_title",
+            "value": "Mis suscripciones"
+        },
+        {
+            "name": "yt_empty_no_subs",
+            "value": "Sin suscripciones"
+        },
+        {
+            "name": "yt_empty_subs_hint",
+            "value": "Por favor, añade en \"Gestión de suscripciones\""
+        },
+        {
+            "name": "yt_empty_subs_hint_alt",
+            "value": "Suscríbete a autores interesantes en la página de búsqueda"
+        },
+        {
+            "name": "yt_error_load_subs",
+            "value": "No se pudieron cargar las suscripciones"
+        },
+        {
+            "name": "yt_fav_videos_title",
+            "value": "Mis videos favoritos"
+        },
+        {
+            "name": "yt_fav_playlists_title",
+            "value": "Mis listas favoritas"
+        },
+        {
+            "name": "yt_local_playlists_title",
+            "value": "Listas locales"
+        },
+        {
+            "name": "yt_local_playlists_tag",
+            "value": "Local"
+        },
+        {
+            "name": "yt_empty_no_local_playlists",
+            "value": "Aún no hay listas locales"
+        },
+        {
+            "name": "yt_empty_local_playlists_hint",
+            "value": "Guarda videos en una lista local desde el reproductor"
+        },
+        {
+            "name": "yt_empty_no_fav_videos",
+            "value": "Sin videos favoritos"
+        },
+        {
+            "name": "yt_empty_no_fav_playlists",
+            "value": "Sin listas favoritas"
+        },
+        {
+            "name": "yt_empty_fav_playlists_hint",
+            "value": "Añade listas a favoritos desde la página de búsqueda"
+        },
+        {
+            "name": "yt_about_current_version",
+            "value": "Versión actual"
+        },
+        {
+            "name": "yt_about_description",
+            "value": "Cliente de YouTube de código abierto basado en HarmonyOS NEXT\nSin anuncios · Sin rastreo · Análisis completamente local"
+        },
+        {
+            "name": "yt_about_qq_group",
+            "value": "Grupo de QQ"
+        },
+        {
+            "name": "yt_about_tg_group",
+            "value": "Grupo de Telegram"
+        },
+        {
+            "name": "yt_about_github_repo",
+            "value": "Repositorio de GitHub"
+        },
+        {
+            "name": "yt_about_project_info",
+            "value": "Información del proyecto"
+        },
+        {
+            "name": "yt_about_open_source",
+            "value": "Proyectos de código abierto utilizados"
+        },
+        {
+            "name": "yt_about_ai_models",
+            "value": "Modelos de IA para desarrollo"
+        },
+        {
+            "name": "yt_about_changelog",
+            "value": "Registro de cambios"
+        },
+        {
+            "name": "yt_about_check_update",
+            "value": "Buscar actualizaciones"
+        },
+        {
+            "name": "yt_about_check_update_subtitle",
+            "value": "Obtener la última versión desde GitHub"
+        },
+        {
+            "name": "yt_update_check_failed",
+            "value": "Error al buscar actualizaciones, inténtalo de nuevo más tarde"
+        },
+        {
+            "name": "yt_update_up_to_date",
+            "value": "Ya tienes la última versión"
+        },
+        {
+            "name": "yt_update_available_title",
+            "value": "Nueva versión disponible"
+        },
+        {
+            "name": "yt_update_open_appgallery",
+            "value": "AppTest"
+        },
+        {
+            "name": "yt_update_open_github",
+            "value": "GitHub"
+        },
+        {
+            "name": "yt_update_checking",
+            "value": "Buscando actualizaciones…"
+        },
+        {
+            "name": "yt_update_current_version",
+            "value": "Versión actual"
+        },
+        {
+            "name": "yt_update_new_version",
+            "value": "Nueva versión"
+        },
+        {
+            "name": "yt_update_release_time",
+            "value": "Publicada"
+        },
+        {
+            "name": "yt_error_load_failed",
+            "value": "Error al cargar"
+        },
+        {
+            "name": "yt_error_play_failed_title",
+            "value": "Reproducción fallida"
+        },
+        {
+            "name": "yt_label_live",
+            "value": "En vivo"
+        },
+        {
+            "name": "yt_error_load_playlists",
+            "value": "No se pudieron cargar las listas"
+        },
+        {
+            "name": "yt_error_load_channel_info",
+            "value": "No se pudo obtener la información del canal"
+        },
+        {
+            "name": "yt_tab_description",
+            "value": "Descripción"
+        },
+        {
+            "name": "yt_tab_comments",
+            "value": "Comentarios"
+        },
+        {
+            "name": "yt_tab_recommended",
+            "value": "Recomendado"
+        },
+        {
+            "name": "yt_home_recommended_error",
+            "value": "Error al cargar recomendaciones; se usara alternativa o reintenta mas tarde"
+        },
+        {
+            "name": "yt_home_auth_expired_notice",
+            "value": "Sesion expirada - mostrando recomendaciones de invitado. Inicia sesion de nuevo."
+        },
+        {
+            "name": "yt_home_kiosk_error",
+            "value": "Error en la solicitud Kiosk, inténtalo más tarde"
+        },
+        {
+            "name": "yt_home_load_error",
+            "value": "Error al cargar la página de inicio, inténtalo más tarde"
+        },
+        {
+            "name": "yt_player_mode_progressive",
+            "value": "Progresivo"
+        },
+        {
+            "name": "yt_player_mode_hls",
+            "value": "Transmisión HLS"
+        },
+        {
+            "name": "yt_player_mode_dash_manifest",
+            "value": "Transmisión DASH (Manifest)"
+        },
+        {
+            "name": "yt_player_mode_dash_track",
+            "value": "Pistas DASH (audio/video separados)"
+        },
+        {
+            "name": "yt_player_default",
+            "value": "Predeterminado (Default)"
+        },
+        {
+            "name": "yt_player_step1_select_mode",
+            "value": "1. Seleccionar modo de reproducción"
+        },
+        {
+            "name": "yt_player_step2_select_quality",
+            "value": "2. Seleccionar calidad"
+        },
+        {
+            "name": "yt_player_video_quality",
+            "value": "Calidad de video"
+        },
+        {
+            "name": "yt_player_step2_select_manifest",
+            "value": "2. Seleccionar manifiesto"
+        },
+        {
+            "name": "yt_player_step2_select_track",
+            "value": "2. Seleccionar pista"
+        },
+        {
+            "name": "yt_player_audio_language_type",
+            "value": "Idioma / tipo de audio"
+        },
+        {
+            "name": "yt_log_saved_to_downloads",
+            "value": "Guardado en la carpeta de descargas"
+        },
+        {
+            "name": "yt_error_no_playable_stream",
+            "value": "No se encontraron flujos reproducibles"
+        },
+        {
+            "name": "yt_error_no_supported_stream",
+            "value": "No se encontraron flujos de video compatibles"
+        },
+        {
+            "name": "new_app_name",
+            "value": "YourPipe"
+        },
+        {
+            "name": "yt_empty_no_playlists",
+            "value": "Sin listas de reproducción"
+        },
+        {
+            "name": "yt_search_results_from",
+            "value": "Resultados de búsqueda para \"%s\""
+        },
+        {
+            "name": "yt_setting_stream_buffer",
+            "value": "Búfer de flujo TCP"
+        },
+        {
+            "name": "yt_setting_seek_keyframe",
+            "value": "Búsqueda rápida (Keyframe)"
+        },
+        {
+            "name": "yt_setting_seek_keyframe_subtitle",
+            "value": "Saltar al keyframe más cercano para una respuesta de búsqueda más rápida"
+        },
+        {
+            "name": "yt_setting_home_feed_after_login",
+            "value": "Contenido de inicio tras iniciar sesion"
+        },
+        {
+            "name": "yt_home_feed_recommended",
+            "value": "Recomendados"
+        },
+        {
+            "name": "yt_home_feed_kiosk",
+            "value": "En directo"
+        },
+        {
+            "name": "yt_option_sync_library_on_launch",
+            "value": "Sincronizar biblioteca al iniciar"
+        },
+        {
+            "name": "yt_option_sync_library_on_launch_subtitle",
+            "value": "Traer historial y suscripciones al iniciar"
+        },
+        {
+            "name": "yt_option_auth_session",
+            "value": "Navegacion con sesion"
+        },
+        {
+            "name": "yt_option_sign_out",
+            "value": "Cerrar sesion"
+        },
+        {
+            "name": "yt_option_sign_out_subtitle",
+            "value": "Borrar inicio de sesión"
+        },
+        {
+            "name": "yt_confirm_sign_out",
+            "value": "Cerrar sesion y borrar las credenciales guardadas?"
+        },
+        {
+            "name": "yt_action_audio_only",
+            "value": "Solo audio"
+        },
+        {
+            "name": "yt_action_audio_only_play",
+            "value": "Reproducir solo audio"
+        },
+        {
+            "name": "yt_player_subtitle_off",
+            "value": "Subtítulos desactivados"
+        },
+{
+    "name": "yt_player_subtitle_auto_translated",
+    "value": "Traducción automática"
+},
+{
+    "name": "yt_option_ai_translate",
+    "value": "Traducción de subtítulos con IA"
+},
+{
+    "name": "yt_option_ai_subtitle",
+    "value": "Subtítulos IA"
+},
+{
+    "name": "yt_ai_translate_engine",
+    "value": "Motor de traducción"
+},
+{
+    "name": "yt_ai_translate_engine_gtx",
+    "value": "Google Translate (gratuito)"
+},
+{
+    "name": "yt_ai_translate_engine_llm",
+    "value": "LLM personalizado (compatible con OpenAI)"
+},
+{
+    "name": "yt_ai_translate_llm_section",
+    "value": "Configuración de LLM"
+},
+{
+    "name": "yt_ai_translate_base_url",
+    "value": "URL base"
+},
+{
+    "name": "yt_ai_translate_model",
+    "value": "Nombre del modelo"
+},
+{
+    "name": "yt_ai_translate_api_key",
+    "value": "API Key"
+},
+{
+    "name": "yt_ai_translate_test",
+    "value": "Probar conexión"
+},
+{
+    "name": "yt_ai_translate_testing",
+    "value": "Probando…"
+},
+{
+    "name": "yt_ai_translate_test_ok",
+    "value": "Conexión correcta"
+},
+{
+    "name": "yt_ai_translate_test_fail",
+    "value": "Conexión fallida; revisa la configuración"
+},
+{
+    "name": "yt_ai_translate_display_section",
+    "value": "Visualización"
+},
+{
+    "name": "yt_ai_translate_bilingual",
+    "value": "Bilingüe"
+},
+{
+    "name": "yt_ai_translate_bilingual_subtitle",
+    "value": "Mostrar original y traducción"
+},
+{
+    "name": "yt_ai_translate_note",
+    "value": "El texto de los subtítulos se envía al servicio de traducción elegido. El idioma destino sigue a «Idioma de traducción de contenido»."
+},
+{
+    "name": "yt_ai_translate_menu",
+    "value": "Traducción IA"
+},
+{
+    "name": "yt_ai_translate_llm_not_configured",
+    "value": "Configura primero el LLM en Ajustes"
+},
+{
+    "name": "yt_ai_translate_partial_fail",
+    "value": "Algunas líneas no se tradujeron; se conserva el original"
+},
+{
+    "name": "yt_ai_translate_failed",
+    "value": "La traducción falló; inténtalo más tarde"
+},
+{
+    "name": "yt_setting_system_ai_caption",
+    "value": "Subtítulos IA del sistema"
+},
+{
+    "name": "yt_setting_system_ai_caption_subtitle",
+    "value": "El sistema transcribe el audio en reproducción en tiempo real (solo dispositivos compatibles, chino/inglés)"
+},
+{
+    "name": "yt_setting_system_ai_caption_source",
+    "value": "Idioma de origen de subtítulos IA"
+},
+{
+    "name": "yt_setting_system_ai_caption_source_zh",
+    "value": "Chino"
+},
+{
+    "name": "yt_asr_menu",
+    "value": "Generar subtítulos con IA"
+},
+{
+    "name": "yt_asr_phase_model",
+    "value": "Descargando modelo"
+},
+{
+    "name": "yt_asr_live_progress",
+    "value": "Reconociendo en directo…"
+},
+{
+    "name": "yt_asr_failed",
+    "value": "Falló la generación de subtítulos; inténtalo más tarde"
+},
+{
+    "name": "yt_asr_model_section",
+    "value": "Modelo de reconocimiento en el dispositivo"
+},
+{
+    "name": "yt_asr_model_status_ready",
+    "value": "Listo (reconocimiento en streaming zh/en)"
+},
+{
+    "name": "yt_asr_model_status_none",
+    "value": "No descargado (~190 MB; se recomienda Wi-Fi)"
+},
+{
+    "name": "yt_asr_model_downloading",
+    "value": "Descargando"
+},
+{
+    "name": "yt_asr_model_download",
+    "value": "Descargar modelo"
+},
+{
+    "name": "yt_asr_model_delete",
+    "value": "Eliminar modelo"
+},
+{
+    "name": "yt_ai_action_cancel",
+    "value": "Cancelar"
+},
+        {
+            "name": "yt_player_chapters",
+            "value": "Capítulos"
+        },
+        {
+            "name": "yt_log_count_format",
+            "value": "%d registros"
+        },
+        {
+            "name": "yt_log_regex_placeholder",
+            "value": "Filtro regex, p. ej. DownloadManager|Task .*failed"
+        },
+        {
+            "name": "yt_label_current",
+            "value": "Actual"
+        },
+        {
+            "name": "yt_label_autoplay",
+            "value": "Reproducción automática"
+        },
+        {
+            "name": "yt_download_hls_hint",
+            "value": "Los segmentos HLS se descargarán en su formato original y se unirán en un archivo"
+        },
+        {
+            "name": "yt_video_count_format",
+            "value": "%d vídeos"
+        },
+        {
+            "name": "yt_playlist_name_placeholder",
+            "value": "Nombre de la lista"
+        },
+        {
+            "name": "yt_action_create",
+            "value": "Crear"
+        },
+        {
+            "name": "yt_action_new_playlist",
+            "value": "Nueva lista"
+        },
+        {
+            "name": "yt_action_save_to_playlist",
+            "value": "Guardar en una lista"
+        },
+        {
+            "name": "yt_comments_count_format",
+            "value": "Comentarios (%d)"
+        },
+        {
+            "name": "yt_replies_count_format",
+            "value": "%d respuestas"
+        },
+        {
+            "name": "yt_error_no_downloadable_stream",
+            "value": "No hay transmisiones descargables"
+        },
+        {
+            "name": "yt_error_live_not_downloadable",
+            "value": "Las transmisiones en vivo no se pueden descargar"
+        },
+        {
+            "name": "yt_action_sleep_timer",
+            "value": "Temporizador"
+        },
+        {
+            "name": "yt_stream_info_title",
+            "value": "Información de la transmisión"
+        },
+        {
+            "name": "yt_stream_stats_title",
+            "value": "Estadísticas de reproducción"
+        },
+        {
+            "name": "yt_stats_video_id",
+            "value": "ID del vídeo"
+        },
+        {
+            "name": "yt_stats_conn_speed",
+            "value": "Velocidad de conexión"
+        },
+        {
+            "name": "yt_stats_buffer",
+            "value": "Longitud del búfer"
+        },
+        {
+            "name": "yt_stats_dropped",
+            "value": "Fotogramas perdidos"
+        },
+        {
+            "name": "yt_stream_container",
+            "value": "Contenedor"
+        },
+        {
+            "name": "yt_stream_media_title",
+            "value": "Título multimedia"
+        },
+        {
+            "name": "yt_stream_duration",
+            "value": "Duración"
+        },
+        {
+            "name": "yt_stream_file_size",
+            "value": "Tamaño del archivo"
+        },
+        {
+            "name": "yt_stream_video",
+            "value": "Vídeo"
+        },
+        {
+            "name": "yt_stream_audio",
+            "value": "Audio"
+        },
+        {
+            "name": "yt_stream_resolution",
+            "value": "Resolución"
+        },
+        {
+            "name": "yt_stream_codec",
+            "value": "Códec"
+        },
+        {
+            "name": "yt_stream_bitrate",
+            "value": "Tasa de bits"
+        },
+        {
+            "name": "yt_stream_frame_rate",
+            "value": "Fotogramas"
+        },
+        {
+            "name": "yt_stream_channels",
+            "value": "Canales"
+        },
+        {
+            "name": "yt_stream_sample_rate",
+            "value": "Frecuencia de muestreo"
+        },
+        {
+            "name": "yt_stream_loading",
+            "value": "Cargando información de la transmisión…"
+        },
+        {
+            "name": "yt_sub_sync_sign_in_first",
+            "value": "Inicia sesión antes de sincronizar"
+        },
+        {
+            "name": "yt_sub_sync_cloud_empty",
+            "value": "La lista de suscripciones en la nube está vacía"
+        },
+        {
+            "name": "yt_sub_sync_result_added",
+            "value": "%d suscripciones sincronizadas, %d añadidas"
+        },
+        {
+            "name": "yt_sub_sync_result",
+            "value": "%d suscripciones sincronizadas"
+        },
+        {
+            "name": "yt_sub_sync_failed",
+            "value": "No se pudieron sincronizar las suscripciones"
+        },
+        {
+            "name": "yt_refresh_failed",
+            "value": "Error al actualizar"
+        },
+        {
+            "name": "yt_sub_pull_to_sync",
+            "value": "Desliza hacia abajo para sincronizar suscripciones de YouTube"
+        },
+        {
+            "name": "yt_sub_signed_in_pull_hint",
+            "value": "Sesión iniciada; desliza para sincronizar"
+        },
+        {
+            "name": "yt_auth_subtitle_sign_in",
+            "value": "Inicia sesión para un feed personalizado"
+        },
+        {
+            "name": "yt_auth_subtitle_cookie_active",
+            "value": "Con sesión (Cookie)"
+        },
+        {
+            "name": "yt_auth_subtitle_active",
+            "value": "Con sesión"
+        },
+        {
+            "name": "yt_auth_subtitle_incognito",
+            "value": "Sesión guardada · Incógnito"
+        },
+        {
+            "name": "yt_auth_notice_title",
+            "value": "Antes de iniciar sesión"
+        },
+        {
+            "name": "yt_auth_notice_message",
+            "value": "Te damos la bienvenida al inicio de sesión de YouTube. Ofrecemos acceso limitado al contenido de la cuenta y podemos mitigar los casos en que el modo anónimo no está disponible en determinados entornos de red. Esto puede generar tráfico de red adicional. Tenlo en cuenta :)"
+        },
+        {
+            "name": "yt_auth_continue_sign_in",
+            "value": "Continuar para iniciar sesión"
+        },
+        {
+            "name": "yt_cookie_collapse",
+            "value": "Ocultar acceso con Cookie"
+        },
+        {
+            "name": "yt_cookie_sign_in",
+            "value": "Acceso con Cookie"
+        },
+        {
+            "name": "yt_cookie_import_subtitle",
+            "value": "Pegar cookies del navegador"
+        },
+        {
+            "name": "yt_cookie_import_help",
+            "value": "Admite cabeceras Cookie y JSON exportado por EditThisCookie o Cookie-Editor. Se requieren SID y SAPISID o __Secure-3PAPISID."
+        },
+        {
+            "name": "yt_cookie_import_placeholder",
+            "value": "SID=...; SAPISID=... o Cookie JSON"
+        },
+        {
+            "name": "yt_cookie_verifying",
+            "value": "Verificando Cookie…"
+        },
+        {
+            "name": "yt_cookie_import_confirm",
+            "value": "Importar y verificar"
+        },
+        {
+            "name": "yt_cookie_verify_history",
+            "value": "Verificación en línea aprobada (%d elementos del historial)"
+        },
+        {
+            "name": "yt_cookie_verify_empty_history",
+            "value": "Verificación en línea aprobada (el historial está vacío; autenticación exitosa)"
+        },
+        {
+            "name": "yt_cookie_session_inactive",
+            "value": "La sesión está inactiva. Importa las cookies de nuevo."
+        },
+        {
+            "name": "yt_cookie_verify_failed",
+            "value": "Verificación en línea fallida: %s"
+        },
+        {
+            "name": "yt_cookie_input_required",
+            "value": "Pega una cadena de Cookie"
+        },
+        {
+            "name": "yt_cookie_parse_failed",
+            "value": "No se pudieron analizar las cookies (se admite encabezado o JSON de EditThisCookie)"
+        },
+        {
+            "name": "yt_cookie_sid_missing",
+            "value": "Verificación local fallida: SID / SAPISID no encontrados"
+        },
+        {
+            "name": "yt_cookie_sapisid_missing",
+            "value": "Verificación local fallida: falta SAPISID (o __Secure-3PAPISID)"
+        },
+        {
+            "name": "yt_auth_module_unavailable",
+            "value": "El módulo de autenticación no está disponible"
+        },
+        {
+            "name": "yt_cookie_local_validating",
+            "value": "Formato local aprobado. Verificando con YouTube…"
+        },
+        {
+            "name": "yt_google_web_sign_in_subtitle",
+            "value": "Iniciar sesión por web"
+        },
+        {
+            "name": "yt_google_web_sign_in_title",
+            "value": "Inicio de sesión en YouTube"
+        },
+        {
+            "name": "yt_label_unknown",
+            "value": "Desconocido"
+        },
+        {
+            "name": "yt_label_untitled",
+            "value": "Sin título"
+        },
+        {
+            "name": "yt_option_preferences",
+            "value": "Preferencias"
+        },
+        {
+            "name": "yt_appearance_theme_color",
+            "value": "Color del tema"
+        },
+        {
+            "name": "yt_playback_pip",
+            "value": "Imagen en imagen"
+        },
+        {
+            "name": "yt_playback_pip_on_return",
+            "value": "Entrar en imagen en imagen al volver"
+        },
+        {
+            "name": "yt_playback_pip_on_return_subtitle",
+            "value": "PiP al pulsar Atrás o Inicio"
+        },
+        {
+            "name": "yt_playback_player",
+            "value": "Reproductor"
+        },
+        {
+            "name": "yt_playback_gestures",
+            "value": "Gestos y controles"
+        },
+        {
+            "name": "yt_option_gesture_control_subtitle",
+            "value": "Deslizar, mantener pulsado y otros controles de reproducción"
+        },
+        {
+            "name": "yt_playback_gesture_seek",
+            "value": "Deslizar para buscar"
+        },
+        {
+            "name": "yt_playback_gesture_seek_subtitle",
+            "value": "Desliza horizontalmente para buscar"
+        },
+        {
+            "name": "yt_playback_gesture_brightness",
+            "value": "Deslizar a la izquierda para el brillo"
+        },
+        {
+            "name": "yt_playback_gesture_brightness_subtitle",
+            "value": "Lado izquierdo: brillo"
+        },
+        {
+            "name": "yt_playback_gesture_volume",
+            "value": "Deslizar a la derecha para el volumen"
+        },
+        {
+            "name": "yt_playback_gesture_volume_subtitle",
+            "value": "Lado derecho: volumen"
+        },
+        {
+            "name": "yt_playback_hold_speed",
+            "value": "Mantener para acelerar"
+        },
+        {
+            "name": "yt_playback_hold_speed_subtitle",
+            "value": "Acelera la reproducción mientras se mantiene pulsada la pantalla"
+        },
+        {
+            "name": "yt_playback_hold_speed_value",
+            "value": "Velocidad al mantener"
+        },
+        {
+            "name": "yt_playback_hold_speed_delay",
+            "value": "Retraso de activación"
+        },
+        {
+            "name": "yt_playback_background_audio_only",
+            "value": "Solo audio en segundo plano"
+        },
+        {
+            "name": "yt_playback_background_audio_only_subtitle",
+            "value": "Sin vídeo en segundo plano para ahorrar"
+        },
+        {
+            "name": "yt_playback_auto_play_next",
+            "value": "Reproducir automáticamente el siguiente video"
+        },
+        {
+            "name": "yt_playback_auto_play_next_subtitle",
+            "value": "Predeterminado de autoplay de cola al iniciar"
+        },
+        {
+            "name": "yt_playback_video_off_delay",
+            "value": "Retardo de apagado de vídeo"
+        },
+        {
+            "name": "yt_playback_hwdec",
+            "value": "Decodificación por hardware"
+        },
+        {
+            "name": "yt_playback_hwdec_subtitle",
+            "value": "Decodificación por hardware, menos consumo"
+        },
+        {
+            "name": "yt_playback_gpu_rendering",
+            "value": "Renderizado por GPU"
+        },
+        {
+            "name": "yt_playback_stream_endpoint",
+            "value": "Endpoint de reproducción"
+        },
+        {
+            "name": "yt_playback_guest_player_client",
+            "value": "Endpoint para invitados"
+        },
+        {
+            "name": "yt_playback_auth_player_client",
+            "value": "Endpoint con sesión iniciada"
+        },
+        {
+            "name": "yt_setting_client_visionos",
+            "value": "VisionOS"
+        },
+        {
+            "name": "yt_setting_client_tv_downgraded",
+            "value": "TV Downgraded"
+        },
+        {
+            "name": "yt_setting_client_mweb",
+            "value": "MWEB (SABR)"
+        },
+        {
+            "name": "yt_playback_buffer_network",
+            "value": "Rendimiento y almacenamiento en búfer"
+        },
+        {
+            "name": "yt_option_perf_buffer_subtitle",
+            "value": "Decodificación, renderizado y caché de búfer"
+        },
+        {
+            "name": "yt_playback_memory_cache",
+            "value": "Caché de memoria"
+        },
+        {
+            "name": "yt_playback_readahead",
+            "value": "Búfer anticipado"
+        },
+        {
+            "name": "yt_playback_buffer_size",
+            "value": "Tamaño del búfer"
+        },
+        {
+            "name": "yt_download_concurrent_tasks",
+            "value": "Descargas simultáneas"
+        },
+        {
+            "name": "yt_toast_login_success",
+            "value": "Inicio de sesión correcto"
+        },
+        {
+            "name": "yt_login_extracting_auth",
+            "value": "Sesión iniciada. Extrayendo información de autenticación…"
+        },
+        {
+            "name": "yt_login_skip_pot",
+            "value": "Omitir (no extraer PoToken)"
+        },
+        {
+            "name": "yt_confirm_delete_search_item",
+            "value": "¿Eliminar \"%s\"?"
+        },
+        {
+            "name": "yt_download_saved_to_downloads",
+            "value": "Guardado en la carpeta de descargas"
+        },
+        {
+            "name": "yt_download_save_failed",
+            "value": "Error al guardar"
+        },
+        {
+            "name": "yt_date_today",
+            "value": "Hoy"
+        },
+        {
+            "name": "yt_date_days_ago",
+            "value": "Hace %d días"
+        },
+        {
+            "name": "yt_date_weeks_ago",
+            "value": "Hace %d semanas"
+        },
+        {
+            "name": "yt_date_months_ago",
+            "value": "Hace %d meses"
+        },
+        {
+            "name": "yt_date_years_ago",
+            "value": "Hace %d años"
+        },
+        {
+            "name": "yt_download_status_waiting",
+            "value": "En espera"
+        },
+        {
+            "name": "yt_download_status_video",
+            "value": "Descargando vídeo"
+        },
+        {
+            "name": "yt_download_status_audio",
+            "value": "Descargando audio"
+        },
+        {
+            "name": "yt_download_status_merging",
+            "value": "Fusionando"
+        },
+        {
+            "name": "yt_download_status_completed",
+            "value": "Completado"
+        },
+        {
+            "name": "yt_download_status_failed",
+            "value": "Descarga fallida"
+        },
+        {
+            "name": "yt_download_status_cancelled",
+            "value": "Cancelado"
+        },
+        {
+            "name": "yt_download_started_format",
+            "value": "Descarga iniciada: %s"
+        },
+        {
+            "name": "yt_download_saved_format",
+            "value": "Guardado en descargas: %s"
+        },
+        {
+            "name": "yt_download_completed_format",
+            "value": "Descarga completada: %s"
+        },
+        {
+            "name": "yt_toast_copied",
+            "value": "Copiado"
+        },
+        {
+            "name": "yt_toast_copy_failed",
+            "value": "Error al copiar"
+        },
+        {
+            "name": "yt_about_package_name",
+            "value": "Nombre del paquete"
+        },
+        {
+            "name": "yt_follow_system",
+            "value": "Seguir sistema"
+        },
+        {
+            "name": "yt_data_account_manage_sign_in",
+            "value": "Gestionar datos e inicio de sesión"
+        },
+        {
+            "name": "yt_data_account_incognito",
+            "value": "Inicio guardado · Modo incógnito"
+        },
+        {
+            "name": "yt_data_account_cookie",
+            "value": "Sesión iniciada (Cookie) · Gestionar datos y cuenta"
+        },
+        {
+            "name": "yt_data_account_signed_in",
+            "value": "Sesión iniciada · Gestionar datos y cuenta"
+        },
+        {
+            "name": "yt_layout_card_mode",
+            "value": "Modo tarjeta"
+        },
+        {
+            "name": "yt_layout_list_mode",
+            "value": "Modo lista"
+        },
+        {
+            "name": "yt_pip_playing",
+            "value": "Reproduciendo en imagen en imagen"
+        },
+        {
+            "name": "yt_pip_restore_hint",
+            "value": "Toca la ventana de imagen en imagen para restaurar"
+        },
+        {
+            "name": "yt_google_web_sign_in",
+            "value": "Inicio de sesión con cuenta de Google"
+        },
+        {
+            "name": "yt_login_sapisid_failed",
+            "value": "No se pudo obtener SAPISID. Inténtalo de nuevo."
+        },
+        {
+            "name": "yt_time_minutes_ago",
+            "value": "Hace %d minutos"
+        },
+        {
+            "name": "yt_time_hours_ago",
+            "value": "Hace %d horas"
+        },
+        {
+            "name": "yt_history_sync_sign_in",
+            "value": "Inicia sesión antes de sincronizar el historial en la nube"
+        },
+        {
+            "name": "yt_history_sync_success",
+            "value": "Sincronizados %d elementos del historial en la nube (progreso y horas locales conservados)"
+        },
+        {
+            "name": "yt_history_sync_empty",
+            "value": "El historial en la nube está vacío"
+        },
+        {
+            "name": "yt_history_sync_failed",
+            "value": "No se pudo sincronizar el historial en la nube"
+        },
+        {
+            "name": "yt_sub_feed_youtube",
+            "value": "Feed de suscripciones de YouTube"
+        },
+        {
+            "name": "yt_sub_feed_title",
+            "value": "Feed de suscripciones"
+        },
+        {
+            "name": "yt_sub_feed_entry_title",
+            "value": "Feed de suscripciones"
+        },
+        {
+            "name": "yt_sub_feed_entry_subtitle",
+            "value": "%d canales suscritos"
+        },
+        {
+            "name": "yt_sub_feed_new_items",
+            "value": "%d vídeos nuevos"
+        },
+        {
+            "name": "yt_sub_feed_empty_hint",
+            "value": "Desliza para actualizar y ver los últimos vídeos de tus suscripciones"
+        },
+        {
+            "name": "yt_backup_item_subscription_feed",
+            "value": "Caché del feed de suscripciones"
+        },
+        {
+            "name": "yt_feed_fast_mode_title",
+            "value": "Modo rápido del feed (RSS)"
+        },
+        {
+            "name": "yt_feed_fast_mode_subtitle",
+            "value": "Obtención mediante RSS ligero; menos solicitudes pero metadatos incompletos"
+        },
+        {
+            "name": "yt_setting_home_layout",
+            "value": "Diseño de inicio"
+        },
+        {
+            "name": "yt_layout_grid",
+            "value": "Modo tarjeta"
+        },
+        {
+            "name": "yt_layout_list",
+            "value": "Modo lista"
+        },
+        {
+            "name": "yt_setting_card_density",
+            "value": "Densidad de tarjetas"
+        },
+        {
+            "name": "yt_density_auto",
+            "value": "Automática"
+        },
+        {
+            "name": "yt_density_compact",
+            "value": "Compacta"
+        },
+        {
+            "name": "yt_density_cozy",
+            "value": "Amplia"
+        },
+        {
+            "name": "yt_codec_av1",
+            "value": "AV1"
+        },
+        {
+            "name": "yt_action_open_browser",
+            "value": "Abrir en el navegador"
+        },
+        {
+            "name": "yt_action_show_more",
+            "value": "Mostrar más"
+        },
+        {
+            "name": "yt_action_show_less",
+            "value": "Mostrar menos"
+        },
+        {
+            "name": "yt_label_loading",
+            "value": "Cargando…"
+        },
+        {
+            "name": "yt_error_age_restricted",
+            "value": "Este vídeo tiene restricción de edad"
+        },
+        {
+            "name": "yt_error_age_restricted_hint",
+            "value": "Necesitas iniciar sesión en una cuenta de YouTube en el navegador para ver esto"
+        },
+        {
+            "name": "yt_error_geo_restricted",
+            "value": "Este contenido no está disponible en tu región"
+        },
+        {
+            "name": "yt_error_geo_restricted_hint",
+            "value": "El autor del vídeo ha restringido las regiones de reproducción"
+        },
+        {
+            "name": "yt_error_paid_content",
+            "value": "Este es contenido de pago"
+        },
+        {
+            "name": "yt_error_paid_content_hint",
+            "value": "Necesitas comprar o alquilar para ver"
+        },
+        {
+            "name": "yt_error_premium_content",
+            "value": "Este contenido es solo para miembros de YouTube Premium"
+        },
+        {
+            "name": "yt_error_premium_content_hint",
+            "value": "Necesitas suscribirte a YouTube Premium para reproducir"
+        },
+        {
+            "name": "yt_error_private_content",
+            "value": "Este es un vídeo privado"
+        },
+        {
+            "name": "yt_error_private_content_hint",
+            "value": "Solo los usuarios autorizados pueden verlo"
+        },
+        {
+            "name": "yt_error_login_required",
+            "value": "Inicio de sesión requerido para ver"
+        },
+        {
+            "name": "yt_error_login_required_hint",
+            "value": "Inicia sesión en una cuenta de YouTube en el navegador"
+        },
+        {
+            "name": "yt_error_account_terminated",
+            "value": "Este canal ha sido terminado"
+        },
+        {
+            "name": "yt_error_account_terminated_hint",
+            "value": "Esta cuenta ha sido suspendida por violar las políticas de YouTube"
+        },
+        {
+            "name": "yt_error_live_offline",
+            "value": "Transmisión en vivo finalizada"
+        },
+        {
+            "name": "yt_error_live_offline_hint",
+            "value": "Esta transmisión en vivo está fuera de línea o aún no ha comenzado"
+        },
+        {
+            "name": "yt_error_content_not_supported",
+            "value": "Este tipo de contenido no es compatible"
+        },
+        {
+            "name": "yt_error_content_not_supported_hint",
+            "value": "Este formato de vídeo no es compatible con la reproducción"
+        },
+        {
+            "name": "yt_error_network",
+            "value": "Conexión de red fallida"
+        },
+        {
+            "name": "yt_error_network_hint",
+            "value": "Verifica tu conexión de red e inténtalo de nuevo"
+        },
+        {
+            "name": "yt_error_timeout",
+            "value": "Tiempo de espera agotado"
+        },
+        {
+            "name": "yt_error_timeout_hint",
+            "value": "El servidor tardó demasiado en responder, inténtalo más tarde"
+        },
+        {
+            "name": "yt_error_extraction_failed",
+            "value": "Error al analizar la información del vídeo"
+        },
+        {
+            "name": "yt_error_endpoint_hint",
+            "value": "Punto de conexión: %s"
+        },
+        {
+            "name": "yt_error_extraction_failed_hint",
+            "value": "No se pueden obtener los datos de reproducción del vídeo"
+        },
+        {
+            "name": "yt_error_cipher_failed",
+            "value": "Error al descifrar el flujo de vídeo"
+        },
+        {
+            "name": "yt_error_cipher_failed_hint",
+            "value": "Algoritmo de firma actualizado, espera una actualización de la app"
+        },
+        {
+            "name": "yt_option_group_recovery",
+            "value": "Recuperación"
+        },
+        {
+            "name": "yt_option_reset_settings",
+            "value": "Restablecer todos los ajustes"
+        },
+        {
+            "name": "yt_option_reset_settings_subtitle",
+            "value": "Restaurar ajustes predeterminados"
+        },
+        {
+            "name": "yt_option_clear_all_data",
+            "value": "Borrar todos los datos de la app"
+        },
+        {
+            "name": "yt_option_clear_all_data_subtitle",
+            "value": "Borrar historial, caché y todos los datos"
+        },
+        {
+            "name": "yt_toast_reset_settings_done",
+            "value": "Ajustes restablecidos a los valores predeterminados"
+        },
+        {
+            "name": "yt_toast_clear_all_data_done",
+            "value": "Todos los datos borrados"
+        },
+        {
+            "name": "yt_option_recovery",
+            "value": "Recuperación"
+        },
+        {
+            "name": "yt_confirm_reset_settings",
+            "value": "¿Restablecer todos los ajustes a los valores predeterminados? Esta acción no se puede deshacer."
+        },
+        {
+            "name": "yt_confirm_clear_all_data",
+            "value": "¿Borrar todos los datos de la app? Esto eliminará todo el historial, favoritos, suscripciones, ajustes, vídeos descargados y archivos locales importados. Esta acción no se puede deshacer."
+        },
+        {
+            "name": "yt_action_download",
+            "value": "Descargar"
+        },
+        {
+            "name": "yt_label_progressive",
+            "value": "Calidad combinada"
+        },
+        {
+            "name": "yt_label_premium",
+            "value": "Premium"
+        },
+        {
+            "name": "yt_label_members_only",
+            "value": "Miembros"
+        },
+        {
+            "name": "yt_option_data_account",
+            "value": "Datos y cuenta"
+        },
+        {
+            "name": "yt_option_data_account_subtitle",
+            "value": "Cuenta y datos locales"
+        },
+        {
+            "name": "yt_section_account",
+            "value": "Cuenta"
+        },
+        {
+            "name": "yt_section_data_management",
+            "value": "Gestión de datos"
+        },
+        {
+            "name": "yt_option_google_login",
+            "value": "Inicio de sesión de Google"
+        },
+        {
+            "name": "yt_option_export_data",
+            "value": "Exportar datos"
+        },
+        {
+            "name": "yt_option_export_data_subtitle",
+            "value": "Respaldar datos locales como JSON"
+        },
+        {
+            "name": "yt_option_restore_data",
+            "value": "Restaurar datos"
+        },
+        {
+            "name": "yt_option_restore_data_subtitle",
+            "value": "Restaurar desde copia JSON"
+        },
+        {
+            "name": "yt_backup_item_settings",
+            "value": "Ajustes de la app"
+        },
+        {
+            "name": "yt_backup_item_subscriptions",
+            "value": "Suscripciones"
+        },
+        {
+            "name": "yt_backup_item_favorites",
+            "value": "Vídeos favoritos"
+        },
+        {
+            "name": "yt_backup_item_playlists",
+            "value": "Listas favoritas"
+        },
+        {
+            "name": "yt_backup_item_local_queues",
+            "value": "Listas locales"
+        },
+        {
+            "name": "yt_backup_item_watch_history",
+            "value": "Historial de visualización"
+        },
+        {
+            "name": "yt_backup_item_search_history",
+            "value": "Historial de búsqueda"
+        },
+        {
+            "name": "yt_backup_item_auth",
+            "value": "Estado de inicio de sesión de YouTube"
+        },
+        {
+            "name": "yt_backup_export_title",
+            "value": "Seleccionar elementos para exportar"
+        },
+        {
+            "name": "yt_backup_restore_title",
+            "value": "Seleccionar elementos para restaurar"
+        },
+        {
+            "name": "yt_backup_confirm_restore",
+            "value": "La restauración sobrescribirá los datos locales seleccionados. ¿Continuar?"
+        },
+        {
+            "name": "yt_backup_export_success",
+            "value": "Exportación exitosa"
+        },
+        {
+            "name": "yt_backup_export_failed",
+            "value": "Error al exportar"
+        },
+        {
+            "name": "yt_backup_restore_success",
+            "value": "Restauración exitosa"
+        },
+        {
+            "name": "yt_backup_restore_failed",
+            "value": "Error al restaurar"
+        },
+        {
+            "name": "yt_backup_version_unsupported",
+            "value": "Versión del archivo de copia no compatible"
+        },
+        {
+            "name": "yt_local_play",
+            "value": "Reproducir"
+        },
+        {
+            "name": "yt_local_file_missing",
+            "value": "Archivo no encontrado"
+        },
+        {
+            "name": "yt_download_export",
+            "value": "Exportar a Descargas"
+        },
+        {
+            "name": "yt_download_title",
+            "value": "Descargar vídeo"
+        },
+        {
+            "name": "yt_download_step1_mode",
+            "value": "Paso 1: Seleccionar modo de descarga"
+        },
+        {
+            "name": "yt_download_step2_quality",
+            "value": "Paso 2: Seleccionar calidad"
+        },
+        {
+            "name": "yt_download_step2_tracks",
+            "value": "Paso 2: Seleccionar pistas"
+        },
+        {
+            "name": "yt_download_mode_progressive",
+            "value": "Flujo combinado (Progressive)"
+        },
+        {
+            "name": "yt_download_mode_dash",
+            "value": "Pistas separadas (DASH)"
+        },
+        {
+            "name": "yt_download_mode_hls",
+            "value": "Flujo HLS"
+        },
+        {
+            "name": "yt_download_mode_sabr",
+            "value": "Pistas SABR"
+        },
+        {
+            "name": "yt_download_progressive_hint",
+            "value": "Recomendado: vídeo y audio ya están combinados"
+        },
+        {
+            "name": "yt_download_dash_hint",
+            "value": "Vídeo y audio se descargan por separado y se fusionan"
+        },
+        {
+            "name": "yt_download_sabr_hint",
+            "value": "Obtener A/V a través de segmentos de sesión SABR/UMP y fusionar (mismo stack que la reproducción)"
+        },
+        {
+            "name": "yt_download_estimated_size",
+            "value": "Tamaño estimado"
+        },
+        {
+            "name": "yt_download_empty",
+            "value": "Aún no hay descargas"
+        },
+        {
+            "name": "yt_download_empty_hint",
+            "value": "Toca el botón de descarga en una página de vídeo para empezar"
+        },
+        {
+            "name": "yt_backup_error_no_context",
+            "value": "No se puede obtener el contexto de la aplicación"
+        },
+        {
+            "name": "yt_backup_error_no_save_path",
+            "value": "No se ha seleccionado ruta de guardado"
+        },
+        {
+            "name": "yt_backup_error_no_file",
+            "value": "No se ha seleccionado ningún archivo"
+        },
+        {
+            "name": "yt_backup_error_format",
+            "value": "Error de formato del archivo de copia"
+        },
+        {
+            "name": "yt_backup_error_wrong_app",
+            "value": "El archivo de copia no pertenece a esta aplicación"
+        },
+        {
+            "name": "yt_backup_error_version",
+            "value": "La versión del archivo de copia no es compatible"
+        },
+        {
+            "name": "yt_backup_error_empty",
+            "value": "El archivo de copia está vacío"
+        },
+        {
+            "name": "yt_backup_error_restore",
+            "value": "Error al restaurar"
+        },
+        {
+            "name": "yt_backup_error_export",
+            "value": "Error al exportar"
+        },
+        {
+            "name": "yt_subscriptions_feed_local",
+            "value": "RSS de suscripciones locales"
+        },
+        {
+            "name": "yt_playlist_video_count",
+            "value": "%d vídeos"
+        },
+        {
+            "name": "yt_history_sync_pull_hint",
+            "value": "Desliza hacia abajo para sincronizar el historial de YouTube"
+        },
+        {
+            "name": "yt_history_sync_sign_in_hint",
+            "value": "Inicia sesión para sincronizar el historial en la nube"
+        },
+        {
+            "name": "yt_history_sync_signed_in_hint",
+            "value": "Sesión iniciada; desliza hacia abajo para sincronizar el historial en la nube"
+        },
+        {
+            "name": "yt_subs_sync_signed_in_hint",
+            "value": "Sesión iniciada; desliza hacia abajo para sincronizar las suscripciones de YouTube"
+        },
+        {
+            "name": "yt_setting_delay_immediate",
+            "value": "Inmediato"
+        },
+        {
+            "name": "yt_setting_gpu_auto",
+            "value": "Automático"
+        },
+        {
+            "name": "yt_label_opengl",
+            "value": "OpenGL"
+        },
+        {
+            "name": "yt_label_vulkan",
+            "value": "Vulkan"
+        },
+        {
+            "name": "yt_about_oss_newpipe_desc",
+            "value": "Cliente de YouTube de código abierto; referencia para navegación y búsqueda"
+        },
+        {
+            "name": "yt_about_oss_iplay_desc",
+            "value": "Reproductor multimedia multiplataforma; referencia para reproducción multi-sitio"
+        },
+        {
+            "name": "yt_about_oss_ytdlp_desc",
+            "value": "Descargador de línea de comandos; referencia para selección de formatos"
+        },
+        {
+            "name": "yt_about_oss_finvideo_desc",
+            "value": "Reproductor multimedia para HarmonyOS; referencia para la interfaz ArkTS"
+        },
+        {
+            "name": "yt_about_oss_pipepipe_desc",
+            "value": "Fork de NewPipe; referencia para endpoints de reproducción y autenticación"
+        },
+        {
+            "name": "yt_about_oss_mpv_desc",
+            "value": "Motor de reproducción; referencia para el comportamiento y la API de libmpv"
+        },
+        {
+            "name": "yt_about_oss_smarttube_desc",
+            "value": "Cliente de YouTube para Android TV; referencia para la interacción en TV"
+        },
+        {
+            "name": "yt_about_oss_clashbox_desc",
+            "value": "Cliente proxy para HarmonyOS; referencia para la configuración del proxy"
+        },
+        {
+            "name": "yt_about_oss_tpc_desc",
+            "value": "Proyecto de portabilidad C/C++ de OpenHarmony; referencia para dependencias nativas"
+        },
+        {
+            "name": "yt_about_oss_vlc_desc",
+            "value": "Reproductor multiplataforma; referencia de compatibilidad de códecs"
+        },
+        {
+            "name": "yt_label_vendors",
+            "value": "proveedores"
+        },
+        {
+            "name": "yt_about_tap_to_open",
+            "value": "Toca una entrada para abrirla en el navegador"
+        },
+        {
+            "name": "yt_about_link_unavailable",
+            "value": "No hay ningún enlace disponible para esta entrada"
+        },
+        {
+            "name": "yt_about_link_failed",
+            "value": "No se pudo abrir el enlace"
+        },
+        {
+            "name": "yt_changelog_0_5_3_1",
+            "value": "Se agregó soporte de transmisión de YouTube SABR/UMP, mejorando la compatibilidad para videos restringidos, de alta resolución y de nuevo formato."
+        },
+        {
+            "name": "yt_changelog_0_5_3_2",
+            "value": "Extracción de video y selección de cliente refactorizadas, alineadas con el comportamiento de solicitud de PipePipe, descifrado de firma remota restaurado, reducción de extracción de duplicados y espera de inicio."
+        },
+        {
+            "name": "yt_changelog_0_5_3_3",
+            "value": "Proxy de medios DASH local mejorado: pistas A/V separadas, caché segmentada, búsqueda precisa, recuperación de interrupciones de transmisión y manejo de fin de reproducción"
+        },
+        {
+            "name": "yt_changelog_0_5_3_4",
+            "value": "Se agregó soporte para SABR PoToken; parámetros de firma optimizados, encabezados de solicitud y manejo de respuestas binarias, lo que reduce los errores 403/no se puede reproducir/carga"
+        },
+        {
+            "name": "yt_changelog_0_5_3_5",
+            "value": "Se mejoró la sincronización del estado del reproductor, la calidad y el cambio de pista de audio, se corrigió la carga interminable después de la reproducción, se corrigieron problemas en el menú de búsqueda de desplazamiento y pista de audio."
+        },
+        {
+            "name": "yt_changelog_0_5_3_6",
+            "value": "Análisis y paginación de listas de reproducción mejorados, compatibles con nuevas estructuras de listas, contenido bloqueado y continuación; carga de listas mejorada y reproducción continua"
+        },
+        {
+            "name": "yt_changelog_0_5_3_7",
+            "value": "Entrada reorganizada de administración de datos y cuenta, vínculo mejorado entre el estado de inicio de sesión, historial de visualización, página local, opciones de descarga y preferencias de reproducción."
+        },
+        {
+            "name": "yt_changelog_0_5_3_8",
+            "value": "Recomendaciones de inicio mejoradas, tarjetas de video, color de tema, imagen en imagen y sesión multimedia del sistema; Se corrigieron múltiples problemas de estabilidad de reproducción y de interfaz de usuario."
+        },
+        {
+            "name": "yt_changelog_0_5_2_1",
+            "value": "La página del reproductor agrega solo audio: apaga el video y escucha el sonido, la portada reemplaza la imagen, el progreso y los controles aún están disponibles"
+        },
+        {
+            "name": "yt_changelog_0_5_2_2",
+            "value": "En modo de solo audio, no hay imagen dentro de imagen; volver al primer plano mantiene solo audio, se requiere reanudación manual"
+        },
+        {
+            "name": "yt_changelog_0_5_2_3",
+            "value": "El fondo puede retrasar el apagado del video para ahorrar energía (ajustable en la configuración de reproducción)"
+        },
+        {
+            "name": "yt_changelog_0_5_2_4",
+            "value": "Se corrigió la interrupción de la transmisión del sistema: reducción correcta del volumen del pato, evita la compresión secundaria que causa silencio"
+        },
+        {
+            "name": "yt_changelog_0_5_2_5",
+            "value": "Reproducción de paisaje/retrato, pantalla completa y ventana más fluida, pantalla reducida en negro y desenfoque"
+        },
+        {
+            "name": "yt_changelog_0_5_2_6",
+            "value": "La página de inicio después de iniciar sesión coincide mejor con el estado de la cuenta, puede sincronizar el historial de visualización en la nube y las suscripciones"
+        },
+        {
+            "name": "yt_changelog_0_5_2_7",
+            "value": "Tarjetas de video más claras, insignias en vivo y visualización del área segura de la página"
+        },
+        {
+            "name": "yt_changelog_0_5_2_8",
+            "value": "Admite transferencia de aplicaciones y enlaces de vídeo de tocar para compartir"
+        },
+        {
+            "name": "yt_changelog_0_5_1_1",
+            "value": "Se corrigieron algunos errores conocidos."
+        },
+        {
+            "name": "yt_changelog_0_5_1_2",
+            "value": "Alineado con los problemas de PipePipe"
+        },
+        {
+            "name": "yt_changelog_0_5_1_3",
+            "value": "Se corrigió la imposibilidad de mirar después de iniciar sesión."
+        },
+        {
+            "name": "yt_changelog_0_5_1_4",
+            "value": "Se corrigió que la barra de información apareciera incorrectamente en modo horizontal."
+        },
+        {
+            "name": "yt_changelog_0_5_1_5",
+            "value": "UI de la página de configuración optimizada"
+        },
+        {
+            "name": "yt_changelog_0_5_1_6",
+            "value": "Verificación de la lógica de descifrado local completada, lista para su implementación"
+        },
+        {
+            "name": "yt_changelog_0_5_0_1",
+            "value": "Se reemplazó el motor de reproducción del sistema y FFMpeg de terceros con MPVPlayer"
+        },
+        {
+            "name": "yt_changelog_0_5_0_2",
+            "value": "Funciones restauradas de reproducción y subtítulos de alta resolución."
+        },
+        {
+            "name": "yt_changelog_0_5_0_3",
+            "value": "Admite decodificación de hardware HEVC/H.264; en API 23+ pruebe la decodificación de hardware VP9/AV1"
+        },
+        {
+            "name": "yt_changelog_0_5_0_4",
+            "value": "Se agregó una pantalla HDR real"
+        },
+        {
+            "name": "yt_changelog_0_5_0_5",
+            "value": "Capacidades optimizadas de la biblioteca de transporte de red en estado sin inicio de sesión"
+        },
+        {
+            "name": "yt_changelog_0_5_0_6",
+            "value": "Visualización de errores optimizada"
+        },
+        {
+            "name": "yt_changelog_0_5_0_7",
+            "value": "Opciones de configuración y UI optimizadas"
+        },
+        {
+            "name": "yt_changelog_0_5_0_8",
+            "value": "Parches aplicados de la última versión de PipePipe"
+        },
+        {
+            "name": "yt_changelog_0_4_1_1",
+            "value": "Velocidad de carga de vídeo optimizada"
+        },
+        {
+            "name": "yt_changelog_0_4_1_2",
+            "value": "Parches de pipepipe 5.1.1 aplicados"
+        },
+        {
+            "name": "yt_changelog_0_4_1_3",
+            "value": "Se permitió el inicio de sesión de Google, básicamente se eliminaron los problemas de protección contra bots."
+        },
+        {
+            "name": "yt_changelog_0_4_1_4",
+            "value": "Interacción optimizada en pantalla completa para varios dispositivos"
+        },
+        {
+            "name": "yt_changelog_0_4_1_5",
+            "value": "Desarrollé múltiples módulos de la página del jugador."
+        },
+        {
+            "name": "yt_changelog_0_4_1_6",
+            "value": "Función de descarga inicial completada"
+        },
+        {
+            "name": "yt_changelog_0_4_1_7",
+            "value": "Función de lista de reproducción completa"
+        },
+        {
+            "name": "yt_changelog_0_4_1_8",
+            "value": "Sistema integrado y entrada de elenco, transferencia de aplicación inicial experimental"
+        },
+        {
+            "name": "yt_changelog_0_4_0_1",
+            "value": "Interfaz de integración y análisis del ecosistema yt-dlp básicamente completada"
+        },
+        {
+            "name": "yt_changelog_0_4_0_2",
+            "value": "Se permitió el inicio de sesión de Google, básicamente se eliminaron los problemas de protección contra bots."
+        },
+        {
+            "name": "yt_changelog_0_4_0_3",
+            "value": "Mecanismo de reproducción optimizado"
+        },
+        {
+            "name": "yt_changelog_0_4_0_4",
+            "value": "Se utilizó decodificación en la nube en lugar de decodificación local, más estable"
+        },
+        {
+            "name": "yt_changelog_0_3_1_1",
+            "value": "Pila de páginas mejorada y reproducción en miniventana"
+        },
+        {
+            "name": "yt_changelog_0_3_1_2",
+            "value": "Caché de servidor agregado para una reproducción más fluida"
+        },
+        {
+            "name": "yt_changelog_0_3_1_3",
+            "value": "Interfaz de usuario e interacción optimizadas"
+        },
+        {
+            "name": "yt_changelog_0_3_1_4",
+            "value": "Más adaptación de página y tamaño"
+        },
+        {
+            "name": "yt_changelog_0_3_1_5",
+            "value": "Se continuó simplificando el código anterior para evitar errores."
+        },
+        {
+            "name": "yt_changelog_0_3_1_6",
+            "value": "Desarrollo inicial de inicio de sesión de Google, viabilidad de inicio de sesión verificada en Pipepipe"
+        },
+        {
+            "name": "yt_changelog_0_3_1_7",
+            "value": "Estabilidad de reproducción en segundo plano optimizada"
+        },
+        {
+            "name": "yt_changelog_0_3_0_1",
+            "value": "Selección experimental final de la solución de servidor HTTP de retransmisión"
+        },
+        {
+            "name": "yt_changelog_0_3_0_2",
+            "value": "Se volvió al reproductor a nivel de sistema para mejorar el ciclo de vida."
+        },
+        {
+            "name": "yt_changelog_0_3_0_3",
+            "value": "Interfaz de usuario e interacción optimizadas"
+        },
+        {
+            "name": "yt_changelog_0_3_0_4",
+            "value": "Más adaptación de página y tamaño"
+        },
+        {
+            "name": "yt_changelog_0_3_0_5",
+            "value": "Se eliminaron muchas bibliotecas y encabezados anteriores y se simplificaron para evitar errores."
+        },
+        {
+            "name": "yt_changelog_0_3_0_6",
+            "value": "Desarrollo inicial de inicio de sesión de Google, viabilidad verificada de smarttube"
+        },
+        {
+            "name": "yt_changelog_0_3_0_7",
+            "value": "Estabilidad de reproducción en segundo plano optimizada"
+        },
+        {
+            "name": "yt_changelog_0_2_0_1",
+            "value": "Código de proyecto refactorizado, gestión del ciclo de vida optimizada y velocidad de desarrollo, nuevo comienzo"
+        },
+        {
+            "name": "yt_changelog_0_2_0_2",
+            "value": "Reproducción optimizada y transmisión en vivo, vivo más fluido, menos calentamiento"
+        },
+        {
+            "name": "yt_changelog_0_2_0_3",
+            "value": "Más opciones, opciones de reproducción personalizables"
+        },
+        {
+            "name": "yt_changelog_0_2_0_4",
+            "value": "Mensajes de error más completos y gestión de registros"
+        },
+        {
+            "name": "yt_changelog_0_2_0_5",
+            "value": "Optimización multilingüe agregada"
+        },
+        {
+            "name": "yt_changelog_0_2_0_6",
+            "value": "Código central NewPipe actualizado, conexión de red optimizada y decodificación, más estable"
+        },
+        {
+            "name": "yt_changelog_0_2_0_7",
+            "value": "Estabilidad de reproducción en segundo plano optimizada"
+        },
+        {
+            "name": "yt_changelog_0_2_0_8",
+            "value": "Reproducción, estabilidad y optimización de energía de AVPlayer a nivel de sistema"
+        },
+        {
+            "name": "yt_changelog_0_1_2_1",
+            "value": "Se corrigió la congelación de la interfaz de usuario al cambiar el idioma de la interfaz de usuario de la aplicación."
+        },
+        {
+            "name": "yt_changelog_0_1_2_2",
+            "value": "Lista de idiomas de contenido optimizada Visualización de variantes en chino (simplificado/tradicional HK/tradicional TW)"
+        },
+        {
+            "name": "yt_changelog_0_1_2_3",
+            "value": "Mostrar sugerencia de ruta para guardar después de que se complete la descarga del registro"
+        },
+        {
+            "name": "yt_changelog_0_1_2_4",
+            "value": "Se agregó la página Acerca de"
+        },
+        {
+            "name": "yt_changelog_0_1_2_5",
+            "value": "Se corrigió la opción de desactivación de alta resolución que no funciona."
+        },
+        {
+            "name": "yt_changelog_0_1_2_6",
+            "value": "Estilo visual unificado en todos los módulos de la página de configuración"
+        },
+        {
+            "name": "yt_changelog_0_1_1_1",
+            "value": "Núcleo de reproducción MPV integrado, admite decodificación de hardware y vídeo de alta resolución"
+        },
+        {
+            "name": "yt_changelog_0_1_1_2",
+            "value": "Se implementó la reproducción en segundo plano y la integración de controles multimedia del sistema."
+        },
+        {
+            "name": "yt_changelog_0_1_1_3",
+            "value": "Configuración completa de idioma y región, admite cambio de idioma/región del contenido"
+        },
+        {
+            "name": "yt_changelog_0_1_1_4",
+            "value": "Se agregó un sistema de registro de tiempo de ejecución que admite la exportación de sesiones."
+        },
+        {
+            "name": "yt_changelog_0_1_1_5",
+            "value": "Diseño optimizado del reproductor horizontal para tableta"
+        },
+        {
+            "name": "yt_changelog_0_1_0_1",
+            "value": "Lanzamiento inicial: navegación y búsqueda básica de vídeos de YouTube"
+        },
+        {
+            "name": "yt_changelog_0_1_0_2",
+            "value": "Motor extractor NewPipe integrado"
+        },
+        {
+            "name": "yt_changelog_0_1_0_3",
+            "value": "Admite suscripciones a canales, favoritos y administración de listas de reproducción"
+        },
+        {
+            "name": "yt_changelog_0_1_0_4",
+            "value": "Admite reproducción de transmisión en vivo"
+        },
+        {
+            "name": "yt_changelog_0_1_0_5",
+            "value": "Lista de comentarios y página del canal."
+        },
+        {
+            "name": "yt_label_version_format",
+            "value": "Versión"
+        },
+        {
+            "name": "yt_label_projects",
+            "value": "proyectos"
+        },
+        {
+            "name": "yt_label_latest_version",
+            "value": "Última v"
+        },
+        {
+            "name": "yt_label_videos",
+            "value": "vídeos"
+        },
+        {
+            "name": "yt_label_videos_alt",
+            "value": "vídeos"
+        },
+        {
+            "name": "yt_label_favorites_videos",
+            "value": "vídeos"
+        },
+        {
+            "name": "yt_label_seconds_short",
+            "value": "s"
+        },
+        {
+            "name": "yt_label_mb_short",
+            "value": "MB"
+        },
+        {
+            "name": "yt_setting_delay_5",
+            "value": "5 s"
+        },
+        {
+            "name": "yt_setting_delay_15",
+            "value": "15 s"
+        },
+        {
+            "name": "yt_setting_delay_30",
+            "value": "30 s"
+        },
+        {
+            "name": "yt_setting_delay_60",
+            "value": "60 s"
+        },
+        {
+            "name": "yt_setting_cache_secs_5",
+            "value": "5 s"
+        },
+        {
+            "name": "yt_setting_cache_secs_10",
+            "value": "10 s"
+        },
+        {
+            "name": "yt_setting_cache_secs_20",
+            "value": "20 s"
+        },
+        {
+            "name": "yt_setting_cache_secs_30",
+            "value": "30 s"
+        },
+        {
+            "name": "yt_setting_cache_secs_60",
+            "value": "60 s"
+        },
+        {
+            "name": "yt_setting_readahead_5",
+            "value": "5 s"
+        },
+        {
+            "name": "yt_setting_readahead_8",
+            "value": "8 s"
+        },
+        {
+            "name": "yt_setting_readahead_15",
+            "value": "15 s"
+        },
+        {
+            "name": "yt_setting_readahead_30",
+            "value": "30 s"
+        },
+        {
+            "name": "yt_setting_readahead_60",
+            "value": "60 s"
+        },
+        {
+            "name": "yt_setting_max_bytes_10",
+            "value": "10 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_20",
+            "value": "20 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_50",
+            "value": "50 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_100",
+            "value": "100 MB"
+        },
+        {
+            "name": "yt_changelog_0_5_4_1",
+            "value": "Mejora del descifrado local de firmas JS con caché en disco, precalentamiento en arranque en frío y reintento ante fallos, reduciendo esperas y errores cuando hace falta el descifrado remoto"
+        },
+        {
+            "name": "yt_changelog_0_5_4_2",
+            "value": "Completados los metadatos de pistas de audio DASH (xtags/acont) y selección automática de la pista predeterminada por idioma de contenido / preferencia de original, reduciendo doblajes incorrectos en vídeos multilingües"
+        },
+        {
+            "name": "yt_changelog_0_5_4_3",
+            "value": "Temporizador de sueño en la página del reproductor que detiene la reproducción y sale al cumplirse; recuentos de me gusta/vistas localizados por idioma y colores del área de información refinados"
+        },
+        {
+            "name": "yt_changelog_0_5_4_4",
+            "value": "Claves de cadenas de UI alineadas en todos los idiomas, corregidas las etiquetas [object Object] en ajustes y Acerca de, y completados los recursos de chino simplificado"
+        },
+        {
+            "name": "yt_changelog_0_5_4_5",
+            "value": "El acento de tema predeterminado pasa a rojo y se añaden colores de fondo del control/info del reproductor para mejor contraste"
+        },
+        {
+            "name": "yt_changelog_0_5_4_6",
+            "value": "Actualización por deslizamiento en Inicio; al borrar todos los datos de la app también se limpian preferencias de auth, caché de miniaturas y caché de cifrado, conservando las descargas"
+        },
+        {
+            "name": "yt_changelog_0_5_4_7",
+            "value": "Mejor registro de peticiones de red y diagnósticos de extracción para localizar fallos de carga y problemas de autenticación"
+        },
+        {
+            "name": "yt_changelog_0_5_4_8",
+            "value": "Runtime MPV incluido actualizado y varios problemas de estabilidad de reproducción e interfaz corregidos"
+        },
+        {
+            "name": "yt_secure_shield_title",
+            "value": "El modo Secure Shield está activado"
+        },
+        {
+            "name": "yt_secure_shield_content",
+            "value": "El sistema ha activado Secure Shield y ha desactivado JIT. El descifrado local de firmas no está disponible; se usará el descifrado remoto y el inicio del vídeo puede ser más lento."
+        },
+        {
+            "name": "yt_secure_shield_dont_show",
+            "value": "No volver a mostrar"
+        },
+        {
+            "name": "yt_action_got_it",
+            "value": "Entendido"
+        },
+        {
+            "name": "yt_option_auth_use_for_user_data",
+            "value": "Usar inicio de sesión para datos de usuario"
+        },
+        {
+            "name": "yt_option_auth_use_for_user_data_subtitle",
+            "value": "Feed, suscripciones, historial, búsqueda"
+        },
+        {
+            "name": "yt_option_auth_use_for_playback",
+            "value": "Usar inicio de sesión para reproducción"
+        },
+        {
+            "name": "yt_changelog_0_5_5_1",
+            "value": "Detecta al iniciar las restricciones de Secure Shield/JIT y explica cuándo se usará el descifrado remoto de firmas"
+        },
+        {
+            "name": "yt_changelog_0_5_5_2",
+            "value": "Las tarjetas de Inicio y suscripciones se reconstruyen correctamente tras actualizar, incluso si sus ID no cambian"
+        },
+        {
+            "name": "yt_changelog_0_5_5_3",
+            "value": "Nuevos controles persistentes para el inicio de sesión general, los datos de usuario y la reproducción"
+        },
+        {
+            "name": "yt_changelog_0_5_5_4",
+            "value": "Al desactivar el acceso a datos de usuario, Inicio y los feeds pasan al modo anónimo/local en vez de quedar vacíos"
+        },
+        {
+            "name": "yt_changelog_0_5_5_5",
+            "value": "Al desactivar el acceso para reproducción se usan clientes anónimos y las descargas SABR no envían credenciales"
+        },
+        {
+            "name": "yt_changelog_0_5_5_6",
+            "value": "Las recomendaciones usan la respuesta anónima estable de YouTube next y corrigen las colas vacías con sesión iniciada"
+        },
+        {
+            "name": "yt_changelog_0_5_5_7",
+            "value": "Se estabilizó la selección del cliente autenticado y el tratamiento de LOGIN_REQUIRED en vídeos restringidos"
+        },
+        {
+            "name": "yt_changelog_0_5_5_8",
+            "value": "Se obtiene primero la marca temporal de firma de la página del vídeo y solo se recurre al servicio remoto si falla"
+        },
+        {
+            "name": "yt_changelog_0_5_5_9",
+            "value": "La caché de metadatos y los tiempos de espera remotos más cortos evitan bloqueos largos al reproducir"
+        },
+        {
+            "name": "yt_changelog_0_5_5_10",
+            "value": "Los PoToken base64url en caché para URL DASH reducen errores 403 de googlevideo sin hacer fatal un fallo del token"
+        },
+        {
+            "name": "yt_changelog_0_5_5_11",
+            "value": "Se corrigieron los paneles Guardar en lista, Información del flujo y Temporizador al unificar sus hojas inferiores"
+        },
+        {
+            "name": "yt_changelog_0_5_5_12",
+            "value": "Mejor acceso autenticado a listas y biblioteca, conservando alternativas anónimas/locales al desactivar la cuenta"
+        },
+        {
+            "name": "yt_changelog_0_5_5_13",
+            "value": "La navegación privada oculta ambos usos de la cuenta sin borrar credenciales guardadas y permite volver fácilmente al modo conectado"
+        },
+        {
+            "name": "yt_changelog_0_5_5_14",
+            "value": "Cambiar el control general o de reproducción selecciona al instante el cliente anónimo o autenticado correcto"
+        },
+        {
+            "name": "yt_changelog_0_5_5_15",
+            "value": "La sincronización de historial y suscripciones respeta el control de datos, manteniendo disponibles los datos locales"
+        },
+        {
+            "name": "yt_changelog_0_5_5_16",
+            "value": "La exploración de listas puede usar la cuenta cuando hace falta, mejorando listas específicas o restringidas"
+        },
+        {
+            "name": "yt_changelog_0_5_5_17",
+            "value": "La generación de PoToken usa la versión web actual de YouTube resuelta, no una versión fija obsoleta"
+        },
+        {
+            "name": "yt_changelog_0_5_5_18",
+            "value": "Los bytes PoToken se convierten a base64 seguro para URL y se guardan cinco minutos por vídeo"
+        },
+        {
+            "name": "yt_changelog_0_5_5_19",
+            "value": "Las solicitudes de datos y reproducción solo adjuntan credenciales en su ámbito elegido, reduciendo la exposición de cookies"
+        },
+        {
+            "name": "yt_changelog_0_5_5_20",
+            "value": "Más diagnósticos de reproducción, autenticación, tokens, actualización y alternativas sin registrar cookies ni URL firmadas"
+        },
+        {
+            "name": "yt_changelog_0_6_0_1",
+            "value": "Sistema de subtítulos rehecho: renderizado en superposición con tamaño, color, fondo, posición y retardo personalizables"
+        },
+        {
+            "name": "yt_changelog_0_6_0_2",
+            "value": "Nueva traducción automática de subtítulos por IA: cualquier pista se traduce en tiempo real al idioma elegido"
+        },
+        {
+            "name": "yt_changelog_0_6_0_3",
+            "value": "Nuevos gestos de reproducción: doble toque ±15s, pulsación larga para velocidad, zoom y desplazamiento con dos dedos, cambio de relación"
+        },
+        {
+            "name": "yt_changelog_0_6_0_4",
+            "value": "Nuevo panel de información del reproductor: descripción, comentarios y cola en uno, panel lateral automático en pantallas anchas"
+        },
+        {
+            "name": "yt_changelog_0_6_0_5",
+            "value": "Tarjetas rediseñadas, menús de pulsación larga unificados, descarga de vídeos directamente desde la tarjeta"
+        },
+        {
+            "name": "yt_changelog_0_6_0_6",
+            "value": "Soporte de proxy SOCKS5; recuperación rápida de la reproducción tras cambiar Wi-Fi/móvil"
+        },
+        {
+            "name": "yt_changelog_0_6_0_7",
+            "value": "Límite de calidad ampliado a 2K/4K/8K; nuevos idiomas japonés/coreano/italiano/portugués"
+        },
+        {
+            "name": "yt_changelog_0_6_0_8",
+            "value": "Página de ajustes reorganizada; los directos se bloquean a velocidad normal"
+        },
+        {
+            "name": "yt_changelog_0_5_9_1",
+            "value": "Las páginas de feed usan cuadrículas/listas de carga diferida: desplazamiento más fluido en Inicio, Búsqueda, Lista, Canal y Suscripciones"
+        },
+        {
+            "name": "yt_changelog_0_5_9_2",
+            "value": "Corregido el cierre al iniciar en frío en algunos dispositivos (vinculación de @BuilderParam)"
+        },
+        {
+            "name": "yt_changelog_0_5_9_3",
+            "value": "Corregido el manejo de sesión expirada: los errores se propagan y se muestra un aviso de reingreso"
+        },
+        {
+            "name": "yt_changelog_0_5_9_4",
+            "value": "Los iconos de opciones y los botones de acciones destructivas ahora siguen el color del tema (rojo fijo eliminado)"
+        },
+        {
+            "name": "yt_changelog_0_5_9_5",
+            "value": "Codificación de texto, Base64 y análisis de URL ahora usan implementaciones oficiales del sistema"
+        },
+        {
+            "name": "yt_changelog_0_5_9_6",
+            "value": "Eliminado código muerto como enlaces de cast y sondeo de estado; paquete más ligero"
+        },
+        {
+            "name": "yt_changelog_0_5_9_7",
+            "value": "Correcciones de estabilidad en la asociación de prefetch y la guarda de tareas en segundo plano"
+        },
+        {
+            "name": "yt_changelog_0_5_8_1",
+            "value": "Traducción de comentarios: botón «Traducir» bajo cada comentario (Google Translate); la traducción se muestra en el mismo lugar y se vuelve al original con un toque"
+        },
+        {
+            "name": "yt_changelog_0_5_8_2",
+            "value": "Nuevo grupo «Traducción de contenido» en Idioma y región: el idioma de traducción sigue al de la app por defecto o se elige manualmente"
+        },
+        {
+            "name": "yt_changelog_0_5_8_3",
+            "value": "Inicio más rápido al estilo PipePipe: sin sesión se usa el cliente visionos para streams directos (sin PoToken); con sesión, tv_downgraded"
+        },
+        {
+            "name": "yt_changelog_0_5_8_4",
+            "value": "Corregida la carga infinita de los directos: clasificación de emisiones en vivo corregida y reproducción normal"
+        },
+        {
+            "name": "yt_changelog_0_5_8_5",
+            "value": "Rutas de inicio de sesión corregidas: identidades de cookie y OAuth aisladas; las solicitudes web ya no mezclan credenciales"
+        },
+        {
+            "name": "yt_changelog_0_5_8_6",
+            "value": "Los controles multimedia del sistema muestran título y autor del vídeo actual: corregidos los metadatos de AVSession"
+        },
+        {
+            "name": "yt_changelog_0_5_8_7",
+            "value": "Correcciones de interfaz: resaltado de pestañas, guía en tablet y scroll anidado en modo tarjeta de canales"
+        },
+        {
+            "name": "yt_changelog_0_5_7_1",
+            "value": "La página Acerca de añade «Buscar actualizaciones»: compara el número de compilación del último Release de GitHub y ofrece acceso directo a la instalación de prueba de AppGallery o a la página del release en GitHub"
+        },
+        {
+            "name": "yt_changelog_0_5_7_2",
+            "value": "Nueva página de Suscripciones: agrupa las novedades de los canales por fecha; las listas de reproducción guardan el historial con insignias de progreso; las listas se adaptan a pantallas anchas"
+        },
+        {
+            "name": "yt_changelog_0_5_7_3",
+            "value": "Nuevo ajuste «Reproducir siguiente automáticamente»; logotipos de proyectos de código abierto en Acerca de; las solicitudes de datos multimedia pueden usar el proxy HTTP"
+        },
+        {
+            "name": "yt_changelog_0_5_7_4",
+            "value": "Inicio más rápido: preextracción del siguiente video en cola durante la reproducción, precalentamiento de BotGuard al arrancar y reutilización en disco de los metadatos STS/versión de cliente"
+        },
+        {
+            "name": "yt_changelog_0_5_7_5",
+            "value": "Los directos admiten variantes de calidad HLS con cambio; precarga del índice SIDX al inicio; visitorData fijado por sesión reduce extracciones repetidas"
+        },
+        {
+            "name": "yt_changelog_0_5_7_6",
+            "value": "Estabilidad SABR: la generación de PoToken tiene tiempo de espera y disyuntor, las respuestas vacías solicitan PoToken al instante y los fallos al crear la sesión liberan el lease"
+        },
+        {
+            "name": "yt_changelog_0_5_7_7",
+            "value": "Corregidos el avance automático duplicado y las carreras al cambiar de fuente (envío de fuente de escritor único); corregidas fugas al cerrar/restaurar PiP y el orden de fusión del historial"
+        },
+        {
+            "name": "yt_changelog_0_5_7_8",
+            "value": "Corregido video en negro en HarmonyOS 6 (OHNativeWindow directo a mpv); las capacidades de decodificación por hardware ahora se detectan según el dispositivo"
+        },
+        {
+            "name": "yt_changelog_0_5_6_1",
+            "value": "Inicio de sesión por código QR de dispositivo al estilo SmartTube para OAuth de YouTube; puede coexistir con el inicio por Cookie"
+        },
+        {
+            "name": "yt_changelog_0_5_6_2",
+            "value": "Autenticación dual Cookie/WEB y OAuth/TV para inicio, historial, suscripciones y biblioteca; los streams públicos siguen en mweb; el contenido restringido puede recurrir a TV"
+        },
+        {
+            "name": "yt_changelog_0_5_6_3",
+            "value": "Ajustes de proxy HTTP para el extractor, SABR y peticiones de medios (la reproducción en bucle local sigue directa)"
+        },
+        {
+            "name": "yt_changelog_0_5_6_4",
+            "value": "Capítulos de vídeo en el reproductor con salto al capítulo y resaltado del actual"
+        },
+        {
+            "name": "yt_changelog_0_5_6_5",
+            "value": "Mejor comportamiento en pantalla dividida y ventanas flotantes; herramientas superiores del reproductor se pliegan en el menú Más cuando hay poco espacio"
+        },
+        {
+            "name": "yt_changelog_0_5_6_6",
+            "value": "Ciclo de vida de medios de reproducción reconstruido para un inicio, cambio de fuente y uso multiventana más fiables"
+        },
+        {
+            "name": "yt_changelog_0_5_6_7",
+            "value": "Mostrar carga/buffer de inmediato al cambiar la calidad"
+        },
+        {
+            "name": "yt_changelog_0_5_6_8",
+            "value": "Lista de descargas rediseñada y animaciones de entrada; empaquetado SABR sin conexión mejorado; entrada de descarga en directo oculta"
+        },
+        {
+            "name": "yt_option_auth_use_for_playback_subtitle",
+            "value": "API del reproductor y auth de stream"
+        },
+        {
+            "name": "yt_player_more_tools",
+            "value": "Más"
+        },
+        {
+            "name": "yt_player_subtitles",
+            "value": "Subtítulos"
+        },
+        {
+            "name": "yt_player_info_panel",
+            "value": "Información del video"
+        },
+        {
+            "name": "yt_player_audio_track",
+            "value": "Pista de audio"
+        },
+        {
+            "name": "yt_player_playback_speed",
+            "value": "Velocidad"
+        },
+        {
+            "name": "yt_option_network",
+            "value": "Network"
+        },
+        {
+            "name": "yt_proxy_off",
+            "value": "Proxy off"
+        },
+        {
+            "name": "yt_proxy_incomplete",
+            "value": "Incomplete settings"
+        },
+        {
+            "name": "yt_proxy_enable",
+            "value": "Use proxy"
+        },
+        {
+            "name": "yt_proxy_enable_subtitle",
+            "value": "Enrutar YouTube por el proxy de abajo"
+        },
+        {
+            "name": "yt_proxy_type",
+            "value": "Proxy type"
+        },
+        {
+            "name": "yt_proxy_type_http",
+            "value": "HTTP"
+        },
+        {
+            "name": "yt_proxy_type_http_subtitle",
+            "value": "Proxy HTTP CONNECT"
+        },
+        {
+            "name": "yt_proxy_type_socks5",
+            "value": "SOCKS5"
+        },
+        {
+            "name": "yt_proxy_type_socks5_subtitle",
+            "value": "SOCKS5 CONNECT"
+        },
+        {
+            "name": "yt_proxy_server",
+            "value": "Server"
+        },
+        {
+            "name": "yt_proxy_host",
+            "value": "Host"
+        },
+        {
+            "name": "yt_proxy_host_placeholder",
+            "value": "e.g. 127.0.0.1"
+        },
+        {
+            "name": "yt_proxy_port",
+            "value": "Port"
+        },
+        {
+            "name": "yt_proxy_auth_optional",
+            "value": "Authentication (optional)"
+        },
+        {
+            "name": "yt_proxy_username",
+            "value": "Username"
+        },
+        {
+            "name": "yt_proxy_password",
+            "value": "Password"
+        },
+        {
+            "name": "yt_proxy_optional_placeholder",
+            "value": "Optional"
+        },
+        {
+            "name": "yt_proxy_test",
+            "value": "Test connection"
+        },
+        {
+            "name": "yt_proxy_testing",
+            "value": "Testing…"
+        },
+        {
+            "name": "yt_proxy_test_ok",
+            "value": "Proxy reachable"
+        },
+        {
+            "name": "yt_proxy_test_failed",
+            "value": "Proxy test failed"
+        },
+        {
+            "name": "yt_proxy_test_http_error",
+            "value": "Unexpected HTTP status"
+        },
+        {
+            "name": "yt_proxy_test_auth_failed",
+            "value": "Falló la autenticación del proxy — comprueba el nombre de usuario y la contraseña"
+        },
+        {
+            "name": "yt_proxy_test_disabled",
+            "value": "Enable proxy first"
+        },
+        {
+            "name": "yt_proxy_loopback_note",
+            "value": "Local playback proxy (127.0.0.1) never uses this setting."
+        },
+        {
+            "name": "yt_proxy_bridge_unavailable",
+            "value": "SOCKS5 proxy bridge disconnected — re-save proxy settings to reconnect."
+        },
+        {
+            "name": "yt_device_qr_sign_in",
+            "value": "QR / TV code sign-in"
+        },
+        {
+            "name": "yt_device_qr_sign_in_subtitle",
+            "value": "Escanear o abrir youtube.com/activate"
+        },
+        {
+            "name": "yt_device_login_help",
+            "value": "On another device, open the link or scan the QR code, then enter the code below to authorize this app."
+        },
+        {
+            "name": "yt_device_login_requesting",
+            "value": "Requesting device code…"
+        },
+        {
+            "name": "yt_device_login_waiting",
+            "value": "Waiting for authorization…"
+        },
+        {
+            "name": "yt_device_login_polling",
+            "value": "Checking authorization status"
+        },
+        {
+            "name": "yt_device_login_success",
+            "value": "Signed in"
+        },
+        {
+            "name": "yt_device_login_failed",
+            "value": "Sign-in failed"
+        },
+        {
+            "name": "yt_device_login_retry",
+            "value": "Try again"
+        },
+        {
+            "name": "yt_option_help",
+            "value": "Ayuda"
+        },
+        {
+            "name": "yt_option_help_subtitle",
+            "value": "Guía rápida y uso básico"
+        },
+        {
+            "name": "yt_guide_skip",
+            "value": "Omitir"
+        },
+        {
+            "name": "yt_guide_next",
+            "value": "Siguiente"
+        },
+        {
+            "name": "yt_guide_done",
+            "value": "Listo"
+        },
+        {
+            "name": "yt_guide_p1_desc",
+            "value": "Un cliente de YouTube de código abierto con reproducción MPV local y sin anuncios: tus datos permanecen en tu propio dispositivo."
+        },
+        {
+            "name": "yt_guide_p2_title",
+            "value": "Iniciar sesión en YouTube"
+        },
+        {
+            "name": "yt_guide_p2_desc",
+            "value": "Inicia sesión desde la página web o con un código QR en «Configuración → Datos y cuenta». Una vez iniciada la sesión podrás ver tus suscripciones, listas de reproducción y demás contenido de la cuenta; el modo invitado también funciona sin iniciar sesión."
+        },
+        {
+            "name": "yt_guide_p3_title",
+            "value": "Gestión de datos de la cuenta"
+        },
+        {
+            "name": "yt_guide_p3_desc",
+            "value": "Tus credenciales se guardan solo en este dispositivo y nunca se suben a servidores de terceros. Puedes cerrar sesión o activar el modo incógnito en cualquier momento en «Datos y cuenta»; al cerrar sesión se borran los datos de tu cuenta."
+        },
+        {
+            "name": "yt_guide_p3_user_data",
+            "value": "Para datos del usuario: Obtiene suscripciones, listas de reproducción, historial, búsquedas y otros datos de la cuenta."
+        },
+        {
+            "name": "yt_guide_p3_playback",
+            "value": "Para reproducción: Solicita las URL de reproducción con tu identidad iniciada para evitar la detección como robot."
+        },
+        {
+            "name": "yt_guide_p4_title",
+            "value": "Proxy de red"
+        },
+        {
+            "name": "yt_guide_p4_desc",
+            "value": "En redes restringidas, activa un proxy HTTP o SOCKS5 en «Configuración → Red» e introduce la dirección del servidor y el puerto. El proxy solo se aplica a solicitudes externas; las direcciones de bucle local de reproducción lo omiten."
+        },
+        {
+            "name": "yt_guide_p5_title",
+            "value": "Calidad y caché"
+        },
+        {
+            "name": "yt_guide_p5_desc",
+            "value": "En «Configuración → Reproducción» puedes configurar la calidad predeterminada, la calidad en redes móviles y la duración de la caché: ahorra datos o mejora la calidad según prefieras."
+        },
+        {
+            "name": "yt_guide_p6_title",
+            "value": "Descargas y archivos locales"
+        },
+        {
+            "name": "yt_guide_p6_desc",
+            "value": "Los vídeos se pueden descargar para verlos sin conexión y se gestionan en la pestaña «Local». «Borrar todos los datos de la app» nunca elimina tus archivos descargados."
+        },
+        {
+            "name": "yt_option_subtitle_style_subtitle",
+            "value": "Tamaño, color, fondo y traducción automática"
+        },
+        {
+            "name": "yt_setting_subtitle_size",
+            "value": "Tamaño de los subtítulos"
+        },
+        {
+            "name": "yt_setting_subtitle_bottom_margin",
+            "value": "Margen inferior de los subtítulos"
+        },
+        {
+            "name": "yt_setting_subtitle_color",
+            "value": "Color de los subtítulos"
+        },
+        {
+            "name": "yt_setting_subtitle_background",
+            "value": "Fondo de los subtítulos"
+        },
+        {
+            "name": "yt_setting_subtitle_offset",
+            "value": "Retraso de los subtítulos"
+        },
+        {
+            "name": "yt_subtitle_color_white",
+            "value": "Blanco"
+        },
+        {
+            "name": "yt_subtitle_color_yellow",
+            "value": "Amarillo"
+        },
+        {
+            "name": "yt_subtitle_color_green",
+            "value": "Verde"
+        },
+        {
+            "name": "yt_subtitle_color_cyan",
+            "value": "Cian"
+        },
+        {
+            "name": "yt_subtitle_bg_none",
+            "value": "Ninguno"
+        },
+        {
+            "name": "yt_subtitle_bg_semi",
+            "value": "Semitransparente"
+        },
+        {
+            "name": "yt_subtitle_bg_solid",
+            "value": "Opaco"
+        },
+        {
+            "name": "yt_player_aspect_mode",
+            "value": "Relación de aspecto"
+        },
+        {
+            "name": "yt_aspect_fit",
+            "value": "Ajustar"
+        },
+        {
+            "name": "yt_aspect_fill",
+            "value": "Rellenar"
+        },
+        {
+            "name": "yt_aspect_stretch",
+            "value": "Estirar"
+        },
+        {
+            "name": "yt_aspect_reset",
+            "value": "Restablecer zoom"
+        },
+        {
+            "name": "yt_gesture_scheme_title",
+            "value": "Esquema de interacción"
+        },
+        {
+            "name": "yt_gesture_scheme_label",
+            "value": "Esquema de gestos"
+        },
+        {
+            "name": "yt_gesture_scheme_enhanced",
+            "value": "Reproductor mejorado"
+        },
+        {
+            "name": "yt_gesture_scheme_youtube",
+            "value": "YouTube clásico"
+        },
+        {
+            "name": "yt_gesture_scheme_custom",
+            "value": "Personalizado"
+        },
+        {
+            "name": "yt_gesture_scheme_subtitle",
+            "value": "Los ajustes predefinidos cambian todo a la vez; cualquier cambio pasa a «Personalizado»"
+        },
+        {
+            "name": "yt_gesture_double_tap",
+            "value": "Doble toque"
+        },
+        {
+            "name": "yt_gesture_double_tap_seek",
+            "value": "Retroceder / avanzar"
+        },
+        {
+            "name": "yt_gesture_double_tap_playpause",
+            "value": "Reproducir / pausar"
+        },
+        {
+            "name": "yt_gesture_double_tap_off",
+            "value": "Sin acción"
+        },
+        {
+            "name": "yt_gesture_double_tap_seek_seconds",
+            "value": "Paso del doble toque"
+        },
+        {
+            "name": "yt_gesture_help_title",
+            "value": "Guía de gestos"
+        },
+        {
+            "name": "yt_gesture_help_single_tap",
+            "value": "Toque simple"
+        },
+        {
+            "name": "yt_gesture_help_single_tap_value",
+            "value": "Muestra los controles (se ocultan solos a los 3 s)"
+        },
+        {
+            "name": "yt_gesture_help_swipe_horizontal",
+            "value": "Deslizar en horizontal"
+        },
+        {
+            "name": "yt_gesture_help_swipe_left",
+            "value": "Deslizar a la izquierda"
+        },
+        {
+            "name": "yt_gesture_help_swipe_right",
+            "value": "Deslizar a la derecha"
+        },
+        {
+            "name": "yt_gesture_help_hold",
+            "value": "Mantener pulsado"
+        },
+        {
+            "name": "yt_gesture_help_brightness",
+            "value": "Brillo"
+        },
+        {
+            "name": "yt_gesture_help_volume",
+            "value": "Volumen"
+        },
+        {
+            "name": "yt_gesture_help_off",
+            "value": "Desactivado"
+        },
+        {
+            "name": "yt_section_privacy",
+            "value": "Privacidad"
+        },
+        {
+            "name": "yt_option_record_history",
+            "value": "Guardar historial"
+        },
+        {
+            "name": "yt_option_record_history_subtitle",
+            "value": "Si se desactiva, no se guarda historial nuevo (los registros existentes se conservan)"
+        },
+        {
+            "name": "yt_option_clear_history",
+            "value": "Borrar historial"
+        },
+        {
+            "name": "yt_option_clear_history_subtitle",
+            "value": "Elimina todo el historial local y el progreso"
+        },
+
+        {
+            "name": "yt_toast_history_cleared",
+            "value": "Historial borrado"
+        },
+        {
+            "name": "yt_option_start_in_subs",
+            "value": "Iniciar en Suscripciones"
+        },
+        {
+            "name": "yt_option_start_in_subs_subtitle",
+            "value": "Abre la app directamente en la pestaña Suscripciones"
+        },
+        {
+            "name": "yt_section_animation",
+            "value": "Animaciones"
+        },
+        {
+            "name": "yt_option_interface_animation",
+            "value": "Animaciones de la interfaz"
+        },
+        {
+            "name": "yt_option_interface_animation_subtitle",
+            "value": "Desactiva los zooms de entrada y los efectos de iconos"
+        },
+        {
+            "name": "yt_gesture_scheme_bilibili",
+            "value": "Bilibili clásico"
+        },
+        {
+            "name": "yt_download_timeout_failed",
+            "value": "Tiempo de descarga agotado"
+        },
+        {
+            "name": "yt_download_retry_failed",
+            "value": "Reintento fallido, inténtalo de nuevo más tarde"
+        },
+        {
+            "name": "yt_download_retrying",
+            "value": "Reintentando…"
+        },
+        {
+            "name": "yt_download_timeout_title",
+            "value": "Tiempo límite de descarga"
+        },
+        {
+            "name": "yt_download_timeout_off",
+            "value": "Sin tiempo límite"
+        },
+        {
+            "name": "yt_download_timeout_minutes",
+            "value": "%d min"
+        },
+        {
+            "name": "yt_player_stop_playback",
+            "value": "Detener reproducción"
+        },
+        {
+            "name": "yt_proxy_status_title",
+            "value": "Estado de la conexión"
+        },
+        {
+            "name": "yt_proxy_status_off",
+            "value": "Desactivado"
+        },
+        {
+            "name": "yt_proxy_status_ready",
+            "value": "Conectado (puente local %d)"
+        },
+        {
+            "name": "yt_proxy_status_direct",
+            "value": "Conectado (directo al origen)"
+        },
+        {
+            "name": "yt_proxy_status_fuse",
+            "value": "Puente desconectado, hay que reaplicar"
+        },
+        {
+            "name": "yt_proxy_status_failed",
+            "value": "Error al aplicar"
+        },
+        {
+            "name": "yt_proxy_restart",
+            "value": "Reaplicar y reiniciar"
+        },
+        {
+            "name": "yt_proxy_restart_done",
+            "value": "Proxy reaplicado"
+        },
+        {
+            "name": "yt_proxy_example_hint",
+            "value": "Ejemplo: para HTTP introduce 127.0.0.1 y el puerto (p. ej. 7890); SOCKS5 igual. Con usuario y contraseña el tráfico pasa por un puente local que falla de forma visible en lugar de recurrir a la conexión directa."
+        },
+        {
+            "name": "yt_playback_center_play_button",
+            "value": "Botón de reproducción central"
+        },
+        {
+            "name": "yt_playback_center_play_button_subtitle",
+            "value": "Muestra un botón grande de reproducción en el centro del fotograma al pausar. Desactivado, el fotograma queda limpio; se controla tocando o con la barra inferior."
+        },
+        {
+            "name": "yt_shorts_open",
+            "value": "Abrir Shorts"
+        },
+        {
+            "name": "yt_shorts_switch_long",
+            "value": "Vídeos largos"
+        },
+        {
+            "name": "yt_home_mode_short",
+            "value": "Shorts"
+        },
+        {
+            "name": "yt_home_mode_long",
+            "value": "Vídeos largos"
+        }
+    ,
+        {
+            "name": "yt_download_pause",
+            "value": "Pausar"
+        },
+        {
+            "name": "yt_download_resume",
+            "value": "Reanudar"
+        },
+        {
+            "name": "yt_download_resuming",
+            "value": "Reanudando…"
+        },
+        {
+            "name": "yt_download_stop_delete",
+            "value": "Detener y eliminar"
+        },
+        {
+            "name": "yt_download_status_paused",
+            "value": "En pausa"
+        },
+        {
+            "name": "yt_playlist_source_account",
+            "value": "Cuenta"
+        },
+        {
+            "name": "yt_playlist_source_favorite",
+            "value": "Favorito"
+        },
+        {
+            "name": "yt_library_playlists_title",
+            "value": "Listas de reproducción de tu cuenta"
+        },
+        {
+            "name": "yt_empty_no_library_playlists",
+            "value": "Aún no hay listas de reproducción en tu cuenta"
+        },
+        {
+            "name": "yt_tab_live_chat",
+            "value": "Chat en directo"
+        },
+        {
+            "name": "yt_live_chat_connecting",
+            "value": "Conectando al chat…"
+        },
+        {
+            "name": "yt_live_chat_connected",
+            "value": "Conectado"
+        },
+        {
+            "name": "yt_live_chat_unavailable",
+            "value": "El chat en directo no está disponible para este vídeo"
+        },
+        {
+            "name": "yt_live_chat_ended",
+            "value": "El chat en directo ha terminado"
+        },
+        {
+            "name": "yt_live_chat_error",
+            "value": "Error de conexión del chat"
+        },
+        {
+            "name": "yt_live_chat_empty",
+            "value": "Aún no hay mensajes"
+        },
+        {
+            "name": "yt_live_chat_readonly",
+            "value": "Solo lectura"
+        },
+        {
+            "name": "yt_live_chat_member",
+            "value": "Miembro"
+        },
+        {
+            "name": "yt_live_chat_owner",
+            "value": "Anfitrión"
+        },
+        {
+            "name": "yt_live_chat_moderator",
+            "value": "Moderador"
+        },
+        {
+            "name": "yt_local_files",
+            "value": "Archivos locales"
+        },
+        {
+            "name": "yt_local_import",
+            "value": "Importar vídeos"
+        },
+        {
+            "name": "yt_local_importing",
+            "value": "Importando…"
+        },
+        {
+            "name": "yt_local_import_success",
+            "value": "%d archivo(s) importado(s)"
+        },
+        {
+            "name": "yt_local_import_failed",
+            "value": "Error al importar"
+        },
+        {
+            "name": "yt_local_files_hint",
+            "value": "Elige vídeos de los archivos del sistema. Los vídeos importados se reproducen en la app."
+        },
+        {
+            "name": "yt_local_delete_title",
+            "value": "Eliminar archivo local"
+        },
+        {
+            "name": "yt_local_delete_message",
+            "value": "El archivo se eliminará de la app y no se podrá recuperar."
+        },
+        {
+            "name": "yt_local_empty_title",
+            "value": "Aún no hay archivos locales"
+        },
+        {
+            "name": "yt_local_empty_hint",
+            "value": "Toca «Importar vídeos» para elegir archivos"
+        },
+        {
+            "name": "yt_local_media",
+            "value": "Medios locales"
+        },
+        {
+            "name": "yt_local_empty_media",
+            "value": "Aún no hay descargas ni archivos locales"
+        },
+        {
+            "name": "yt_local_empty_media_hint",
+            "value": "Descarga un vídeo o toca «Importar vídeos»"
+        },
+        {
+            "name": "yt_changelog_0_7_0_1",
+            "value": "Versión mínima rebajada a HarmonyOS 6.1.0(23); SOCKS5, reutilización de conexiones y preconexión RCP ahora dependen de la versión del sistema"
+        },
+        {
+            "name": "yt_changelog_0_7_0_2",
+            "value": "El endpoint de invitado usa visionos por defecto y se elimina Samsung; los errores muestran el endpoint y SABR vuelve a enlaces directos sin token"
+        },
+        {
+            "name": "yt_changelog_0_7_0_3",
+            "value": "SABR decodifica mientras descarga y alinea los campos de solicitud con PipePipe; la rotación de nodos, la recarga y los vigilantes reducen la espera inicial y los cortes en vídeos largos"
+        },
+        {
+            "name": "yt_changelog_0_7_0_4",
+            "value": "Gestos y controles del reproductor renovados: preajustes, acción de doble toque, mantener para velocidad, tocar para pausar, ayuda de gestos; corregidos toques erróneos y doble toque repetido"
+        },
+        {
+            "name": "yt_changelog_0_7_0_5",
+            "value": "Descargas: reproducción en la app, índice persistente con recuperación al reiniciar, transferencias reanudables, pausa/reanudar, reintento y vigilantes de tiempo/sin progreso"
+        },
+        {
+            "name": "yt_changelog_0_7_0_6",
+            "value": "Medios locales: importar vídeos desde archivos del sistema, unir descargas e importaciones en una lista y una cola de reproducción compartida (descargas primero, importaciones después)"
+        },
+        {
+            "name": "yt_changelog_0_7_0_7",
+            "value": "Nueva pestaña de chat en directo de solo lectura: comentarios en tiempo real, Super Chat e insignias de miembro; solo consulta visible y se pausa en segundo plano"
+        },
+        {
+            "name": "yt_changelog_0_7_0_8",
+            "value": "Inicio con cambio largo/corto y recarga de Shorts; la búsqueda expande estanterías; las marcas de tiempo de comentarios y descripciones son pulsables"
+        },
+        {
+            "name": "yt_changelog_0_7_0_9",
+            "value": "Ajustes y UX: configuración reactiva corrige el parpadeo de interruptores; historial, pestaña de suscripciones por defecto, animaciones, barra inferior oficial y estado del proxy/reaplicar"
+        },
+        {
+            "name": "yt_changelog_0_7_0_10",
+            "value": "Corregidos: fuga de estado de sesión, fallo al cambiar el primer vídeo, PiP vacío al volver, archivos de descarga residuales; textos de 14 idiomas completados"
+        },
+        {
+            "name": "yt_option_translation_service",
+            "value": "Servicio de traducción"
+        },
+        {
+            "name": "yt_translation_engine_mymemory",
+            "value": "MyMemory (gratis)"
+        },
+        {
+            "name": "yt_translation_engine_lingva",
+            "value": "Lingva (proxy de Google)"
+        },
+        {
+            "name": "yt_translation_engine_libre",
+            "value": "LibreTranslate"
+        },
+        {
+            "name": "yt_translation_engine_deepl",
+            "value": "DeepL"
+        },
+        {
+            "name": "yt_translation_engine_custom",
+            "value": "Endpoint personalizado"
+        },
+        {
+            "name": "yt_translation_endpoint",
+            "value": "Endpoint"
+        },
+        {
+            "name": "yt_translation_custom_url",
+            "value": "URL de solicitud"
+        },
+        {
+            "name": "yt_translation_custom_method",
+            "value": "Método"
+        },
+        {
+            "name": "yt_translation_custom_headers",
+            "value": "Cabeceras (JSON o Key: Value por línea)"
+        },
+        {
+            "name": "yt_translation_custom_body",
+            "value": "Plantilla del cuerpo"
+        },
+        {
+            "name": "yt_translation_custom_response_path",
+            "value": "Ruta del campo de respuesta"
+        },
+        {
+            "name": "yt_translation_custom_hint",
+            "value": "Marcadores: {text} {target} {source} {apiKey}; ejemplo: data.translations.0.text"
+        },
+        {
+            "name": "yt_translation_note",
+            "value": "Los comentarios y descripciones usan este servicio; los subtítulos siguen usando la traducción automática de YouTube"
+        },
+        {
+            "name": "yt_translation_engine_google",
+            "value": "Google Cloud Translation (clave API)"
+        },
+        {
+            "name": "yt_translation_engine_azure",
+            "value": "Microsoft Translator (Azure)"
+        },
+        {
+            "name": "yt_translation_region",
+            "value": "Región"
+        },
+        {
+            "name": "yt_exp_title",
+            "value": "Funciones experimentales"
+        },
+        {
+            "name": "yt_exp_subtitle",
+            "value": "Mejoras experimentales integradas, desactivadas por defecto"
+        },
+        {
+            "name": "yt_exp_enabled",
+            "value": "Activado"
+        },
+        {
+            "name": "yt_exp_disabled",
+            "value": "Desactivado"
+        },
+        {
+            "name": "yt_exp_footer",
+            "value": "Estas funciones dependen de servicios comunitarios de terceros y pueden cambiar o fallar en cualquier momento."
+        },
+        {
+            "name": "yt_exp_clear_cache",
+            "value": "Borrar caché del complemento"
+        },
+        {
+            "name": "yt_exp_cache_cleared",
+            "value": "Caché borrada"
+        },
+        {
+            "name": "yt_exp_coming_soon",
+            "value": "Esta función está en desarrollo"
+        },
+        {
+            "name": "yt_exp_sb_title",
+            "value": "SponsorBlock"
+        },
+        {
+            "name": "yt_exp_sb_desc",
+            "value": "Omite automáticamente segmentos de patrocinio, intro, outro y similares"
+        },
+        {
+            "name": "yt_exp_sb_master",
+            "value": "Activar SponsorBlock"
+        },
+        {
+            "name": "yt_exp_sb_categories",
+            "value": "Categorías de segmentos"
+        },
+        {
+            "name": "yt_exp_sb_cat_sponsor",
+            "value": "Patrocinio"
+        },
+        {
+            "name": "yt_exp_sb_cat_selfpromo",
+            "value": "Autopromoción"
+        },
+        {
+            "name": "yt_exp_sb_cat_interaction",
+            "value": "Recordatorio de interacción"
+        },
+        {
+            "name": "yt_exp_sb_cat_intro",
+            "value": "Intro"
+        },
+        {
+            "name": "yt_exp_sb_cat_outro",
+            "value": "Outro"
+        },
+        {
+            "name": "yt_exp_sb_cat_preview",
+            "value": "Avance/resumen"
+        },
+        {
+            "name": "yt_exp_sb_cat_music",
+            "value": "Fuera de música"
+        },
+        {
+            "name": "yt_exp_sb_cat_filler",
+            "value": "Relleno"
+        },
+        {
+            "name": "yt_exp_sb_cat_highlight",
+            "value": "Momento destacado"
+        },
+        {
+            "name": "yt_exp_sb_behavior",
+            "value": "Comportamiento al omitir"
+        },
+        {
+            "name": "yt_exp_sb_behavior_toast",
+            "value": "Omitir y avisar (se puede deshacer)"
+        },
+        {
+            "name": "yt_exp_sb_behavior_silent",
+            "value": "Omitir en silencio"
+        },
+        {
+            "name": "yt_exp_sb_behavior_manual",
+            "value": "Mostrar solo el botón"
+        },
+        {
+            "name": "yt_exp_sb_unskip",
+            "value": "Aviso previo"
+        },
+        {
+            "name": "yt_exp_sb_unskip_value",
+            "value": "%d s"
+        },
+        {
+            "name": "yt_exp_sb_privacy",
+            "value": "Consulta privada"
+        },
+        {
+            "name": "yt_exp_sb_privacy_desc",
+            "value": "Enviar solo un hash del vídeo, no su ID"
+        },
+        {
+            "name": "yt_exp_sb_skipped",
+            "value": "Se omitirá en breve: %s"
+        },
+        {
+            "name": "yt_exp_sb_undo",
+            "value": "Deshacer"
+        },
+        {
+            "name": "yt_exp_sb_no_segments",
+            "value": "No hay segmentos disponibles para este vídeo"
+        },
+        {
+            "name": "yt_exp_sb_categories_count",
+            "value": "%d categorías"
+        },
+        {
+            "name": "yt_exp_da_title",
+            "value": "DeArrow"
+        },
+        {
+            "name": "yt_exp_da_desc",
+            "value": "Títulos y miniaturas colaborativos"
+        },
+        {
+            "name": "yt_exp_ai_title",
+            "value": "AiSList"
+        },
+        {
+            "name": "yt_exp_ai_desc",
+            "value": "Marcar u ocultar canales con contenido generado por IA"
+        },
+        {
+            "name": "yt_exp_da_replace_titles",
+            "value": "Reemplazar títulos"
+        },
+        {
+            "name": "yt_exp_da_limit",
+            "value": "Títulos por página"
+        },
+        {
+            "name": "yt_exp_da_concurrency",
+            "value": "Solicitudes simultáneas"
+        },
+        {
+            "name": "yt_exp_da_footer",
+            "value": "Los títulos provienen de envíos de la comunidad de DeArrow y pueden no coincidir exactamente con el vídeo."
+        },
+        {
+            "name": "yt_exp_da_thumbs",
+            "value": "Reemplazar miniaturas"
+        },
+        {
+            "name": "yt_exp_da_thumbs_desc",
+            "value": "Usa fotogramas del vídeo; carga más lenta"
+        },
+        {
+            "name": "yt_exp_ai_mode",
+            "value": "Tratamiento"
+        },
+        {
+            "name": "yt_exp_ai_mode_mark",
+            "value": "Solo marcar"
+        },
+        {
+            "name": "yt_exp_ai_mode_hide",
+            "value": "Ocultar por completo"
+        },
+        {
+            "name": "yt_exp_ai_warnlist",
+            "value": "Incluir lista de confianza media"
+        },
+        {
+            "name": "yt_exp_ai_sync",
+            "value": "Actualización automática"
+        },
+        {
+            "name": "yt_exp_ai_sync_daily",
+            "value": "Diaria"
+        },
+        {
+            "name": "yt_exp_ai_sync_weekly",
+            "value": "Semanal"
+        },
+        {
+            "name": "yt_exp_ai_sync_manual",
+            "value": "Solo manual"
+        },
+        {
+            "name": "yt_exp_ai_sync_now",
+            "value": "Actualizar ahora"
+        },
+        {
+            "name": "yt_exp_ai_status",
+            "value": "Última sincronización: %s · %d entradas"
+        },
+        {
+            "name": "yt_exp_ai_never",
+            "value": "Aún no sincronizado"
+        },
+        {
+            "name": "yt_exp_ai_license",
+            "value": "Fuente: AiSList (CC BY-NC 4.0)"
+        },
+        {
+            "name": "yt_exp_ai_badge",
+            "value": "IA"
+        },
+        {
+            "name": "yt_exp_ai_notice",
+            "value": "Este canal está marcado como contenido generado por IA"
+        },
+        {
+            "name": "yt_exp_ai_syncing",
+            "value": "Sincronizando…"
+        },
+        {
+            "name": "yt_exp_ai_sync_failed",
+            "value": "Error de sincronización"
+        },
+        {
+            "name": "yt_exp_ai_empty",
+            "value": "La lista está vacía; actualízala primero"
+        },
+        {
+            "name": "yt_exp_ai_status_label",
+            "value": "Estado de la lista"
+        },
+        {
+            "name": "yt_update_page_title",
+            "value": "Buscar actualizaciones"
+        },
+        {
+            "name": "yt_update_enable",
+            "value": "Buscar actualizaciones de GitHub"
+        },
+        {
+            "name": "yt_update_enable_desc",
+            "value": "Si se desactiva, no habrá comprobaciones automáticas ni manuales"
+        },
+        {
+            "name": "yt_update_on_startup",
+            "value": "Buscar al iniciar"
+        },
+        {
+            "name": "yt_update_on_startup_desc",
+            "value": "Se ejecuta en silencio, sin avisos"
+        },
+        {
+            "name": "yt_update_last_check",
+            "value": "Última comprobación"
+        },
+        {
+            "name": "yt_update_never_checked",
+            "value": "Aún no comprobado"
+        },
+        {
+            "name": "yt_update_check_now",
+            "value": "Buscar ahora"
+        },
+        {
+            "name": "yt_update_rate_limited",
+            "value": "GitHub está limitando las solicitudes; inténtalo más tarde"
+        },
+        {
+            "name": "yt_update_available",
+            "value": "Nueva versión disponible"
+        },
+        {
+            "name": "yt_update_disabled_hint",
+            "value": "Activa primero «Buscar actualizaciones de GitHub»"
+        },
+        {
+            "name": "yt_update_links",
+            "value": "Enlaces"
+        }
+    ]
+}

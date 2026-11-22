@@ -1,0 +1,337 @@
+import { OptionItem } from '../../common/components/OptionItem';
+import { PlaybackSectionTitle } from '../../common/components/PlaybackSectionTitle';
+import { UIConfig, YourtubeDarkMode } from '../../common/AppState';
+import { PlaybackConfig, VideoQualityCap } from '../../common/PlaybackConfig';
+import { NetworkProxyConfig } from '../../common/NetworkProxyConfig';
+import { AuthAccountStatus, AuthStage } from 'youtube_core';
+// [DISABLED] P3 ASR 模型状态行已随 AI 字幕设置入口禁用
+// import { AsrModelManager } from '../player/asr/AsrModelManager';
+import { LanguagePickerItem } from '../../common/components/LanguagePickerDialog';
+import { AppLog } from '../../common/AppLog';
+import { getAppVersion } from '../../common/AppVersion';
+
+const logger = AppLog.getInstance('OptionsMainPage');
+
+interface OptionsMainPageParams {
+  clickEffectEnabled: ClickEffect | null;
+  appLangItems: LanguagePickerItem[];
+  contentLangItems: LanguagePickerItem[];
+  contentCountryItems: LanguagePickerItem[];
+  onDataAccountClick: () => void;
+  onLanguageClick: () => void;
+  onPlaybackClick: () => void;
+  onGestureControlClick: () => void;
+  onSubtitleClick: () => void;
+  onPerformanceClick: () => void;
+  onExperimentalClick: () => void;
+  onNetworkClick: () => void;
+  onAppearanceClick: () => void;
+  // [DISABLED] P3：onAiTranslateClick: () => void;
+  onLogClick: () => void;
+  onHelpClick: () => void;
+  onUpdateClick: () => void;
+  onAboutClick: () => void;
+}
+
+@Component
+export struct OptionsMainPage {
+  @StorageProp('themePrimaryColor') themePrimary: string = '#E53935';
+  @StorageLink('uiConfig') uiConfig: UIConfig = new UIConfig();
+  @StorageLink('playbackConfig') playbackConfig: PlaybackConfig = new PlaybackConfig();
+  @StorageLink('networkProxyConfig') networkProxyConfig: NetworkProxyConfig = new NetworkProxyConfig();
+  @StorageProp('authStatus') authStatus: AuthAccountStatus = new AuthAccountStatus();
+
+  @Prop params: OptionsMainPageParams = {
+    clickEffectEnabled: null,
+    appLangItems: [] as LanguagePickerItem[],
+    contentLangItems: [] as LanguagePickerItem[],
+    contentCountryItems: [] as LanguagePickerItem[],
+    onDataAccountClick: () => {},
+    onLanguageClick: () => {},
+    onPlaybackClick: () => {},
+    onGestureControlClick: () => {},
+    onSubtitleClick: () => {},
+    onPerformanceClick: () => {},
+    onExperimentalClick: () => {},
+    onNetworkClick: () => {},
+    onAppearanceClick: () => {},
+    // [DISABLED] P3：onAiTranslateClick: () => {},
+    onLogClick: () => {},
+    onHelpClick: () => {},
+    onUpdateClick: () => {},
+    onAboutClick: () => {}
+  };
+
+  private getItemDisplay(items: LanguagePickerItem[], code: string): ResourceStr {
+    const found = items.find((it: LanguagePickerItem): boolean => it.code === code);
+    return found ? found.localizedName : $r('app.string.yt_follow_system');
+  }
+
+  private getDataAccountSubtitle(): ResourceStr {
+    const hasCred = this.authStatus.hasCredential
+      || this.authStatus.hasCookieCredential
+      || this.authStatus.hasRefreshToken
+      || this.authStatus.stage === AuthStage.SIGNED_IN;
+    if (!hasCred) {
+      return $r('app.string.yt_data_account_manage_sign_in');
+    }
+    if (this.authStatus.authEnabled === false) {
+      return $r('app.string.yt_data_account_incognito');
+    }
+    if (this.authStatus.authMode === 'cookie' || this.authStatus.authMode === 'both') {
+      return $r('app.string.yt_data_account_cookie');
+    }
+    return $r('app.string.yt_data_account_signed_in');
+  }
+
+  private getLanguageAndRegionSubtitle(): string {
+    const appLang = this.getItemDisplay(this.params.appLangItems, this.uiConfig.userLanguage);
+    const contentLang = this.getItemDisplay(this.params.contentLangItems, this.uiConfig.searchLanguage);
+    const region = this.getItemDisplay(this.params.contentCountryItems, this.uiConfig.searchCountry);
+    return `${appLang} / ${contentLang} / ${region}`;
+  }
+
+  private getPlaybackSubtitle(): string {
+    return this.playbackConfig.defaultQuality;
+  }
+
+  // [DISABLED] P3 AI 字幕设置项副标题（端侧识别模型状态），随入口禁用，代码保留：
+  // private getAiSubtitleSubtitle(): ResourceStr {
+  //   const mgr = AsrModelManager.getInstance();
+  //   const status = mgr.getStatus();
+  //   if (status === 'ready') {
+  //     return $r('app.string.yt_asr_model_status_ready');
+  //   }
+  //   if (status === 'downloading') {
+  //     return `${getContext().resourceManager.getStringSync($r('app.string.yt_asr_model_downloading').id)} ${mgr.getPercent()}%`;
+  //   }
+  //   return $r('app.string.yt_asr_model_status_none');
+  // }
+
+  private getAppearanceSubtitle(): ResourceStr {
+    switch (this.uiConfig.darkMode) {
+      case YourtubeDarkMode.LIGHT:
+        return $r('app.string.yt_dark_mode_light');
+      case YourtubeDarkMode.DARK:
+        return $r('app.string.yt_dark_mode_dark');
+      case YourtubeDarkMode.SYSTEM:
+      default:
+        return $r('app.string.yt_dark_mode_system');
+    }
+  }
+
+  build() {
+    Column() {
+      List({ space: 6 }) {
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_option_group_general') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.person_crop_circle_fill'),
+            title: $r('app.string.yt_option_data_account'),
+            subtitle: this.getDataAccountSubtitle(),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onDataAccountClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.wifi'),
+            title: $r('app.string.yt_option_network'),
+            subtitle: this.networkProxyConfig.subtitle(),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onNetworkClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_option_group_personalization') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.paintpalette_fill'),
+            title: $r('app.string.yt_option_appearance'),
+            subtitle: this.getAppearanceSubtitle(),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onAppearanceClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.globe_and_keyboard'),
+            title: $r('app.string.yt_section_language_region'),
+            subtitle: this.getLanguageAndRegionSubtitle(),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onLanguageClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_section_playback') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.play_circle_fill'),
+            title: $r('app.string.yt_section_playback'),
+            subtitle: this.getPlaybackSubtitle(),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onPlaybackClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        // [DISABLED] P3 AI 字幕设置页入口（端侧识别模型管理）：产品只保留 P0 tlang，代码保留。
+        // 重新启用 = 取消本块及 OptionsMainPage/OptionsSheetHost 内其余 P3 [DISABLED] 注释块。
+        // ListItem() {
+        //   OptionItem({
+        //     icon: $r('sys.symbol.character_on_character'),
+        //     title: $r('app.string.yt_option_ai_subtitle'),
+        //     subtitle: this.getAiSubtitleSubtitle(),
+        //     iconColor: this.themePrimary,
+        //     clickEffectEnabled: this.params.clickEffectEnabled,
+        //     onClickAction: this.params.onAiTranslateClick
+        //   })
+        // }
+        // .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.hand_point_up_tap_fill'),
+            title: $r('app.string.yt_playback_gestures'),
+            subtitle: $r('app.string.yt_option_gesture_control_subtitle'),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onGestureControlClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.character_textbox'),
+            title: $r('app.string.yt_player_subtitles'),
+            subtitle: $r('app.string.yt_option_subtitle_style_subtitle'),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onSubtitleClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.gauge_with_dots_needle_33percent'),
+            title: $r('app.string.yt_playback_buffer_network'),
+            subtitle: $r('app.string.yt_option_perf_buffer_subtitle'),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onPerformanceClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_exp_title') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.clock'),
+            title: $r('app.string.yt_exp_title'),
+            subtitle: $r('app.string.yt_exp_subtitle'),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onExperimentalClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          PlaybackSectionTitle({ title: $r('app.string.yt_option_group_others') })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.questionmark_circle'),
+            title: $r('app.string.yt_option_help'),
+            subtitle: $r('app.string.yt_option_help_subtitle'),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onHelpClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.doc_plaintext'),
+            title: $r('app.string.yt_option_log'),
+            subtitle: $r('app.string.yt_option_log_subtitle'),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onLogClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.download_fill'),
+            title: $r('app.string.yt_about_check_update'),
+            subtitle: $r('app.string.yt_about_check_update_subtitle'),
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onUpdateClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          OptionItem({
+            icon: $r('sys.symbol.info_circle_fill'),
+            title: $r('app.string.yt_option_about'),
+            subtitle: 'v' + getAppVersion().versionName,
+            iconColor: this.themePrimary,
+            clickEffectEnabled: this.params.clickEffectEnabled,
+            onClickAction: this.params.onAboutClick
+          })
+        }
+        .padding({ left: 0, right: 0 })
+
+        ListItem() {
+          Column().height(24)
+        }
+        .padding({ left: 0, right: 0 })
+      }
+      .width('100%')
+      .height('100%')
+      .layoutWeight(1)
+      .padding({ left: 16, right: 16, top: 8, bottom: 12 })
+      .edgeEffect(EdgeEffect.Spring)
+      .alignListItem(ListItemAlign.Start)
+      .scrollBar(BarState.Off)
+    }
+    .width('100%')
+    .height('100%')
+  }
+}

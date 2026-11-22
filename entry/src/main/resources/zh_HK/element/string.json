@@ -1,0 +1,4142 @@
+{
+    "string": [
+        {
+            "name": "yt_tab_home",
+            "value": "首頁"
+        },
+        {
+            "name": "yt_tab_playlists",
+            "value": "播放清單"
+        },
+        {
+            "name": "yt_tab_subscriptions",
+            "value": "訂閱"
+        },
+        {
+            "name": "yt_tab_favorites",
+            "value": "收藏"
+        },
+        {
+            "name": "yt_option_title",
+            "value": "選項"
+        },
+        {
+            "name": "yt_option_group_general",
+            "value": "通用"
+        },
+        {
+            "name": "yt_option_group_personalization",
+            "value": "個性化"
+        },
+        {
+            "name": "yt_option_group_settings",
+            "value": "設定"
+        },
+        {
+            "name": "yt_option_group_others",
+            "value": "其他"
+        },
+        {
+            "name": "yt_option_language",
+            "value": "語言調整"
+        },
+        {
+            "name": "yt_option_color",
+            "value": "顏色調整"
+        },
+        {
+            "name": "yt_option_color_subtitle",
+            "value": "主題色與強調色"
+        },
+        {
+            "name": "yt_option_log",
+            "value": "日誌"
+        },
+        {
+            "name": "yt_option_log_subtitle",
+            "value": "查看執行記錄"
+        },
+        {
+            "name": "yt_action_close",
+            "value": "關閉"
+        },
+        {
+            "name": "yt_option_about",
+            "value": "關於"
+        },
+        {
+            "name": "yt_option_about_subtitle",
+            "value": "版本與致謝"
+        },
+        {
+            "name": "yt_option_in_development",
+            "value": "功能開發中"
+        },
+        {
+            "name": "yt_option_in_development_color",
+            "value": "顏色主題選項將顯示於此"
+        },
+        {
+            "name": "yt_lang_follow_system",
+            "value": "跟隨系統"
+        },
+        {
+            "name": "yt_lang_simplified",
+            "value": "簡體中文"
+        },
+        {
+            "name": "yt_lang_simplified_subtitle",
+            "value": "簡體中文"
+        },
+        {
+            "name": "yt_lang_traditional_hk",
+            "value": "繁體中文（香港）"
+        },
+        {
+            "name": "yt_lang_traditional_hk_subtitle",
+            "value": "繁體中文（香港）"
+        },
+        {
+            "name": "yt_lang_traditional_tw",
+            "value": "繁體中文（台灣）"
+        },
+        {
+            "name": "yt_lang_traditional_tw_subtitle",
+            "value": "繁體中文（台灣）"
+        },
+        {
+            "name": "yt_lang_english",
+            "value": "英語"
+        },
+        {
+            "name": "yt_lang_english_subtitle",
+            "value": "English"
+        },
+        {
+            "name": "yt_log_session_active",
+            "value": "記錄中"
+        },
+        {
+            "name": "yt_log_session_saved",
+            "value": "已儲存"
+        },
+        {
+            "name": "yt_log_no_sessions",
+            "value": "暫無日誌工作階段"
+        },
+        {
+            "name": "yt_log_delete_all_confirm",
+            "value": "刪除所有日誌記錄？"
+        },
+        {
+            "name": "yt_log_delete_confirm_yes",
+            "value": "刪除"
+        },
+        {
+            "name": "yt_log_delete_confirm_no",
+            "value": "取消"
+        },
+        {
+            "name": "module_desc",
+            "value": "module description"
+        },
+        {
+            "name": "EntryAbility_desc",
+            "value": "description"
+        },
+        {
+            "name": "EntryAbility_label",
+            "value": "label"
+        },
+        {
+            "name": "HOME_EXIT_TOAST",
+            "value": "再按一次返回鍵退出應用"
+        },
+        {
+            "name": "LIVING_LEFT_TEXT",
+            "value": "共 "
+        },
+        {
+            "name": "LIVING_RIGHT_TEXT",
+            "value": " 條評論"
+        },
+        {
+            "name": "LIVING_WRITE",
+            "value": "寫評論"
+        },
+        {
+            "name": "number_of_viewers",
+            "value": "738,600 人正在觀看"
+        },
+        {
+            "name": "store_name",
+            "value": "官方直播間"
+        },
+        {
+            "name": "yt_tab_local",
+            "value": "本地"
+        },
+        {
+            "name": "yt_option_appearance",
+            "value": "外觀"
+        },
+        {
+            "name": "yt_dark_mode_title",
+            "value": "深色模式"
+        },
+        {
+            "name": "yt_dark_mode_system",
+            "value": "跟隨系統"
+        },
+        {
+            "name": "yt_dark_mode_system_subtitle",
+            "value": "根據系統設定自動切換"
+        },
+        {
+            "name": "yt_dark_mode_light",
+            "value": "淺色模式"
+        },
+        {
+            "name": "yt_dark_mode_light_subtitle",
+            "value": "始終使用淺色主題"
+        },
+        {
+            "name": "yt_dark_mode_dark",
+            "value": "深色模式"
+        },
+        {
+            "name": "yt_dark_mode_dark_subtitle",
+            "value": "始終使用深色主題"
+        },
+        {
+            "name": "yt_log_title",
+            "value": "日誌"
+        },
+        {
+            "name": "yt_log_enable",
+            "value": "開啟日誌記錄"
+        },
+        {
+            "name": "yt_log_enable_subtitle",
+            "value": "啟動後記錄執行日誌"
+        },
+        {
+            "name": "yt_log_disabled_hint",
+            "value": "日誌記錄未開啟\n在上方打開開關以開始擷取"
+        },
+        {
+            "name": "yt_log_empty",
+            "value": "暫無日誌記錄"
+        },
+        {
+            "name": "internet_reason",
+            "value": "請求網絡數據"
+        },
+        {
+            "name": "reason_background",
+            "value": "保持視頻在後台運行"
+        },
+        {
+            "name": "video_name0",
+            "value": "@Cat"
+        },
+        {
+            "name": "video_name1",
+            "value": "@Mountaineer"
+        },
+        {
+            "name": "video_name2",
+            "value": "@Nice To Meet You"
+        },
+        {
+            "name": "video_name3",
+            "value": "@Tick"
+        },
+        {
+            "name": "video_name4",
+            "value": "@Faery"
+        },
+        {
+            "name": "video_description0",
+            "value": "#1 #本地影片 #色彩斑斕的世界，生活不只有眼前的苟且，還有詩和遠方"
+        },
+        {
+            "name": "video_description1",
+            "value": "#2 #線上影片 #夢想"
+        },
+        {
+            "name": "video_description3",
+            "value": "#4 #線上影片 #色彩斑斕的世界，生活不只有眼前的苟且，還有詩和遠方"
+        },
+        {
+            "name": "video_description4",
+            "value": "#5 #線上影片 #色彩斑斕的世界，生活不只有眼前的苟且，還有詩和遠方"
+        },
+        {
+            "name": "yt_section_language_region",
+            "value": "語言與地區"
+        },
+        {
+            "name": "yt_section_playback",
+            "value": "播放"
+        },
+        {
+            "name": "yt_section_language",
+            "value": "語言設定"
+        },
+        {
+            "name": "yt_section_content_translation",
+            "value": "內容翻譯"
+        },
+        {
+            "name": "yt_setting_translation_language",
+            "value": "翻譯目標語言"
+        },
+        {
+            "name": "yt_follow_app_language",
+            "value": "跟隨應用程式語言"
+        },
+        {
+            "name": "yt_setting_subtitle_translate_language",
+            "value": "自動翻譯字幕語言"
+        },
+        {
+            "name": "yt_follow_translation_language",
+            "value": "跟隨翻譯語言"
+        },
+        {
+            "name": "yt_setting_ui_language",
+            "value": "應用 UI 語言"
+        },
+        {
+            "name": "yt_setting_content_language",
+            "value": "內容語言"
+        },
+        {
+            "name": "yt_setting_content_region",
+            "value": "內容地區"
+        },
+        {
+            "name": "yt_section_video",
+            "value": "影片設定"
+        },
+        {
+            "name": "yt_setting_default_quality",
+            "value": "預設影片清晰度"
+        },
+        {
+            "name": "yt_setting_live_quality_cap",
+            "value": "直播清晰度上限"
+        },
+        {
+            "name": "yt_setting_show_high_res",
+            "value": "顯示高解析度（1440p / 4K）"
+        },
+        {
+            "name": "yt_setting_show_high_res_subtitle",
+            "value": "在清晰度選擇器中顯示 4K 選項，效能要求較高"
+        },
+        {
+            "name": "yt_setting_video_codec",
+            "value": "影片編碼格式"
+        },
+        {
+            "name": "yt_section_audio",
+            "value": "音訊設定"
+        },
+        {
+            "name": "yt_setting_audio_quality",
+            "value": "音訊質量上限"
+        },
+        {
+            "name": "yt_section_decoder",
+            "value": "解碼器設定"
+        },
+        {
+            "name": "yt_setting_hwdec_mode",
+            "value": "硬件解碼模式"
+        },
+        {
+            "name": "yt_setting_decoder_fallback",
+            "value": "解碼器回退"
+        },
+        {
+            "name": "yt_setting_decoder_fallback_subtitle",
+            "value": "硬解失敗時自動回退到軟解，避免黑屏"
+        },
+        {
+            "name": "yt_section_buffer",
+            "value": "緩衝策略"
+        },
+        {
+            "name": "yt_setting_readahead",
+            "value": "前向緩衝時長"
+        },
+        {
+            "name": "yt_setting_cache_pause",
+            "value": "緩衝不足恢復等待時長"
+        },
+        {
+            "name": "yt_setting_max_back_bytes",
+            "value": "後向緩衝大小 (向後 Seek 不重拉流)"
+        },
+        {
+            "name": "yt_quality_best",
+            "value": "最高畫質"
+        },
+        {
+            "name": "yt_quality_auto",
+            "value": "自動"
+        },
+        {
+            "name": "yt_codec_h264_first",
+            "value": "自動（H.264 優先）"
+        },
+        {
+            "name": "yt_codec_force_h264",
+            "value": "強制 H.264"
+        },
+        {
+            "name": "yt_audio_high",
+            "value": "最高（≈256kbps AAC）"
+        },
+        {
+            "name": "yt_audio_medium",
+            "value": "中等（≈128kbps AAC）"
+        },
+        {
+            "name": "yt_audio_low",
+            "value": "省流（≈48kbps）"
+        },
+        {
+            "name": "yt_hwdec_auto",
+            "value": "自動（推薦）"
+        },
+        {
+            "name": "yt_hwdec_auto_safe",
+            "value": "強制硬解"
+        },
+        {
+            "name": "yt_hwdec_no",
+            "value": "僅軟解"
+        },
+        {
+            "name": "yt_recommended_suffix",
+            "value": "（推薦）"
+        },
+        {
+            "name": "yt_unit_seconds",
+            "value": "秒"
+        },
+        {
+            "name": "yt_unit_mb",
+            "value": "MB"
+        },
+        {
+            "name": "yt_placeholder_search",
+            "value": "搜尋..."
+        },
+        {
+            "name": "yt_action_favorite",
+            "value": "收藏"
+        },
+        {
+            "name": "yt_action_unfavorite",
+            "value": "取消收藏"
+        },
+        {
+            "name": "yt_action_subscribe",
+            "value": "訂閱"
+        },
+        {
+            "name": "yt_action_unsubscribe",
+            "value": "取消訂閱"
+        },
+        {
+            "name": "yt_action_share",
+            "value": "分享"
+        },
+        {
+            "name": "yt_action_retry",
+            "value": "重試"
+        },
+        {
+            "name": "yt_action_cancel",
+            "value": "取消"
+        },
+        {
+            "name": "yt_action_confirm",
+            "value": "確定"
+        },
+        {
+            "name": "yt_action_delete",
+            "value": "刪除"
+        },
+        {
+            "name": "yt_action_clear",
+            "value": "清空"
+        },
+        {
+            "name": "yt_action_view_author",
+            "value": "查看作者"
+        },
+        {
+            "name": "yt_action_clear_all",
+            "value": "全部清空"
+        },
+        {
+            "name": "yt_search_youtube",
+            "value": "YouTube搜尋"
+        },
+        {
+            "name": "yt_search_youtube_music",
+            "value": "YouTube Music搜尋"
+        },
+        {
+            "name": "yt_filter_all",
+            "value": "全部"
+        },
+        {
+            "name": "yt_filter_videos",
+            "value": "影片"
+        },
+        {
+            "name": "yt_filter_channels",
+            "value": "頻道"
+        },
+        {
+            "name": "yt_filter_playlists",
+            "value": "播放清單"
+        },
+        {
+            "name": "yt_filter_songs",
+            "value": "歌曲"
+        },
+        {
+            "name": "yt_filter_albums",
+            "value": "專輯"
+        },
+        {
+            "name": "yt_search_history",
+            "value": "搜尋記錄"
+        },
+        {
+            "name": "yt_action_clear_search_history",
+            "value": "清空搜尋記錄"
+        },
+        {
+            "name": "yt_empty_no_search_history",
+            "value": "暫無搜尋記錄"
+        },
+        {
+            "name": "yt_search_no_results",
+            "value": "沒有找到相關內容"
+        },
+        {
+            "name": "yt_error_search_failed",
+            "value": "搜尋失敗，請稍後重試"
+        },
+        {
+            "name": "yt_dialog_delete_search_record",
+            "value": "刪除搜尋記錄"
+        },
+        {
+            "name": "yt_confirm_clear_search_history",
+            "value": "確定要清空所有搜尋記錄嗎？"
+        },
+        {
+            "name": "yt_toast_cleared",
+            "value": "已清空"
+        },
+        {
+            "name": "yt_placeholder_search_content",
+            "value": "搜尋內容"
+        },
+        {
+            "name": "yt_empty_no_content",
+            "value": "暫無內容"
+        },
+        {
+            "name": "yt_error_invalid_video",
+            "value": "無有效影片資訊"
+        },
+        {
+            "name": "yt_dialog_select_quality",
+            "value": "選擇清晰度"
+        },
+        {
+            "name": "yt_label_video_track",
+            "value": "影片軌道"
+        },
+        {
+            "name": "yt_warn_high_resolution",
+            "value": "此清晰度超過 1440p，在部分裝置上可能出現效能問題或播放卡頓"
+        },
+        {
+            "name": "yt_label_audio_quality",
+            "value": "音訊質量"
+        },
+        {
+            "name": "yt_player_syncing_buffer",
+            "value": "正在同步雙軌道緩衝..."
+        },
+        {
+            "name": "yt_error_playback_failed",
+            "value": "播放失敗"
+        },
+        {
+            "name": "yt_error_load_video_info",
+            "value": "影片資訊獲取失敗"
+        },
+        {
+            "name": "yt_error_load_video",
+            "value": "影片載入失敗"
+        },
+        {
+            "name": "yt_error_load_exception",
+            "value": "載入發生異常"
+        },
+        {
+            "name": "yt_error_unknown",
+            "value": "未知錯誤"
+        },
+        {
+            "name": "yt_error_invalid_video_id",
+            "value": "無效的影片ID"
+        },
+        {
+            "name": "yt_error_play_error_retry",
+            "value": "播放出錯，請重試"
+        },
+        {
+            "name": "yt_empty_no_comments",
+            "value": "暫無評論"
+        },
+        {
+            "name": "yt_label_pinned",
+            "value": "置頂"
+        },
+        {
+            "name": "yt_error_load_comments",
+            "value": "載入評論失敗"
+        },
+        {
+            "name": "yt_label_reply",
+            "value": "回覆"
+        },
+        {
+            "name": "yt_error_load_replies",
+            "value": "載入回覆失敗"
+        },
+        {
+            "name": "yt_label_like",
+            "value": "讚"
+        },
+        {
+            "name": "yt_translate_action",
+            "value": "翻譯"
+        },
+        {
+            "name": "yt_show_original",
+            "value": "查看原文"
+        },
+        {
+            "name": "yt_translating",
+            "value": "翻譯中…"
+        },
+        {
+            "name": "yt_translate_failed",
+            "value": "翻譯失敗，點擊重試"
+        },
+        {
+            "name": "yt_label_dislike",
+            "value": "踩"
+        },
+        {
+            "name": "yt_tab_videos",
+            "value": "影片"
+        },
+        {
+            "name": "yt_tab_shorts",
+            "value": "短片"
+        },
+        {
+            "name": "yt_tab_live",
+            "value": "直播"
+        },
+        {
+            "name": "yt_tab_about",
+            "value": "關於"
+        },
+        {
+            "name": "yt_empty_no_videos",
+            "value": "暫無影片"
+        },
+        {
+            "name": "yt_empty_no_shorts",
+            "value": "暫無短片"
+        },
+        {
+            "name": "yt_empty_no_live",
+            "value": "暫無直播"
+        },
+        {
+            "name": "yt_channel_info",
+            "value": "頻道資訊"
+        },
+        {
+            "name": "yt_channel_id",
+            "value": "頻道 ID"
+        },
+        {
+            "name": "yt_channel_subscribers",
+            "value": "訂閱數"
+        },
+        {
+            "name": "yt_channel_video_count",
+            "value": "影片數"
+        },
+        {
+            "name": "yt_channel_description",
+            "value": "簡介"
+        },
+        {
+            "name": "yt_error_load_user_videos",
+            "value": "載入用戶影片失敗"
+        },
+        {
+            "name": "yt_error_load_shorts",
+            "value": "載入短片失敗"
+        },
+        {
+            "name": "yt_error_load_live",
+            "value": "載入直播失敗"
+        },
+        {
+            "name": "yt_label_user",
+            "value": "用戶"
+        },
+        {
+            "name": "yt_local_history",
+            "value": "觀看歷史"
+        },
+        {
+            "name": "yt_dialog_clear_history",
+            "value": "清空歷史"
+        },
+        {
+            "name": "yt_confirm_clear_history",
+            "value": "確定要清空全部觀看記錄嗎？"
+        },
+        {
+            "name": "yt_empty_no_history",
+            "value": "暫無觀看記錄"
+        },
+        {
+            "name": "yt_empty_history_hint",
+            "value": "看過的影片會出現在這裡"
+        },
+        {
+            "name": "yt_time_just_now",
+            "value": "剛剛"
+        },
+        {
+            "name": "yt_action_delete_record",
+            "value": "刪除記錄"
+        },
+        {
+            "name": "yt_action_remove_from_queue",
+            "value": "從佇列移除"
+        },
+        {
+            "name": "yt_sub_manage_title",
+            "value": "我訂閱的作者"
+        },
+        {
+            "name": "yt_empty_no_subs",
+            "value": "暫無訂閱用戶"
+        },
+        {
+            "name": "yt_empty_subs_hint",
+            "value": "請在\"訂閱管理\"中添加"
+        },
+        {
+            "name": "yt_empty_subs_hint_alt",
+            "value": "在搜尋頁訂閱感興趣的作者"
+        },
+        {
+            "name": "yt_error_load_subs",
+            "value": "載入訂閱失敗"
+        },
+        {
+            "name": "yt_fav_videos_title",
+            "value": "我收藏的影片"
+        },
+        {
+            "name": "yt_fav_playlists_title",
+            "value": "我收藏的播放清單"
+        },
+        {
+            "name": "yt_local_playlists_title",
+            "value": "本地播放清單"
+        },
+        {
+            "name": "yt_local_playlists_tag",
+            "value": "本地"
+        },
+        {
+            "name": "yt_empty_no_local_playlists",
+            "value": "暫無本地播放清單"
+        },
+        {
+            "name": "yt_empty_local_playlists_hint",
+            "value": "在播放頁儲存影片到本地播放清單"
+        },
+        {
+            "name": "yt_empty_no_fav_videos",
+            "value": "暫無收藏的影片"
+        },
+        {
+            "name": "yt_empty_no_fav_playlists",
+            "value": "暫無收藏的播放清單"
+        },
+        {
+            "name": "yt_empty_fav_playlists_hint",
+            "value": "在搜尋頁收藏感興趣的播放清單"
+        },
+        {
+            "name": "yt_about_current_version",
+            "value": "當前版本"
+        },
+        {
+            "name": "yt_about_description",
+            "value": "基於鴻蒙 HarmonyOS NEXT 的開源 YouTube 客戶端\n無廣告 · 無追蹤 · 完全本地解析"
+        },
+        {
+            "name": "yt_about_qq_group",
+            "value": "QQ 群組"
+        },
+        {
+            "name": "yt_about_tg_group",
+            "value": "Telegram 群組"
+        },
+        {
+            "name": "yt_about_github_repo",
+            "value": "GitHub 倉庫"
+        },
+        {
+            "name": "yt_about_project_info",
+            "value": "專案資訊"
+        },
+        {
+            "name": "yt_about_open_source",
+            "value": "使用的開源項目"
+        },
+        {
+            "name": "yt_about_ai_models",
+            "value": "開發輔助 AI 模型"
+        },
+        {
+            "name": "yt_about_changelog",
+            "value": "更新日誌"
+        },
+        {
+            "name": "yt_about_check_update",
+            "value": "檢查更新"
+        },
+        {
+            "name": "yt_about_check_update_subtitle",
+            "value": "取得 GitHub 最新版本"
+        },
+        {
+            "name": "yt_update_check_failed",
+            "value": "檢查更新失敗，請稍後重試"
+        },
+        {
+            "name": "yt_update_up_to_date",
+            "value": "已是最新版本"
+        },
+        {
+            "name": "yt_update_available_title",
+            "value": "發現新版本"
+        },
+        {
+            "name": "yt_update_open_appgallery",
+            "value": "AppTest"
+        },
+        {
+            "name": "yt_update_open_github",
+            "value": "GitHub"
+        },
+        {
+            "name": "yt_update_checking",
+            "value": "正在檢查更新…"
+        },
+        {
+            "name": "yt_update_current_version",
+            "value": "目前版本"
+        },
+        {
+            "name": "yt_update_new_version",
+            "value": "新版本"
+        },
+        {
+            "name": "yt_update_release_time",
+            "value": "更新時間"
+        },
+        {
+            "name": "yt_error_load_failed",
+            "value": "載入失敗"
+        },
+        {
+            "name": "yt_error_play_failed_title",
+            "value": "播放失敗"
+        },
+        {
+            "name": "yt_label_live",
+            "value": "直播"
+        },
+        {
+            "name": "yt_error_load_playlists",
+            "value": "載入播放清單失敗"
+        },
+        {
+            "name": "yt_error_load_channel_info",
+            "value": "頻道資訊獲取失敗"
+        },
+        {
+            "name": "yt_tab_description",
+            "value": "簡介"
+        },
+        {
+            "name": "yt_tab_comments",
+            "value": "評論"
+        },
+        {
+            "name": "yt_tab_recommended",
+            "value": "推薦"
+        },
+        {
+            "name": "yt_home_recommended_error",
+            "value": "推薦來源載入失敗，已回退或請稍後再試"
+        },
+        {
+            "name": "yt_home_auth_expired_notice",
+            "value": "登入狀態已失效，正在顯示訪客推薦內容，請重新登入"
+        },
+        {
+            "name": "yt_home_kiosk_error",
+            "value": "Kiosk 請求失敗，請稍後重試"
+        },
+        {
+            "name": "yt_home_load_error",
+            "value": "主頁載入失敗，請稍後重試"
+        },
+        {
+            "name": "yt_player_mode_progressive",
+            "value": "漸進式 (Progressive)"
+        },
+        {
+            "name": "yt_player_mode_hls",
+            "value": "HLS 串流"
+        },
+        {
+            "name": "yt_player_mode_dash_manifest",
+            "value": "DASH 串流 (Manifest)"
+        },
+        {
+            "name": "yt_player_mode_dash_track",
+            "value": "DASH 軌道 (音視頻分離)"
+        },
+        {
+            "name": "yt_player_default",
+            "value": "預設 (Default)"
+        },
+        {
+            "name": "yt_player_step1_select_mode",
+            "value": "1. 選擇播放模式"
+        },
+        {
+            "name": "yt_player_step2_select_quality",
+            "value": "2. 選擇清晰度"
+        },
+        {
+            "name": "yt_player_video_quality",
+            "value": "影片清晰度"
+        },
+        {
+            "name": "yt_player_step2_select_manifest",
+            "value": "2. 選擇資源清單"
+        },
+        {
+            "name": "yt_player_step2_select_track",
+            "value": "2. 選擇音視頻軌道"
+        },
+        {
+            "name": "yt_player_audio_language_type",
+            "value": "音訊語言 / 類型"
+        },
+        {
+            "name": "yt_log_saved_to_downloads",
+            "value": "已儲存至下載目錄"
+        },
+        {
+            "name": "yt_error_no_playable_stream",
+            "value": "未找到可播放的流"
+        },
+        {
+            "name": "yt_error_no_supported_stream",
+            "value": "沒有找到可支援的影片流"
+        },
+        {
+            "name": "new_app_name",
+            "value": "YourPipe"
+        },
+        {
+            "name": "yt_empty_no_playlists",
+            "value": "暫無播放清單"
+        },
+        {
+            "name": "yt_search_results_from",
+            "value": "來自 \"%s\" 的搜尋結果"
+        },
+        {
+            "name": "yt_setting_stream_buffer",
+            "value": "TCP 流緩衝大小"
+        },
+        {
+            "name": "yt_setting_seek_keyframe",
+            "value": "快速跳轉（關鍵幀）"
+        },
+        {
+            "name": "yt_setting_seek_keyframe_subtitle",
+            "value": "跳轉到最近的關鍵幀以加快回應速度"
+        },
+        {
+            "name": "yt_setting_home_feed_after_login",
+            "value": "登入後的主頁內容"
+        },
+        {
+            "name": "yt_home_feed_recommended",
+            "value": "推薦"
+        },
+        {
+            "name": "yt_home_feed_kiosk",
+            "value": "直播"
+        },
+        {
+            "name": "yt_option_sync_library_on_launch",
+            "value": "啟動時同步用戶數據"
+        },
+        {
+            "name": "yt_option_sync_library_on_launch_subtitle",
+            "value": "啟動時拉取雲端歷史與訂閱"
+        },
+        {
+            "name": "yt_option_auth_session",
+            "value": "登入態瀏覽"
+        },
+        {
+            "name": "yt_option_sign_out",
+            "value": "退出登入"
+        },
+        {
+            "name": "yt_option_sign_out_subtitle",
+            "value": "清除登入資訊"
+        },
+        {
+            "name": "yt_confirm_sign_out",
+            "value": "確認退出登入？將清除已儲存的登入資訊。"
+        },
+        {
+            "name": "yt_action_audio_only",
+            "value": "僅音訊"
+        },
+        {
+            "name": "yt_action_audio_only_play",
+            "value": "僅音訊播放"
+        },
+        {
+            "name": "yt_player_subtitle_off",
+            "value": "關閉字幕"
+        },
+{
+    "name": "yt_player_subtitle_auto_translated",
+    "value": "自動翻譯"
+},
+{
+    "name": "yt_option_ai_translate",
+    "value": "AI 字幕翻譯"
+},
+{
+    "name": "yt_option_ai_subtitle",
+    "value": "AI 字幕"
+},
+{
+    "name": "yt_ai_translate_engine",
+    "value": "翻譯引擎"
+},
+{
+    "name": "yt_ai_translate_engine_gtx",
+    "value": "Google 免費翻譯"
+},
+{
+    "name": "yt_ai_translate_engine_llm",
+    "value": "自訂 LLM（OpenAI 相容）"
+},
+{
+    "name": "yt_ai_translate_llm_section",
+    "value": "LLM 設定"
+},
+{
+    "name": "yt_ai_translate_base_url",
+    "value": "介面地址（Base URL）"
+},
+{
+    "name": "yt_ai_translate_model",
+    "value": "模型名稱"
+},
+{
+    "name": "yt_ai_translate_api_key",
+    "value": "API Key"
+},
+{
+    "name": "yt_ai_translate_test",
+    "value": "測試連線"
+},
+{
+    "name": "yt_ai_translate_testing",
+    "value": "測試中…"
+},
+{
+    "name": "yt_ai_translate_test_ok",
+    "value": "連線成功"
+},
+{
+    "name": "yt_ai_translate_test_fail",
+    "value": "連線失敗，請檢查設定"
+},
+{
+    "name": "yt_ai_translate_display_section",
+    "value": "顯示"
+},
+{
+    "name": "yt_ai_translate_bilingual",
+    "value": "雙語對照"
+},
+{
+    "name": "yt_ai_translate_bilingual_subtitle",
+    "value": "同時顯示原文與譯文"
+},
+{
+    "name": "yt_ai_translate_note",
+    "value": "字幕文本將傳送到所選翻譯服務。目標語言與「內容翻譯語言」一致。"
+},
+{
+    "name": "yt_ai_translate_menu",
+    "value": "AI 翻譯"
+},
+{
+    "name": "yt_ai_translate_llm_not_configured",
+    "value": "請先在設定中完成 LLM 設定"
+},
+{
+    "name": "yt_ai_translate_partial_fail",
+    "value": "部分字幕翻譯失敗，已保留原文"
+},
+{
+    "name": "yt_ai_translate_failed",
+    "value": "字幕翻譯失敗，請稍後重試"
+},
+{
+    "name": "yt_setting_system_ai_caption",
+    "value": "系統 AI 字幕"
+},
+{
+    "name": "yt_setting_system_ai_caption_subtitle",
+    "value": "由系統即時識別播放中的音訊（部分機型支援，中/英文）"
+},
+{
+    "name": "yt_setting_system_ai_caption_source",
+    "value": "AI 字幕源語言"
+},
+{
+    "name": "yt_setting_system_ai_caption_source_zh",
+    "value": "中文"
+},
+{
+    "name": "yt_asr_menu",
+    "value": "AI 生成字幕"
+},
+{
+    "name": "yt_asr_phase_model",
+    "value": "下載模型"
+},
+{
+    "name": "yt_asr_live_progress",
+    "value": "即時識別中…"
+},
+{
+    "name": "yt_asr_failed",
+    "value": "AI 生成字幕失敗，請稍後重試"
+},
+{
+    "name": "yt_asr_model_section",
+    "value": "端側識別模型"
+},
+{
+    "name": "yt_asr_model_status_ready",
+    "value": "已就緒（中英雙語串流識別）"
+},
+{
+    "name": "yt_asr_model_status_none",
+    "value": "未下載（約 190MB，建議 Wi-Fi 網絡）"
+},
+{
+    "name": "yt_asr_model_downloading",
+    "value": "下載中"
+},
+{
+    "name": "yt_asr_model_download",
+    "value": "下載模型"
+},
+{
+    "name": "yt_asr_model_delete",
+    "value": "刪除模型"
+},
+{
+    "name": "yt_ai_action_cancel",
+    "value": "取消"
+},
+        {
+            "name": "yt_player_chapters",
+            "value": "章節"
+        },
+        {
+            "name": "yt_log_count_format",
+            "value": "%d 條日誌"
+        },
+        {
+            "name": "yt_log_regex_placeholder",
+            "value": "正則篩選，例如 DownloadManager|Task .*failed"
+        },
+        {
+            "name": "yt_label_current",
+            "value": "目前"
+        },
+        {
+            "name": "yt_label_autoplay",
+            "value": "自動播放"
+        },
+        {
+            "name": "yt_download_hls_hint",
+            "value": "HLS 串流將以原始分段格式下載並合併成完整檔案"
+        },
+        {
+            "name": "yt_video_count_format",
+            "value": "%d 個影片"
+        },
+        {
+            "name": "yt_playlist_name_placeholder",
+            "value": "播放清單名稱"
+        },
+        {
+            "name": "yt_action_create",
+            "value": "建立"
+        },
+        {
+            "name": "yt_action_new_playlist",
+            "value": "新增播放清單"
+        },
+        {
+            "name": "yt_action_save_to_playlist",
+            "value": "儲存至播放清單"
+        },
+        {
+            "name": "yt_comments_count_format",
+            "value": "留言（%d）"
+        },
+        {
+            "name": "yt_replies_count_format",
+            "value": "%d 則回覆"
+        },
+        {
+            "name": "yt_error_no_downloadable_stream",
+            "value": "沒有可下載的媒體串流"
+        },
+        {
+            "name": "yt_error_live_not_downloadable",
+            "value": "直播內容暫不支援下載"
+        },
+        {
+            "name": "yt_action_sleep_timer",
+            "value": "定時停止"
+        },
+        {
+            "name": "yt_stream_info_title",
+            "value": "串流資訊"
+        },
+        {
+            "name": "yt_stream_stats_title",
+            "value": "播放統計"
+        },
+        {
+            "name": "yt_stats_video_id",
+            "value": "影片 ID"
+        },
+        {
+            "name": "yt_stats_conn_speed",
+            "value": "連線速度"
+        },
+        {
+            "name": "yt_stats_buffer",
+            "value": "緩衝長度"
+        },
+        {
+            "name": "yt_stats_dropped",
+            "value": "掉幀"
+        },
+        {
+            "name": "yt_stream_container",
+            "value": "容器格式"
+        },
+        {
+            "name": "yt_stream_media_title",
+            "value": "媒體標題"
+        },
+        {
+            "name": "yt_stream_duration",
+            "value": "時長"
+        },
+        {
+            "name": "yt_stream_file_size",
+            "value": "檔案大小"
+        },
+        {
+            "name": "yt_stream_video",
+            "value": "影片"
+        },
+        {
+            "name": "yt_stream_audio",
+            "value": "音訊"
+        },
+        {
+            "name": "yt_stream_resolution",
+            "value": "解像度"
+        },
+        {
+            "name": "yt_stream_codec",
+            "value": "編碼"
+        },
+        {
+            "name": "yt_stream_bitrate",
+            "value": "位元率"
+        },
+        {
+            "name": "yt_stream_frame_rate",
+            "value": "幀率"
+        },
+        {
+            "name": "yt_stream_channels",
+            "value": "聲道"
+        },
+        {
+            "name": "yt_stream_sample_rate",
+            "value": "取樣率"
+        },
+        {
+            "name": "yt_stream_loading",
+            "value": "正在取得串流資訊…"
+        },
+        {
+            "name": "yt_sub_sync_sign_in_first",
+            "value": "請先登入再同步訂閱清單"
+        },
+        {
+            "name": "yt_sub_sync_cloud_empty",
+            "value": "雲端訂閱清單為空"
+        },
+        {
+            "name": "yt_sub_sync_result_added",
+            "value": "已同步 %d 個訂閱，新增 %d"
+        },
+        {
+            "name": "yt_sub_sync_result",
+            "value": "已同步 %d 個訂閱"
+        },
+        {
+            "name": "yt_sub_sync_failed",
+            "value": "同步訂閱清單失敗"
+        },
+        {
+            "name": "yt_refresh_failed",
+            "value": "重新整理失敗"
+        },
+        {
+            "name": "yt_sub_pull_to_sync",
+            "value": "下拉同步 YouTube 訂閱清單"
+        },
+        {
+            "name": "yt_sub_signed_in_pull_hint",
+            "value": "已登入，下拉即可同步 YouTube 訂閱"
+        },
+        {
+            "name": "yt_auth_subtitle_sign_in",
+            "value": "登入以取得個人化推薦"
+        },
+        {
+            "name": "yt_auth_subtitle_cookie_active",
+            "value": "已登入 (Cookie)"
+        },
+        {
+            "name": "yt_auth_subtitle_active",
+            "value": "已登入"
+        },
+        {
+            "name": "yt_auth_subtitle_incognito",
+            "value": "已儲存登入 · 無痕"
+        },
+        {
+            "name": "yt_auth_notice_title",
+            "value": "登入須知"
+        },
+        {
+            "name": "yt_auth_notice_message",
+            "value": "歡迎登入 YouTube，我們提供有限的帳戶內容存取，並能有效緩解部分網絡環境下匿名模式無法使用的問題。這會帶來部分額外的網絡開銷，敬請知悉：）"
+        },
+        {
+            "name": "yt_auth_continue_sign_in",
+            "value": "繼續登入"
+        },
+        {
+            "name": "yt_cookie_collapse",
+            "value": "收起 Cookie 登入"
+        },
+        {
+            "name": "yt_cookie_sign_in",
+            "value": "Cookie 登入"
+        },
+        {
+            "name": "yt_cookie_import_subtitle",
+            "value": "貼上瀏覽器 Cookie"
+        },
+        {
+            "name": "yt_cookie_import_help",
+            "value": "支援 Cookie header（SID=...; SAPISID=...）及 EditThisCookie / Cookie-Editor 匯出的 JSON。必須包含 SID 與 SAPISID 或 __Secure-3PAPISID。"
+        },
+        {
+            "name": "yt_cookie_import_placeholder",
+            "value": "SID=...; SAPISID=... 或 Cookie JSON"
+        },
+        {
+            "name": "yt_cookie_verifying",
+            "value": "正在驗證 Cookie…"
+        },
+        {
+            "name": "yt_cookie_import_confirm",
+            "value": "匯入並驗證"
+        },
+        {
+            "name": "yt_cookie_verify_history",
+            "value": "線上校驗通過（歷史 %d 條）"
+        },
+        {
+            "name": "yt_cookie_verify_empty_history",
+            "value": "線上校驗通過（帳號歷史為空，但鑑權成功）"
+        },
+        {
+            "name": "yt_cookie_session_inactive",
+            "value": "會話未生效，請重新匯入"
+        },
+        {
+            "name": "yt_cookie_verify_failed",
+            "value": "線上校驗失敗：%s"
+        },
+        {
+            "name": "yt_cookie_input_required",
+            "value": "請貼上 Cookie 字串"
+        },
+        {
+            "name": "yt_cookie_parse_failed",
+            "value": "無法解析 Cookie（支援 header 或 EditThisCookie JSON）"
+        },
+        {
+            "name": "yt_cookie_sid_missing",
+            "value": "本地校驗失敗：未找到 SID / SAPISID"
+        },
+        {
+            "name": "yt_cookie_sapisid_missing",
+            "value": "本地校驗失敗：缺少 SAPISID（或 __Secure-3PAPISID）"
+        },
+        {
+            "name": "yt_auth_module_unavailable",
+            "value": "認證模組未初始化"
+        },
+        {
+            "name": "yt_cookie_local_validating",
+            "value": "本地格式通過，正在向 YouTube 校驗…"
+        },
+        {
+            "name": "yt_google_web_sign_in_subtitle",
+            "value": "網頁登入 YouTube"
+        },
+        {
+            "name": "yt_google_web_sign_in_title",
+            "value": "YouTube 登入"
+        },
+        {
+            "name": "yt_label_unknown",
+            "value": "未知"
+        },
+        {
+            "name": "yt_label_untitled",
+            "value": "未命名"
+        },
+        {
+            "name": "yt_option_preferences",
+            "value": "首選項"
+        },
+        {
+            "name": "yt_appearance_theme_color",
+            "value": "主題色"
+        },
+        {
+            "name": "yt_playback_pip",
+            "value": "畫中畫"
+        },
+        {
+            "name": "yt_playback_pip_on_return",
+            "value": "返回時進入畫中畫"
+        },
+        {
+            "name": "yt_playback_pip_on_return_subtitle",
+            "value": "返回/Home 時自動進入子母畫面"
+        },
+        {
+            "name": "yt_playback_player",
+            "value": "播放器"
+        },
+        {
+            "name": "yt_playback_gestures",
+            "value": "手勢與操控"
+        },
+        {
+            "name": "yt_option_gesture_control_subtitle",
+            "value": "滑動、長按等播放操控方式"
+        },
+        {
+            "name": "yt_playback_gesture_seek",
+            "value": "滑動調整播放進度"
+        },
+        {
+            "name": "yt_playback_gesture_seek_subtitle",
+            "value": "畫面橫向滑動調進度"
+        },
+        {
+            "name": "yt_playback_gesture_brightness",
+            "value": "左側滑動調整亮度"
+        },
+        {
+            "name": "yt_playback_gesture_brightness_subtitle",
+            "value": "畫面左側上下滑調亮度"
+        },
+        {
+            "name": "yt_playback_gesture_volume",
+            "value": "右側滑動調整音量"
+        },
+        {
+            "name": "yt_playback_gesture_volume_subtitle",
+            "value": "畫面右側上下滑調音量"
+        },
+        {
+            "name": "yt_playback_hold_speed",
+            "value": "長按加速播放"
+        },
+        {
+            "name": "yt_playback_hold_speed_subtitle",
+            "value": "按住畫面時暫時加速播放"
+        },
+        {
+            "name": "yt_playback_hold_speed_value",
+            "value": "長按倍速"
+        },
+        {
+            "name": "yt_playback_hold_speed_delay",
+            "value": "長按觸發延遲"
+        },
+        {
+            "name": "yt_playback_background_audio_only",
+            "value": "後台僅音訊"
+        },
+        {
+            "name": "yt_playback_background_audio_only_subtitle",
+            "value": "後台關閉影片解碼以省電"
+        },
+        {
+            "name": "yt_playback_auto_play_next",
+            "value": "自動播放下一條影片"
+        },
+        {
+            "name": "yt_playback_auto_play_next_subtitle",
+            "value": "啟動時作為佇列自動播放預設值"
+        },
+        {
+            "name": "yt_playback_video_off_delay",
+            "value": "關閉影片延遲"
+        },
+        {
+            "name": "yt_playback_hwdec",
+            "value": "硬體解碼"
+        },
+        {
+            "name": "yt_playback_hwdec_subtitle",
+            "value": "硬體加速解碼，更省電"
+        },
+        {
+            "name": "yt_playback_gpu_rendering",
+            "value": "GPU 渲染"
+        },
+        {
+            "name": "yt_playback_stream_endpoint",
+            "value": "播放端點"
+        },
+        {
+            "name": "yt_playback_guest_player_client",
+            "value": "遊客播放端點"
+        },
+        {
+            "name": "yt_playback_auth_player_client",
+            "value": "登入播放端點"
+        },
+        {
+            "name": "yt_setting_client_visionos",
+            "value": "VisionOS"
+        },
+        {
+            "name": "yt_setting_client_tv_downgraded",
+            "value": "TV Downgraded"
+        },
+        {
+            "name": "yt_setting_client_mweb",
+            "value": "MWEB (SABR)"
+        },
+        {
+            "name": "yt_playback_buffer_network",
+            "value": "性能與緩衝"
+        },
+        {
+            "name": "yt_option_perf_buffer_subtitle",
+            "value": "解碼、渲染與緩衝快取"
+        },
+        {
+            "name": "yt_playback_memory_cache",
+            "value": "記憶體快取"
+        },
+        {
+            "name": "yt_playback_readahead",
+            "value": "預讀緩衝"
+        },
+        {
+            "name": "yt_playback_buffer_size",
+            "value": "緩衝區大小"
+        },
+        {
+            "name": "yt_download_concurrent_tasks",
+            "value": "並行下載任務"
+        },
+        {
+            "name": "yt_toast_login_success",
+            "value": "登入成功"
+        },
+        {
+            "name": "yt_login_extracting_auth",
+            "value": "登入成功，正在提取認證資訊…"
+        },
+        {
+            "name": "yt_login_skip_pot",
+            "value": "跳過（不提取 PoToken）"
+        },
+        {
+            "name": "yt_confirm_delete_search_item",
+            "value": "確定要刪除「%s」嗎？"
+        },
+        {
+            "name": "yt_download_saved_to_downloads",
+            "value": "已儲存至下載目錄"
+        },
+        {
+            "name": "yt_download_save_failed",
+            "value": "儲存失敗"
+        },
+        {
+            "name": "yt_date_today",
+            "value": "今天"
+        },
+        {
+            "name": "yt_date_days_ago",
+            "value": "%d 天前"
+        },
+        {
+            "name": "yt_date_weeks_ago",
+            "value": "%d 週前"
+        },
+        {
+            "name": "yt_date_months_ago",
+            "value": "%d 個月前"
+        },
+        {
+            "name": "yt_date_years_ago",
+            "value": "%d 年前"
+        },
+        {
+            "name": "yt_download_status_waiting",
+            "value": "等待中"
+        },
+        {
+            "name": "yt_download_status_video",
+            "value": "正在下載影片"
+        },
+        {
+            "name": "yt_download_status_audio",
+            "value": "正在下載音訊"
+        },
+        {
+            "name": "yt_download_status_merging",
+            "value": "正在合併"
+        },
+        {
+            "name": "yt_download_status_completed",
+            "value": "已完成"
+        },
+        {
+            "name": "yt_download_status_failed",
+            "value": "下載失敗"
+        },
+        {
+            "name": "yt_download_status_cancelled",
+            "value": "已取消"
+        },
+        {
+            "name": "yt_download_started_format",
+            "value": "開始下載：%s"
+        },
+        {
+            "name": "yt_download_saved_format",
+            "value": "已儲存至下載目錄：%s"
+        },
+        {
+            "name": "yt_download_completed_format",
+            "value": "下載完成：%s"
+        },
+        {
+            "name": "yt_toast_copied",
+            "value": "已複製"
+        },
+        {
+            "name": "yt_toast_copy_failed",
+            "value": "複製失敗"
+        },
+        {
+            "name": "yt_about_package_name",
+            "value": "應用套件名稱"
+        },
+        {
+            "name": "yt_follow_system",
+            "value": "跟隨系統"
+        },
+        {
+            "name": "yt_data_account_manage_sign_in",
+            "value": "管理資料與登入狀態"
+        },
+        {
+            "name": "yt_data_account_incognito",
+            "value": "已儲存登入 · 無痕瀏覽中"
+        },
+        {
+            "name": "yt_data_account_cookie",
+            "value": "已登入（Cookie）· 管理資料與帳號"
+        },
+        {
+            "name": "yt_data_account_signed_in",
+            "value": "已登入 · 管理資料與帳號"
+        },
+        {
+            "name": "yt_layout_card_mode",
+            "value": "卡片模式"
+        },
+        {
+            "name": "yt_layout_list_mode",
+            "value": "列表模式"
+        },
+        {
+            "name": "yt_pip_playing",
+            "value": "畫中畫播放中"
+        },
+        {
+            "name": "yt_pip_restore_hint",
+            "value": "點擊畫中畫視窗恢復"
+        },
+        {
+            "name": "yt_google_web_sign_in",
+            "value": "Google 帳號登入"
+        },
+        {
+            "name": "yt_login_sapisid_failed",
+            "value": "未能取得 SAPISID，請重試"
+        },
+        {
+            "name": "yt_time_minutes_ago",
+            "value": "%d 分鐘前"
+        },
+        {
+            "name": "yt_time_hours_ago",
+            "value": "%d 小時前"
+        },
+        {
+            "name": "yt_history_sync_sign_in",
+            "value": "請先登入後再同步雲端歷史"
+        },
+        {
+            "name": "yt_history_sync_success",
+            "value": "已同步雲端歷史 %d 條（保留本地進度與時間）"
+        },
+        {
+            "name": "yt_history_sync_empty",
+            "value": "雲端歷史為空"
+        },
+        {
+            "name": "yt_history_sync_failed",
+            "value": "同步雲端歷史失敗"
+        },
+        {
+            "name": "yt_sub_feed_youtube",
+            "value": "YouTube 訂閱動態"
+        },
+        {
+            "name": "yt_sub_feed_title",
+            "value": "訂閱動態"
+        },
+        {
+            "name": "yt_sub_feed_entry_title",
+            "value": "訂閱動態"
+        },
+        {
+            "name": "yt_sub_feed_entry_subtitle",
+            "value": "%d 個訂閱頻道"
+        },
+        {
+            "name": "yt_sub_feed_new_items",
+            "value": "%d 個新影片"
+        },
+        {
+            "name": "yt_sub_feed_empty_hint",
+            "value": "下拉重新整理取得訂閱頻道的最新影片"
+        },
+        {
+            "name": "yt_backup_item_subscription_feed",
+            "value": "訂閱動態快取"
+        },
+        {
+            "name": "yt_feed_fast_mode_title",
+            "value": "訂閱動態快速模式 (RSS)"
+        },
+        {
+            "name": "yt_feed_fast_mode_subtitle",
+            "value": "使用輕量 RSS 抓取，請求更少但資訊不完整"
+        },
+        {
+            "name": "yt_setting_home_layout",
+            "value": "首頁佈局"
+        },
+        {
+            "name": "yt_layout_grid",
+            "value": "卡片模式"
+        },
+        {
+            "name": "yt_layout_list",
+            "value": "列表模式"
+        },
+        {
+            "name": "yt_setting_card_density",
+            "value": "卡片密度"
+        },
+        {
+            "name": "yt_density_auto",
+            "value": "自動"
+        },
+        {
+            "name": "yt_density_compact",
+            "value": "緊湊"
+        },
+        {
+            "name": "yt_density_cozy",
+            "value": "寬鬆"
+        },
+        {
+            "name": "yt_codec_av1",
+            "value": "AV1"
+        },
+        {
+            "name": "yt_action_open_browser",
+            "value": "在瀏覽器中開啟"
+        },
+        {
+            "name": "yt_action_show_more",
+            "value": "顯示更多"
+        },
+        {
+            "name": "yt_action_show_less",
+            "value": "收起"
+        },
+        {
+            "name": "yt_label_loading",
+            "value": "載入中…"
+        },
+        {
+            "name": "yt_error_age_restricted",
+            "value": "此影片有年齡限制"
+        },
+        {
+            "name": "yt_error_age_restricted_hint",
+            "value": "需要在瀏覽器中登入 YouTube 帳號才能觀看"
+        },
+        {
+            "name": "yt_error_geo_restricted",
+            "value": "此內容在你所在地區不可用"
+        },
+        {
+            "name": "yt_error_geo_restricted_hint",
+            "value": "影片發布者限制了播放地區"
+        },
+        {
+            "name": "yt_error_paid_content",
+            "value": "此影片為付費內容"
+        },
+        {
+            "name": "yt_error_paid_content_hint",
+            "value": "需要購買或租借才能觀看"
+        },
+        {
+            "name": "yt_error_premium_content",
+            "value": "此內容僅限 YouTube Premium 會員"
+        },
+        {
+            "name": "yt_error_premium_content_hint",
+            "value": "需要訂閱 YouTube Premium 才能播放"
+        },
+        {
+            "name": "yt_error_private_content",
+            "value": "此影片為私密影片"
+        },
+        {
+            "name": "yt_error_private_content_hint",
+            "value": "只有獲得授權的用戶才能觀看"
+        },
+        {
+            "name": "yt_error_login_required",
+            "value": "需要登入才能觀看"
+        },
+        {
+            "name": "yt_error_login_required_hint",
+            "value": "請在瀏覽器中登入 YouTube 帳號"
+        },
+        {
+            "name": "yt_error_account_terminated",
+            "value": "此頻道已被終止"
+        },
+        {
+            "name": "yt_error_account_terminated_hint",
+            "value": "該帳號因違反 YouTube 政策已被封禁"
+        },
+        {
+            "name": "yt_error_live_offline",
+            "value": "直播已結束"
+        },
+        {
+            "name": "yt_error_live_offline_hint",
+            "value": "此直播流已下線或尚未開始"
+        },
+        {
+            "name": "yt_error_content_not_supported",
+            "value": "不支援此類型的內容"
+        },
+        {
+            "name": "yt_error_content_not_supported_hint",
+            "value": "該影片格式暫不支援播放"
+        },
+        {
+            "name": "yt_error_network",
+            "value": "網路連線失敗"
+        },
+        {
+            "name": "yt_error_network_hint",
+            "value": "請檢查網路連線後重試"
+        },
+        {
+            "name": "yt_error_timeout",
+            "value": "請求逾時"
+        },
+        {
+            "name": "yt_error_timeout_hint",
+            "value": "伺服器回應過慢，請稍後重試"
+        },
+        {
+            "name": "yt_error_extraction_failed",
+            "value": "解析影片資訊失敗"
+        },
+        {
+            "name": "yt_error_endpoint_hint",
+            "value": "當前端點：%s"
+        },
+        {
+            "name": "yt_error_extraction_failed_hint",
+            "value": "無法取得影片播放資料"
+        },
+        {
+            "name": "yt_error_cipher_failed",
+            "value": "解密影片串流失敗"
+        },
+        {
+            "name": "yt_error_cipher_failed_hint",
+            "value": "簽章演算法已更新，請等待應用更新"
+        },
+        {
+            "name": "yt_option_group_recovery",
+            "value": "恢復"
+        },
+        {
+            "name": "yt_option_reset_settings",
+            "value": "恢復所有設定"
+        },
+        {
+            "name": "yt_option_reset_settings_subtitle",
+            "value": "恢復預設設定"
+        },
+        {
+            "name": "yt_option_clear_all_data",
+            "value": "清除應用全部資料"
+        },
+        {
+            "name": "yt_option_clear_all_data_subtitle",
+            "value": "清除歷史、快取等全部資料"
+        },
+        {
+            "name": "yt_toast_reset_settings_done",
+            "value": "已恢復預設設定"
+        },
+        {
+            "name": "yt_toast_clear_all_data_done",
+            "value": "已清除所有資料"
+        },
+        {
+            "name": "yt_option_recovery",
+            "value": "恢復"
+        },
+        {
+            "name": "yt_confirm_reset_settings",
+            "value": "確定要將所有設定恢復為預設值嗎？此操作無法復原。"
+        },
+        {
+            "name": "yt_confirm_clear_all_data",
+            "value": "確定要清除應用全部資料嗎？此操作將刪除所有歷史記錄、收藏、訂閱、設定，以及已下載的影片和本機匯入檔案，無法復原。"
+        },
+        {
+            "name": "yt_action_download",
+            "value": "下載"
+        },
+        {
+            "name": "yt_label_progressive",
+            "value": "合併流品質"
+        },
+        {
+            "name": "yt_label_premium",
+            "value": "付費"
+        },
+        {
+            "name": "yt_label_members_only",
+            "value": "會員"
+        },
+        {
+            "name": "yt_option_data_account",
+            "value": "資料與帳號"
+        },
+        {
+            "name": "yt_option_data_account_subtitle",
+            "value": "登入與本機資料"
+        },
+        {
+            "name": "yt_section_account",
+            "value": "帳號"
+        },
+        {
+            "name": "yt_section_data_management",
+            "value": "資料管理"
+        },
+        {
+            "name": "yt_option_google_login",
+            "value": "Google 登入"
+        },
+        {
+            "name": "yt_option_export_data",
+            "value": "匯出資料"
+        },
+        {
+            "name": "yt_option_export_data_subtitle",
+            "value": "備份本機資料為 JSON"
+        },
+        {
+            "name": "yt_option_restore_data",
+            "value": "還原資料"
+        },
+        {
+            "name": "yt_option_restore_data_subtitle",
+            "value": "從 JSON 還原資料"
+        },
+        {
+            "name": "yt_backup_item_settings",
+            "value": "應用設定"
+        },
+        {
+            "name": "yt_backup_item_subscriptions",
+            "value": "訂閱"
+        },
+        {
+            "name": "yt_backup_item_favorites",
+            "value": "收藏影片"
+        },
+        {
+            "name": "yt_backup_item_playlists",
+            "value": "收藏的播放清單"
+        },
+        {
+            "name": "yt_backup_item_local_queues",
+            "value": "本地播放清單"
+        },
+        {
+            "name": "yt_backup_item_watch_history",
+            "value": "觀看歷史"
+        },
+        {
+            "name": "yt_backup_item_search_history",
+            "value": "搜尋記錄"
+        },
+        {
+            "name": "yt_backup_item_auth",
+            "value": "YouTube 登入狀態"
+        },
+        {
+            "name": "yt_backup_export_title",
+            "value": "選擇要匯出的項目"
+        },
+        {
+            "name": "yt_backup_restore_title",
+            "value": "選擇要還原的項目"
+        },
+        {
+            "name": "yt_backup_confirm_restore",
+            "value": "還原將覆蓋目前選取的本地資料，確定繼續嗎？"
+        },
+        {
+            "name": "yt_backup_export_success",
+            "value": "匯出成功"
+        },
+        {
+            "name": "yt_backup_export_failed",
+            "value": "匯出失敗"
+        },
+        {
+            "name": "yt_backup_restore_success",
+            "value": "還原成功"
+        },
+        {
+            "name": "yt_backup_restore_failed",
+            "value": "還原失敗"
+        },
+        {
+            "name": "yt_backup_version_unsupported",
+            "value": "備份檔案版本不受支援"
+        },
+        {
+            "name": "yt_local_play",
+            "value": "播放"
+        },
+        {
+            "name": "yt_local_file_missing",
+            "value": "檔案已遺失"
+        },
+        {
+            "name": "yt_download_export",
+            "value": "匯出到 Downloads"
+        },
+        {
+            "name": "yt_download_title",
+            "value": "下載影片"
+        },
+        {
+            "name": "yt_download_step1_mode",
+            "value": "步驟 1: 選擇下載模式"
+        },
+        {
+            "name": "yt_download_step2_quality",
+            "value": "步驟 2: 選擇清晰度"
+        },
+        {
+            "name": "yt_download_step2_tracks",
+            "value": "步驟 2: 選擇軌道"
+        },
+        {
+            "name": "yt_download_mode_progressive",
+            "value": "合併流 (Progressive)"
+        },
+        {
+            "name": "yt_download_mode_dash",
+            "value": "分離軌道 (DASH)"
+        },
+        {
+            "name": "yt_download_mode_hls",
+            "value": "HLS 流"
+        },
+        {
+            "name": "yt_download_mode_sabr",
+            "value": "SABR 分軌"
+        },
+        {
+            "name": "yt_download_progressive_hint",
+            "value": "推薦：影片和音訊已合併，無需額外處理"
+        },
+        {
+            "name": "yt_download_dash_hint",
+            "value": "影片和音訊分別下載後自動合併"
+        },
+        {
+            "name": "yt_download_sabr_hint",
+            "value": "透過 SABR/UMP 工作階段按分片擷取音影片後自動合併（與播放同源）"
+        },
+        {
+            "name": "yt_download_estimated_size",
+            "value": "預計大小"
+        },
+        {
+            "name": "yt_download_empty",
+            "value": "暫無下載任務"
+        },
+        {
+            "name": "yt_download_empty_hint",
+            "value": "在影片頁面點擊下載按鈕開始下載"
+        },
+        {
+            "name": "yt_backup_error_no_context",
+            "value": "無法取得應用程式上下文"
+        },
+        {
+            "name": "yt_backup_error_no_save_path",
+            "value": "未選擇儲存路徑"
+        },
+        {
+            "name": "yt_backup_error_no_file",
+            "value": "未選擇檔案"
+        },
+        {
+            "name": "yt_backup_error_format",
+            "value": "備份檔案格式錯誤"
+        },
+        {
+            "name": "yt_backup_error_wrong_app",
+            "value": "備份檔案不屬於本應用程式"
+        },
+        {
+            "name": "yt_backup_error_version",
+            "value": "備份檔案版本不受支援"
+        },
+        {
+            "name": "yt_backup_error_empty",
+            "value": "備份檔案內容為空"
+        },
+        {
+            "name": "yt_backup_error_restore",
+            "value": "還原失敗"
+        },
+        {
+            "name": "yt_backup_error_export",
+            "value": "匯出失敗"
+        },
+        {
+            "name": "yt_subscriptions_feed_local",
+            "value": "本地訂閱 RSS"
+        },
+        {
+            "name": "yt_playlist_video_count",
+            "value": "%d 個影片"
+        },
+        {
+            "name": "yt_history_sync_pull_hint",
+            "value": "下拉同步 YouTube 觀看歷史"
+        },
+        {
+            "name": "yt_history_sync_sign_in_hint",
+            "value": "登入後可下拉同步雲端歷史"
+        },
+        {
+            "name": "yt_history_sync_signed_in_hint",
+            "value": "已登入，下拉可同步雲端歷史"
+        },
+        {
+            "name": "yt_subs_sync_signed_in_hint",
+            "value": "已登入，下拉可同步 YouTube 訂閱"
+        },
+        {
+            "name": "yt_setting_delay_immediate",
+            "value": "立即"
+        },
+        {
+            "name": "yt_setting_gpu_auto",
+            "value": "自動"
+        },
+        {
+            "name": "yt_label_opengl",
+            "value": "OpenGL"
+        },
+        {
+            "name": "yt_label_vulkan",
+            "value": "Vulkan"
+        },
+        {
+            "name": "yt_about_oss_newpipe_desc",
+            "value": "開源 YouTube 用戶端；瀏覽與搜尋的參考"
+        },
+        {
+            "name": "yt_about_oss_iplay_desc",
+            "value": "跨平台媒體播放器；多站點播放的參考"
+        },
+        {
+            "name": "yt_about_oss_ytdlp_desc",
+            "value": "命令列下載工具；格式選擇與下載流程的參考"
+        },
+        {
+            "name": "yt_about_oss_finvideo_desc",
+            "value": "HarmonyOS 媒體播放器；ArkTS 播放控制介面的參考"
+        },
+        {
+            "name": "yt_about_oss_pipepipe_desc",
+            "value": "NewPipe 分支；播放端點與驗證決策的參考"
+        },
+        {
+            "name": "yt_about_oss_mpv_desc",
+            "value": "播放核心；libmpv 行為與 API 的依據"
+        },
+        {
+            "name": "yt_about_oss_smarttube_desc",
+            "value": "Android TV 端 YouTube 用戶端；電視端互動的參考"
+        },
+        {
+            "name": "yt_about_oss_clashbox_desc",
+            "value": "HarmonyOS 代理用戶端；代理設定介面的參考"
+        },
+        {
+            "name": "yt_about_oss_tpc_desc",
+            "value": "OpenHarmony C/C++ 移植工程；native 依賴建置的參考"
+        },
+        {
+            "name": "yt_about_oss_vlc_desc",
+            "value": "跨平台播放器；編解碼相容性的參考"
+        },
+        {
+            "name": "yt_label_vendors",
+            "value": "個廠商"
+        },
+        {
+            "name": "yt_about_tap_to_open",
+            "value": "點擊條目在瀏覽器中開啟"
+        },
+        {
+            "name": "yt_about_link_unavailable",
+            "value": "該條目暫無可用連結"
+        },
+        {
+            "name": "yt_about_link_failed",
+            "value": "無法開啟連結"
+        },
+        {
+            "name": "yt_changelog_0_5_3_1",
+            "value": "新增 YouTube SABR/UMP 流支持，提升新格式、高分辨率和受限视頻兼容性"
+        },
+        {
+            "name": "yt_changelog_0_5_3_2",
+            "value": "重構视頻解析與客户端選择，对齊 PipePipe 请求行为並恢複远程签名解密"
+        },
+        {
+            "name": "yt_changelog_0_5_3_3",
+            "value": "改進本地 DASH 媒體代理：分离音视頻轨道、分段緩存和精确跳轉"
+        },
+        {
+            "name": "yt_changelog_0_5_3_4",
+            "value": "新增 SABR PoToken 支持，優化签名参数、请求頭和二進制响應處理"
+        },
+        {
+            "name": "yt_changelog_0_5_3_5",
+            "value": "改進播放器状态同步、清晰度和音轨切換，修複播放後的无限加載"
+        },
+        {
+            "name": "yt_changelog_0_5_3_6",
+            "value": "升级播放列表解析與分頁，兼容新列表结構、锁定内容和续頁"
+        },
+        {
+            "name": "yt_changelog_0_5_3_7",
+            "value": "重组账号與数据管理入口，改善登錄、歷史记錄、下載和播放設置联動"
+        },
+        {
+            "name": "yt_changelog_0_5_3_8",
+            "value": "優化首頁推荐、视頻卡片、主题色、畫中畫和系統媒體會話穩定性"
+        },
+        {
+            "name": "yt_changelog_0_5_2_1",
+            "value": "播放器新增纯音頻模式：關閉视頻後繼续收聽聲音，封面替代畫面"
+        },
+        {
+            "name": "yt_changelog_0_5_2_2",
+            "value": "纯音頻模式不進入畫中畫；回到前臺仍保持纯音頻，需手動恢複视頻"
+        },
+        {
+            "name": "yt_changelog_0_5_2_3",
+            "value": "支持在後臺延迟關閉视頻以節省电量，可在播放設置中調整"
+        },
+        {
+            "name": "yt_changelog_0_5_2_4",
+            "value": "修複系統广播中斷时的音量衰減，避免二次壓缩導致静音"
+        },
+        {
+            "name": "yt_changelog_0_5_2_5",
+            "value": "優化橫豎螢、全螢和窗口播放切換，減少黑螢與模糊"
+        },
+        {
+            "name": "yt_changelog_0_5_2_6",
+            "value": "登錄後首頁更贴合账号状态，可同步雲端觀看歷史和訂阅"
+        },
+        {
+            "name": "yt_changelog_0_5_2_7",
+            "value": "優化视頻卡片、直播標識和頁面安全區域顯示"
+        },
+        {
+            "name": "yt_changelog_0_5_2_8",
+            "value": "支持應用接续與點击分享视頻鏈接"
+        },
+        {
+            "name": "yt_changelog_0_5_1_1",
+            "value": "修複部分已知问题"
+        },
+        {
+            "name": "yt_changelog_0_5_1_2",
+            "value": "对齊 PipePipe 的相關问题修複"
+        },
+        {
+            "name": "yt_changelog_0_5_1_3",
+            "value": "修複登錄後无法觀看的问题"
+        },
+        {
+            "name": "yt_changelog_0_5_1_4",
+            "value": "修複橫螢时信息栏錯誤弹出的问题"
+        },
+        {
+            "name": "yt_changelog_0_5_1_5",
+            "value": "優化設置頁面介面"
+        },
+        {
+            "name": "yt_changelog_0_5_1_6",
+            "value": "完成本地解密逻辑驗證，为部署做好准備"
+        },
+        {
+            "name": "yt_changelog_0_5_0_1",
+            "value": "以 MPVPlayer 替換系統播放引擎和第三方 FFMpeg"
+        },
+        {
+            "name": "yt_changelog_0_5_0_2",
+            "value": "恢複高分辨率播放和字幕功能"
+        },
+        {
+            "name": "yt_changelog_0_5_0_3",
+            "value": "支持 HEVC/H.264 硬件解碼；API 23 以上嘗試 VP9/AV1 硬件解碼"
+        },
+        {
+            "name": "yt_changelog_0_5_0_4",
+            "value": "新增真正的 HDR 顯示"
+        },
+        {
+            "name": "yt_changelog_0_5_0_5",
+            "value": "優化非登錄状态下的網絡传输能力"
+        },
+        {
+            "name": "yt_changelog_0_5_0_6",
+            "value": "優化錯誤提示顯示"
+        },
+        {
+            "name": "yt_changelog_0_5_0_7",
+            "value": "優化介面和設置選項"
+        },
+        {
+            "name": "yt_changelog_0_5_0_8",
+            "value": "合入 PipePipe 最新版本補丁"
+        },
+        {
+            "name": "yt_changelog_0_4_1_1",
+            "value": "優化视頻加載速度"
+        },
+        {
+            "name": "yt_changelog_0_4_1_2",
+            "value": "合入 PipePipe 5.1.1 補丁"
+        },
+        {
+            "name": "yt_changelog_0_4_1_3",
+            "value": "允許 Google 登錄，基本消除机器人驗證问题"
+        },
+        {
+            "name": "yt_changelog_0_4_1_4",
+            "value": "優化多設備全螢交互"
+        },
+        {
+            "name": "yt_changelog_0_4_1_5",
+            "value": "開發播放器頁面多個模块"
+        },
+        {
+            "name": "yt_changelog_0_4_1_6",
+            "value": "完成下載功能初版"
+        },
+        {
+            "name": "yt_changelog_0_4_1_7",
+            "value": "完善播放列表功能"
+        },
+        {
+            "name": "yt_changelog_0_4_1_8",
+            "value": "集成系統與投螢入口，初步實驗應用接续"
+        },
+        {
+            "name": "yt_changelog_0_4_0_1",
+            "value": "基本完成 yt-dlp 生态分析和集成接口"
+        },
+        {
+            "name": "yt_changelog_0_4_0_2",
+            "value": "允許 Google 登錄，基本消除机器人驗證问题"
+        },
+        {
+            "name": "yt_changelog_0_4_0_3",
+            "value": "優化播放机制"
+        },
+        {
+            "name": "yt_changelog_0_4_0_4",
+            "value": "使用雲端解密替代本地解密，提升穩定性"
+        },
+        {
+            "name": "yt_changelog_0_3_1_1",
+            "value": "改進頁面栈和小窗播放"
+        },
+        {
+            "name": "yt_changelog_0_3_1_2",
+            "value": "新增服务器緩存以提升播放流畅度"
+        },
+        {
+            "name": "yt_changelog_0_3_1_3",
+            "value": "優化介面和交互"
+        },
+        {
+            "name": "yt_changelog_0_3_1_4",
+            "value": "增加頁面與尺寸适配"
+        },
+        {
+            "name": "yt_changelog_0_3_1_5",
+            "value": "繼续精簡舊代碼以減少问题"
+        },
+        {
+            "name": "yt_changelog_0_3_1_6",
+            "value": "初步開發 Google 登錄，驗證 PipePipe 登錄可行性"
+        },
+        {
+            "name": "yt_changelog_0_3_1_7",
+            "value": "優化後臺播放穩定性"
+        },
+        {
+            "name": "yt_changelog_0_3_0_1",
+            "value": "最终試驗性确定中繼 HTTP 服务器方案"
+        },
+        {
+            "name": "yt_changelog_0_3_0_2",
+            "value": "回退到系統级播放器以改善生命周期"
+        },
+        {
+            "name": "yt_changelog_0_3_0_3",
+            "value": "優化介面和交互"
+        },
+        {
+            "name": "yt_changelog_0_3_0_4",
+            "value": "增加頁面與尺寸适配"
+        },
+        {
+            "name": "yt_changelog_0_3_0_5",
+            "value": "移除大量舊庫和頭文件，精簡以減少问题"
+        },
+        {
+            "name": "yt_changelog_0_3_0_6",
+            "value": "初步開發 Google 登錄，驗證 SmartTube 可行性"
+        },
+        {
+            "name": "yt_changelog_0_3_0_7",
+            "value": "優化後臺播放穩定性"
+        },
+        {
+            "name": "yt_changelog_0_2_0_1",
+            "value": "重構項目代碼，優化生命周期管理和開發效率，重新起步"
+        },
+        {
+            "name": "yt_changelog_0_2_0_2",
+            "value": "優化播放與直播，直播更流畅並減少發熱"
+        },
+        {
+            "name": "yt_changelog_0_2_0_3",
+            "value": "增加更多可自定义的播放選項"
+        },
+        {
+            "name": "yt_changelog_0_2_0_4",
+            "value": "豐富錯誤信息和日志管理"
+        },
+        {
+            "name": "yt_changelog_0_2_0_5",
+            "value": "新增多語言優化"
+        },
+        {
+            "name": "yt_changelog_0_2_0_6",
+            "value": "更新 NewPipe 核心代碼，優化網絡连接與解碼穩定性"
+        },
+        {
+            "name": "yt_changelog_0_2_0_7",
+            "value": "優化後臺播放穩定性"
+        },
+        {
+            "name": "yt_changelog_0_2_0_8",
+            "value": "使用系統级 AVPlayer 播放，優化穩定性和功耗"
+        },
+        {
+            "name": "yt_changelog_0_1_2_1",
+            "value": "修複切換應用介面語言时的卡顿"
+        },
+        {
+            "name": "yt_changelog_0_1_2_2",
+            "value": "優化内容語言列表中的中文变體顯示（簡體／繁體香港／繁體臺湾）"
+        },
+        {
+            "name": "yt_changelog_0_1_2_3",
+            "value": "日志下載完成後顯示保存路径提示"
+        },
+        {
+            "name": "yt_changelog_0_1_2_4",
+            "value": "新增關于頁面"
+        },
+        {
+            "name": "yt_changelog_0_1_2_5",
+            "value": "修複高分辨率禁用選項无效的问题"
+        },
+        {
+            "name": "yt_changelog_0_1_2_6",
+            "value": "統一設置頁各模块的视觉風格"
+        },
+        {
+            "name": "yt_changelog_0_1_1_1",
+            "value": "集成 MPV 播放核心，支持硬件解碼和高分辨率视頻"
+        },
+        {
+            "name": "yt_changelog_0_1_1_2",
+            "value": "實現後臺播放和系統媒體控制集成"
+        },
+        {
+            "name": "yt_changelog_0_1_1_3",
+            "value": "完成語言和地區設置，支持内容語言和地區切換"
+        },
+        {
+            "name": "yt_changelog_0_1_1_4",
+            "value": "新增运行时日志系統，支持會話導出"
+        },
+        {
+            "name": "yt_changelog_0_1_1_5",
+            "value": "優化平板橫螢播放器布局"
+        },
+        {
+            "name": "yt_changelog_0_1_0_1",
+            "value": "初始發布：支持 YouTube 视頻浏覽和搜索"
+        },
+        {
+            "name": "yt_changelog_0_1_0_2",
+            "value": "集成 NewPipe Extractor 引擎"
+        },
+        {
+            "name": "yt_changelog_0_1_0_3",
+            "value": "支持頻道訂阅、收藏和播放列表管理"
+        },
+        {
+            "name": "yt_changelog_0_1_0_4",
+            "value": "支持直播播放"
+        },
+        {
+            "name": "yt_changelog_0_1_0_5",
+            "value": "新增评论列表和頻道頁面"
+        },
+        {
+            "name": "yt_label_version_format",
+            "value": "版本"
+        },
+        {
+            "name": "yt_label_projects",
+            "value": "個項目"
+        },
+        {
+            "name": "yt_label_latest_version",
+            "value": "最新 v"
+        },
+        {
+            "name": "yt_label_videos",
+            "value": "個影片"
+        },
+        {
+            "name": "yt_label_videos_alt",
+            "value": "條影片"
+        },
+        {
+            "name": "yt_label_favorites_videos",
+            "value": "個影片"
+        },
+        {
+            "name": "yt_label_seconds_short",
+            "value": "秒"
+        },
+        {
+            "name": "yt_label_mb_short",
+            "value": "MB"
+        },
+        {
+            "name": "yt_setting_delay_5",
+            "value": "5 秒"
+        },
+        {
+            "name": "yt_setting_delay_15",
+            "value": "15 秒"
+        },
+        {
+            "name": "yt_setting_delay_30",
+            "value": "30 秒"
+        },
+        {
+            "name": "yt_setting_delay_60",
+            "value": "60 秒"
+        },
+        {
+            "name": "yt_setting_cache_secs_5",
+            "value": "5 秒"
+        },
+        {
+            "name": "yt_setting_cache_secs_10",
+            "value": "10 秒"
+        },
+        {
+            "name": "yt_setting_cache_secs_20",
+            "value": "20 秒"
+        },
+        {
+            "name": "yt_setting_cache_secs_30",
+            "value": "30 秒"
+        },
+        {
+            "name": "yt_setting_cache_secs_60",
+            "value": "60 秒"
+        },
+        {
+            "name": "yt_setting_readahead_5",
+            "value": "5 秒"
+        },
+        {
+            "name": "yt_setting_readahead_8",
+            "value": "8 秒"
+        },
+        {
+            "name": "yt_setting_readahead_15",
+            "value": "15 秒"
+        },
+        {
+            "name": "yt_setting_readahead_30",
+            "value": "30 秒"
+        },
+        {
+            "name": "yt_setting_readahead_60",
+            "value": "60 秒"
+        },
+        {
+            "name": "yt_setting_max_bytes_10",
+            "value": "10 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_20",
+            "value": "20 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_50",
+            "value": "50 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_100",
+            "value": "100 MB"
+        },
+        {
+            "name": "yt_changelog_0_5_4_1",
+            "value": "完善本地 JS 签名解密與磁盘緩存，冷启動预熱並支持失败回退，減少依赖远程解密时的等待與失败"
+        },
+        {
+            "name": "yt_changelog_0_5_4_2",
+            "value": "補齊 DASH 音轨元数据（xtags/acont），按内容語言與原聲轨偏好自動選择默認音轨，減少多語言片誤選配音"
+        },
+        {
+            "name": "yt_changelog_0_5_4_3",
+            "value": "播放頁新增睡眠定时器，到时停止播放並退出；點赞/播放量按語言本地化顯示，並優化信息區配色"
+        },
+        {
+            "name": "yt_changelog_0_5_4_4",
+            "value": "对齊全部介面語言文案键，修複設置項與關于頁出現 [object Object] 的问题，補全簡體中文資源"
+        },
+        {
+            "name": "yt_changelog_0_5_4_5",
+            "value": "默認主题色改为红色，並新增播放頁控制區/信息區背景色以提升对比度"
+        },
+        {
+            "name": "yt_changelog_0_5_4_6",
+            "value": "首頁支持下拉刷新；清理全部数据时同步清理鉴权偏好、缩略图緩存與解密緩存（保留已下載媒體）"
+        },
+        {
+            "name": "yt_changelog_0_5_4_7",
+            "value": "完善網絡请求日志與提取鏈路诊斷信息，便于定位加載失败與鉴权相關问题"
+        },
+        {
+            "name": "yt_changelog_0_5_4_8",
+            "value": "同步更新 MPV 运行庫，並修複播放與介面相關的多處穩定性问题"
+        },
+        {
+            "name": "yt_secure_shield_title",
+            "value": "堅盾守護模式已開啟"
+        },
+        {
+            "name": "yt_secure_shield_content",
+            "value": "系統已開啟堅盾守護模式並停用 JIT。本地簽名解密不可用，將改用遠端解密服務，影片起播可能更慢。"
+        },
+        {
+            "name": "yt_secure_shield_dont_show",
+            "value": "不再提示"
+        },
+        {
+            "name": "yt_action_got_it",
+            "value": "知道了"
+        },
+        {
+            "name": "yt_option_auth_use_for_user_data",
+            "value": "登入態用作用戶數據"
+        },
+        {
+            "name": "yt_option_auth_use_for_user_data_subtitle",
+            "value": "Feed、訂閱、歷史、搜尋"
+        },
+        {
+            "name": "yt_option_auth_use_for_playback",
+            "value": "登入態用於播放"
+        },
+        {
+            "name": "yt_changelog_0_5_5_1",
+            "value": "启動时检測坚盾守护/JIT 限制，並明确提示何时會改用远程签名解密"
+        },
+        {
+            "name": "yt_changelog_0_5_5_2",
+            "value": "修複首頁和訂阅卡片下拉刷新後的重建逻辑，即使条目 ID 不变也能正确更新内容"
+        },
+        {
+            "name": "yt_changelog_0_5_5_3",
+            "value": "新增可持久化的登錄总開關、用户数据開關和播放開關，可分别控制账号使用范围"
+        },
+        {
+            "name": "yt_changelog_0_5_5_4",
+            "value": "關閉用户数据登錄态後，首頁和信息流會自動使用匿名/本地模式，不再顯示空的登錄响應"
+        },
+        {
+            "name": "yt_changelog_0_5_5_5",
+            "value": "關閉播放登錄态後自動選择匿名播放器客户端，SABR 下載也不會携带账号凭据"
+        },
+        {
+            "name": "yt_changelog_0_5_5_6",
+            "value": "播放頁推荐固定使用穩定的匿名 YouTube next 响應，修複登錄状态下推荐队列为空的问题"
+        },
+        {
+            "name": "yt_changelog_0_5_5_7",
+            "value": "改進登錄播放客户端選择及受限视頻的 LOGIN_REQUIRED 處理，提升账号播放穩定性"
+        },
+        {
+            "name": "yt_changelog_0_5_5_8",
+            "value": "優先从觀看頁面取得签名时间戳，仅在失败时使用远程播放器服务，缩短起播等待"
+        },
+        {
+            "name": "yt_changelog_0_5_5_9",
+            "value": "增加播放器元数据緩存並收紧远程解密超时，避免緩慢服务長时间阻塞播放"
+        },
+        {
+            "name": "yt_changelog_0_5_5_10",
+            "value": "为 DASH 地址加入可緩存的 base64url PoToken，減少 googlevideo 403，令牌失败时仍可繼续播放"
+        },
+        {
+            "name": "yt_changelog_0_5_5_11",
+            "value": "合並衝突的底部面板绑定，修複保存到播放列表、流信息和睡眠定时器按钮无响應"
+        },
+        {
+            "name": "yt_changelog_0_5_5_12",
+            "value": "完善登錄播放列表和用户資料庫访问，同时在账号使用關閉时保留匿名與本地回退"
+        },
+        {
+            "name": "yt_changelog_0_5_5_13",
+            "value": "无痕模式可同时隐藏两类账号访问而不刪除已保存凭据，随时可以恢複登錄模式"
+        },
+        {
+            "name": "yt_changelog_0_5_5_14",
+            "value": "切換登錄总開關或播放開關後立即重新選择正确的匿名或登錄播放器客户端"
+        },
+        {
+            "name": "yt_changelog_0_5_5_15",
+            "value": "歷史和訂阅雲同步現在遵循用户数据開關，同时保留已有本地歷史與訂阅内容"
+        },
+        {
+            "name": "yt_changelog_0_5_5_16",
+            "value": "播放列表浏覽请求可在需要时使用账号访问，改善账号专属及受限播放列表加載"
+        },
+        {
+            "name": "yt_changelog_0_5_5_17",
+            "value": "PoToken 生成改用当前解析到的 YouTube Web 客户端版本，不再依赖过期的固定版本"
+        },
+        {
+            "name": "yt_changelog_0_5_5_18",
+            "value": "PoToken 字節會轉換为 URL 安全的 base64，並按视頻緩存五分钟，避免重複生成"
+        },
+        {
+            "name": "yt_changelog_0_5_5_19",
+            "value": "用户数据和播放请求只會在各自启用范围内附加凭据，減少账号 Cookie 的意外暴露"
+        },
+        {
+            "name": "yt_changelog_0_5_5_20",
+            "value": "扩充播放、鉴权、令牌、刷新及回退诊斷，同时确保日志不记錄敏感 Cookie 和签名地址"
+        },
+        {
+            "name": "yt_changelog_0_6_0_1",
+            "value": "字幕系統重做：覆蓋層渲染，支援字體大小/顏色/背景/位置/延遲自訂"
+        },
+        {
+            "name": "yt_changelog_0_6_0_2",
+            "value": "新增 AI 字幕自動翻譯：任何字幕軌可即時翻譯成指定目標語言"
+        },
+        {
+            "name": "yt_changelog_0_6_0_3",
+            "value": "全新播放手勢：雙擊 ±15s 快進快退、長按倍速、雙指縮放與平移、畫面比例切換"
+        },
+        {
+            "name": "yt_changelog_0_6_0_4",
+            "value": "新增播放器資訊面板：簡介/評論/播放佇列三合一，寬螢幕自動展開側欄"
+        },
+        {
+            "name": "yt_changelog_0_6_0_5",
+            "value": "卡片全新設計，統一長按選單，支援卡片直接下載影片"
+        },
+        {
+            "name": "yt_changelog_0_6_0_6",
+            "value": "新增 SOCKS5 代理支援；Wi-Fi/流動網絡切換後播放快速恢復"
+        },
+        {
+            "name": "yt_changelog_0_6_0_7",
+            "value": "畫質上限開放至 2K/4K/8K；新增日語/韓語/意大利語/葡萄牙語介面"
+        },
+        {
+            "name": "yt_changelog_0_6_0_8",
+            "value": "設定頁重新分組；直播鎖定原倍速播放"
+        },
+        {
+            "name": "yt_changelog_0_5_9_1",
+            "value": "資訊流頁面改為延遲載入網格/列表：首頁、搜尋、歌單、頻道、訂閱長列表捲動更流暢"
+        },
+        {
+            "name": "yt_changelog_0_5_9_2",
+            "value": "修復部分機型冷啟動即崩潰的問題（@BuilderParam 綁定）"
+        },
+        {
+            "name": "yt_changelog_0_5_9_3",
+            "value": "修復登入狀態過期未正確處理、首頁靜默回落無提示的問題"
+        },
+        {
+            "name": "yt_changelog_0_5_9_4",
+            "value": "選項圖示與危險操作按鈕統一跟隨主題色，移除固定警示紅"
+        },
+        {
+            "name": "yt_changelog_0_5_9_5",
+            "value": "文字編解碼、Base64、URL 解析等切換為系統官方實作"
+        },
+        {
+            "name": "yt_changelog_0_5_9_6",
+            "value": "清理投屏死鏈、狀態輪詢等無用程式碼，精簡套件體積"
+        },
+        {
+            "name": "yt_changelog_0_5_9_7",
+            "value": "修復播放預取關聯、背景任務守衛等穩定性問題"
+        },
+        {
+            "name": "yt_changelog_0_5_8_1",
+            "value": "評論區翻譯：評論下方新增「翻譯」按鈕（Google 翻譯引擎），譯文原位展示、可一鍵切回原文"
+        },
+        {
+            "name": "yt_changelog_0_5_8_2",
+            "value": "「語言與地區」新增「內容翻譯」設定組：翻譯目標語言預設跟隨應用程式語言，也可手動指定"
+        },
+        {
+            "name": "yt_changelog_0_5_8_3",
+            "value": "起播提速對齊 PipePipe：未登入預設改用 visionos 用戶端直連取流（免 PoToken），登入態用 tv_downgraded"
+        },
+        {
+            "name": "yt_changelog_0_5_8_4",
+            "value": "修復直播一直轉圈：直播條目分類修正，直播流可正常起播"
+        },
+        {
+            "name": "yt_changelog_0_5_8_5",
+            "value": "登入路徑修復：Cookie 與 OAuth 雙軌身分隔離，網頁中繼資料/評論請求不再串用憑據"
+        },
+        {
+            "name": "yt_changelog_0_5_8_6",
+            "value": "系統播控顯示當前影片標題與作者：修復 AVSession 中繼資料偶發為空"
+        },
+        {
+            "name": "yt_changelog_0_5_8_7",
+            "value": "介面修復：底部標籤高亮刷新、平板引導頁佈局、頻道頁卡片模式巢狀捲動"
+        },
+        {
+            "name": "yt_changelog_0_5_7_1",
+            "value": "關於頁新增「檢查更新」：對比 GitHub 最新 Release 的組建編號，發現新版本可一鍵跳轉 AppGallery 測試安裝或 GitHub 發佈頁"
+        },
+        {
+            "name": "yt_changelog_0_5_7_2",
+            "value": "新增訂閱動態頁：按時間聚合訂閱頻道更新；播放清單記錄觀看歷史並顯示進度徽標；列表適配寬螢幕佈局"
+        },
+        {
+            "name": "yt_changelog_0_5_7_3",
+            "value": "新增「自動播放下一個」設定開關；關於頁補全開源項目標識；媒體數據請求支援使用 HTTP 代理"
+        },
+        {
+            "name": "yt_changelog_0_5_7_4",
+            "value": "起播提速：播放中預提取佇列下一影片、BotGuard 開機預熱、STS/用戶端版本中繼資料落盤複用"
+        },
+        {
+            "name": "yt_changelog_0_5_7_5",
+            "value": "直播支援 HLS 多畫質變體解析與切換；SIDX 索引啟動預取；visitorData 工作階段級釘選減少重複取流"
+        },
+        {
+            "name": "yt_changelog_0_5_7_6",
+            "value": "SABR 穩定性：PoToken 鑄造加逾時與熔斷、空回應即時補發 PoToken、工作階段建構失敗正確釋放租約"
+        },
+        {
+            "name": "yt_changelog_0_5_7_7",
+            "value": "修復自動連播重複觸發與換源競態（源提交收斂為單一寫入方）；修復畫中畫關閉/恢復洩漏與觀看歷史合併順序"
+        },
+        {
+            "name": "yt_changelog_0_5_7_8",
+            "value": "修復 HarmonyOS 6 影片無畫面（OHNativeWindow 直傳 mpv）；硬體解碼能力改為按裝置探測宣告"
+        },
+        {
+            "name": "yt_changelog_0_5_6_1",
+            "value": "新增 SmartTube 風格裝置二維碼登入，以手機掃碼完成 YouTube OAuth，可與 Cookie 登入並存"
+        },
+        {
+            "name": "yt_changelog_0_5_6_2",
+            "value": "Cookie/WEB 與 OAuth/TV 雙軌驗證：推薦、歷史、訂閱、資料庫按登入能力分流；公開影片統一 mweb 抽流，受限內容再回退 TV"
+        },
+        {
+            "name": "yt_changelog_0_5_6_3",
+            "value": "設定新增 HTTP 代理，擷取、SABR 與媒體請求可走代理（本機回環播放仍直連）"
+        },
+        {
+            "name": "yt_changelog_0_5_6_4",
+            "value": "播放頁支援影片章節列表，可從章節跳轉並反白目前章節"
+        },
+        {
+            "name": "yt_changelog_0_5_6_5",
+            "value": "優化分割畫面／懸浮視窗與播放器頂列：真分割畫面才強制鋪滿，空間不足時摺疊為「更多」選單"
+        },
+        {
+            "name": "yt_changelog_0_5_6_6",
+            "value": "重構播放媒體生命週期，改善起播、換源與多視窗穩定性"
+        },
+        {
+            "name": "yt_changelog_0_5_6_7",
+            "value": "切換畫質時立即顯示載入／緩衝指示，避免長時間無回饋"
+        },
+        {
+            "name": "yt_changelog_0_5_6_8",
+            "value": "下載列表改版並統一列表入場動畫；改進 SABR 離線封裝，隱藏直播下載入口"
+        },
+        {
+            "name": "yt_option_auth_use_for_playback_subtitle",
+            "value": "播放介面與串流網址驗證"
+        },
+        {
+            "name": "yt_player_more_tools",
+            "value": "更多"
+        },
+        {
+            "name": "yt_player_subtitles",
+            "value": "字幕"
+        },
+        {
+            "name": "yt_player_info_panel",
+            "value": "影片資訊"
+        },
+        {
+            "name": "yt_player_audio_track",
+            "value": "音軌"
+        },
+        {
+            "name": "yt_player_playback_speed",
+            "value": "播放速度"
+        },
+        {
+            "name": "yt_option_network",
+            "value": "网络"
+        },
+        {
+            "name": "yt_proxy_off",
+            "value": "未启用代理"
+        },
+        {
+            "name": "yt_proxy_incomplete",
+            "value": "代理配置不完整"
+        },
+        {
+            "name": "yt_proxy_enable",
+            "value": "使用代理"
+        },
+        {
+            "name": "yt_proxy_enable_subtitle",
+            "value": "經下方代理存取 YouTube"
+        },
+        {
+            "name": "yt_proxy_type",
+            "value": "代理类型"
+        },
+        {
+            "name": "yt_proxy_type_http",
+            "value": "HTTP"
+        },
+        {
+            "name": "yt_proxy_type_http_subtitle",
+            "value": "HTTP CONNECT 代理"
+        },
+        {
+            "name": "yt_proxy_type_socks5",
+            "value": "SOCKS5"
+        },
+        {
+            "name": "yt_proxy_type_socks5_subtitle",
+            "value": "SOCKS5 CONNECT"
+        },
+        {
+            "name": "yt_proxy_server",
+            "value": "服务器"
+        },
+        {
+            "name": "yt_proxy_host",
+            "value": "主机"
+        },
+        {
+            "name": "yt_proxy_host_placeholder",
+            "value": "例如 127.0.0.1"
+        },
+        {
+            "name": "yt_proxy_port",
+            "value": "端口"
+        },
+        {
+            "name": "yt_proxy_auth_optional",
+            "value": "认证（可选）"
+        },
+        {
+            "name": "yt_proxy_username",
+            "value": "用户名"
+        },
+        {
+            "name": "yt_proxy_password",
+            "value": "密码"
+        },
+        {
+            "name": "yt_proxy_optional_placeholder",
+            "value": "可选"
+        },
+        {
+            "name": "yt_proxy_test",
+            "value": "测试连接"
+        },
+        {
+            "name": "yt_proxy_testing",
+            "value": "测试中…"
+        },
+        {
+            "name": "yt_proxy_test_ok",
+            "value": "代理可用"
+        },
+        {
+            "name": "yt_proxy_test_failed",
+            "value": "代理测试失败"
+        },
+        {
+            "name": "yt_proxy_test_http_error",
+            "value": "HTTP 状态异常"
+        },
+        {
+            "name": "yt_proxy_test_auth_failed",
+            "value": "代理認證失敗，請檢查使用者名稱和密碼"
+        },
+        {
+            "name": "yt_proxy_test_disabled",
+            "value": "请先启用代理"
+        },
+        {
+            "name": "yt_proxy_loopback_note",
+            "value": "本地播放环回地址（127.0.0.1）不会走此代理。"
+        },
+        {
+            "name": "yt_proxy_bridge_unavailable",
+            "value": "SOCKS5 代理桥已断开，请重新保存代理设置以恢复连接。"
+        },
+        {
+            "name": "yt_device_qr_sign_in",
+            "value": "二维码 / 电视码登录"
+        },
+        {
+            "name": "yt_device_qr_sign_in_subtitle",
+            "value": "掃碼或開啟 youtube.com/activate"
+        },
+        {
+            "name": "yt_device_login_help",
+            "value": "请在另一台设备打开下方链接或扫描二维码，输入验证码完成授权（类似 SmartTube 电视登录）。"
+        },
+        {
+            "name": "yt_device_login_requesting",
+            "value": "正在获取设备码…"
+        },
+        {
+            "name": "yt_device_login_waiting",
+            "value": "等待你在手机上完成授权…"
+        },
+        {
+            "name": "yt_device_login_polling",
+            "value": "正在检查授权状态"
+        },
+        {
+            "name": "yt_device_login_success",
+            "value": "登录成功"
+        },
+        {
+            "name": "yt_device_login_failed",
+            "value": "登录失败"
+        },
+        {
+            "name": "yt_device_login_retry",
+            "value": "重试"
+        },
+        {
+            "name": "yt_option_help",
+            "value": "幫助"
+        },
+        {
+            "name": "yt_option_help_subtitle",
+            "value": "新手引導與基本使用說明"
+        },
+        {
+            "name": "yt_guide_skip",
+            "value": "跳過"
+        },
+        {
+            "name": "yt_guide_next",
+            "value": "下一頁"
+        },
+        {
+            "name": "yt_guide_done",
+            "value": "完成"
+        },
+        {
+            "name": "yt_guide_p1_desc",
+            "value": "開源的 YouTube 第三方客戶端：本機 MPV 播放、無廣告，資料只儲存在你自己的裝置上。"
+        },
+        {
+            "name": "yt_guide_p2_title",
+            "value": "登入 YouTube 帳號"
+        },
+        {
+            "name": "yt_guide_p2_desc",
+            "value": "在「設定 → 資料與帳號」中透過網頁或掃碼登入。登入後可以查看你的訂閱和播放清單等帳號內容；不登入也可以以訪客身份正常使用。"
+        },
+        {
+            "name": "yt_guide_p3_title",
+            "value": "帳號資料管理"
+        },
+        {
+            "name": "yt_guide_p3_desc",
+            "value": "登入憑據只儲存在本機，不會上傳到任何第三方伺服器。你可以隨時在「資料與帳號」中登出或開啟無痕模式，登出後帳號資料將被清除。"
+        },
+        {
+            "name": "yt_guide_p3_user_data",
+            "value": "用於用戶資料：取得訂閱、歷史等帳號資料"
+        },
+        {
+            "name": "yt_guide_p3_playback",
+            "value": "用於播放：登入身份請求 URL，避免人機驗證"
+        },
+        {
+            "name": "yt_guide_p4_title",
+            "value": "網絡代理"
+        },
+        {
+            "name": "yt_guide_p4_desc",
+            "value": "網絡受限時，可在「設定 → 網絡」中啟用 HTTP 或 SOCKS5 代理，並填寫伺服器地址和連接埠。代理只用於外部網絡請求，本機播放回環地址不會經過代理。"
+        },
+        {
+            "name": "yt_guide_p5_title",
+            "value": "清晰度與緩存"
+        },
+        {
+            "name": "yt_guide_p5_desc",
+            "value": "在「設定 → 播放」中可以設定預設清晰度、流動網絡清晰度和緩存時長，按需節省流量或提升畫質。"
+        },
+        {
+            "name": "yt_guide_p6_title",
+            "value": "下載與本地"
+        },
+        {
+            "name": "yt_guide_p6_desc",
+            "value": "支援把影片下載到本機離線觀看，下載內容在「本地」頁管理。「清除應用全部資料」不會刪除你已下載的檔案。"
+        },
+        {
+            "name": "yt_option_subtitle_style_subtitle",
+            "value": "字號、顏色、背景與自動翻譯"
+        },
+        {
+            "name": "yt_setting_subtitle_size",
+            "value": "字幕字體大小"
+        },
+        {
+            "name": "yt_setting_subtitle_bottom_margin",
+            "value": "字幕底部間距"
+        },
+        {
+            "name": "yt_setting_subtitle_color",
+            "value": "字幕字體顏色"
+        },
+        {
+            "name": "yt_setting_subtitle_background",
+            "value": "字幕背景"
+        },
+        {
+            "name": "yt_setting_subtitle_offset",
+            "value": "字幕延遲"
+        },
+        {
+            "name": "yt_subtitle_color_white",
+            "value": "白色"
+        },
+        {
+            "name": "yt_subtitle_color_yellow",
+            "value": "黃色"
+        },
+        {
+            "name": "yt_subtitle_color_green",
+            "value": "綠色"
+        },
+        {
+            "name": "yt_subtitle_color_cyan",
+            "value": "青色"
+        },
+        {
+            "name": "yt_subtitle_bg_none",
+            "value": "無背景"
+        },
+        {
+            "name": "yt_subtitle_bg_semi",
+            "value": "半透明"
+        },
+        {
+            "name": "yt_subtitle_bg_solid",
+            "value": "實底"
+        },
+        {
+            "name": "yt_player_aspect_mode",
+            "value": "畫面比例"
+        },
+        {
+            "name": "yt_aspect_fit",
+            "value": "嵌入"
+        },
+        {
+            "name": "yt_aspect_fill",
+            "value": "填充"
+        },
+        {
+            "name": "yt_aspect_stretch",
+            "value": "拉伸"
+        },
+        {
+            "name": "yt_aspect_reset",
+            "value": "還原縮放"
+        },
+        {
+            "name": "yt_gesture_scheme_title",
+            "value": "互動方案"
+        },
+        {
+            "name": "yt_gesture_scheme_label",
+            "value": "手勢方案"
+        },
+        {
+            "name": "yt_gesture_scheme_enhanced",
+            "value": "播放器增強"
+        },
+        {
+            "name": "yt_gesture_scheme_youtube",
+            "value": "YouTube 經典"
+        },
+        {
+            "name": "yt_gesture_scheme_custom",
+            "value": "自訂"
+        },
+        {
+            "name": "yt_gesture_scheme_subtitle",
+            "value": "預設一鍵切換；改動任一分項後會變成「自訂」"
+        },
+        {
+            "name": "yt_gesture_double_tap",
+            "value": "雙擊螢幕"
+        },
+        {
+            "name": "yt_gesture_double_tap_seek",
+            "value": "倒轉 / 快進"
+        },
+        {
+            "name": "yt_gesture_double_tap_playpause",
+            "value": "播放 / 暫停"
+        },
+        {
+            "name": "yt_gesture_double_tap_off",
+            "value": "不回應"
+        },
+        {
+            "name": "yt_gesture_double_tap_seek_seconds",
+            "value": "雙擊步長"
+        },
+        {
+            "name": "yt_gesture_help_title",
+            "value": "手勢說明"
+        },
+        {
+            "name": "yt_gesture_help_single_tap",
+            "value": "單擊"
+        },
+        {
+            "name": "yt_gesture_help_single_tap_value",
+            "value": "顯示控制欄（3 秒後自動收起）"
+        },
+        {
+            "name": "yt_gesture_help_swipe_horizontal",
+            "value": "橫向滑動"
+        },
+        {
+            "name": "yt_gesture_help_swipe_left",
+            "value": "左側上下滑"
+        },
+        {
+            "name": "yt_gesture_help_swipe_right",
+            "value": "右側上下滑"
+        },
+        {
+            "name": "yt_gesture_help_hold",
+            "value": "長按畫面"
+        },
+        {
+            "name": "yt_gesture_help_brightness",
+            "value": "亮度"
+        },
+        {
+            "name": "yt_gesture_help_volume",
+            "value": "音量"
+        },
+        {
+            "name": "yt_gesture_help_off",
+            "value": "已關閉"
+        },
+        {
+            "name": "yt_section_privacy",
+            "value": "私隱"
+        },
+        {
+            "name": "yt_option_record_history",
+            "value": "記錄觀看記錄"
+        },
+        {
+            "name": "yt_option_record_history_subtitle",
+            "value": "關閉後不再寫入新的觀看記錄，已有記錄保留"
+        },
+        {
+            "name": "yt_option_clear_history",
+            "value": "清除觀看記錄"
+        },
+        {
+            "name": "yt_option_clear_history_subtitle",
+            "value": "刪除全部本機觀看記錄與播放進度"
+        },
+
+        {
+            "name": "yt_toast_history_cleared",
+            "value": "觀看記錄已清除"
+        },
+        {
+            "name": "yt_option_start_in_subs",
+            "value": "啟動時進入訂閱"
+        },
+        {
+            "name": "yt_option_start_in_subs_subtitle",
+            "value": "開啟應用程式後直接進入訂閱頁"
+        },
+        {
+            "name": "yt_section_animation",
+            "value": "動畫"
+        },
+        {
+            "name": "yt_option_interface_animation",
+            "value": "介面動畫"
+        },
+        {
+            "name": "yt_option_interface_animation_subtitle",
+            "value": "關閉後移除清單縮放入場與圖示動效等動畫"
+        },
+        {
+            "name": "yt_gesture_scheme_bilibili",
+            "value": "Bilibili 經典"
+        },
+        {
+            "name": "yt_download_timeout_failed",
+            "value": "下載逾時"
+        },
+        {
+            "name": "yt_download_retry_failed",
+            "value": "重試失敗，請稍後再試"
+        },
+        {
+            "name": "yt_download_retrying",
+            "value": "重試中…"
+        },
+        {
+            "name": "yt_download_timeout_title",
+            "value": "下載逾時"
+        },
+        {
+            "name": "yt_download_timeout_off",
+            "value": "不逾時"
+        },
+        {
+            "name": "yt_download_timeout_minutes",
+            "value": "%d 分鐘"
+        },
+        {
+            "name": "yt_player_stop_playback",
+            "value": "停止播放"
+        },
+        {
+            "name": "yt_proxy_status_title",
+            "value": "連線狀態"
+        },
+        {
+            "name": "yt_proxy_status_off",
+            "value": "未啟用"
+        },
+        {
+            "name": "yt_proxy_status_ready",
+            "value": "已連線（本機橋接 %d）"
+        },
+        {
+            "name": "yt_proxy_status_direct",
+            "value": "已連線（直連上游）"
+        },
+        {
+            "name": "yt_proxy_status_fuse",
+            "value": "橋接已斷開，需重新套用"
+        },
+        {
+            "name": "yt_proxy_status_failed",
+            "value": "套用失敗"
+        },
+        {
+            "name": "yt_proxy_restart",
+            "value": "重新套用並重新啟動"
+        },
+        {
+            "name": "yt_proxy_restart_done",
+            "value": "代理已重新套用"
+        },
+        {
+            "name": "yt_proxy_example_hint",
+            "value": "示例：HTTP 填 127.0.0.1 與埠號（如 7890）；SOCKS5 同理。填了使用者名稱密碼時走本機橋接，橋接失敗不會靜默直連。"
+        },
+        {
+            "name": "yt_playback_center_play_button",
+            "value": "中央播放按鈕"
+        },
+        {
+            "name": "yt_playback_center_play_button_subtitle",
+            "value": "暫停時在畫面中央顯示大播放按鈕。關閉後畫面中央保持乾淨，只用點擊畫面或底部按鈕控制。"
+        },
+        {
+            "name": "yt_shorts_open",
+            "value": "開啟 Shorts"
+        },
+        {
+            "name": "yt_shorts_switch_long",
+            "value": "長影片"
+        },
+        {
+            "name": "yt_home_mode_short",
+            "value": "短影片"
+        },
+        {
+            "name": "yt_home_mode_long",
+            "value": "長影片"
+        }
+    ,
+        {
+            "name": "yt_download_pause",
+            "value": "暫停"
+        },
+        {
+            "name": "yt_download_resume",
+            "value": "繼續"
+        },
+        {
+            "name": "yt_download_resuming",
+            "value": "繼續中…"
+        },
+        {
+            "name": "yt_download_stop_delete",
+            "value": "停止並刪除"
+        },
+        {
+            "name": "yt_download_status_paused",
+            "value": "已暫停"
+        },
+        {
+            "name": "yt_playlist_source_account",
+            "value": "帳號"
+        },
+        {
+            "name": "yt_playlist_source_favorite",
+            "value": "收藏"
+        },
+        {
+            "name": "yt_library_playlists_title",
+            "value": "帳號播放清單"
+        },
+        {
+            "name": "yt_empty_no_library_playlists",
+            "value": "帳號裡還沒有播放清單"
+        },
+        {
+            "name": "yt_tab_live_chat",
+            "value": "聊天室"
+        },
+        {
+            "name": "yt_live_chat_connecting",
+            "value": "正在連線聊天…"
+        },
+        {
+            "name": "yt_live_chat_connected",
+            "value": "已連線"
+        },
+        {
+            "name": "yt_live_chat_unavailable",
+            "value": "此影片沒有可用的直播聊天"
+        },
+        {
+            "name": "yt_live_chat_ended",
+            "value": "直播聊天已結束"
+        },
+        {
+            "name": "yt_live_chat_error",
+            "value": "聊天連線失敗"
+        },
+        {
+            "name": "yt_live_chat_empty",
+            "value": "目前沒有聊天訊息"
+        },
+        {
+            "name": "yt_live_chat_readonly",
+            "value": "唯讀"
+        },
+        {
+            "name": "yt_live_chat_member",
+            "value": "會員"
+        },
+        {
+            "name": "yt_live_chat_owner",
+            "value": "直播主"
+        },
+        {
+            "name": "yt_live_chat_moderator",
+            "value": "管理員"
+        },
+        {
+            "name": "yt_local_files",
+            "value": "本機檔案"
+        },
+        {
+            "name": "yt_local_import",
+            "value": "匯入影片"
+        },
+        {
+            "name": "yt_local_importing",
+            "value": "匯入中…"
+        },
+        {
+            "name": "yt_local_import_success",
+            "value": "已匯入 %d 個檔案"
+        },
+        {
+            "name": "yt_local_import_failed",
+            "value": "匯入失敗"
+        },
+        {
+            "name": "yt_local_files_hint",
+            "value": "從系統檔案中選擇影片，匯入後可在應用程式內播放"
+        },
+        {
+            "name": "yt_local_delete_title",
+            "value": "刪除本機檔案"
+        },
+        {
+            "name": "yt_local_delete_message",
+            "value": "刪除後檔案將從應用程式移除，無法復原。"
+        },
+        {
+            "name": "yt_local_empty_title",
+            "value": "還沒有本機檔案"
+        },
+        {
+            "name": "yt_local_empty_hint",
+            "value": "點擊「匯入影片」從系統檔案中選擇"
+        },
+        {
+            "name": "yt_local_media",
+            "value": "本機媒體"
+        },
+        {
+            "name": "yt_local_empty_media",
+            "value": "尚無下載或本機檔案"
+        },
+        {
+            "name": "yt_local_empty_media_hint",
+            "value": "下載影片或點擊「匯入影片」加入本機檔案"
+        },
+        {
+            "name": "yt_changelog_0_7_0_1",
+            "value": "最低執行版本降至 HarmonyOS 6.1.0(23)，依系統版本啟用 SOCKS5、連線重用與 RCP 預連線"
+        },
+        {
+            "name": "yt_changelog_0_7_0_2",
+            "value": "遊客端點改為預設 visionos 並移除 Samsung；失敗時顯示端點，SABR 無法使用時自動降級為免 token 直連"
+        },
+        {
+            "name": "yt_changelog_0_7_0_3",
+            "value": "SABR 改為邊下邊解並對齊 PipePipe 請求參數，完善節點輪替、重載續播與卡頓看門狗，縮短起播等待並減少長影片中斷"
+        },
+        {
+            "name": "yt_changelog_0_7_0_4",
+            "value": "播放器手勢與控制重做：手勢預設、雙擊動作、長按倍速、點擊暫停、手勢說明，修正控制誤觸與重複雙擊"
+        },
+        {
+            "name": "yt_changelog_0_7_0_5",
+            "value": "下載管理增強：應用內播放、任務索引與重啟恢復、斷點續傳、暫停/繼續、失敗重試、逾時與無進度看門狗"
+        },
+        {
+            "name": "yt_changelog_0_7_0_6",
+            "value": "本機媒體：新增系統檔案匯入，下載與匯入合併為一個清單並共用播放佇列（下載在前、匯入在後）"
+        },
+        {
+            "name": "yt_changelog_0_7_0_7",
+            "value": "新增唯讀直播聊天 Tab：即時留言、Super Chat 與會員標識，僅在可見時輪詢，切到背景自動暫停"
+        },
+        {
+            "name": "yt_changelog_0_7_0_8",
+            "value": "首頁新增長/短影片維度切換與 Shorts 補貨，搜尋可解析貨架；留言與簡介中的時間戳可點擊跳轉"
+        },
+        {
+            "name": "yt_changelog_0_7_0_9",
+            "value": "設定與體驗：設定響應式修正開關閃爍，新增觀看記錄開關、預設訂閱頁、動畫總開關、官方底欄與代理狀態列/一鍵重啟"
+        },
+        {
+            "name": "yt_changelog_0_7_0_10",
+            "value": "修正登入狀態串號、首個影片切換失敗、返回時空子母畫面、下載檔案殘留等問題，並補齊 14 語言文案"
+        },
+        {
+            "name": "yt_option_translation_service",
+            "value": "翻譯服務"
+        },
+        {
+            "name": "yt_translation_engine_mymemory",
+            "value": "MyMemory（免費）"
+        },
+        {
+            "name": "yt_translation_engine_lingva",
+            "value": "Lingva（Google 代理）"
+        },
+        {
+            "name": "yt_translation_engine_libre",
+            "value": "LibreTranslate"
+        },
+        {
+            "name": "yt_translation_engine_deepl",
+            "value": "DeepL"
+        },
+        {
+            "name": "yt_translation_engine_custom",
+            "value": "自訂介面"
+        },
+        {
+            "name": "yt_translation_endpoint",
+            "value": "介面位址"
+        },
+        {
+            "name": "yt_translation_custom_url",
+            "value": "請求位址"
+        },
+        {
+            "name": "yt_translation_custom_method",
+            "value": "請求方法"
+        },
+        {
+            "name": "yt_translation_custom_headers",
+            "value": "請求標頭（JSON 或每行 Key: Value）"
+        },
+        {
+            "name": "yt_translation_custom_body",
+            "value": "請求內容範本"
+        },
+        {
+            "name": "yt_translation_custom_response_path",
+            "value": "回應欄位路徑"
+        },
+        {
+            "name": "yt_translation_custom_hint",
+            "value": "可用佔位符：{text} {target} {source} {apiKey}；欄位路徑範例：data.translations.0.text"
+        },
+        {
+            "name": "yt_translation_note",
+            "value": "留言與簡介使用此介面；字幕仍預設使用 YouTube 自動翻譯"
+        },
+        {
+            "name": "yt_translation_engine_google",
+            "value": "Google Cloud 翻譯（API Key）"
+        },
+        {
+            "name": "yt_translation_engine_azure",
+            "value": "Microsoft Translator（Azure）"
+        },
+        {
+            "name": "yt_translation_region",
+            "value": "區域（Region）"
+        },
+        {
+            "name": "yt_exp_title",
+            "value": "實驗性功能"
+        },
+        {
+            "name": "yt_exp_subtitle",
+            "value": "內建實驗性增強功能，預設關閉"
+        },
+        {
+            "name": "yt_exp_enabled",
+            "value": "已啟用"
+        },
+        {
+            "name": "yt_exp_disabled",
+            "value": "未啟用"
+        },
+        {
+            "name": "yt_exp_footer",
+            "value": "這些功能依賴第三方社群服務，可能隨時變更或無法使用。"
+        },
+        {
+            "name": "yt_exp_clear_cache",
+            "value": "清除此外掛快取"
+        },
+        {
+            "name": "yt_exp_cache_cleared",
+            "value": "快取已清除"
+        },
+        {
+            "name": "yt_exp_coming_soon",
+            "value": "此功能正在開發中"
+        },
+        {
+            "name": "yt_exp_sb_title",
+            "value": "SponsorBlock"
+        },
+        {
+            "name": "yt_exp_sb_desc",
+            "value": "自動跳過贊助、片頭、片尾等片段"
+        },
+        {
+            "name": "yt_exp_sb_master",
+            "value": "啟用 SponsorBlock"
+        },
+        {
+            "name": "yt_exp_sb_categories",
+            "value": "片段類別"
+        },
+        {
+            "name": "yt_exp_sb_cat_sponsor",
+            "value": "贊助片段"
+        },
+        {
+            "name": "yt_exp_sb_cat_selfpromo",
+            "value": "自我推廣"
+        },
+        {
+            "name": "yt_exp_sb_cat_interaction",
+            "value": "互動提醒"
+        },
+        {
+            "name": "yt_exp_sb_cat_intro",
+            "value": "片頭"
+        },
+        {
+            "name": "yt_exp_sb_cat_outro",
+            "value": "片尾"
+        },
+        {
+            "name": "yt_exp_sb_cat_preview",
+            "value": "預覽/回顧"
+        },
+        {
+            "name": "yt_exp_sb_cat_music",
+            "value": "非音樂片段"
+        },
+        {
+            "name": "yt_exp_sb_cat_filler",
+            "value": "填充內容"
+        },
+        {
+            "name": "yt_exp_sb_cat_highlight",
+            "value": "精彩片段"
+        },
+        {
+            "name": "yt_exp_sb_behavior",
+            "value": "跳過行為"
+        },
+        {
+            "name": "yt_exp_sb_behavior_toast",
+            "value": "跳過並提示（可撤銷）"
+        },
+        {
+            "name": "yt_exp_sb_behavior_silent",
+            "value": "靜默跳過"
+        },
+        {
+            "name": "yt_exp_sb_behavior_manual",
+            "value": "只顯示跳過按鈕"
+        },
+        {
+            "name": "yt_exp_sb_unskip",
+            "value": "提前提示"
+        },
+        {
+            "name": "yt_exp_sb_unskip_value",
+            "value": "%d 秒"
+        },
+        {
+            "name": "yt_exp_sb_privacy",
+            "value": "隱私查詢"
+        },
+        {
+            "name": "yt_exp_sb_privacy_desc",
+            "value": "只傳送影片雜湊，不傳送影片 ID"
+        },
+        {
+            "name": "yt_exp_sb_skipped",
+            "value": "即將跳過：%s"
+        },
+        {
+            "name": "yt_exp_sb_undo",
+            "value": "撤銷"
+        },
+        {
+            "name": "yt_exp_sb_no_segments",
+            "value": "此影片沒有可用片段"
+        },
+        {
+            "name": "yt_exp_sb_categories_count",
+            "value": "%d 類片段"
+        },
+        {
+            "name": "yt_exp_da_title",
+            "value": "DeArrow"
+        },
+        {
+            "name": "yt_exp_da_desc",
+            "value": "群眾標題與縮圖"
+        },
+        {
+            "name": "yt_exp_ai_title",
+            "value": "AiSList"
+        },
+        {
+            "name": "yt_exp_ai_desc",
+            "value": "標記或隱藏 AI 生成內容的頻道"
+        },
+        {
+            "name": "yt_exp_da_replace_titles",
+            "value": "替換標題"
+        },
+        {
+            "name": "yt_exp_da_limit",
+            "value": "每頁回填條數"
+        },
+        {
+            "name": "yt_exp_da_concurrency",
+            "value": "並行請求數"
+        },
+        {
+            "name": "yt_exp_da_footer",
+            "value": "標題來自 DeArrow 社群提交，可能與影片內容不完全一致。"
+        },
+        {
+            "name": "yt_exp_da_thumbs",
+            "value": "替換縮圖"
+        },
+        {
+            "name": "yt_exp_da_thumbs_desc",
+            "value": "使用影片截圖，載入較慢"
+        },
+        {
+            "name": "yt_exp_ai_mode",
+            "value": "處理方式"
+        },
+        {
+            "name": "yt_exp_ai_mode_mark",
+            "value": "只標記"
+        },
+        {
+            "name": "yt_exp_ai_mode_hide",
+            "value": "直接隱藏"
+        },
+        {
+            "name": "yt_exp_ai_warnlist",
+            "value": "包含中置信名單"
+        },
+        {
+            "name": "yt_exp_ai_sync",
+            "value": "自動更新"
+        },
+        {
+            "name": "yt_exp_ai_sync_daily",
+            "value": "每天"
+        },
+        {
+            "name": "yt_exp_ai_sync_weekly",
+            "value": "每週"
+        },
+        {
+            "name": "yt_exp_ai_sync_manual",
+            "value": "僅手動"
+        },
+        {
+            "name": "yt_exp_ai_sync_now",
+            "value": "立即更新"
+        },
+        {
+            "name": "yt_exp_ai_status",
+            "value": "上次同步：%s · %d 條"
+        },
+        {
+            "name": "yt_exp_ai_never",
+            "value": "尚未同步"
+        },
+        {
+            "name": "yt_exp_ai_license",
+            "value": "資料來源：AiSList（CC BY-NC 4.0）"
+        },
+        {
+            "name": "yt_exp_ai_badge",
+            "value": "AI"
+        },
+        {
+            "name": "yt_exp_ai_notice",
+            "value": "該頻道被標記為 AI 生成內容"
+        },
+        {
+            "name": "yt_exp_ai_syncing",
+            "value": "正在同步…"
+        },
+        {
+            "name": "yt_exp_ai_sync_failed",
+            "value": "同步失敗"
+        },
+        {
+            "name": "yt_exp_ai_empty",
+            "value": "名單為空，請先更新"
+        },
+        {
+            "name": "yt_exp_ai_status_label",
+            "value": "名單狀態"
+        },
+        {
+            "name": "yt_update_page_title",
+            "value": "檢查更新"
+        },
+        {
+            "name": "yt_update_enable",
+            "value": "檢查 GitHub 更新"
+        },
+        {
+            "name": "yt_update_enable_desc",
+            "value": "關閉後不會自動或手動檢查"
+        },
+        {
+            "name": "yt_update_on_startup",
+            "value": "啟動時檢查"
+        },
+        {
+            "name": "yt_update_on_startup_desc",
+            "value": "靜默進行，不彈出提示"
+        },
+        {
+            "name": "yt_update_last_check",
+            "value": "上次檢查"
+        },
+        {
+            "name": "yt_update_never_checked",
+            "value": "尚未檢查"
+        },
+        {
+            "name": "yt_update_check_now",
+            "value": "立即檢查"
+        },
+        {
+            "name": "yt_update_rate_limited",
+            "value": "GitHub 介面限流，請稍後重試"
+        },
+        {
+            "name": "yt_update_available",
+            "value": "發現新版本"
+        },
+        {
+            "name": "yt_update_disabled_hint",
+            "value": "請先開啟「檢查 GitHub 更新」"
+        },
+        {
+            "name": "yt_update_links",
+            "value": "相關連結"
+        }
+    ]
+}

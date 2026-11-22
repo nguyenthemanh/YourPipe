@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "trang từ gói"
+    },
+    {
+      "name": "reason_background",
+      "value": "Giữ video chạy nền"
+    },
+    {
+      "name": "module_desc",
+      "value": "Dịch vụ media YourPipe"
+    }
+  ]
+}

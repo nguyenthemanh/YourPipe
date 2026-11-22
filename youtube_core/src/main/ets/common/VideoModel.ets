@@ -1,0 +1,173 @@
+export class VideoItem {
+  id: number;
+  videoId: string;
+  channelId: string;
+  title: string;
+  author: string;
+  viewCount: string;
+  thumbnailUrl: string;
+  /** DeArrow 替换前的原始缩略图；用于替换图加载失败时回退。 */
+  originalThumbnailUrl: string = '';
+  thumbnailColor: string;
+  isLive: boolean;
+  isPremium: boolean;
+  requiresMembership: boolean;
+  channelAvatarUrl: string;
+  channelHandle: string;
+  videoDescription: string;
+  videoDescriptionError: string | null;
+  /** 发布时间的本地化相对文本（如 "3 days ago" / "3 天前"），由 entry 侧解析；无则空串 */
+  publishedTimeText: string = '';
+  /** 时长文本（如 "12:34"），列表条目解析；直播/未知为空串 */
+  durationText: string = '';
+  /** 精确播放次数文本（如 "10,493,211 views"），来自 accessibilityLabel 等；无则空串 */
+  viewCountExact: string = '';
+  /** 频道是否带官方认证徽章 */
+  uploaderVerified: boolean = false;
+  /**
+   * 本地视频文件在应用沙箱内的绝对路径（已下载 / 已导入的媒体）。
+   * 非空表示这是一个本地源条目：播放时跳过 YouTube 提取，直接交给 MPV 打开该文件。
+   */
+  localMediaPath?: string;
+  /**
+   * 条目来自 Shorts 货架 / reel renderer / Shorts lockup。
+   * 仅作数据标记（Shorts feed 过滤、UI 角标用），不改变播放路径。
+   */
+  isShort: boolean = false;
+
+  /** AiSList 命中标记：'' = 未命中，'block' = 高置信，'warn' = 中置信。仅 UI 展示用。 */
+  aiListFlag: string = '';
+
+  constructor(
+    id: number,
+    videoId: string,
+    title: string,
+    author: string,
+    viewCount: string,
+    thumbnailUrl: string,
+    isLive: boolean = true,
+    thumbnailColor: string = "#CCCCCC",
+    channelId: string = "",
+    channelAvatarUrl: string = "",
+    channelHandle: string = "",
+    videoDescription: string = "",
+    videoDescriptionError: string | null = null,
+    isPremium: boolean = false,
+    requiresMembership: boolean = false
+  ) {
+    this.id = id;
+    this.videoId = videoId;
+    this.title = title;
+    this.author = author;
+    this.viewCount = viewCount;
+    this.thumbnailUrl = thumbnailUrl;
+    this.isLive = isLive;
+    this.isPremium = isPremium;
+    this.requiresMembership = requiresMembership;
+    this.thumbnailColor = thumbnailColor;
+    this.channelId = channelId;
+    this.channelAvatarUrl = channelAvatarUrl;
+    this.channelHandle = channelHandle;
+    this.videoDescription = videoDescription;
+    this.videoDescriptionError = videoDescriptionError;
+  }
+}
+
+export interface IDataSource {
+  totalCount(): number;
+  getData(index: number): VideoItem;
+  registerDataChangeListener(listener: DataChangeListener): void;
+  unregisterDataChangeListener(listener: DataChangeListener): void;
+}
+
+export interface DataChangeListener {
+  onDataReloaded(): void;
+  onDataAdd(index: number): void;
+  onDataDelete(index: number): void;
+  onDataChange(index: number): void;
+  onDataMove(from: number, to: number): void;
+}
+
+export class VideoDataSource implements IDataSource {
+  private listeners: DataChangeListener[] = [];
+  private dataArray: VideoItem[] = [];
+
+  public totalCount(): number {
+    return this.dataArray.length;
+  }
+
+  public getData(index: number): VideoItem {
+    return this.dataArray[index];
+  }
+
+  public addData(index: number, data: VideoItem): void {
+    this.dataArray.splice(index, 0, data);
+    this.notifyDataAdd(index);
+  }
+
+  public pushData(data: VideoItem): void {
+    this.dataArray.push(data);
+    this.notifyDataAdd(this.dataArray.length - 1);
+  }
+
+  public setData(data: VideoItem[]): void {
+    this.dataArray = data;
+    this.notifyDataReload();
+  }
+
+  public getDataList(): VideoItem[] {
+    return this.dataArray;
+  }
+
+  public addAll(data: VideoItem[]): void {
+    if (data.length === 0) {
+      return;
+    }
+    const startIndex = this.dataArray.length;
+    this.dataArray = this.dataArray.concat(data);
+    this.notifyDataReload();
+  }
+
+  registerDataChangeListener(listener: DataChangeListener): void {
+    if (this.listeners.indexOf(listener) < 0) {
+      this.listeners.push(listener);
+    }
+  }
+
+  unregisterDataChangeListener(listener: DataChangeListener): void {
+    const pos = this.listeners.indexOf(listener);
+    if (pos >= 0) {
+      this.listeners.splice(pos, 1);
+    }
+  }
+
+  notifyDataReload(): void {
+    this.listeners.forEach(listener => {
+      listener.onDataReloaded();
+    })
+  }
+
+  notifyDataAdd(index: number): void {
+    this.listeners.forEach(listener => {
+      listener.onDataAdd(index);
+    })
+  }
+
+  notifyDataDelete(index: number): void {
+    this.listeners.forEach(listener => {
+      listener.onDataDelete(index);
+    })
+  }
+
+  notifyDataChange(index: number): void {
+    this.listeners.forEach(listener => {
+      listener.onDataChange(index);
+    })
+  }
+
+  notifyDataMove(from: number, to: number): void {
+    this.listeners.forEach(listener => {
+      listener.onDataMove(from, to);
+    })
+  }
+}

@@ -1,0 +1,4140 @@
+{
+    "string": [
+        {
+            "name": "yt_tab_home",
+            "value": "Trang chủ"
+        },
+        {
+            "name": "yt_tab_playlists",
+            "value": "Danh sách phát"
+        },
+        {
+            "name": "yt_tab_subscriptions",
+            "value": "Kênh đăng ký"
+        },
+        {
+            "name": "yt_tab_favorites",
+            "value": "Yêu thích"
+        },
+        {
+            "name": "yt_option_title",
+            "value": "Tùy chọn"
+        },
+        {
+            "name": "yt_option_group_settings",
+            "value": "Cài đặt"
+        },
+        {
+            "name": "yt_option_group_others",
+            "value": "Khác"
+        },
+        {
+            "name": "yt_option_group_general",
+            "value": "Chung"
+        },
+        {
+            "name": "yt_option_group_personalization",
+            "value": "Cá nhân hóa"
+        },
+        {
+            "name": "yt_option_language",
+            "value": "Ngôn ngữ"
+        },
+        {
+            "name": "yt_option_color",
+            "value": "Màu sắc"
+        },
+        {
+            "name": "yt_option_color_subtitle",
+            "value": "Giao diện và màu nhấn"
+        },
+        {
+            "name": "yt_option_log",
+            "value": "Nhật ký"
+        },
+        {
+            "name": "yt_option_log_subtitle",
+            "value": "Xem nhật ký gần đây"
+        },
+        {
+            "name": "yt_action_close",
+            "value": "Đóng"
+        },
+        {
+            "name": "yt_option_about",
+            "value": "Giới thiệu"
+        },
+        {
+            "name": "yt_option_about_subtitle",
+            "value": "Phiên bản và ghi công"
+        },
+        {
+            "name": "yt_option_in_development",
+            "value": "Tính năng đang phát triển"
+        },
+        {
+            "name": "yt_option_in_development_color",
+            "value": "Tùy chọn màu giao diện sẽ hiện ở đây"
+        },
+        {
+            "name": "yt_lang_follow_system",
+            "value": "Theo hệ thống"
+        },
+        {
+            "name": "yt_lang_simplified",
+            "value": "Tiếng Trung giản thể"
+        },
+        {
+            "name": "yt_lang_simplified_subtitle",
+            "value": "Tiếng Trung giản thể"
+        },
+        {
+            "name": "yt_lang_traditional_hk",
+            "value": "Tiếng Trung phồn thể (Hồng Kông)"
+        },
+        {
+            "name": "yt_lang_traditional_hk_subtitle",
+            "value": "Tiếng Trung phồn thể (Hồng Kông)"
+        },
+        {
+            "name": "yt_lang_traditional_tw",
+            "value": "Tiếng Trung phồn thể (Đài Loan)"
+        },
+        {
+            "name": "yt_lang_traditional_tw_subtitle",
+            "value": "Tiếng Trung phồn thể (Đài Loan)"
+        },
+        {
+            "name": "yt_lang_english",
+            "value": "Tiếng Anh"
+        },
+        {
+            "name": "yt_lang_english_subtitle",
+            "value": "Tiếng Anh"
+        },
+        {
+            "name": "yt_log_session_active",
+            "value": "Đang ghi"
+        },
+        {
+            "name": "yt_log_session_saved",
+            "value": "Đã lưu"
+        },
+        {
+            "name": "yt_log_no_sessions",
+            "value": "Không có phiên nhật ký"
+        },
+        {
+            "name": "yt_log_delete_all_confirm",
+            "value": "Xóa mọi phiên nhật ký?"
+        },
+        {
+            "name": "yt_log_delete_confirm_yes",
+            "value": "Xóa"
+        },
+        {
+            "name": "yt_log_delete_confirm_no",
+            "value": "Hủy"
+        },
+        {
+            "name": "module_desc",
+            "value": "mô tả mô-đun"
+        },
+        {
+            "name": "EntryAbility_desc",
+            "value": "mô tả"
+        },
+        {
+            "name": "EntryAbility_label",
+            "value": "nhãn"
+        },
+        {
+            "name": "HOME_EXIT_TOAST",
+            "value": "Nhấn quay lại lần nữa để thoát"
+        },
+        {
+            "name": "LIVING_LEFT_TEXT",
+            "value": "Tổng cộng "
+        },
+        {
+            "name": "LIVING_RIGHT_TEXT",
+            "value": " bình luận"
+        },
+        {
+            "name": "LIVING_WRITE",
+            "value": "Viết bình luận"
+        },
+        {
+            "name": "number_of_viewers",
+            "value": "738.600 người đang xem"
+        },
+        {
+            "name": "store_name",
+            "value": "Phòng phát trực tiếp chính thức"
+        },
+        {
+            "name": "yt_tab_local",
+            "value": "Máy"
+        },
+        {
+            "name": "yt_option_appearance",
+            "value": "Giao diện"
+        },
+        {
+            "name": "yt_dark_mode_title",
+            "value": "Chế độ tối"
+        },
+        {
+            "name": "yt_dark_mode_system",
+            "value": "Theo hệ thống"
+        },
+        {
+            "name": "yt_dark_mode_system_subtitle",
+            "value": "Tự đổi theo cài đặt hệ thống"
+        },
+        {
+            "name": "yt_dark_mode_light",
+            "value": "Chế độ sáng"
+        },
+        {
+            "name": "yt_dark_mode_light_subtitle",
+            "value": "Luôn dùng giao diện sáng"
+        },
+        {
+            "name": "yt_dark_mode_dark",
+            "value": "Chế độ tối"
+        },
+        {
+            "name": "yt_dark_mode_dark_subtitle",
+            "value": "Luôn dùng giao diện tối"
+        },
+        {
+            "name": "yt_log_title",
+            "value": "Nhật ký"
+        },
+        {
+            "name": "yt_log_enable",
+            "value": "Bật ghi nhật ký"
+        },
+        {
+            "name": "yt_log_enable_subtitle",
+            "value": "Ghi nhật ký sau khi mở ứng dụng"
+        },
+        {
+            "name": "yt_log_disabled_hint",
+            "value": "Đã tắt ghi nhật ký\nBật công tắc phía trên để bắt đầu ghi"
+        },
+        {
+            "name": "yt_log_empty",
+            "value": "Không có bản ghi nhật ký"
+        },
+        {
+            "name": "internet_reason",
+            "value": "Tải dữ liệu mạng"
+        },
+        {
+            "name": "reason_background",
+            "value": "Giữ video chạy nền"
+        },
+        {
+            "name": "video_name0",
+            "value": "@Mèo"
+        },
+        {
+            "name": "video_name1",
+            "value": "@Người leo núi"
+        },
+        {
+            "name": "video_name2",
+            "value": "@Rất vui được gặp bạn"
+        },
+        {
+            "name": "video_name3",
+            "value": "@Tick"
+        },
+        {
+            "name": "video_name4",
+            "value": "@Faery"
+        },
+        {
+            "name": "video_description0",
+            "value": "#1 #Video trên máy #Thế giới muôn màu, cuộc sống không chỉ là trước mắt mà còn là thơ và khoảng cách"
+        },
+        {
+            "name": "video_description1",
+            "value": "#2 #Video trực tuyến #Giấc mơ"
+        },
+        {
+            "name": "video_description3",
+            "value": "#4 #Video trực tuyến #Thế giới muôn màu, cuộc sống không chỉ là trước mắt mà còn là thơ và khoảng cách"
+        },
+        {
+            "name": "video_description4",
+            "value": "#5 #Video trực tuyến #Thế giới muôn màu, cuộc sống không chỉ là trước mắt mà còn là thơ và khoảng cách"
+        },
+        {
+            "name": "yt_section_language_region",
+            "value": "Ngôn ngữ và khu vực"
+        },
+        {
+            "name": "yt_section_playback",
+            "value": "Phát"
+        },
+        {
+            "name": "yt_section_language",
+            "value": "Cài đặt ngôn ngữ"
+        },
+        {
+            "name": "yt_section_content_translation",
+            "value": "Dịch nội dung"
+        },
+        {
+            "name": "yt_setting_translation_language",
+            "value": "Dịch sang"
+        },
+        {
+            "name": "yt_follow_app_language",
+            "value": "Theo ngôn ngữ ứng dụng"
+        },
+        {
+            "name": "yt_setting_subtitle_translate_language",
+            "value": "Tự dịch phụ đề sang"
+        },
+        {
+            "name": "yt_follow_translation_language",
+            "value": "Theo ngôn ngữ dịch"
+        },
+        {
+            "name": "yt_setting_ui_language",
+            "value": "Ngôn ngữ giao diện"
+        },
+        {
+            "name": "yt_setting_content_language",
+            "value": "Ngôn ngữ nội dung"
+        },
+        {
+            "name": "yt_setting_content_region",
+            "value": "Khu vực nội dung"
+        },
+        {
+            "name": "yt_section_video",
+            "value": "Cài đặt video"
+        },
+        {
+            "name": "yt_setting_default_quality",
+            "value": "Chất lượng video mặc định"
+        },
+        {
+            "name": "yt_setting_live_quality_cap",
+            "value": "Giới hạn chất lượng livestream"
+        },
+        {
+            "name": "yt_setting_show_high_res",
+            "value": "Hiện độ phân giải cao (1440p / 4K)"
+        },
+        {
+            "name": "yt_setting_show_high_res_subtitle",
+            "value": "Hiện lựa chọn 4K trong bộ chọn chất lượng, cần máy mạnh hơn"
+        },
+        {
+            "name": "yt_setting_video_codec",
+            "value": "Bộ mã video"
+        },
+        {
+            "name": "yt_section_audio",
+            "value": "Cài đặt âm thanh"
+        },
+        {
+            "name": "yt_setting_audio_quality",
+            "value": "Giới hạn chất lượng âm thanh"
+        },
+        {
+            "name": "yt_section_decoder",
+            "value": "Cài đặt bộ giải mã"
+        },
+        {
+            "name": "yt_setting_hwdec_mode",
+            "value": "Chế độ giải mã phần cứng"
+        },
+        {
+            "name": "yt_setting_decoder_fallback",
+            "value": "Giải mã dự phòng"
+        },
+        {
+            "name": "yt_setting_decoder_fallback_subtitle",
+            "value": "Tự chuyển sang giải mã phần mềm khi giải mã phần cứng thất bại"
+        },
+        {
+            "name": "yt_section_buffer",
+            "value": "Chiến lược bộ đệm"
+        },
+        {
+            "name": "yt_setting_readahead",
+            "value": "Thời lượng đệm phía trước"
+        },
+        {
+            "name": "yt_setting_cache_pause",
+            "value": "Chờ khôi phục khi hết đệm"
+        },
+        {
+            "name": "yt_setting_max_back_bytes",
+            "value": "Kích thước đệm lùi (tua lại không tải lại)"
+        },
+        {
+            "name": "yt_quality_best",
+            "value": "Chất lượng cao nhất"
+        },
+        {
+            "name": "yt_quality_auto",
+            "value": "Tự động"
+        },
+        {
+            "name": "yt_codec_h264_first",
+            "value": "Tự động (ưu tiên H.264)"
+        },
+        {
+            "name": "yt_codec_force_h264",
+            "value": "Bắt buộc H.264"
+        },
+        {
+            "name": "yt_audio_high",
+            "value": "Cao (~256kbps AAC)"
+        },
+        {
+            "name": "yt_audio_medium",
+            "value": "Trung bình (~128kbps AAC)"
+        },
+        {
+            "name": "yt_audio_low",
+            "value": "Tiết kiệm dữ liệu (~48kbps)"
+        },
+        {
+            "name": "yt_hwdec_auto",
+            "value": "Tự động (khuyên dùng)"
+        },
+        {
+            "name": "yt_hwdec_auto_safe",
+            "value": "Bắt buộc giải mã phần cứng"
+        },
+        {
+            "name": "yt_hwdec_no",
+            "value": "Chỉ phần mềm"
+        },
+        {
+            "name": "yt_recommended_suffix",
+            "value": "(Khuyên dùng)"
+        },
+        {
+            "name": "yt_unit_seconds",
+            "value": "giây"
+        },
+        {
+            "name": "yt_unit_mb",
+            "value": "MB"
+        },
+        {
+            "name": "yt_placeholder_search",
+            "value": "Tìm kiếm..."
+        },
+        {
+            "name": "yt_action_favorite",
+            "value": "Yêu thích"
+        },
+        {
+            "name": "yt_action_unfavorite",
+            "value": "Bỏ yêu thích"
+        },
+        {
+            "name": "yt_action_subscribe",
+            "value": "Đăng ký"
+        },
+        {
+            "name": "yt_action_unsubscribe",
+            "value": "Hủy đăng ký"
+        },
+        {
+            "name": "yt_action_share",
+            "value": "Chia sẻ"
+        },
+        {
+            "name": "yt_action_retry",
+            "value": "Thử lại"
+        },
+        {
+            "name": "yt_action_cancel",
+            "value": "Hủy"
+        },
+        {
+            "name": "yt_action_confirm",
+            "value": "Xác nhận"
+        },
+        {
+            "name": "yt_action_delete",
+            "value": "Xóa"
+        },
+        {
+            "name": "yt_action_clear",
+            "value": "Xóa sạch"
+        },
+        {
+            "name": "yt_action_view_author",
+            "value": "Xem tác giả"
+        },
+        {
+            "name": "yt_action_clear_all",
+            "value": "Xóa tất cả"
+        },
+        {
+            "name": "yt_search_youtube",
+            "value": "Tìm trên YouTube"
+        },
+        {
+            "name": "yt_search_youtube_music",
+            "value": "Tìm trên YouTube Music"
+        },
+        {
+            "name": "yt_filter_all",
+            "value": "Tất cả"
+        },
+        {
+            "name": "yt_filter_videos",
+            "value": "Video"
+        },
+        {
+            "name": "yt_filter_channels",
+            "value": "Kênh"
+        },
+        {
+            "name": "yt_filter_playlists",
+            "value": "Danh sách phát"
+        },
+        {
+            "name": "yt_filter_songs",
+            "value": "Bài hát"
+        },
+        {
+            "name": "yt_filter_albums",
+            "value": "Album"
+        },
+        {
+            "name": "yt_search_history",
+            "value": "Lịch sử tìm kiếm"
+        },
+        {
+            "name": "yt_action_clear_search_history",
+            "value": "Xóa lịch sử tìm kiếm"
+        },
+        {
+            "name": "yt_empty_no_search_history",
+            "value": "Không có lịch sử tìm kiếm"
+        },
+        {
+            "name": "yt_search_no_results",
+            "value": "Không tìm thấy nội dung phù hợp"
+        },
+        {
+            "name": "yt_error_search_failed",
+            "value": "Tìm kiếm thất bại, hãy thử lại sau"
+        },
+        {
+            "name": "yt_dialog_delete_search_record",
+            "value": "Xóa mục tìm kiếm"
+        },
+        {
+            "name": "yt_confirm_clear_search_history",
+            "value": "Xóa toàn bộ lịch sử tìm kiếm?"
+        },
+        {
+            "name": "yt_toast_cleared",
+            "value": "Đã xóa"
+        },
+        {
+            "name": "yt_placeholder_search_content",
+            "value": "Tìm nội dung"
+        },
+        {
+            "name": "yt_empty_no_content",
+            "value": "Không có nội dung"
+        },
+        {
+            "name": "yt_error_invalid_video",
+            "value": "Không có thông tin video hợp lệ"
+        },
+        {
+            "name": "yt_dialog_select_quality",
+            "value": "Chọn chất lượng"
+        },
+        {
+            "name": "yt_label_video_track",
+            "value": "Luồng video"
+        },
+        {
+            "name": "yt_warn_high_resolution",
+            "value": "Độ phân giải trên 1440p có thể gây giật hoặc nặng máy trên một số thiết bị"
+        },
+        {
+            "name": "yt_label_audio_quality",
+            "value": "Chất lượng âm thanh"
+        },
+        {
+            "name": "yt_player_syncing_buffer",
+            "value": "Đang đồng bộ bộ đệm hai luồng..."
+        },
+        {
+            "name": "yt_error_playback_failed",
+            "value": "Phát thất bại"
+        },
+        {
+            "name": "yt_error_load_video_info",
+            "value": "Không tải được thông tin video"
+        },
+        {
+            "name": "yt_error_load_video",
+            "value": "Không tải được video"
+        },
+        {
+            "name": "yt_error_load_exception",
+            "value": "Có lỗi khi đang tải"
+        },
+        {
+            "name": "yt_error_unknown",
+            "value": "Lỗi không xác định"
+        },
+        {
+            "name": "yt_error_invalid_video_id",
+            "value": "ID video không hợp lệ"
+        },
+        {
+            "name": "yt_error_play_error_retry",
+            "value": "Lỗi phát, hãy thử lại"
+        },
+        {
+            "name": "yt_empty_no_comments",
+            "value": "Không có bình luận"
+        },
+        {
+            "name": "yt_label_pinned",
+            "value": "Đã ghim"
+        },
+        {
+            "name": "yt_error_load_comments",
+            "value": "Không tải được bình luận"
+        },
+        {
+            "name": "yt_label_reply",
+            "value": "Trả lời"
+        },
+        {
+            "name": "yt_error_load_replies",
+            "value": "Không tải được câu trả lời"
+        },
+        {
+            "name": "yt_label_like",
+            "value": "Thích"
+        },
+        {
+            "name": "yt_translate_action",
+            "value": "Dịch"
+        },
+        {
+            "name": "yt_show_original",
+            "value": "Hiện bản gốc"
+        },
+        {
+            "name": "yt_translating",
+            "value": "Đang dịch…"
+        },
+        {
+            "name": "yt_translate_failed",
+            "value": "Dịch thất bại, chạm để thử lại"
+        },
+        {
+            "name": "yt_label_dislike",
+            "value": "Không thích"
+        },
+        {
+            "name": "yt_tab_videos",
+            "value": "Video"
+        },
+        {
+            "name": "yt_tab_shorts",
+            "value": "Shorts"
+        },
+        {
+            "name": "yt_tab_live",
+            "value": "Trực tiếp"
+        },
+        {
+            "name": "yt_tab_about",
+            "value": "Giới thiệu"
+        },
+        {
+            "name": "yt_empty_no_videos",
+            "value": "Không có video"
+        },
+        {
+            "name": "yt_empty_no_shorts",
+            "value": "Không có Shorts"
+        },
+        {
+            "name": "yt_empty_no_live",
+            "value": "Không có livestream"
+        },
+        {
+            "name": "yt_channel_info",
+            "value": "Thông tin kênh"
+        },
+        {
+            "name": "yt_channel_id",
+            "value": "ID kênh"
+        },
+        {
+            "name": "yt_channel_subscribers",
+            "value": "Người đăng ký"
+        },
+        {
+            "name": "yt_channel_video_count",
+            "value": "Số video"
+        },
+        {
+            "name": "yt_channel_description",
+            "value": "Mô tả"
+        },
+        {
+            "name": "yt_error_load_user_videos",
+            "value": "Không tải được video của người dùng"
+        },
+        {
+            "name": "yt_error_load_shorts",
+            "value": "Không tải được Shorts"
+        },
+        {
+            "name": "yt_error_load_live",
+            "value": "Không tải được livestream"
+        },
+        {
+            "name": "yt_label_user",
+            "value": "Người dùng"
+        },
+        {
+            "name": "yt_local_history",
+            "value": "Lịch sử xem"
+        },
+        {
+            "name": "yt_dialog_clear_history",
+            "value": "Xóa lịch sử"
+        },
+        {
+            "name": "yt_confirm_clear_history",
+            "value": "Xóa toàn bộ lịch sử xem?"
+        },
+        {
+            "name": "yt_empty_no_history",
+            "value": "Không có lịch sử xem"
+        },
+        {
+            "name": "yt_empty_history_hint",
+            "value": "Video bạn đã xem sẽ hiện ở đây"
+        },
+        {
+            "name": "yt_time_just_now",
+            "value": "Vừa xong"
+        },
+        {
+            "name": "yt_action_delete_record",
+            "value": "Xóa mục"
+        },
+        {
+            "name": "yt_action_remove_from_queue",
+            "value": "Xóa khỏi hàng đợi"
+        },
+        {
+            "name": "yt_sub_manage_title",
+            "value": "Tác giả đã đăng ký"
+        },
+        {
+            "name": "yt_empty_no_subs",
+            "value": "Chưa đăng ký ai"
+        },
+        {
+            "name": "yt_empty_subs_hint",
+            "value": "Hãy thêm trong \"Quản lý đăng ký\""
+        },
+        {
+            "name": "yt_empty_subs_hint_alt",
+            "value": "Đăng ký tác giả bạn thích ở trang tìm kiếm"
+        },
+        {
+            "name": "yt_error_load_subs",
+            "value": "Không tải được danh sách đăng ký"
+        },
+        {
+            "name": "yt_fav_videos_title",
+            "value": "Video yêu thích"
+        },
+        {
+            "name": "yt_fav_playlists_title",
+            "value": "Danh sách phát yêu thích"
+        },
+        {
+            "name": "yt_local_playlists_title",
+            "value": "Danh sách phát trên máy"
+        },
+        {
+            "name": "yt_local_playlists_tag",
+            "value": "Máy"
+        },
+        {
+            "name": "yt_empty_no_local_playlists",
+            "value": "Chưa có danh sách phát trên máy"
+        },
+        {
+            "name": "yt_empty_local_playlists_hint",
+            "value": "Lưu video vào danh sách phát trên máy từ trình phát"
+        },
+        {
+            "name": "yt_empty_no_fav_videos",
+            "value": "Không có video yêu thích"
+        },
+        {
+            "name": "yt_empty_no_fav_playlists",
+            "value": "Không có danh sách phát yêu thích"
+        },
+        {
+            "name": "yt_empty_fav_playlists_hint",
+            "value": "Thêm danh sách phát yêu thích ở trang tìm kiếm"
+        },
+        {
+            "name": "yt_about_current_version",
+            "value": "Phiên bản hiện tại"
+        },
+        {
+            "name": "yt_about_description",
+            "value": "Ứng dụng YouTube mã nguồn mở cho HarmonyOS NEXT\nKhông quảng cáo · Không theo dõi · Phân tích hoàn toàn trên máy"
+        },
+        {
+            "name": "yt_about_qq_group",
+            "value": "Nhóm QQ"
+        },
+        {
+            "name": "yt_about_tg_group",
+            "value": "Nhóm Telegram"
+        },
+        {
+            "name": "yt_about_github_repo",
+            "value": "Kho GitHub"
+        },
+        {
+            "name": "yt_about_project_info",
+            "value": "Thông tin dự án"
+        },
+        {
+            "name": "yt_about_open_source",
+            "value": "Dự án mã nguồn mở"
+        },
+        {
+            "name": "yt_about_ai_models",
+            "value": "Trợ lý AI"
+        },
+        {
+            "name": "yt_about_changelog",
+            "value": "Nhật ký thay đổi"
+        },
+        {
+            "name": "yt_about_check_update",
+            "value": "Kiểm tra cập nhật"
+        },
+        {
+            "name": "yt_about_check_update_subtitle",
+            "value": "Lấy bản phát hành mới nhất từ GitHub"
+        },
+        {
+            "name": "yt_update_check_failed",
+            "value": "Kiểm tra cập nhật thất bại, hãy thử lại sau"
+        },
+        {
+            "name": "yt_update_up_to_date",
+            "value": "Bạn đang dùng bản mới nhất"
+        },
+        {
+            "name": "yt_update_available_title",
+            "value": "Có bản cập nhật"
+        },
+        {
+            "name": "yt_update_open_appgallery",
+            "value": "AppTest"
+        },
+        {
+            "name": "yt_update_open_github",
+            "value": "GitHub"
+        },
+        {
+            "name": "yt_update_checking",
+            "value": "Đang kiểm tra cập nhật…"
+        },
+        {
+            "name": "yt_update_current_version",
+            "value": "Phiên bản hiện tại"
+        },
+        {
+            "name": "yt_update_new_version",
+            "value": "Phiên bản mới"
+        },
+        {
+            "name": "yt_update_release_time",
+            "value": "Ngày phát hành"
+        },
+        {
+            "name": "yt_error_load_failed",
+            "value": "Tải thất bại"
+        },
+        {
+            "name": "yt_error_play_failed_title",
+            "value": "Phát thất bại"
+        },
+        {
+            "name": "yt_label_live",
+            "value": "TRỰC TIẾP"
+        },
+        {
+            "name": "yt_error_load_playlists",
+            "value": "Không tải được danh sách phát"
+        },
+        {
+            "name": "yt_error_load_channel_info",
+            "value": "Không tải được thông tin kênh"
+        },
+        {
+            "name": "yt_tab_description",
+            "value": "Mô tả"
+        },
+        {
+            "name": "yt_tab_comments",
+            "value": "Bình luận"
+        },
+        {
+            "name": "yt_tab_recommended",
+            "value": "Đề xuất"
+        },
+        {
+            "name": "yt_home_recommended_error",
+            "value": "Không tải được bảng tin đề xuất, đang dùng phương án dự phòng hoặc hãy thử lại sau"
+        },
+        {
+            "name": "yt_home_auth_expired_notice",
+            "value": "Phiên đăng nhập đã hết hạn — đang hiện đề xuất khách. Hãy đăng nhập lại."
+        },
+        {
+            "name": "yt_home_kiosk_error",
+            "value": "Yêu cầu kiosk thất bại, hãy thử lại sau"
+        },
+        {
+            "name": "yt_home_load_error",
+            "value": "Không tải được trang chủ, hãy thử lại sau"
+        },
+        {
+            "name": "yt_player_mode_progressive",
+            "value": "Progressive"
+        },
+        {
+            "name": "yt_player_mode_hls",
+            "value": "Luồng HLS"
+        },
+        {
+            "name": "yt_player_mode_dash_manifest",
+            "value": "Luồng DASH (Manifest)"
+        },
+        {
+            "name": "yt_player_mode_dash_track",
+            "value": "Luồng DASH (tách âm thanh/hình)"
+        },
+        {
+            "name": "yt_player_default",
+            "value": "Mặc định"
+        },
+        {
+            "name": "yt_player_step1_select_mode",
+            "value": "1. Chọn chế độ phát"
+        },
+        {
+            "name": "yt_player_step2_select_quality",
+            "value": "2. Chọn chất lượng"
+        },
+        {
+            "name": "yt_player_video_quality",
+            "value": "Chất lượng video"
+        },
+        {
+            "name": "yt_player_step2_select_manifest",
+            "value": "2. Chọn manifest"
+        },
+        {
+            "name": "yt_player_step2_select_track",
+            "value": "2. Chọn luồng"
+        },
+        {
+            "name": "yt_player_audio_language_type",
+            "value": "Ngôn ngữ / loại âm thanh"
+        },
+        {
+            "name": "yt_log_saved_to_downloads",
+            "value": "Đã lưu vào Tải xuống"
+        },
+        {
+            "name": "yt_error_no_playable_stream",
+            "value": "Không tìm thấy luồng phát được"
+        },
+        {
+            "name": "yt_error_no_supported_stream",
+            "value": "Không tìm thấy luồng video được hỗ trợ"
+        },
+        {
+            "name": "new_app_name",
+            "value": "YourPipe"
+        },
+        {
+            "name": "yt_empty_no_playlists",
+            "value": "Không có danh sách phát"
+        },
+        {
+            "name": "yt_search_results_from",
+            "value": "Kết quả tìm kiếm từ \"%s\""
+        },
+        {
+            "name": "yt_setting_stream_buffer",
+            "value": "Bộ đệm luồng TCP"
+        },
+        {
+            "name": "yt_setting_seek_keyframe",
+            "value": "Tua nhanh (khung hình khóa)"
+        },
+        {
+            "name": "yt_setting_seek_keyframe_subtitle",
+            "value": "Nhảy tới khung hình khóa gần nhất để tua nhanh hơn"
+        },
+        {
+            "name": "yt_action_download",
+            "value": "Tải xuống"
+        },
+        {
+            "name": "yt_local_play",
+            "value": "Phát"
+        },
+        {
+            "name": "yt_local_file_missing",
+            "value": "Không tìm thấy tệp"
+        },
+        {
+            "name": "yt_download_export",
+            "value": "Xuất vào Tải xuống"
+        },
+        {
+            "name": "yt_download_title",
+            "value": "Tải video"
+        },
+        {
+            "name": "yt_download_step1_mode",
+            "value": "Bước 1: Chọn chế độ tải"
+        },
+        {
+            "name": "yt_download_step2_quality",
+            "value": "Bước 2: Chọn chất lượng"
+        },
+        {
+            "name": "yt_download_step2_tracks",
+            "value": "Bước 2: Chọn luồng"
+        },
+        {
+            "name": "yt_download_mode_progressive",
+            "value": "Luồng đã ghép (Progressive)"
+        },
+        {
+            "name": "yt_download_mode_dash",
+            "value": "Luồng tách (DASH)"
+        },
+        {
+            "name": "yt_download_mode_hls",
+            "value": "Luồng HLS"
+        },
+        {
+            "name": "yt_download_mode_sabr",
+            "value": "Luồng SABR"
+        },
+        {
+            "name": "yt_download_progressive_hint",
+            "value": "Khuyên dùng: hình và tiếng đã được ghép sẵn"
+        },
+        {
+            "name": "yt_download_dash_hint",
+            "value": "Tải hình và tiếng riêng rồi ghép lại"
+        },
+        {
+            "name": "yt_download_sabr_hint",
+            "value": "Lấy hình/tiếng qua phân đoạn phiên SABR/UMP rồi ghép (cùng lớp với lúc phát)"
+        },
+        {
+            "name": "yt_download_estimated_size",
+            "value": "Dung lượng ước tính"
+        },
+        {
+            "name": "yt_download_empty",
+            "value": "Chưa có mục tải xuống"
+        },
+        {
+            "name": "yt_download_empty_hint",
+            "value": "Chạm nút tải trên trang video để bắt đầu"
+        },
+        {
+            "name": "yt_label_progressive",
+            "value": "Chất lượng đã ghép"
+        },
+        {
+            "name": "yt_label_premium",
+            "value": "Premium"
+        },
+        {
+            "name": "yt_label_members_only",
+            "value": "Thành viên"
+        },
+        {
+            "name": "yt_setting_home_feed_after_login",
+            "value": "Nội dung trang chủ sau khi đăng nhập"
+        },
+        {
+            "name": "yt_home_feed_recommended",
+            "value": "Đề xuất"
+        },
+        {
+            "name": "yt_home_feed_kiosk",
+            "value": "Trực tiếp"
+        },
+        {
+            "name": "yt_option_sync_library_on_launch",
+            "value": "Đồng bộ thư viện khi mở app"
+        },
+        {
+            "name": "yt_option_sync_library_on_launch_subtitle",
+            "value": "Kéo lịch sử đám mây và kênh đăng ký khi mở app"
+        },
+        {
+            "name": "yt_option_auth_session",
+            "value": "Duyệt khi đã đăng nhập"
+        },
+        {
+            "name": "yt_option_sign_out",
+            "value": "Đăng xuất"
+        },
+        {
+            "name": "yt_option_sign_out_subtitle",
+            "value": "Xóa thông tin đăng nhập đã lưu"
+        },
+        {
+            "name": "yt_confirm_sign_out",
+            "value": "Đăng xuất và xóa thông tin đăng nhập đã lưu?"
+        },
+        {
+            "name": "yt_action_audio_only",
+            "value": "Chỉ âm thanh"
+        },
+        {
+            "name": "yt_action_audio_only_play",
+            "value": "Chỉ phát âm thanh"
+        },
+        {
+            "name": "yt_player_subtitle_off",
+            "value": "Tắt phụ đề"
+        },
+        {
+            "name": "yt_player_subtitle_auto_translated",
+            "value": "Tự động dịch"
+        },
+        {
+            "name": "yt_option_ai_translate",
+            "value": "Dịch phụ đề bằng AI"
+        },
+        {
+            "name": "yt_option_ai_subtitle",
+            "value": "Phụ đề AI"
+        },
+        {
+            "name": "yt_ai_translate_engine",
+            "value": "Công cụ dịch"
+        },
+        {
+            "name": "yt_ai_translate_engine_gtx",
+            "value": "Google Dịch (miễn phí)"
+        },
+        {
+            "name": "yt_ai_translate_engine_llm",
+            "value": "LLM tùy chỉnh (tương thích OpenAI)"
+        },
+        {
+            "name": "yt_ai_translate_llm_section",
+            "value": "Cài đặt LLM"
+        },
+        {
+            "name": "yt_ai_translate_base_url",
+            "value": "URL gốc"
+        },
+        {
+            "name": "yt_ai_translate_model",
+            "value": "Tên mô hình"
+        },
+        {
+            "name": "yt_ai_translate_api_key",
+            "value": "Khóa API"
+        },
+        {
+            "name": "yt_ai_translate_test",
+            "value": "Kiểm tra kết nối"
+        },
+        {
+            "name": "yt_ai_translate_testing",
+            "value": "Đang kiểm tra…"
+        },
+        {
+            "name": "yt_ai_translate_test_ok",
+            "value": "Kết nối thành công"
+        },
+        {
+            "name": "yt_ai_translate_test_fail",
+            "value": "Kết nối thất bại; hãy kiểm tra cài đặt"
+        },
+        {
+            "name": "yt_ai_translate_display_section",
+            "value": "Hiển thị"
+        },
+        {
+            "name": "yt_ai_translate_bilingual",
+            "value": "Song ngữ"
+        },
+        {
+            "name": "yt_ai_translate_bilingual_subtitle",
+            "value": "Hiện cả bản gốc và bản dịch"
+        },
+        {
+            "name": "yt_ai_translate_note",
+            "value": "Nội dung phụ đề được gửi tới dịch vụ dịch đã chọn. Ngôn ngữ đích theo \"Ngôn ngữ dịch nội dung\"."
+        },
+        {
+            "name": "yt_ai_translate_menu",
+            "value": "Dịch bằng AI"
+        },
+        {
+            "name": "yt_ai_translate_llm_not_configured",
+            "value": "Hãy cấu hình LLM trong Cài đặt trước"
+        },
+        {
+            "name": "yt_ai_translate_partial_fail",
+            "value": "Một số dòng dịch thất bại; đã giữ bản gốc"
+        },
+        {
+            "name": "yt_ai_translate_failed",
+            "value": "Dịch phụ đề thất bại; hãy thử lại sau"
+        },
+        {
+            "name": "yt_setting_system_ai_caption",
+            "value": "Phụ đề AI của hệ thống"
+        },
+        {
+            "name": "yt_setting_system_ai_caption_subtitle",
+            "value": "Hệ thống chép lời âm thanh đang phát theo thời gian thực (chỉ máy được hỗ trợ, tiếng Trung/Anh)"
+        },
+        {
+            "name": "yt_setting_system_ai_caption_source",
+            "value": "Ngôn ngữ nguồn phụ đề AI"
+        },
+        {
+            "name": "yt_setting_system_ai_caption_source_zh",
+            "value": "Tiếng Trung"
+        },
+        {
+            "name": "yt_asr_menu",
+            "value": "Phụ đề do AI tạo"
+        },
+        {
+            "name": "yt_asr_phase_model",
+            "value": "Đang tải mô hình"
+        },
+        {
+            "name": "yt_asr_live_progress",
+            "value": "Đang nhận dạng trực tiếp…"
+        },
+        {
+            "name": "yt_asr_failed",
+            "value": "Tạo phụ đề AI thất bại; hãy thử lại sau"
+        },
+        {
+            "name": "yt_asr_model_section",
+            "value": "Mô hình nhận dạng trên máy"
+        },
+        {
+            "name": "yt_asr_model_status_ready",
+            "value": "Sẵn sàng (nhận dạng zh/en theo luồng)"
+        },
+        {
+            "name": "yt_asr_model_status_none",
+            "value": "Chưa tải (~190 MB; nên dùng Wi-Fi)"
+        },
+        {
+            "name": "yt_asr_model_downloading",
+            "value": "Đang tải"
+        },
+        {
+            "name": "yt_asr_model_download",
+            "value": "Tải mô hình"
+        },
+        {
+            "name": "yt_asr_model_delete",
+            "value": "Xóa mô hình"
+        },
+        {
+            "name": "yt_ai_action_cancel",
+            "value": "Hủy"
+        },
+        {
+            "name": "yt_player_chapters",
+            "value": "Chương"
+        },
+        {
+            "name": "yt_log_count_format",
+            "value": "%d nhật ký"
+        },
+        {
+            "name": "yt_log_regex_placeholder",
+            "value": "Lọc regex, ví dụ DownloadManager|Task .*failed"
+        },
+        {
+            "name": "yt_label_current",
+            "value": "Hiện tại"
+        },
+        {
+            "name": "yt_label_autoplay",
+            "value": "Tự phát"
+        },
+        {
+            "name": "yt_download_hls_hint",
+            "value": "Các phân đoạn HLS sẽ được tải đúng định dạng gốc rồi nối thành một tệp"
+        },
+        {
+            "name": "yt_video_count_format",
+            "value": "%d video"
+        },
+        {
+            "name": "yt_playlist_name_placeholder",
+            "value": "Tên danh sách phát"
+        },
+        {
+            "name": "yt_action_create",
+            "value": "Tạo"
+        },
+        {
+            "name": "yt_action_new_playlist",
+            "value": "Danh sách phát mới"
+        },
+        {
+            "name": "yt_action_save_to_playlist",
+            "value": "Lưu vào danh sách phát"
+        },
+        {
+            "name": "yt_comments_count_format",
+            "value": "Bình luận (%d)"
+        },
+        {
+            "name": "yt_replies_count_format",
+            "value": "%d câu trả lời"
+        },
+        {
+            "name": "yt_error_no_downloadable_stream",
+            "value": "Không có luồng tải được"
+        },
+        {
+            "name": "yt_error_live_not_downloadable",
+            "value": "Không tải được livestream"
+        },
+        {
+            "name": "yt_action_sleep_timer",
+            "value": "Hẹn giờ tắt"
+        },
+        {
+            "name": "yt_stream_info_title",
+            "value": "Thông tin luồng"
+        },
+        {
+            "name": "yt_stream_stats_title",
+            "value": "Thống kê phát"
+        },
+        {
+            "name": "yt_stats_video_id",
+            "value": "ID video"
+        },
+        {
+            "name": "yt_stats_conn_speed",
+            "value": "Tốc độ kết nối"
+        },
+        {
+            "name": "yt_stats_buffer",
+            "value": "Độ dài bộ đệm"
+        },
+        {
+            "name": "yt_stats_dropped",
+            "value": "Khung hình bị mất"
+        },
+        {
+            "name": "yt_stream_container",
+            "value": "Định dạng chứa"
+        },
+        {
+            "name": "yt_stream_media_title",
+            "value": "Tiêu đề"
+        },
+        {
+            "name": "yt_stream_duration",
+            "value": "Thời lượng"
+        },
+        {
+            "name": "yt_stream_file_size",
+            "value": "Kích thước tệp"
+        },
+        {
+            "name": "yt_stream_video",
+            "value": "Video"
+        },
+        {
+            "name": "yt_stream_audio",
+            "value": "Âm thanh"
+        },
+        {
+            "name": "yt_stream_resolution",
+            "value": "Độ phân giải"
+        },
+        {
+            "name": "yt_stream_codec",
+            "value": "Bộ mã"
+        },
+        {
+            "name": "yt_stream_bitrate",
+            "value": "Tốc độ bit"
+        },
+        {
+            "name": "yt_stream_frame_rate",
+            "value": "Tốc độ khung hình"
+        },
+        {
+            "name": "yt_stream_channels",
+            "value": "Kênh âm thanh"
+        },
+        {
+            "name": "yt_stream_sample_rate",
+            "value": "Tần số lấy mẫu"
+        },
+        {
+            "name": "yt_stream_loading",
+            "value": "Đang tải thông tin luồng…"
+        },
+        {
+            "name": "yt_sub_sync_sign_in_first",
+            "value": "Hãy đăng nhập trước khi đồng bộ kênh đăng ký"
+        },
+        {
+            "name": "yt_sub_sync_cloud_empty",
+            "value": "Danh sách đăng ký trên đám mây đang trống"
+        },
+        {
+            "name": "yt_sub_sync_result_added",
+            "value": "Đã đồng bộ %d kênh đăng ký, thêm %d"
+        },
+        {
+            "name": "yt_sub_sync_result",
+            "value": "Đã đồng bộ %d kênh đăng ký"
+        },
+        {
+            "name": "yt_sub_sync_failed",
+            "value": "Đồng bộ kênh đăng ký thất bại"
+        },
+        {
+            "name": "yt_refresh_failed",
+            "value": "Làm mới thất bại"
+        },
+        {
+            "name": "yt_sub_pull_to_sync",
+            "value": "Kéo xuống để đồng bộ kênh đăng ký YouTube"
+        },
+        {
+            "name": "yt_sub_signed_in_pull_hint",
+            "value": "Đã đăng nhập; kéo xuống để đồng bộ kênh đăng ký YouTube"
+        },
+        {
+            "name": "yt_auth_subtitle_sign_in",
+            "value": "Đăng nhập để có bảng tin cá nhân"
+        },
+        {
+            "name": "yt_auth_subtitle_cookie_active",
+            "value": "Đã đăng nhập (Cookie)"
+        },
+        {
+            "name": "yt_auth_subtitle_active",
+            "value": "Đã đăng nhập"
+        },
+        {
+            "name": "yt_auth_subtitle_incognito",
+            "value": "Đã lưu đăng nhập · Ẩn danh"
+        },
+        {
+            "name": "yt_auth_notice_title",
+            "value": "Trước khi đăng nhập"
+        },
+        {
+            "name": "yt_auth_notice_message",
+            "value": "Chào mừng bạn đăng nhập YouTube. Chúng tôi cung cấp quyền truy cập giới hạn nội dung tài khoản và giúp giảm tình trạng chế độ ẩn danh không dùng được ở một số mạng. Việc này có thể tốn thêm dữ liệu. Hãy lưu ý nhé :)"
+        },
+        {
+            "name": "yt_auth_continue_sign_in",
+            "value": "Tiếp tục đăng nhập"
+        },
+        {
+            "name": "yt_cookie_collapse",
+            "value": "Ẩn đăng nhập bằng Cookie"
+        },
+        {
+            "name": "yt_cookie_sign_in",
+            "value": "Đăng nhập bằng Cookie"
+        },
+        {
+            "name": "yt_cookie_import_subtitle",
+            "value": "Dán cookie trình duyệt"
+        },
+        {
+            "name": "yt_cookie_import_help",
+            "value": "Hỗ trợ định dạng header Cookie (SID=...; SAPISID=...) và JSON xuất từ EditThisCookie hoặc Cookie-Editor. Cần có SID và SAPISID hoặc __Secure-3PAPISID."
+        },
+        {
+            "name": "yt_cookie_import_placeholder",
+            "value": "SID=...; SAPISID=... hoặc JSON cookie"
+        },
+        {
+            "name": "yt_cookie_verifying",
+            "value": "Đang xác minh Cookie…"
+        },
+        {
+            "name": "yt_cookie_import_confirm",
+            "value": "Nhập và xác minh"
+        },
+        {
+            "name": "yt_cookie_verify_history",
+            "value": "Xác minh trực tuyến thành công (%d mục lịch sử)"
+        },
+        {
+            "name": "yt_cookie_verify_empty_history",
+            "value": "Xác minh trực tuyến thành công (lịch sử trống; xác thực đã thành công)"
+        },
+        {
+            "name": "yt_cookie_session_inactive",
+            "value": "Phiên không còn hoạt động. Hãy nhập cookie lại."
+        },
+        {
+            "name": "yt_cookie_verify_failed",
+            "value": "Xác minh trực tuyến thất bại: %s"
+        },
+        {
+            "name": "yt_cookie_input_required",
+            "value": "Hãy dán chuỗi cookie"
+        },
+        {
+            "name": "yt_cookie_parse_failed",
+            "value": "Không phân tích được cookie (hỗ trợ header hoặc JSON EditThisCookie)"
+        },
+        {
+            "name": "yt_cookie_sid_missing",
+            "value": "Xác minh cục bộ thất bại: không thấy SID / SAPISID"
+        },
+        {
+            "name": "yt_cookie_sapisid_missing",
+            "value": "Xác minh cục bộ thất bại: thiếu SAPISID (hoặc __Secure-3PAPISID)"
+        },
+        {
+            "name": "yt_auth_module_unavailable",
+            "value": "Mô-đun xác thực không khả dụng"
+        },
+        {
+            "name": "yt_cookie_local_validating",
+            "value": "Định dạng cục bộ hợp lệ. Đang xác minh với YouTube…"
+        },
+        {
+            "name": "yt_google_web_sign_in_subtitle",
+            "value": "Đăng nhập qua web"
+        },
+        {
+            "name": "yt_google_web_sign_in_title",
+            "value": "Đăng nhập YouTube"
+        },
+        {
+            "name": "yt_label_unknown",
+            "value": "Không rõ"
+        },
+        {
+            "name": "yt_label_untitled",
+            "value": "Chưa có tiêu đề"
+        },
+        {
+            "name": "yt_option_preferences",
+            "value": "Tùy chọn"
+        },
+        {
+            "name": "yt_appearance_theme_color",
+            "value": "Màu chủ đề"
+        },
+        {
+            "name": "yt_playback_pip",
+            "value": "Hình trong hình"
+        },
+        {
+            "name": "yt_playback_pip_on_return",
+            "value": "Vào hình trong hình khi rời app"
+        },
+        {
+            "name": "yt_playback_pip_on_return_subtitle",
+            "value": "Tự bật PiP khi nhấn Quay lại hoặc Home"
+        },
+        {
+            "name": "yt_playback_player",
+            "value": "Trình phát"
+        },
+        {
+            "name": "yt_playback_gestures",
+            "value": "Cử chỉ và điều khiển"
+        },
+        {
+            "name": "yt_option_gesture_control_subtitle",
+            "value": "Vuốt, giữ và các điều khiển phát khác"
+        },
+        {
+            "name": "yt_playback_gesture_seek",
+            "value": "Vuốt để tua"
+        },
+        {
+            "name": "yt_playback_gesture_seek_subtitle",
+            "value": "Vuốt ngang để tua"
+        },
+        {
+            "name": "yt_playback_gesture_brightness",
+            "value": "Vuốt trái để chỉnh độ sáng"
+        },
+        {
+            "name": "yt_playback_gesture_brightness_subtitle",
+            "value": "Vuốt cạnh trái để chỉnh độ sáng"
+        },
+        {
+            "name": "yt_playback_gesture_volume",
+            "value": "Vuốt phải để chỉnh âm lượng"
+        },
+        {
+            "name": "yt_playback_gesture_volume_subtitle",
+            "value": "Vuốt cạnh phải để chỉnh âm lượng"
+        },
+        {
+            "name": "yt_playback_hold_speed",
+            "value": "Giữ để tăng tốc"
+        },
+        {
+            "name": "yt_playback_hold_speed_subtitle",
+            "value": "Tạm tăng tốc phát khi đang giữ màn hình"
+        },
+        {
+            "name": "yt_playback_hold_speed_value",
+            "value": "Tốc độ khi giữ"
+        },
+        {
+            "name": "yt_playback_hold_speed_delay",
+            "value": "Độ trễ kích hoạt khi giữ"
+        },
+        {
+            "name": "yt_playback_background_audio_only",
+            "value": "Nền chỉ phát tiếng"
+        },
+        {
+            "name": "yt_playback_background_audio_only_subtitle",
+            "value": "Tắt hình khi ở nền để tiết kiệm pin"
+        },
+        {
+            "name": "yt_playback_auto_play_next",
+            "value": "Tự phát video tiếp theo"
+        },
+        {
+            "name": "yt_playback_auto_play_next_subtitle",
+            "value": "Mặc định tự phát hàng đợi khi mở app"
+        },
+        {
+            "name": "yt_playback_video_off_delay",
+            "value": "Độ trễ tắt hình"
+        },
+        {
+            "name": "yt_playback_hwdec",
+            "value": "Giải mã phần cứng"
+        },
+        {
+            "name": "yt_playback_hwdec_subtitle",
+            "value": "Giải mã phần cứng để đỡ tốn pin"
+        },
+        {
+            "name": "yt_playback_gpu_rendering",
+            "value": "Kết xuất GPU"
+        },
+        {
+            "name": "yt_playback_stream_endpoint",
+            "value": "Điểm cuối luồng"
+        },
+        {
+            "name": "yt_playback_guest_player_client",
+            "value": "Điểm cuối phát khi chưa đăng nhập"
+        },
+        {
+            "name": "yt_playback_auth_player_client",
+            "value": "Điểm cuối phát khi đã đăng nhập"
+        },
+        {
+            "name": "yt_setting_client_visionos",
+            "value": "VisionOS"
+        },
+        {
+            "name": "yt_setting_client_tv_downgraded",
+            "value": "TV hạ cấp"
+        },
+        {
+            "name": "yt_setting_client_mweb",
+            "value": "MWEB (SABR)"
+        },
+        {
+            "name": "yt_playback_buffer_network",
+            "value": "Hiệu năng và bộ đệm"
+        },
+        {
+            "name": "yt_option_perf_buffer_subtitle",
+            "value": "Giải mã, kết xuất và bộ nhớ đệm"
+        },
+        {
+            "name": "yt_playback_memory_cache",
+            "value": "Bộ nhớ đệm RAM"
+        },
+        {
+            "name": "yt_playback_readahead",
+            "value": "Bộ đệm đọc trước"
+        },
+        {
+            "name": "yt_playback_buffer_size",
+            "value": "Kích thước bộ đệm"
+        },
+        {
+            "name": "yt_download_concurrent_tasks",
+            "value": "Số tải đồng thời"
+        },
+        {
+            "name": "yt_toast_login_success",
+            "value": "Đăng nhập thành công"
+        },
+        {
+            "name": "yt_login_extracting_auth",
+            "value": "Đã đăng nhập. Đang lấy thông tin xác thực…"
+        },
+        {
+            "name": "yt_login_skip_pot",
+            "value": "Bỏ qua (không lấy PoToken)"
+        },
+        {
+            "name": "yt_confirm_delete_search_item",
+            "value": "Xóa “%s”?"
+        },
+        {
+            "name": "yt_download_saved_to_downloads",
+            "value": "Đã lưu vào Tải xuống"
+        },
+        {
+            "name": "yt_download_save_failed",
+            "value": "Lưu thất bại"
+        },
+        {
+            "name": "yt_date_today",
+            "value": "Hôm nay"
+        },
+        {
+            "name": "yt_date_days_ago",
+            "value": "%d ngày trước"
+        },
+        {
+            "name": "yt_date_weeks_ago",
+            "value": "%d tuần trước"
+        },
+        {
+            "name": "yt_date_months_ago",
+            "value": "%d tháng trước"
+        },
+        {
+            "name": "yt_date_years_ago",
+            "value": "%d năm trước"
+        },
+        {
+            "name": "yt_download_status_waiting",
+            "value": "Đang chờ"
+        },
+        {
+            "name": "yt_download_status_video",
+            "value": "Đang tải video"
+        },
+        {
+            "name": "yt_download_status_audio",
+            "value": "Đang tải âm thanh"
+        },
+        {
+            "name": "yt_download_status_merging",
+            "value": "Đang ghép"
+        },
+        {
+            "name": "yt_download_status_completed",
+            "value": "Hoàn tất"
+        },
+        {
+            "name": "yt_download_status_failed",
+            "value": "Tải thất bại"
+        },
+        {
+            "name": "yt_download_status_cancelled",
+            "value": "Đã hủy"
+        },
+        {
+            "name": "yt_download_started_format",
+            "value": "Đã bắt đầu tải: %s"
+        },
+        {
+            "name": "yt_download_saved_format",
+            "value": "Đã lưu vào Tải xuống: %s"
+        },
+        {
+            "name": "yt_download_completed_format",
+            "value": "Tải xong: %s"
+        },
+        {
+            "name": "yt_toast_copied",
+            "value": "Đã sao chép"
+        },
+        {
+            "name": "yt_toast_copy_failed",
+            "value": "Sao chép thất bại"
+        },
+        {
+            "name": "yt_about_package_name",
+            "value": "Tên gói"
+        },
+        {
+            "name": "yt_follow_system",
+            "value": "Theo hệ thống"
+        },
+        {
+            "name": "yt_data_account_manage_sign_in",
+            "value": "Quản lý dữ liệu và đăng nhập"
+        },
+        {
+            "name": "yt_data_account_incognito",
+            "value": "Đã lưu đăng nhập · Chế độ ẩn danh"
+        },
+        {
+            "name": "yt_data_account_cookie",
+            "value": "Đã đăng nhập (Cookie) · Quản lý dữ liệu và tài khoản"
+        },
+        {
+            "name": "yt_data_account_signed_in",
+            "value": "Đã đăng nhập · Quản lý dữ liệu và tài khoản"
+        },
+        {
+            "name": "yt_layout_card_mode",
+            "value": "Chế độ thẻ"
+        },
+        {
+            "name": "yt_layout_list_mode",
+            "value": "Chế độ danh sách"
+        },
+        {
+            "name": "yt_pip_playing",
+            "value": "Đang phát hình trong hình"
+        },
+        {
+            "name": "yt_pip_restore_hint",
+            "value": "Chạm cửa sổ hình trong hình để trở lại"
+        },
+        {
+            "name": "yt_google_web_sign_in",
+            "value": "Đăng nhập tài khoản Google"
+        },
+        {
+            "name": "yt_login_sapisid_failed",
+            "value": "Không lấy được SAPISID. Hãy thử lại."
+        },
+        {
+            "name": "yt_time_minutes_ago",
+            "value": "%d phút trước"
+        },
+        {
+            "name": "yt_time_hours_ago",
+            "value": "%d giờ trước"
+        },
+        {
+            "name": "yt_history_sync_sign_in",
+            "value": "Hãy đăng nhập trước khi đồng bộ lịch sử đám mây"
+        },
+        {
+            "name": "yt_history_sync_success",
+            "value": "Đã đồng bộ %d mục lịch sử đám mây (giữ tiến độ và thời gian trên máy)"
+        },
+        {
+            "name": "yt_history_sync_empty",
+            "value": "Lịch sử đám mây đang trống"
+        },
+        {
+            "name": "yt_history_sync_failed",
+            "value": "Không đồng bộ được lịch sử đám mây"
+        },
+        {
+            "name": "yt_sub_feed_youtube",
+            "value": "Bảng tin đăng ký YouTube"
+        },
+        {
+            "name": "yt_sub_feed_title",
+            "value": "Bảng tin đăng ký"
+        },
+        {
+            "name": "yt_sub_feed_entry_title",
+            "value": "Bảng tin đăng ký"
+        },
+        {
+            "name": "yt_sub_feed_entry_subtitle",
+            "value": "%d kênh đã đăng ký"
+        },
+        {
+            "name": "yt_sub_feed_new_items",
+            "value": "%d video mới"
+        },
+        {
+            "name": "yt_sub_feed_empty_hint",
+            "value": "Kéo để làm mới video mới nhất từ kênh bạn đăng ký"
+        },
+        {
+            "name": "yt_backup_item_subscription_feed",
+            "value": "Bộ nhớ đệm bảng tin đăng ký"
+        },
+        {
+            "name": "yt_feed_fast_mode_title",
+            "value": "Bảng tin đăng ký nhanh (RSS)"
+        },
+        {
+            "name": "yt_feed_fast_mode_subtitle",
+            "value": "Lấy qua RSS nhẹ; ít yêu cầu hơn nhưng thiếu siêu dữ liệu"
+        },
+        {
+            "name": "yt_action_open_browser",
+            "value": "Mở trong trình duyệt"
+        },
+        {
+            "name": "yt_action_show_more",
+            "value": "Xem thêm"
+        },
+        {
+            "name": "yt_action_show_less",
+            "value": "Thu gọn"
+        },
+        {
+            "name": "yt_backup_export_title",
+            "value": "Chọn mục để xuất"
+        },
+        {
+            "name": "yt_backup_export_success",
+            "value": "Xuất thành công"
+        },
+        {
+            "name": "yt_backup_export_failed",
+            "value": "Xuất thất bại"
+        },
+        {
+            "name": "yt_backup_restore_title",
+            "value": "Chọn mục để khôi phục"
+        },
+        {
+            "name": "yt_backup_restore_success",
+            "value": "Khôi phục thành công"
+        },
+        {
+            "name": "yt_backup_restore_failed",
+            "value": "Khôi phục thất bại"
+        },
+        {
+            "name": "yt_backup_confirm_restore",
+            "value": "Khôi phục sẽ ghi đè dữ liệu trên máy đã chọn. Tiếp tục?"
+        },
+        {
+            "name": "yt_backup_version_unsupported",
+            "value": "Không hỗ trợ phiên bản tệp sao lưu"
+        },
+        {
+            "name": "yt_backup_item_settings",
+            "value": "Cài đặt ứng dụng"
+        },
+        {
+            "name": "yt_backup_item_subscriptions",
+            "value": "Kênh đăng ký"
+        },
+        {
+            "name": "yt_backup_item_favorites",
+            "value": "Video yêu thích"
+        },
+        {
+            "name": "yt_backup_item_playlists",
+            "value": "Danh sách phát yêu thích"
+        },
+        {
+            "name": "yt_backup_item_local_queues",
+            "value": "Danh sách phát trên máy"
+        },
+        {
+            "name": "yt_backup_item_watch_history",
+            "value": "Lịch sử xem"
+        },
+        {
+            "name": "yt_backup_item_search_history",
+            "value": "Lịch sử tìm kiếm"
+        },
+        {
+            "name": "yt_backup_item_auth",
+            "value": "Trạng thái đăng nhập YouTube"
+        },
+        {
+            "name": "yt_codec_av1",
+            "value": "AV1"
+        },
+        {
+            "name": "yt_confirm_reset_settings",
+            "value": "Đặt lại mọi cài đặt về mặc định? Không thể hoàn tác."
+        },
+        {
+            "name": "yt_confirm_clear_all_data",
+            "value": "Xóa toàn bộ dữ liệu ứng dụng? Thao tác này xóa lịch sử, yêu thích, đăng ký, cài đặt, video đã tải và tệp đã nhập. Không thể hoàn tác."
+        },
+        {
+            "name": "yt_error_age_restricted",
+            "value": "Video này có giới hạn độ tuổi"
+        },
+        {
+            "name": "yt_error_age_restricted_hint",
+            "value": "Bạn cần đăng nhập tài khoản YouTube trong trình duyệt để xem"
+        },
+        {
+            "name": "yt_error_geo_restricted",
+            "value": "Nội dung này không khả dụng ở khu vực của bạn"
+        },
+        {
+            "name": "yt_error_geo_restricted_hint",
+            "value": "Người đăng đã giới hạn khu vực phát"
+        },
+        {
+            "name": "yt_error_paid_content",
+            "value": "Đây là nội dung trả phí"
+        },
+        {
+            "name": "yt_error_paid_content_hint",
+            "value": "Bạn cần mua hoặc thuê để xem"
+        },
+        {
+            "name": "yt_error_premium_content",
+            "value": "Nội dung này chỉ dành cho thành viên YouTube Premium"
+        },
+        {
+            "name": "yt_error_premium_content_hint",
+            "value": "Bạn cần đăng ký YouTube Premium để phát"
+        },
+        {
+            "name": "yt_error_private_content",
+            "value": "Đây là video riêng tư"
+        },
+        {
+            "name": "yt_error_private_content_hint",
+            "value": "Chỉ người được phép mới xem được"
+        },
+        {
+            "name": "yt_error_login_required",
+            "value": "Cần đăng nhập để xem"
+        },
+        {
+            "name": "yt_error_login_required_hint",
+            "value": "Hãy đăng nhập tài khoản YouTube trong trình duyệt"
+        },
+        {
+            "name": "yt_error_account_terminated",
+            "value": "Kênh này đã bị đóng"
+        },
+        {
+            "name": "yt_error_account_terminated_hint",
+            "value": "Tài khoản này bị cấm vì vi phạm chính sách YouTube"
+        },
+        {
+            "name": "yt_error_live_offline",
+            "value": "Livestream đã kết thúc"
+        },
+        {
+            "name": "yt_error_live_offline_hint",
+            "value": "Livestream này đang tắt hoặc chưa bắt đầu"
+        },
+        {
+            "name": "yt_error_content_not_supported",
+            "value": "Không hỗ trợ loại nội dung này"
+        },
+        {
+            "name": "yt_error_content_not_supported_hint",
+            "value": "Định dạng video này không phát được"
+        },
+        {
+            "name": "yt_error_network",
+            "value": "Kết nối mạng thất bại"
+        },
+        {
+            "name": "yt_error_network_hint",
+            "value": "Hãy kiểm tra mạng rồi thử lại"
+        },
+        {
+            "name": "yt_error_timeout",
+            "value": "Yêu cầu hết thời gian"
+        },
+        {
+            "name": "yt_error_timeout_hint",
+            "value": "Máy chủ phản hồi quá chậm, hãy thử lại sau"
+        },
+        {
+            "name": "yt_error_extraction_failed",
+            "value": "Không phân tích được thông tin video"
+        },
+        {
+            "name": "yt_error_endpoint_hint",
+            "value": "Điểm cuối: %s"
+        },
+        {
+            "name": "yt_error_extraction_failed_hint",
+            "value": "Không lấy được dữ liệu phát video"
+        },
+        {
+            "name": "yt_error_cipher_failed",
+            "value": "Không giải mã được luồng video"
+        },
+        {
+            "name": "yt_error_cipher_failed_hint",
+            "value": "Thuật toán chữ ký đã đổi, hãy đợi bản cập nhật ứng dụng"
+        },
+        {
+            "name": "yt_label_loading",
+            "value": "Đang tải…"
+        },
+        {
+            "name": "yt_option_group_recovery",
+            "value": "Khôi phục"
+        },
+        {
+            "name": "yt_option_reset_settings",
+            "value": "Đặt lại mọi cài đặt"
+        },
+        {
+            "name": "yt_option_reset_settings_subtitle",
+            "value": "Khôi phục cài đặt mặc định"
+        },
+        {
+            "name": "yt_option_clear_all_data",
+            "value": "Xóa toàn bộ dữ liệu ứng dụng"
+        },
+        {
+            "name": "yt_option_clear_all_data_subtitle",
+            "value": "Xóa lịch sử, bộ nhớ đệm và mọi dữ liệu"
+        },
+        {
+            "name": "yt_option_recovery",
+            "value": "Khôi phục"
+        },
+        {
+            "name": "yt_option_data_account",
+            "value": "Dữ liệu và tài khoản"
+        },
+        {
+            "name": "yt_option_data_account_subtitle",
+            "value": "Đăng nhập và dữ liệu trên máy"
+        },
+        {
+            "name": "yt_option_google_login",
+            "value": "Đăng nhập Google"
+        },
+        {
+            "name": "yt_option_export_data",
+            "value": "Xuất dữ liệu"
+        },
+        {
+            "name": "yt_option_export_data_subtitle",
+            "value": "Sao lưu dữ liệu trên máy dạng JSON"
+        },
+        {
+            "name": "yt_option_restore_data",
+            "value": "Khôi phục dữ liệu"
+        },
+        {
+            "name": "yt_option_restore_data_subtitle",
+            "value": "Khôi phục từ bản sao lưu JSON"
+        },
+        {
+            "name": "yt_section_account",
+            "value": "Tài khoản"
+        },
+        {
+            "name": "yt_section_data_management",
+            "value": "Quản lý dữ liệu"
+        },
+        {
+            "name": "yt_toast_reset_settings_done",
+            "value": "Đã đặt lại cài đặt về mặc định"
+        },
+        {
+            "name": "yt_toast_clear_all_data_done",
+            "value": "Đã xóa toàn bộ dữ liệu"
+        },
+        {
+            "name": "yt_setting_home_layout",
+            "value": "Bố cục trang chủ"
+        },
+        {
+            "name": "yt_layout_grid",
+            "value": "Chế độ thẻ"
+        },
+        {
+            "name": "yt_layout_list",
+            "value": "Chế độ danh sách"
+        },
+        {
+            "name": "yt_setting_card_density",
+            "value": "Mật độ thẻ"
+        },
+        {
+            "name": "yt_density_auto",
+            "value": "Tự động"
+        },
+        {
+            "name": "yt_density_compact",
+            "value": "Gọn"
+        },
+        {
+            "name": "yt_density_cozy",
+            "value": "Vừa"
+        },
+        {
+            "name": "yt_backup_error_no_context",
+            "value": "Không lấy được ngữ cảnh ứng dụng"
+        },
+        {
+            "name": "yt_backup_error_no_save_path",
+            "value": "Chưa chọn đường dẫn lưu"
+        },
+        {
+            "name": "yt_backup_error_no_file",
+            "value": "Chưa chọn tệp"
+        },
+        {
+            "name": "yt_backup_error_format",
+            "value": "Sai định dạng tệp sao lưu"
+        },
+        {
+            "name": "yt_backup_error_wrong_app",
+            "value": "Tệp sao lưu không thuộc ứng dụng này"
+        },
+        {
+            "name": "yt_backup_error_version",
+            "value": "Không hỗ trợ phiên bản tệp sao lưu"
+        },
+        {
+            "name": "yt_backup_error_empty",
+            "value": "Tệp sao lưu trống"
+        },
+        {
+            "name": "yt_backup_error_restore",
+            "value": "Khôi phục thất bại"
+        },
+        {
+            "name": "yt_backup_error_export",
+            "value": "Xuất thất bại"
+        },
+        {
+            "name": "yt_subscriptions_feed_local",
+            "value": "RSS kênh đăng ký trên máy"
+        },
+        {
+            "name": "yt_playlist_video_count",
+            "value": "%d video"
+        },
+        {
+            "name": "yt_history_sync_pull_hint",
+            "value": "Kéo xuống để đồng bộ lịch sử xem YouTube"
+        },
+        {
+            "name": "yt_history_sync_sign_in_hint",
+            "value": "Đăng nhập để bật đồng bộ lịch sử đám mây"
+        },
+        {
+            "name": "yt_history_sync_signed_in_hint",
+            "value": "Đã đăng nhập; kéo xuống để đồng bộ lịch sử đám mây"
+        },
+        {
+            "name": "yt_subs_sync_signed_in_hint",
+            "value": "Đã đăng nhập; kéo xuống để đồng bộ kênh đăng ký YouTube"
+        },
+        {
+            "name": "yt_setting_delay_immediate",
+            "value": "Ngay lập tức"
+        },
+        {
+            "name": "yt_setting_gpu_auto",
+            "value": "Tự động"
+        },
+        {
+            "name": "yt_label_opengl",
+            "value": "OpenGL"
+        },
+        {
+            "name": "yt_label_vulkan",
+            "value": "Vulkan"
+        },
+        {
+            "name": "yt_about_oss_newpipe_desc",
+            "value": "Ứng dụng YouTube mã nguồn mở; tham chiếu duyệt và tìm kiếm"
+        },
+        {
+            "name": "yt_about_oss_iplay_desc",
+            "value": "Trình phát đa nền tảng; tham chiếu phát nhiều nguồn"
+        },
+        {
+            "name": "yt_about_oss_ytdlp_desc",
+            "value": "Công cụ tải dòng lệnh; tham chiếu chọn định dạng và luồng tải"
+        },
+        {
+            "name": "yt_about_oss_finvideo_desc",
+            "value": "Trình phát HarmonyOS; tham chiếu giao diện phát ArkTS"
+        },
+        {
+            "name": "yt_about_oss_pipepipe_desc",
+            "value": "Nhánh NewPipe; tham chiếu điểm cuối phát và quyết định xác thực"
+        },
+        {
+            "name": "yt_about_oss_mpv_desc",
+            "value": "Công cụ phát; tham chiếu chính thức hành vi và API libmpv"
+        },
+        {
+            "name": "yt_about_oss_smarttube_desc",
+            "value": "Ứng dụng YouTube cho Android TV; tham chiếu tương tác TV"
+        },
+        {
+            "name": "yt_about_oss_clashbox_desc",
+            "value": "Ứng dụng proxy HarmonyOS; tham chiếu giao diện cấu hình proxy"
+        },
+        {
+            "name": "yt_about_oss_tpc_desc",
+            "value": "Dự án chuyển C/C++ sang OpenHarmony; tham chiếu biên dịch phụ thuộc gốc"
+        },
+        {
+            "name": "yt_about_oss_vlc_desc",
+            "value": "Trình phát đa nền tảng; tham chiếu tương thích bộ mã"
+        },
+        {
+            "name": "yt_label_vendors",
+            "value": "nhà cung cấp"
+        },
+        {
+            "name": "yt_about_tap_to_open",
+            "value": "Chạm một mục để mở trong trình duyệt"
+        },
+        {
+            "name": "yt_about_link_unavailable",
+            "value": "Mục này không có liên kết"
+        },
+        {
+            "name": "yt_about_link_failed",
+            "value": "Không mở được liên kết"
+        },
+        {
+            "name": "yt_changelog_0_5_3_1",
+            "value": "Thêm phát trực tuyến YouTube SABR/UMP, tương thích tốt hơn với định dạng mới, độ phân giải cao và video bị hạn chế"
+        },
+        {
+            "name": "yt_changelog_0_5_3_2",
+            "value": "Làm lại cách trích xuất video và chọn client, khớp hành vi yêu cầu PipePipe, khôi phục giải mã chữ ký từ xa, giảm trích xuất trùng và thời gian chờ lúc mở"
+        },
+        {
+            "name": "yt_changelog_0_5_3_3",
+            "value": "Cải thiện proxy media DASH trên máy: tách luồng hình/tiếng, bộ nhớ đệm theo đoạn, tua chính xác, khôi phục khi đứt luồng và xử lý khi phát xong"
+        },
+        {
+            "name": "yt_changelog_0_5_3_4",
+            "value": "Thêm PoToken cho SABR; tối ưu tham số chữ ký, header yêu cầu và xử lý phản hồi nhị phân, giảm lỗi 403 / không phát được / tải mãi"
+        },
+        {
+            "name": "yt_changelog_0_5_3_5",
+            "value": "Cải thiện đồng bộ trạng thái trình phát, đổi chất lượng và track âm thanh; sửa tải vô hạn sau khi phát, lệch khi tua và menu track âm thanh"
+        },
+        {
+            "name": "yt_changelog_0_5_3_6",
+            "value": "Nâng phân tích danh sách phát và phân trang, tương thích cấu trúc danh sách mới, nội dung khóa và continuation; cải thiện tải danh sách và phát liên tục"
+        },
+        {
+            "name": "yt_changelog_0_5_3_7",
+            "value": "Sắp lại lối vào quản lý tài khoản và dữ liệu, liên kết tốt hơn trạng thái đăng nhập, lịch sử xem, trang máy, tùy chọn tải và tùy chọn phát"
+        },
+        {
+            "name": "yt_changelog_0_5_3_8",
+            "value": "Cải thiện đề xuất trang chủ, thẻ video, màu chủ đề, hình trong hình và phiên media hệ thống; sửa nhiều lỗi giao diện và ổn định phát"
+        },
+        {
+            "name": "yt_changelog_0_5_2_1",
+            "value": "Trang phát thêm Chỉ âm thanh: tắt hình và nghe tiếng, ảnh bìa thay khung hình, vẫn tua và điều khiển được"
+        },
+        {
+            "name": "yt_changelog_0_5_2_2",
+            "value": "Ở chế độ chỉ âm thanh không vào hình trong hình; trở lại tiền cảnh vẫn chỉ âm thanh, cần bật hình thủ công"
+        },
+        {
+            "name": "yt_changelog_0_5_2_3",
+            "value": "Khi ở nền có thể trì hoãn tắt hình để tiết kiệm pin (chỉnh trong cài đặt phát)"
+        },
+        {
+            "name": "yt_changelog_0_5_2_4",
+            "value": "Sửa gián đoạn phát hệ thống: giảm âm lượng đúng cách, tránh nén lần hai gây mất tiếng"
+        },
+        {
+            "name": "yt_changelog_0_5_2_5",
+            "value": "Chuyển ngang/dọc, toàn màn hình và cửa sổ mượt hơn, giảm màn hình đen và mờ"
+        },
+        {
+            "name": "yt_changelog_0_5_2_6",
+            "value": "Trang chủ sau đăng nhập khớp trạng thái tài khoản hơn, có thể đồng bộ lịch sử xem và kênh đăng ký trên đám mây"
+        },
+        {
+            "name": "yt_changelog_0_5_2_7",
+            "value": "Thẻ video, huy hiệu trực tiếp và vùng an toàn trang rõ hơn"
+        },
+        {
+            "name": "yt_changelog_0_5_2_8",
+            "value": "Hỗ trợ chuyển tiếp ứng dụng và chạm để chia sẻ liên kết video"
+        },
+        {
+            "name": "yt_changelog_0_5_1_1",
+            "value": "Sửa một số lỗi đã biết"
+        },
+        {
+            "name": "yt_changelog_0_5_1_2",
+            "value": "Khớp các vấn đề của PipePipe"
+        },
+        {
+            "name": "yt_changelog_0_5_1_3",
+            "value": "Sửa không xem được sau khi đăng nhập"
+        },
+        {
+            "name": "yt_changelog_0_5_1_4",
+            "value": "Sửa thanh thông tin hiện nhầm ở chế độ ngang"
+        },
+        {
+            "name": "yt_changelog_0_5_1_5",
+            "value": "Tối ưu giao diện trang cài đặt"
+        },
+        {
+            "name": "yt_changelog_0_5_1_6",
+            "value": "Hoàn tất kiểm tra logic giải mã trên máy, sẵn sàng triển khai"
+        },
+        {
+            "name": "yt_changelog_0_5_0_1",
+            "value": "Thay công cụ phát hệ thống và FFMpeg bên thứ ba bằng MPVPlayer"
+        },
+        {
+            "name": "yt_changelog_0_5_0_2",
+            "value": "Khôi phục phát độ phân giải cao và phụ đề"
+        },
+        {
+            "name": "yt_changelog_0_5_0_3",
+            "value": "Hỗ trợ giải mã phần cứng HEVC/H.264; trên API 23+ thử giải mã phần cứng VP9/AV1"
+        },
+        {
+            "name": "yt_changelog_0_5_0_4",
+            "value": "Thêm hiển thị HDR thật"
+        },
+        {
+            "name": "yt_changelog_0_5_0_5",
+            "value": "Tối ưu khả năng thư viện mạng khi chưa đăng nhập"
+        },
+        {
+            "name": "yt_changelog_0_5_0_6",
+            "value": "Tối ưu hiển thị lỗi"
+        },
+        {
+            "name": "yt_changelog_0_5_0_7",
+            "value": "Tối ưu giao diện và tùy chọn cài đặt"
+        },
+        {
+            "name": "yt_changelog_0_5_0_8",
+            "value": "Áp dụng bản vá mới nhất của PipePipe"
+        },
+        {
+            "name": "yt_changelog_0_4_1_1",
+            "value": "Tối ưu tốc độ tải video"
+        },
+        {
+            "name": "yt_changelog_0_4_1_2",
+            "value": "Áp dụng bản vá pipepipe 5.1.1"
+        },
+        {
+            "name": "yt_changelog_0_4_1_3",
+            "value": "Cho phép đăng nhập Google, gần như hết vấn đề chống bot"
+        },
+        {
+            "name": "yt_changelog_0_4_1_4",
+            "value": "Tối ưu tương tác toàn màn hình trên nhiều thiết bị"
+        },
+        {
+            "name": "yt_changelog_0_4_1_5",
+            "value": "Phát triển nhiều mô-đun trang trình phát"
+        },
+        {
+            "name": "yt_changelog_0_4_1_6",
+            "value": "Hoàn thành tính năng tải xuống ban đầu"
+        },
+        {
+            "name": "yt_changelog_0_4_1_7",
+            "value": "Hoàn thiện tính năng danh sách phát"
+        },
+        {
+            "name": "yt_changelog_0_4_1_8",
+            "value": "Tích hợp lối vào hệ thống và truyền màn hình, thử nghiệm chuyển tiếp ứng dụng"
+        },
+        {
+            "name": "yt_changelog_0_4_0_1",
+            "value": "Cơ bản hoàn tất phân tích hệ sinh thái yt-dlp và giao diện tích hợp"
+        },
+        {
+            "name": "yt_changelog_0_4_0_2",
+            "value": "Cho phép đăng nhập Google, gần như hết vấn đề chống bot"
+        },
+        {
+            "name": "yt_changelog_0_4_0_3",
+            "value": "Tối ưu cơ chế phát"
+        },
+        {
+            "name": "yt_changelog_0_4_0_4",
+            "value": "Dùng giải mã đám mây thay giải mã trên máy, ổn định hơn"
+        },
+        {
+            "name": "yt_changelog_0_3_1_1",
+            "value": "Cải thiện ngăn xếp trang và phát cửa sổ nhỏ"
+        },
+        {
+            "name": "yt_changelog_0_3_1_2",
+            "value": "Thêm bộ nhớ đệm máy chủ để phát mượt hơn"
+        },
+        {
+            "name": "yt_changelog_0_3_1_3",
+            "value": "Tối ưu giao diện và tương tác"
+        },
+        {
+            "name": "yt_changelog_0_3_1_4",
+            "value": "Thích ứng thêm trang và kích thước"
+        },
+        {
+            "name": "yt_changelog_0_3_1_5",
+            "value": "Tiếp tục đơn giản hóa mã cũ để giảm lỗi"
+        },
+        {
+            "name": "yt_changelog_0_3_1_6",
+            "value": "Bắt đầu đăng nhập Google, xác minh khả thi đăng nhập pipepipe"
+        },
+        {
+            "name": "yt_changelog_0_3_1_7",
+            "value": "Tối ưu ổn định phát nền"
+        },
+        {
+            "name": "yt_changelog_0_3_0_1",
+            "value": "Chốt thử nghiệm giải pháp máy chủ HTTP chuyển tiếp"
+        },
+        {
+            "name": "yt_changelog_0_3_0_2",
+            "value": "Quay lại trình phát hệ thống để cải thiện vòng đời"
+        },
+        {
+            "name": "yt_changelog_0_3_0_3",
+            "value": "Tối ưu giao diện và tương tác"
+        },
+        {
+            "name": "yt_changelog_0_3_0_4",
+            "value": "Thích ứng thêm trang và kích thước"
+        },
+        {
+            "name": "yt_changelog_0_3_0_5",
+            "value": "Gỡ nhiều thư viện và header cũ, đơn giản hóa để giảm lỗi"
+        },
+        {
+            "name": "yt_changelog_0_3_0_6",
+            "value": "Bắt đầu đăng nhập Google, xác minh khả thi smarttube"
+        },
+        {
+            "name": "yt_changelog_0_3_0_7",
+            "value": "Tối ưu ổn định phát nền"
+        },
+        {
+            "name": "yt_changelog_0_2_0_1",
+            "value": "Viết lại mã dự án, tối ưu quản lý vòng đời và tốc độ phát triển, bắt đầu lại"
+        },
+        {
+            "name": "yt_changelog_0_2_0_2",
+            "value": "Tối ưu phát và livestream, livestream mượt hơn, ít nóng máy hơn"
+        },
+        {
+            "name": "yt_changelog_0_2_0_3",
+            "value": "Nhiều tùy chọn hơn, tùy chỉnh cách phát"
+        },
+        {
+            "name": "yt_changelog_0_2_0_4",
+            "value": "Thông báo lỗi và quản lý nhật ký phong phú hơn"
+        },
+        {
+            "name": "yt_changelog_0_2_0_5",
+            "value": "Thêm tối ưu đa ngôn ngữ"
+        },
+        {
+            "name": "yt_changelog_0_2_0_6",
+            "value": "Cập nhật lõi NewPipe, tối ưu kết nối mạng và giải mã, ổn định hơn"
+        },
+        {
+            "name": "yt_changelog_0_2_0_7",
+            "value": "Tối ưu ổn định phát nền"
+        },
+        {
+            "name": "yt_changelog_0_2_0_8",
+            "value": "Phát bằng AVPlayer hệ thống, tối ưu ổn định và pin"
+        },
+        {
+            "name": "yt_changelog_0_1_2_1",
+            "value": "Sửa giao diện đơ khi đổi ngôn ngữ ứng dụng"
+        },
+        {
+            "name": "yt_changelog_0_1_2_2",
+            "value": "Tối ưu hiển thị biến thể tiếng Trung trong danh sách ngôn ngữ nội dung (giản thể / phồn thể HK / phồn thể Đài Loan)"
+        },
+        {
+            "name": "yt_changelog_0_1_2_3",
+            "value": "Hiện gợi ý đường dẫn lưu sau khi tải nhật ký xong"
+        },
+        {
+            "name": "yt_changelog_0_1_2_4",
+            "value": "Thêm trang Giới thiệu"
+        },
+        {
+            "name": "yt_changelog_0_1_2_5",
+            "value": "Sửa tùy chọn tắt độ phân giải cao không có tác dụng"
+        },
+        {
+            "name": "yt_changelog_0_1_2_6",
+            "value": "Thống nhất kiểu giao diện các mục trang cài đặt"
+        },
+        {
+            "name": "yt_changelog_0_1_1_1",
+            "value": "Tích hợp lõi phát MPV, hỗ trợ giải mã phần cứng và video độ phân giải cao"
+        },
+        {
+            "name": "yt_changelog_0_1_1_2",
+            "value": "Thêm phát nền và điều khiển media hệ thống"
+        },
+        {
+            "name": "yt_changelog_0_1_1_3",
+            "value": "Hoàn thiện cài đặt ngôn ngữ và khu vực, hỗ trợ đổi ngôn ngữ / khu vực nội dung"
+        },
+        {
+            "name": "yt_changelog_0_1_1_4",
+            "value": "Thêm hệ thống nhật ký lúc chạy, hỗ trợ xuất phiên"
+        },
+        {
+            "name": "yt_changelog_0_1_1_5",
+            "value": "Tối ưu bố cục trình phát ngang trên máy tính bảng"
+        },
+        {
+            "name": "yt_changelog_0_1_0_1",
+            "value": "Bản đầu: duyệt và tìm video YouTube cơ bản"
+        },
+        {
+            "name": "yt_changelog_0_1_0_2",
+            "value": "Tích hợp công cụ NewPipe Extractor"
+        },
+        {
+            "name": "yt_changelog_0_1_0_3",
+            "value": "Hỗ trợ đăng ký kênh, yêu thích và quản lý danh sách phát"
+        },
+        {
+            "name": "yt_changelog_0_1_0_4",
+            "value": "Hỗ trợ phát livestream"
+        },
+        {
+            "name": "yt_changelog_0_1_0_5",
+            "value": "Danh sách bình luận và trang kênh"
+        },
+        {
+            "name": "yt_label_version_format",
+            "value": "Phiên bản"
+        },
+        {
+            "name": "yt_label_projects",
+            "value": "dự án"
+        },
+        {
+            "name": "yt_label_latest_version",
+            "value": "Mới nhất v"
+        },
+        {
+            "name": "yt_label_videos",
+            "value": "video"
+        },
+        {
+            "name": "yt_label_videos_alt",
+            "value": "video"
+        },
+        {
+            "name": "yt_label_favorites_videos",
+            "value": "video"
+        },
+        {
+            "name": "yt_label_seconds_short",
+            "value": "giây"
+        },
+        {
+            "name": "yt_label_mb_short",
+            "value": "MB"
+        },
+        {
+            "name": "yt_setting_delay_5",
+            "value": "5 giây"
+        },
+        {
+            "name": "yt_setting_delay_15",
+            "value": "15 giây"
+        },
+        {
+            "name": "yt_setting_delay_30",
+            "value": "30 giây"
+        },
+        {
+            "name": "yt_setting_delay_60",
+            "value": "60 giây"
+        },
+        {
+            "name": "yt_setting_cache_secs_5",
+            "value": "5 giây"
+        },
+        {
+            "name": "yt_setting_cache_secs_10",
+            "value": "10 giây"
+        },
+        {
+            "name": "yt_setting_cache_secs_20",
+            "value": "20 giây"
+        },
+        {
+            "name": "yt_setting_cache_secs_30",
+            "value": "30 giây"
+        },
+        {
+            "name": "yt_setting_cache_secs_60",
+            "value": "60 giây"
+        },
+        {
+            "name": "yt_setting_readahead_5",
+            "value": "5 giây"
+        },
+        {
+            "name": "yt_setting_readahead_8",
+            "value": "8 giây"
+        },
+        {
+            "name": "yt_setting_readahead_15",
+            "value": "15 giây"
+        },
+        {
+            "name": "yt_setting_readahead_30",
+            "value": "30 giây"
+        },
+        {
+            "name": "yt_setting_readahead_60",
+            "value": "60 giây"
+        },
+        {
+            "name": "yt_setting_max_bytes_10",
+            "value": "10 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_20",
+            "value": "20 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_50",
+            "value": "50 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_100",
+            "value": "100 MB"
+        },
+        {
+            "name": "yt_changelog_0_5_4_1",
+            "value": "Cải thiện giải mã chữ ký JS trên máy với bộ nhớ đệm đĩa, làm nóng lúc khởi động lạnh và phương án dự phòng khi lỗi, giảm chờ và lỗi khi cần giải mã từ xa"
+        },
+        {
+            "name": "yt_changelog_0_5_4_2",
+            "value": "Bổ sung siêu dữ liệu track âm thanh DASH (xtags/acont) và tự chọn track mặc định theo ngôn ngữ nội dung / bản gốc, giảm chọn nhầm lồng tiếng"
+        },
+        {
+            "name": "yt_changelog_0_5_4_3",
+            "value": "Thêm hẹn giờ tắt trên trang phát, hết giờ thì dừng phát và thoát; bản địa hóa số lượt thích/xem theo ngôn ngữ và chỉnh màu vùng thông tin"
+        },
+        {
+            "name": "yt_changelog_0_5_4_4",
+            "value": "Khớp khóa chuỗi giao diện trên mọi ngôn ngữ, sửa nhãn [object Object] trong cài đặt và Giới thiệu, hoàn thiện tài nguyên tiếng Trung giản thể"
+        },
+        {
+            "name": "yt_changelog_0_5_4_5",
+            "value": "Đổi màu nhấn mặc định sang đỏ và thêm màu nền điều khiển/thông tin trình phát để tương phản tốt hơn"
+        },
+        {
+            "name": "yt_changelog_0_5_4_6",
+            "value": "Thêm kéo để làm mới ở Trang chủ; xóa toàn bộ dữ liệu cũng xóa tùy chọn xác thực, bộ nhớ đệm ảnh thu nhỏ và bộ nhớ đệm chữ ký, nhưng giữ file đã tải"
+        },
+        {
+            "name": "yt_changelog_0_5_4_7",
+            "value": "Cải thiện nhật ký yêu cầu mạng và chẩn đoán trích xuất để tìm lỗi tải và lỗi liên quan đăng nhập"
+        },
+        {
+            "name": "yt_changelog_0_5_4_8",
+            "value": "Cập nhật runtime MPV đi kèm và sửa nhiều lỗi ổn định phát và giao diện"
+        },
+        {
+            "name": "yt_secure_shield_title",
+            "value": "Chế độ Lá chắn bảo mật đang bật"
+        },
+        {
+            "name": "yt_secure_shield_content",
+            "value": "Hệ thống đã bật Lá chắn bảo mật và tắt JIT. Không giải mã chữ ký trên máy được, nên sẽ dùng giải mã từ xa và video có thể vào chậm hơn."
+        },
+        {
+            "name": "yt_secure_shield_dont_show",
+            "value": "Không hiện lại"
+        },
+        {
+            "name": "yt_action_got_it",
+            "value": "Đã hiểu"
+        },
+        {
+            "name": "yt_option_auth_use_for_user_data",
+            "value": "Dùng trạng thái đăng nhập cho dữ liệu người dùng"
+        },
+        {
+            "name": "yt_option_auth_use_for_user_data_subtitle",
+            "value": "Bảng tin, đăng ký, lịch sử, tìm kiếm"
+        },
+        {
+            "name": "yt_option_auth_use_for_playback",
+            "value": "Dùng trạng thái đăng nhập để phát"
+        },
+        {
+            "name": "yt_changelog_0_5_5_1",
+            "value": "Phát hiện hạn chế Lá chắn bảo mật/JIT lúc khởi động và nói rõ khi nào sẽ dùng giải mã chữ ký từ xa"
+        },
+        {
+            "name": "yt_changelog_0_5_5_2",
+            "value": "Thẻ trang chủ và đăng ký dựng lại đáng tin sau khi kéo làm mới, kể cả khi ID mục không đổi"
+        },
+        {
+            "name": "yt_changelog_0_5_5_3",
+            "value": "Thêm công tắc đăng nhập chính, dữ liệu người dùng và phát, để quản lý quyền tài khoản riêng"
+        },
+        {
+            "name": "yt_changelog_0_5_5_4",
+            "value": "Tắt đăng nhập cho dữ liệu người dùng sẽ về Trang chủ ẩn danh và bảng tin trên máy, thay vì hiện phản hồi xác thực trống"
+        },
+        {
+            "name": "yt_changelog_0_5_5_5",
+            "value": "Tắt đăng nhập khi phát sẽ chọn client trình phát ẩn danh và tải SABR không kèm thông tin tài khoản"
+        },
+        {
+            "name": "yt_changelog_0_5_5_6",
+            "value": "Đề xuất trình phát dùng phản hồi next ẩn danh ổn định của YouTube, sửa hàng đợi trống khi đã đăng nhập"
+        },
+        {
+            "name": "yt_changelog_0_5_5_7",
+            "value": "Ổn định chọn client phát đã xác thực và xử lý LOGIN_REQUIRED với video bị hạn chế"
+        },
+        {
+            "name": "yt_changelog_0_5_5_8",
+            "value": "Ưu tiên dấu thời gian chữ ký từ trang xem, giảm độ trễ khởi động trước khi chuyển sang dịch vụ trình phát từ xa"
+        },
+        {
+            "name": "yt_changelog_0_5_5_9",
+            "value": "Thêm siêu dữ liệu trình phát đã lưu và thời gian chờ giải mã từ xa chặt hơn để dịch vụ chậm không chặn phát lâu"
+        },
+        {
+            "name": "yt_changelog_0_5_5_10",
+            "value": "Thêm chèn PoToken base64url đã lưu cho URL DASH để giảm lỗi 403 googlevideo mà không làm lỗi token thành lỗi nghiêm trọng"
+        },
+        {
+            "name": "yt_changelog_0_5_5_11",
+            "value": "Sửa bảng Lưu vào danh sách phát, Thông tin luồng và Hẹn giờ tắt bằng cách gộp các binding sheet đáy bị xung đột"
+        },
+        {
+            "name": "yt_changelog_0_5_5_12",
+            "value": "Cải thiện duyệt danh sách phát và thư viện khi đã xác thực, vẫn giữ phương án ẩn danh và trên máy khi tắt dùng tài khoản"
+        },
+        {
+            "name": "yt_changelog_0_5_5_13",
+            "value": "Duyệt riêng tư có thể che cả hai bề mặt tài khoản mà không xóa thông tin đã lưu, dễ quay lại chế độ đã đăng nhập"
+        },
+        {
+            "name": "yt_changelog_0_5_5_14",
+            "value": "Đổi công tắc đăng nhập chính hoặc đăng nhập khi phát sẽ chọn lại ngay client trình phát ẩn danh hoặc đã xác thực"
+        },
+        {
+            "name": "yt_changelog_0_5_5_15",
+            "value": "Đồng bộ lịch sử và đăng ký trên đám mây theo công tắc dữ liệu người dùng, vẫn giữ lịch sử và đăng ký trên máy"
+        },
+        {
+            "name": "yt_changelog_0_5_5_16",
+            "value": "Yêu cầu duyệt danh sách phát có thể dùng quyền tài khoản khi cần, tải tốt hơn danh sách riêng tài khoản và bị hạn chế"
+        },
+        {
+            "name": "yt_changelog_0_5_5_17",
+            "value": "Tạo PoToken dùng chung phiên bản web client YouTube đã phân giải, không dựa phiên bản cố định cũ"
+        },
+        {
+            "name": "yt_changelog_0_5_5_18",
+            "value": "Byte PoToken được chuyển sang base64 an toàn URL và lưu theo video trong năm phút để tránh tạo token lặp"
+        },
+        {
+            "name": "yt_changelog_0_5_5_19",
+            "value": "Yêu cầu dữ liệu người dùng và phát chỉ gắn thông tin trong phạm vi đã chọn, giảm lộ cookie tài khoản ngoài ý muốn"
+        },
+        {
+            "name": "yt_changelog_0_5_5_20",
+            "value": "Mở rộng chẩn đoán phát, xác thực, token, làm mới và dự phòng, đồng thời không ghi cookie nhạy cảm và URL đã ký vào nhật ký"
+        },
+        {
+            "name": "yt_changelog_0_6_0_1",
+            "value": "Làm lại hệ phụ đề: vẽ chồng với cỡ chữ, màu, nền, vị trí và độ trễ tùy chỉnh"
+        },
+        {
+            "name": "yt_changelog_0_6_0_2",
+            "value": "Dịch phụ đề bằng AI: mọi track phụ đề có thể dịch ngay sang ngôn ngữ đích"
+        },
+        {
+            "name": "yt_changelog_0_6_0_3",
+            "value": "Cử chỉ phát mới: chạm đúp tua ±15 giây, giữ để tăng tốc, hai ngón kéo và phóng to, đổi tỉ lệ khung"
+        },
+        {
+            "name": "yt_changelog_0_6_0_4",
+            "value": "Bảng thông tin trình phát mới: mô tả, bình luận và hàng đợi một chỗ, tự mở bảng bên trên màn hình rộng"
+        },
+        {
+            "name": "yt_changelog_0_6_0_5",
+            "value": "Thiết kế lại thẻ, thống nhất menu nhấn giữ, tải video trực tiếp từ thẻ"
+        },
+        {
+            "name": "yt_changelog_0_6_0_6",
+            "value": "Hỗ trợ proxy SOCKS5; khôi phục phát nhanh sau khi đổi Wi-Fi/mạng di động"
+        },
+        {
+            "name": "yt_changelog_0_6_0_7",
+            "value": "Nâng trần chất lượng lên 2K/4K/8K; thêm ngôn ngữ giao diện Nhật, Hàn, Ý, Bồ Đào Nha"
+        },
+        {
+            "name": "yt_changelog_0_6_0_8",
+            "value": "Nhóm lại trang cài đặt; livestream khóa tốc độ phát bình thường"
+        },
+        {
+            "name": "yt_changelog_0_5_9_1",
+            "value": "Trang bảng tin chuyển sang lưới/danh sách tải lười: cuộn mượt hơn ở Trang chủ, Tìm kiếm, Danh sách phát, Kênh và Đăng ký"
+        },
+        {
+            "name": "yt_changelog_0_5_9_2",
+            "value": "Sửa sập lúc khởi động lạnh trên một số máy (gắn @BuilderParam)"
+        },
+        {
+            "name": "yt_changelog_0_5_9_3",
+            "value": "Sửa đăng nhập hết hạn không truyền lỗi và bảng tin trang chủ lặng lẽ dùng phương án dự phòng không báo"
+        },
+        {
+            "name": "yt_changelog_0_5_9_4",
+            "value": "Biểu tượng tùy chọn và nút hành động phá hủy theo màu chủ đề; bỏ đỏ cảnh báo cố định"
+        },
+        {
+            "name": "yt_changelog_0_5_9_5",
+            "value": "Mã hóa văn bản, Base64 và phân tích URL dùng triển khai hệ thống chính thức"
+        },
+        {
+            "name": "yt_changelog_0_5_9_6",
+            "value": "Gỡ mã chết như liên kết truyền màn hình và thăm dò trạng thái để gói nhỏ hơn"
+        },
+        {
+            "name": "yt_changelog_0_5_9_7",
+            "value": "Sửa ổn định liên kết tải trước khi phát và chốt tác vụ nền"
+        },
+        {
+            "name": "yt_changelog_0_5_8_1",
+            "value": "Dịch bình luận: nút \"Dịch\" dưới mỗi bình luận (Google Dịch) hiện bản dịch tại chỗ và chạm một lần về bản gốc"
+        },
+        {
+            "name": "yt_changelog_0_5_8_2",
+            "value": "Nhóm \"Dịch nội dung\" mới trong Ngôn ngữ và khu vực: ngôn ngữ đích mặc định theo ngôn ngữ ứng dụng và có thể đặt tay"
+        },
+        {
+            "name": "yt_changelog_0_5_8_3",
+            "value": "Khởi động nhanh hơn theo PipePipe: phát khi chưa đăng nhập dùng client visionos để phát trực tiếp (không PoToken); đã đăng nhập dùng tv_downgraded"
+        },
+        {
+            "name": "yt_changelog_0_5_8_4",
+            "value": "Sửa livestream tải mãi: phân loại lối vào trực tiếp đúng nên livestream phát bình thường"
+        },
+        {
+            "name": "yt_changelog_0_5_8_5",
+            "value": "Sửa đường đăng nhập: cookie và OAuth tách riêng, yêu cầu siêu dữ liệu/bình luận web không còn trộn thông tin"
+        },
+        {
+            "name": "yt_changelog_0_5_8_6",
+            "value": "Điều khiển media hệ thống hiện tiêu đề và tác giả video hiện tại: sửa siêu dữ liệu AVSession đôi khi trống"
+        },
+        {
+            "name": "yt_changelog_0_5_8_7",
+            "value": "Sửa giao diện: làm mới tô sáng tab dưới, bố cục hướng dẫn máy tính bảng, cuộn lồng trong chế độ thẻ kênh"
+        },
+        {
+            "name": "yt_changelog_0_5_7_1",
+            "value": "Trang Giới thiệu có \"Kiểm tra cập nhật\": so số bản dựng của GitHub Release mới nhất và nhảy một chạm tới cài thử AppGallery hoặc trang phát hành GitHub"
+        },
+        {
+            "name": "yt_changelog_0_5_7_2",
+            "value": "Bảng tin Đăng ký mới: gom cập nhật kênh theo thời gian; danh sách phát theo dõi lịch sử xem với huy hiệu tiến độ; danh sách thích ứng màn hình rộng"
+        },
+        {
+            "name": "yt_changelog_0_5_7_3",
+            "value": "Cài đặt \"Tự phát tiếp\" mới; trang Giới thiệu thêm logo dự án mã nguồn mở; yêu cầu dữ liệu media có thể đi qua proxy HTTP"
+        },
+        {
+            "name": "yt_changelog_0_5_7_4",
+            "value": "Khởi động nhanh hơn: tải trước video kế tiếp trong hàng đợi khi đang phát, làm nóng BotGuard lúc mở, và dùng lại siêu dữ liệu STS/phiên bản client trên đĩa"
+        },
+        {
+            "name": "yt_changelog_0_5_7_5",
+            "value": "Livestream hỗ trợ biến thể chất lượng HLS và chuyển đổi; tải trước chỉ mục SIDX lúc bắt đầu; visitorData ghim theo phiên giảm trích xuất lặp"
+        },
+        {
+            "name": "yt_changelog_0_5_7_6",
+            "value": "Ổn định SABR: tạo PoToken có thời gian chờ và cầu chì, phản hồi trống thì tạo PoToken ngay, lỗi dựng phiên giải phóng lease đúng"
+        },
+        {
+            "name": "yt_changelog_0_5_7_7",
+            "value": "Sửa tự chuyển trùng và tranh chấp đổi nguồn (gửi nguồn chỉ một người ghi); sửa rò rỉ đóng/khôi phục PiP và thứ tự gộp lịch sử xem"
+        },
+        {
+            "name": "yt_changelog_0_5_7_8",
+            "value": "Sửa video trắng trên HarmonyOS 6 (truyền OHNativeWindow thẳng cho mpv); dò khả năng bộ giải mã phần cứng theo từng máy"
+        },
+        {
+            "name": "yt_changelog_0_5_6_1",
+            "value": "Đăng nhập QR thiết bị kiểu SmartTube cho OAuth YouTube; có thể cùng tồn tại với đăng nhập Cookie"
+        },
+        {
+            "name": "yt_changelog_0_5_6_2",
+            "value": "Xác thực hai đường Cookie/WEB + OAuth/TV cho trang chủ, lịch sử, đăng ký và thư viện; luồng công khai ở mweb, nội dung hạn chế có thể về TV"
+        },
+        {
+            "name": "yt_changelog_0_5_6_3",
+            "value": "Cài đặt proxy HTTP cho trình trích xuất, SABR và yêu cầu media (phát loopback vẫn đi thẳng)"
+        },
+        {
+            "name": "yt_changelog_0_5_6_4",
+            "value": "Chương video trong trình phát, nhảy tới chương và tô sáng chương hiện tại"
+        },
+        {
+            "name": "yt_changelog_0_5_6_5",
+            "value": "Hành vi chia đôi màn hình / cửa sổ nổi tốt hơn; gom công cụ trình phát phía trên vào menu Thêm khi chật chỗ"
+        },
+        {
+            "name": "yt_changelog_0_5_6_6",
+            "value": "Làm lại vòng đời media phát để bắt đầu, đổi nguồn và đa cửa sổ đáng tin hơn"
+        },
+        {
+            "name": "yt_changelog_0_5_6_7",
+            "value": "Hiện tải/đệm ngay khi đổi chất lượng"
+        },
+        {
+            "name": "yt_changelog_0_5_6_8",
+            "value": "Thiết kế lại danh sách tải và hoạt ảnh lối vào; cải thiện đóng gói SABR ngoại tuyến; ẩn lối tải livestream"
+        },
+        {
+            "name": "yt_option_auth_use_for_playback_subtitle",
+            "value": "API trình phát và xác thực luồng"
+        },
+        {
+            "name": "yt_player_more_tools",
+            "value": "Thêm"
+        },
+        {
+            "name": "yt_player_subtitles",
+            "value": "Phụ đề"
+        },
+        {
+            "name": "yt_player_info_panel",
+            "value": "Thông tin video"
+        },
+        {
+            "name": "yt_player_audio_track",
+            "value": "Track âm thanh"
+        },
+        {
+            "name": "yt_player_playback_speed",
+            "value": "Tốc độ phát"
+        },
+        {
+            "name": "yt_option_network",
+            "value": "Mạng"
+        },
+        {
+            "name": "yt_proxy_off",
+            "value": "Tắt proxy"
+        },
+        {
+            "name": "yt_proxy_incomplete",
+            "value": "Cài đặt chưa đủ"
+        },
+        {
+            "name": "yt_proxy_enable",
+            "value": "Dùng proxy"
+        },
+        {
+            "name": "yt_proxy_enable_subtitle",
+            "value": "Đưa YouTube qua proxy bên dưới"
+        },
+        {
+            "name": "yt_proxy_type",
+            "value": "Loại proxy"
+        },
+        {
+            "name": "yt_proxy_type_http",
+            "value": "HTTP"
+        },
+        {
+            "name": "yt_proxy_type_http_subtitle",
+            "value": "Proxy HTTP CONNECT"
+        },
+        {
+            "name": "yt_proxy_type_socks5",
+            "value": "SOCKS5"
+        },
+        {
+            "name": "yt_proxy_type_socks5_subtitle",
+            "value": "SOCKS5 CONNECT"
+        },
+        {
+            "name": "yt_proxy_server",
+            "value": "Máy chủ"
+        },
+        {
+            "name": "yt_proxy_host",
+            "value": "Máy chủ"
+        },
+        {
+            "name": "yt_proxy_host_placeholder",
+            "value": "ví dụ 127.0.0.1"
+        },
+        {
+            "name": "yt_proxy_port",
+            "value": "Cổng"
+        },
+        {
+            "name": "yt_proxy_auth_optional",
+            "value": "Xác thực (không bắt buộc)"
+        },
+        {
+            "name": "yt_proxy_username",
+            "value": "Tên người dùng"
+        },
+        {
+            "name": "yt_proxy_password",
+            "value": "Mật khẩu"
+        },
+        {
+            "name": "yt_proxy_optional_placeholder",
+            "value": "Không bắt buộc"
+        },
+        {
+            "name": "yt_proxy_test",
+            "value": "Kiểm tra kết nối"
+        },
+        {
+            "name": "yt_proxy_testing",
+            "value": "Đang kiểm tra…"
+        },
+        {
+            "name": "yt_proxy_test_ok",
+            "value": "Proxy truy cập được"
+        },
+        {
+            "name": "yt_proxy_test_failed",
+            "value": "Kiểm tra proxy thất bại"
+        },
+        {
+            "name": "yt_proxy_test_http_error",
+            "value": "Trạng thái HTTP không mong đợi"
+        },
+        {
+            "name": "yt_proxy_test_auth_failed",
+            "value": "Xác thực proxy thất bại — hãy kiểm tra tên và mật khẩu"
+        },
+        {
+            "name": "yt_proxy_test_disabled",
+            "value": "Hãy bật proxy trước"
+        },
+        {
+            "name": "yt_proxy_loopback_note",
+            "value": "Proxy phát trên máy (127.0.0.1) không dùng cài đặt này."
+        },
+        {
+            "name": "yt_proxy_bridge_unavailable",
+            "value": "Cầu nối proxy SOCKS5 đã ngắt — lưu lại cài đặt proxy để kết nối lại."
+        },
+        {
+            "name": "yt_device_qr_sign_in",
+            "value": "Đăng nhập mã QR / TV"
+        },
+        {
+            "name": "yt_device_qr_sign_in_subtitle",
+            "value": "Quét mã hoặc mở youtube.com/activate"
+        },
+        {
+            "name": "yt_device_login_help",
+            "value": "Trên thiết bị khác, mở liên kết hoặc quét mã QR, rồi nhập mã bên dưới để ủy quyền ứng dụng này."
+        },
+        {
+            "name": "yt_device_login_requesting",
+            "value": "Đang yêu cầu mã thiết bị…"
+        },
+        {
+            "name": "yt_device_login_waiting",
+            "value": "Đang chờ ủy quyền…"
+        },
+        {
+            "name": "yt_device_login_polling",
+            "value": "Đang kiểm tra trạng thái ủy quyền"
+        },
+        {
+            "name": "yt_device_login_success",
+            "value": "Đã đăng nhập"
+        },
+        {
+            "name": "yt_device_login_failed",
+            "value": "Đăng nhập thất bại"
+        },
+        {
+            "name": "yt_device_login_retry",
+            "value": "Thử lại"
+        },
+        {
+            "name": "yt_option_help",
+            "value": "Trợ giúp"
+        },
+        {
+            "name": "yt_option_help_subtitle",
+            "value": "Hướng dẫn nhanh và cách dùng cơ bản"
+        },
+        {
+            "name": "yt_guide_skip",
+            "value": "Bỏ qua"
+        },
+        {
+            "name": "yt_guide_next",
+            "value": "Tiếp"
+        },
+        {
+            "name": "yt_guide_done",
+            "value": "Xong"
+        },
+        {
+            "name": "yt_guide_p1_desc",
+            "value": "Ứng dụng YouTube mã nguồn mở, phát bằng MPV trên máy và không quảng cáo — dữ liệu ở trên thiết bị của bạn."
+        },
+        {
+            "name": "yt_guide_p2_title",
+            "value": "Đăng nhập YouTube"
+        },
+        {
+            "name": "yt_guide_p2_desc",
+            "value": "Đăng nhập qua trang web hoặc mã QR trong Cài đặt → Dữ liệu và tài khoản. Sau khi đăng nhập bạn xem được kênh đăng ký, danh sách phát và nội dung tài khoản khác; chế độ khách vẫn dùng được khi không đăng nhập."
+        },
+        {
+            "name": "yt_guide_p3_title",
+            "value": "Quản lý dữ liệu tài khoản"
+        },
+        {
+            "name": "yt_guide_p3_desc",
+            "value": "Thông tin đăng nhập chỉ lưu trên thiết bị này và không tải lên máy chủ bên thứ ba. Bạn có thể đăng xuất hoặc bật ẩn danh bất cứ lúc nào trong Dữ liệu và tài khoản; đăng xuất sẽ xóa dữ liệu tài khoản."
+        },
+        {
+            "name": "yt_guide_p3_user_data",
+            "value": "Dùng cho dữ liệu người dùng: lấy kênh đăng ký, danh sách phát, lịch sử, tìm kiếm và dữ liệu tài khoản khác."
+        },
+        {
+            "name": "yt_guide_p3_playback",
+            "value": "Dùng để phát: yêu cầu URL phát với danh tính đã đăng nhập để giảm bị nhận là bot."
+        },
+        {
+            "name": "yt_guide_p4_title",
+            "value": "Proxy mạng"
+        },
+        {
+            "name": "yt_guide_p4_desc",
+            "value": "Trên mạng bị hạn chế, bật proxy HTTP hoặc SOCKS5 trong Cài đặt → Mạng và nhập địa chỉ máy chủ cùng cổng. Proxy chỉ áp dụng cho yêu cầu ra ngoài; địa chỉ loopback phát trên máy không đi qua."
+        },
+        {
+            "name": "yt_guide_p5_title",
+            "value": "Chất lượng và bộ nhớ đệm"
+        },
+        {
+            "name": "yt_guide_p5_desc",
+            "value": "Trong Cài đặt → Phát bạn đặt chất lượng mặc định, chất lượng mạng di động và thời lượng bộ nhớ đệm — tiết kiệm dữ liệu hoặc tăng chất lượng tùy ý."
+        },
+        {
+            "name": "yt_guide_p6_title",
+            "value": "Tải xuống và tệp trên máy"
+        },
+        {
+            "name": "yt_guide_p6_desc",
+            "value": "Có thể tải video để xem ngoại tuyến và quản lý ở tab Máy. \"Xóa toàn bộ dữ liệu\" không xóa file đã tải."
+        },
+        {
+            "name": "yt_option_subtitle_style_subtitle",
+            "value": "Cỡ, màu, nền và tự động dịch"
+        },
+        {
+            "name": "yt_setting_subtitle_size",
+            "value": "Cỡ phụ đề"
+        },
+        {
+            "name": "yt_setting_subtitle_bottom_margin",
+            "value": "Lề dưới phụ đề"
+        },
+        {
+            "name": "yt_setting_subtitle_color",
+            "value": "Màu chữ phụ đề"
+        },
+        {
+            "name": "yt_setting_subtitle_background",
+            "value": "Nền phụ đề"
+        },
+        {
+            "name": "yt_setting_subtitle_offset",
+            "value": "Độ trễ phụ đề"
+        },
+        {
+            "name": "yt_subtitle_color_white",
+            "value": "Trắng"
+        },
+        {
+            "name": "yt_subtitle_color_yellow",
+            "value": "Vàng"
+        },
+        {
+            "name": "yt_subtitle_color_green",
+            "value": "Xanh lá"
+        },
+        {
+            "name": "yt_subtitle_color_cyan",
+            "value": "Xanh lơ"
+        },
+        {
+            "name": "yt_subtitle_bg_none",
+            "value": "Không"
+        },
+        {
+            "name": "yt_subtitle_bg_semi",
+            "value": "Bán trong suốt"
+        },
+        {
+            "name": "yt_subtitle_bg_solid",
+            "value": "Đặc"
+        },
+        {
+            "name": "yt_player_aspect_mode",
+            "value": "Tỉ lệ khung"
+        },
+        {
+            "name": "yt_aspect_fit",
+            "value": "Vừa khung"
+        },
+        {
+            "name": "yt_aspect_fill",
+            "value": "Phủ kín"
+        },
+        {
+            "name": "yt_aspect_stretch",
+            "value": "Kéo giãn"
+        },
+        {
+            "name": "yt_aspect_reset",
+            "value": "Đặt lại thu phóng"
+        },
+        {
+            "name": "yt_gesture_scheme_title",
+            "value": "Kiểu tương tác"
+        },
+        {
+            "name": "yt_gesture_scheme_label",
+            "value": "Kiểu cử chỉ"
+        },
+        {
+            "name": "yt_gesture_scheme_enhanced",
+            "value": "Trình phát nâng cao"
+        },
+        {
+            "name": "yt_gesture_scheme_youtube",
+            "value": "YouTube cổ điển"
+        },
+        {
+            "name": "yt_gesture_scheme_custom",
+            "value": "Tùy chỉnh"
+        },
+        {
+            "name": "yt_gesture_scheme_subtitle",
+            "value": "Mẫu đặt đổi mọi cử chỉ cùng lúc; đổi một mục sẽ đánh dấu Tùy chỉnh"
+        },
+        {
+            "name": "yt_gesture_double_tap",
+            "value": "Chạm đúp"
+        },
+        {
+            "name": "yt_gesture_double_tap_seek",
+            "value": "Tua lùi / tới"
+        },
+        {
+            "name": "yt_gesture_double_tap_playpause",
+            "value": "Phát / tạm dừng"
+        },
+        {
+            "name": "yt_gesture_double_tap_off",
+            "value": "Không làm gì"
+        },
+        {
+            "name": "yt_gesture_double_tap_seek_seconds",
+            "value": "Bước tua khi chạm đúp"
+        },
+        {
+            "name": "yt_gesture_help_title",
+            "value": "Hướng dẫn cử chỉ"
+        },
+        {
+            "name": "yt_gesture_help_single_tap",
+            "value": "Chạm một lần"
+        },
+        {
+            "name": "yt_gesture_help_single_tap_value",
+            "value": "Hiện điều khiển (tự ẩn sau 3 giây)"
+        },
+        {
+            "name": "yt_gesture_help_swipe_horizontal",
+            "value": "Vuốt ngang"
+        },
+        {
+            "name": "yt_gesture_help_swipe_left",
+            "value": "Vuốt cạnh trái"
+        },
+        {
+            "name": "yt_gesture_help_swipe_right",
+            "value": "Vuốt cạnh phải"
+        },
+        {
+            "name": "yt_gesture_help_hold",
+            "value": "Nhấn giữ"
+        },
+        {
+            "name": "yt_gesture_help_brightness",
+            "value": "Độ sáng"
+        },
+        {
+            "name": "yt_gesture_help_volume",
+            "value": "Âm lượng"
+        },
+        {
+            "name": "yt_gesture_help_off",
+            "value": "Tắt"
+        },
+        {
+            "name": "yt_section_privacy",
+            "value": "Quyền riêng tư"
+        },
+        {
+            "name": "yt_option_record_history",
+            "value": "Ghi lịch sử xem"
+        },
+        {
+            "name": "yt_option_record_history_subtitle",
+            "value": "Khi tắt, không ghi lịch sử xem mới; mục cũ vẫn giữ"
+        },
+        {
+            "name": "yt_option_clear_history",
+            "value": "Xóa lịch sử xem"
+        },
+        {
+            "name": "yt_option_clear_history_subtitle",
+            "value": "Xóa toàn bộ lịch sử xem và tiến độ phát trên máy"
+        },
+        {
+            "name": "yt_toast_history_cleared",
+            "value": "Đã xóa lịch sử xem"
+        },
+        {
+            "name": "yt_option_start_in_subs",
+            "value": "Mở vào tab Đăng ký"
+        },
+        {
+            "name": "yt_option_start_in_subs_subtitle",
+            "value": "Mở ứng dụng thẳng vào tab Kênh đăng ký"
+        },
+        {
+            "name": "yt_section_animation",
+            "value": "Hoạt ảnh"
+        },
+        {
+            "name": "yt_option_interface_animation",
+            "value": "Hoạt ảnh giao diện"
+        },
+        {
+            "name": "yt_option_interface_animation_subtitle",
+            "value": "Tắt phóng to lúc vào danh sách, hiệu ứng biểu tượng và hoạt ảnh khác"
+        },
+        {
+            "name": "yt_gesture_scheme_bilibili",
+            "value": "Bilibili cổ điển"
+        },
+        {
+            "name": "yt_download_timeout_failed",
+            "value": "Tải xuống hết thời gian"
+        },
+        {
+            "name": "yt_download_retry_failed",
+            "value": "Thử lại thất bại, hãy thử sau"
+        },
+        {
+            "name": "yt_download_retrying",
+            "value": "Đang thử lại…"
+        },
+        {
+            "name": "yt_download_timeout_title",
+            "value": "Thời gian chờ tải"
+        },
+        {
+            "name": "yt_download_timeout_off",
+            "value": "Không giới hạn"
+        },
+        {
+            "name": "yt_download_timeout_minutes",
+            "value": "%d phút"
+        },
+        {
+            "name": "yt_player_stop_playback",
+            "value": "Dừng phát"
+        },
+        {
+            "name": "yt_proxy_status_title",
+            "value": "Trạng thái kết nối"
+        },
+        {
+            "name": "yt_proxy_status_off",
+            "value": "Đã tắt"
+        },
+        {
+            "name": "yt_proxy_status_ready",
+            "value": "Đã kết nối (cầu nối máy %d)"
+        },
+        {
+            "name": "yt_proxy_status_direct",
+            "value": "Đã kết nối (thẳng tới upstream)"
+        },
+        {
+            "name": "yt_proxy_status_fuse",
+            "value": "Cầu nối đã ngắt, cần áp dụng lại"
+        },
+        {
+            "name": "yt_proxy_status_failed",
+            "value": "Áp dụng thất bại"
+        },
+        {
+            "name": "yt_proxy_restart",
+            "value": "Áp dụng lại và khởi động lại"
+        },
+        {
+            "name": "yt_proxy_restart_done",
+            "value": "Đã áp dụng lại proxy"
+        },
+        {
+            "name": "yt_proxy_example_hint",
+            "value": "Ví dụ: với HTTP nhập 127.0.0.1 và cổng (ví dụ 7890); SOCKS5 tương tự. Có tên/mật khẩu thì lưu lượng đi qua cầu nối trên máy, lỗi sẽ hiện rõ thay vì tự đi thẳng."
+        },
+        {
+            "name": "yt_playback_center_play_button",
+            "value": "Nút phát ở giữa"
+        },
+        {
+            "name": "yt_playback_center_play_button_subtitle",
+            "value": "Hiện nút phát lớn giữa khung khi tạm dừng. Tắt để khung sạch và điều khiển bằng chạm hoặc thanh dưới."
+        },
+        {
+            "name": "yt_shorts_open",
+            "value": "Mở Shorts"
+        },
+        {
+            "name": "yt_shorts_switch_long",
+            "value": "Video dài"
+        },
+        {
+            "name": "yt_home_mode_short",
+            "value": "Shorts"
+        },
+        {
+            "name": "yt_home_mode_long",
+            "value": "Video dài"
+        },
+        {
+            "name": "yt_download_pause",
+            "value": "Tạm dừng"
+        },
+        {
+            "name": "yt_download_resume",
+            "value": "Tiếp tục"
+        },
+        {
+            "name": "yt_download_resuming",
+            "value": "Đang tiếp tục…"
+        },
+        {
+            "name": "yt_download_stop_delete",
+            "value": "Dừng và xóa"
+        },
+        {
+            "name": "yt_download_status_paused",
+            "value": "Đã tạm dừng"
+        },
+        {
+            "name": "yt_playlist_source_account",
+            "value": "Tài khoản"
+        },
+        {
+            "name": "yt_playlist_source_favorite",
+            "value": "Yêu thích"
+        },
+        {
+            "name": "yt_library_playlists_title",
+            "value": "Danh sách phát của bạn"
+        },
+        {
+            "name": "yt_empty_no_library_playlists",
+            "value": "Tài khoản chưa có danh sách phát"
+        },
+        {
+            "name": "yt_tab_live_chat",
+            "value": "Trò chuyện trực tiếp"
+        },
+        {
+            "name": "yt_live_chat_connecting",
+            "value": "Đang kết nối trò chuyện…"
+        },
+        {
+            "name": "yt_live_chat_connected",
+            "value": "Đã kết nối"
+        },
+        {
+            "name": "yt_live_chat_unavailable",
+            "value": "Video này không có trò chuyện trực tiếp"
+        },
+        {
+            "name": "yt_live_chat_ended",
+            "value": "Trò chuyện trực tiếp đã kết thúc"
+        },
+        {
+            "name": "yt_live_chat_error",
+            "value": "Kết nối trò chuyện thất bại"
+        },
+        {
+            "name": "yt_live_chat_empty",
+            "value": "Chưa có tin nhắn"
+        },
+        {
+            "name": "yt_live_chat_readonly",
+            "value": "Chỉ đọc"
+        },
+        {
+            "name": "yt_live_chat_member",
+            "value": "Thành viên"
+        },
+        {
+            "name": "yt_live_chat_owner",
+            "value": "Chủ phòng"
+        },
+        {
+            "name": "yt_live_chat_moderator",
+            "value": "Kiểm duyệt"
+        },
+        {
+            "name": "yt_local_files",
+            "value": "Tệp trên máy"
+        },
+        {
+            "name": "yt_local_import",
+            "value": "Nhập video"
+        },
+        {
+            "name": "yt_local_importing",
+            "value": "Đang nhập…"
+        },
+        {
+            "name": "yt_local_import_success",
+            "value": "Đã nhập %d tệp"
+        },
+        {
+            "name": "yt_local_import_failed",
+            "value": "Nhập thất bại"
+        },
+        {
+            "name": "yt_local_files_hint",
+            "value": "Chọn video từ tệp hệ thống. Video đã nhập phát trong ứng dụng."
+        },
+        {
+            "name": "yt_local_delete_title",
+            "value": "Xóa tệp trên máy"
+        },
+        {
+            "name": "yt_local_delete_message",
+            "value": "Tệp sẽ bị xóa khỏi ứng dụng và không khôi phục được."
+        },
+        {
+            "name": "yt_local_empty_title",
+            "value": "Chưa có tệp trên máy"
+        },
+        {
+            "name": "yt_local_empty_hint",
+            "value": "Chạm \"Nhập video\" để chọn tệp từ hệ thống"
+        },
+        {
+            "name": "yt_local_media",
+            "value": "Media trên máy"
+        },
+        {
+            "name": "yt_local_empty_media",
+            "value": "Chưa có bản tải hoặc tệp trên máy"
+        },
+        {
+            "name": "yt_local_empty_media_hint",
+            "value": "Tải một video hoặc chạm \"Nhập video\" để thêm tệp trên máy"
+        },
+        {
+            "name": "yt_changelog_0_7_0_1",
+            "value": "Hạ runtime tối thiểu xuống HarmonyOS 6.1.0(23); SOCKS5, tái sử dụng kết nối và RCP kết nối trước được bật theo phiên bản hệ điều hành"
+        },
+        {
+            "name": "yt_changelog_0_7_0_2",
+            "value": "Điểm cuối khách mặc định là visionos và bỏ Samsung; khi lỗi hiện điểm cuối đang dùng và SABR quay về liên kết trực tiếp không token"
+        },
+        {
+            "name": "yt_changelog_0_7_0_3",
+            "value": "SABR giải mã trong lúc tải và khớp trường yêu cầu với PipePipe; xoay nút, continuation tải lại và watchdog đứng giảm thời gian chờ lúc vào và gián đoạn video dài"
+        },
+        {
+            "name": "yt_changelog_0_7_0_4",
+            "value": "Làm lại cử chỉ và điều khiển trình phát: mẫu cử chỉ, hành động chạm đúp, giữ để tăng tốc, chạm để tạm dừng, trợ giúp cử chỉ; sửa chạm nhầm điều khiển và chạm đúp lặp"
+        },
+        {
+            "name": "yt_changelog_0_7_0_5",
+            "value": "Cải thiện tải xuống: phát trong app, chỉ mục tác vụ bền với khôi phục khi khởi động lại, tải tiếp được, tạm dừng/tiếp tục, thử lại, và watchdog hết giờ/không tiến triển"
+        },
+        {
+            "name": "yt_changelog_0_7_0_6",
+            "value": "Media trên máy: nhập video từ tệp hệ thống, gộp bản tải và file nhập thành một danh sách, dùng chung hàng đợi phát (tải trước, nhập sau)"
+        },
+        {
+            "name": "yt_changelog_0_7_0_7",
+            "value": "Tab trò chuyện trực tiếp chỉ đọc với bình luận thời gian thực, Super Chat và huy hiệu thành viên; chỉ thăm dò khi đang hiện và tạm dừng khi ở nền"
+        },
+        {
+            "name": "yt_changelog_0_7_0_8",
+            "value": "Bảng tin trang chủ thêm chuyển video dài/ngắn và bổ sung Shorts; tìm kiếm mở rộng kệ; mốc thời gian trong bình luận và mô tả có thể chạm"
+        },
+        {
+            "name": "yt_changelog_0_7_0_9",
+            "value": "Cài đặt và trải nghiệm: cấu hình phản ứng sửa nhấp nháy công tắc; thêm công tắc lịch sử xem, tab đăng ký mặc định, công tắc hoạt ảnh, thanh dưới chính thức, và trạng thái/áp dụng lại proxy"
+        },
+        {
+            "name": "yt_changelog_0_7_0_10",
+            "value": "Sửa rò trạng thái đăng nhập, lỗi chuyển video đầu, PiP trống khi quay lại, file tải sót, và hoàn thiện bản dịch 14 ngôn ngữ"
+        },
+        {
+            "name": "yt_option_translation_service",
+            "value": "Dịch vụ dịch"
+        },
+        {
+            "name": "yt_translation_engine_mymemory",
+            "value": "MyMemory (miễn phí)"
+        },
+        {
+            "name": "yt_translation_engine_lingva",
+            "value": "Lingva (proxy Google)"
+        },
+        {
+            "name": "yt_translation_engine_libre",
+            "value": "LibreTranslate"
+        },
+        {
+            "name": "yt_translation_engine_deepl",
+            "value": "DeepL"
+        },
+        {
+            "name": "yt_translation_engine_custom",
+            "value": "Điểm cuối tùy chỉnh"
+        },
+        {
+            "name": "yt_translation_endpoint",
+            "value": "Điểm cuối"
+        },
+        {
+            "name": "yt_translation_custom_url",
+            "value": "URL yêu cầu"
+        },
+        {
+            "name": "yt_translation_custom_method",
+            "value": "Phương thức"
+        },
+        {
+            "name": "yt_translation_custom_headers",
+            "value": "Header (JSON hoặc mỗi dòng một Key: Value)"
+        },
+        {
+            "name": "yt_translation_custom_body",
+            "value": "Mẫu nội dung"
+        },
+        {
+            "name": "yt_translation_custom_response_path",
+            "value": "Đường dẫn trường phản hồi"
+        },
+        {
+            "name": "yt_translation_custom_hint",
+            "value": "Chỗ giữ: {text} {target} {source} {apiKey}; ví dụ đường dẫn: data.translations.0.text"
+        },
+        {
+            "name": "yt_translation_note",
+            "value": "Bình luận và mô tả dùng dịch vụ này; phụ đề vẫn mặc định tự dịch của YouTube"
+        },
+        {
+            "name": "yt_translation_engine_google",
+            "value": "Google Cloud Translation (khóa API)"
+        },
+        {
+            "name": "yt_translation_engine_azure",
+            "value": "Microsoft Translator (Azure)"
+        },
+        {
+            "name": "yt_translation_region",
+            "value": "Khu vực"
+        },
+        {
+            "name": "yt_exp_title",
+            "value": "Tính năng thử nghiệm"
+        },
+        {
+            "name": "yt_exp_subtitle",
+            "value": "Tính năng thử nghiệm tích hợp, mặc định tắt"
+        },
+        {
+            "name": "yt_exp_enabled",
+            "value": "Bật"
+        },
+        {
+            "name": "yt_exp_disabled",
+            "value": "Tắt"
+        },
+        {
+            "name": "yt_exp_footer",
+            "value": "Các tính năng này dựa vào dịch vụ cộng đồng bên thứ ba và có thể đổi hoặc hỏng bất cứ lúc nào."
+        },
+        {
+            "name": "yt_exp_clear_cache",
+            "value": "Xóa bộ nhớ đệm plugin"
+        },
+        {
+            "name": "yt_exp_cache_cleared",
+            "value": "Đã xóa bộ nhớ đệm"
+        },
+        {
+            "name": "yt_exp_coming_soon",
+            "value": "Tính năng này đang được phát triển"
+        },
+        {
+            "name": "yt_exp_sb_title",
+            "value": "SponsorBlock"
+        },
+        {
+            "name": "yt_exp_sb_desc",
+            "value": "Tự bỏ qua đoạn tài trợ, intro, outro và đoạn tương tự"
+        },
+        {
+            "name": "yt_exp_sb_master",
+            "value": "Bật SponsorBlock"
+        },
+        {
+            "name": "yt_exp_sb_categories",
+            "value": "Loại đoạn"
+        },
+        {
+            "name": "yt_exp_sb_cat_sponsor",
+            "value": "Tài trợ"
+        },
+        {
+            "name": "yt_exp_sb_cat_selfpromo",
+            "value": "Tự quảng bá"
+        },
+        {
+            "name": "yt_exp_sb_cat_interaction",
+            "value": "Nhắc tương tác"
+        },
+        {
+            "name": "yt_exp_sb_cat_intro",
+            "value": "Mở đầu"
+        },
+        {
+            "name": "yt_exp_sb_cat_outro",
+            "value": "Kết"
+        },
+        {
+            "name": "yt_exp_sb_cat_preview",
+            "value": "Xem trước/tóm tắt"
+        },
+        {
+            "name": "yt_exp_sb_cat_music",
+            "value": "Không phải nhạc"
+        },
+        {
+            "name": "yt_exp_sb_cat_filler",
+            "value": "Đoạn đệm"
+        },
+        {
+            "name": "yt_exp_sb_cat_highlight",
+            "value": "Điểm nhấn"
+        },
+        {
+            "name": "yt_exp_sb_behavior",
+            "value": "Cách bỏ qua"
+        },
+        {
+            "name": "yt_exp_sb_behavior_toast",
+            "value": "Bỏ qua và báo (hoàn tác được)"
+        },
+        {
+            "name": "yt_exp_sb_behavior_silent",
+            "value": "Bỏ qua im lặng"
+        },
+        {
+            "name": "yt_exp_sb_behavior_manual",
+            "value": "Chỉ hiện nút bỏ qua"
+        },
+        {
+            "name": "yt_exp_sb_unskip",
+            "value": "Báo trước"
+        },
+        {
+            "name": "yt_exp_sb_unskip_value",
+            "value": "%d giây"
+        },
+        {
+            "name": "yt_exp_sb_privacy",
+            "value": "Tra cứu riêng tư"
+        },
+        {
+            "name": "yt_exp_sb_privacy_desc",
+            "value": "Chỉ gửi mã băm video, không gửi ID video"
+        },
+        {
+            "name": "yt_exp_sb_skipped",
+            "value": "Sắp bỏ qua: %s"
+        },
+        {
+            "name": "yt_exp_sb_undo",
+            "value": "Hoàn tác"
+        },
+        {
+            "name": "yt_exp_sb_no_segments",
+            "value": "Video này không có đoạn nào"
+        },
+        {
+            "name": "yt_exp_sb_categories_count",
+            "value": "%d loại"
+        },
+        {
+            "name": "yt_exp_da_title",
+            "value": "DeArrow"
+        },
+        {
+            "name": "yt_exp_da_desc",
+            "value": "Tiêu đề và ảnh thu nhỏ do cộng đồng đóng góp"
+        },
+        {
+            "name": "yt_exp_ai_title",
+            "value": "AiSList"
+        },
+        {
+            "name": "yt_exp_ai_desc",
+            "value": "Đánh dấu hoặc ẩn kênh có nội dung do AI tạo"
+        },
+        {
+            "name": "yt_exp_da_replace_titles",
+            "value": "Thay tiêu đề"
+        },
+        {
+            "name": "yt_exp_da_limit",
+            "value": "Số tiêu đề mỗi trang"
+        },
+        {
+            "name": "yt_exp_da_concurrency",
+            "value": "Số yêu cầu đồng thời"
+        },
+        {
+            "name": "yt_exp_da_footer",
+            "value": "Tiêu đề lấy từ đóng góp cộng đồng DeArrow và có thể không khớp video hoàn toàn."
+        },
+        {
+            "name": "yt_exp_da_thumbs",
+            "value": "Thay ảnh thu nhỏ"
+        },
+        {
+            "name": "yt_exp_da_thumbs_desc",
+            "value": "Dùng khung hình từ video; tải chậm hơn"
+        },
+        {
+            "name": "yt_exp_ai_mode",
+            "value": "Cách xử lý"
+        },
+        {
+            "name": "yt_exp_ai_mode_mark",
+            "value": "Chỉ đánh dấu"
+        },
+        {
+            "name": "yt_exp_ai_mode_hide",
+            "value": "Ẩn hoàn toàn"
+        },
+        {
+            "name": "yt_exp_ai_warnlist",
+            "value": "Gồm danh sách độ tin cậy trung bình"
+        },
+        {
+            "name": "yt_exp_ai_sync",
+            "value": "Tự cập nhật"
+        },
+        {
+            "name": "yt_exp_ai_sync_daily",
+            "value": "Hằng ngày"
+        },
+        {
+            "name": "yt_exp_ai_sync_weekly",
+            "value": "Hằng tuần"
+        },
+        {
+            "name": "yt_exp_ai_sync_manual",
+            "value": "Chỉ thủ công"
+        },
+        {
+            "name": "yt_exp_ai_sync_now",
+            "value": "Cập nhật ngay"
+        },
+        {
+            "name": "yt_exp_ai_status",
+            "value": "Đồng bộ lần cuối: %s · %d mục"
+        },
+        {
+            "name": "yt_exp_ai_never",
+            "value": "Chưa đồng bộ"
+        },
+        {
+            "name": "yt_exp_ai_license",
+            "value": "Nguồn dữ liệu: AiSList (CC BY-NC 4.0)"
+        },
+        {
+            "name": "yt_exp_ai_badge",
+            "value": "AI"
+        },
+        {
+            "name": "yt_exp_ai_notice",
+            "value": "Kênh này được đánh dấu là nội dung do AI tạo"
+        },
+        {
+            "name": "yt_exp_ai_syncing",
+            "value": "Đang đồng bộ…"
+        },
+        {
+            "name": "yt_exp_ai_sync_failed",
+            "value": "Đồng bộ thất bại"
+        },
+        {
+            "name": "yt_exp_ai_empty",
+            "value": "Danh sách trống, hãy cập nhật trước"
+        },
+        {
+            "name": "yt_exp_ai_status_label",
+            "value": "Trạng thái danh sách"
+        },
+        {
+            "name": "yt_update_page_title",
+            "value": "Kiểm tra cập nhật"
+        },
+        {
+            "name": "yt_update_enable",
+            "value": "Kiểm tra cập nhật GitHub"
+        },
+        {
+            "name": "yt_update_enable_desc",
+            "value": "Khi tắt, không kiểm tra tự động hay thủ công"
+        },
+        {
+            "name": "yt_update_on_startup",
+            "value": "Kiểm tra khi khởi động"
+        },
+        {
+            "name": "yt_update_on_startup_desc",
+            "value": "Chạy im lặng, không hiện hộp thoại"
+        },
+        {
+            "name": "yt_update_last_check",
+            "value": "Lần kiểm tra gần nhất"
+        },
+        {
+            "name": "yt_update_never_checked",
+            "value": "Chưa kiểm tra"
+        },
+        {
+            "name": "yt_update_check_now",
+            "value": "Kiểm tra ngay"
+        },
+        {
+            "name": "yt_update_rate_limited",
+            "value": "GitHub đang giới hạn yêu cầu, hãy thử lại sau"
+        },
+        {
+            "name": "yt_update_available",
+            "value": "Có phiên bản mới"
+        },
+        {
+            "name": "yt_update_disabled_hint",
+            "value": "Hãy bật “Kiểm tra cập nhật GitHub” trước"
+        },
+        {
+            "name": "yt_update_links",
+            "value": "Liên kết"
+        }
+    ]
+}

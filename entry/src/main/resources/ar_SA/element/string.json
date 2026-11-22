@@ -1,0 +1,4142 @@
+{
+    "string": [
+        {
+            "name": "module_desc",
+            "value": "module description"
+        },
+        {
+            "name": "EntryAbility_desc",
+            "value": "description"
+        },
+        {
+            "name": "EntryAbility_label",
+            "value": "label"
+        },
+        {
+            "name": "HOME_EXIT_TOAST",
+            "value": "اضغط مرة أخرى للخروج"
+        },
+        {
+            "name": "LIVING_LEFT_TEXT",
+            "value": "إجمالي "
+        },
+        {
+            "name": "LIVING_RIGHT_TEXT",
+            "value": " تعليقات"
+        },
+        {
+            "name": "LIVING_WRITE",
+            "value": "كتابة تعليق"
+        },
+        {
+            "name": "number_of_viewers",
+            "value": "738,600 مشاهد"
+        },
+        {
+            "name": "store_name",
+            "value": "غرفة البث المباشر الرسمية"
+        },
+        {
+            "name": "yt_tab_home",
+            "value": "الرئيسية"
+        },
+        {
+            "name": "yt_tab_playlists",
+            "value": "قوائم التشغيل"
+        },
+        {
+            "name": "yt_tab_subscriptions",
+            "value": "الاشتراكات"
+        },
+        {
+            "name": "yt_tab_favorites",
+            "value": "المفضلة"
+        },
+        {
+            "name": "yt_tab_local",
+            "value": "محلي"
+        },
+        {
+            "name": "yt_option_title",
+            "value": "الخيارات"
+        },
+        {
+            "name": "yt_option_group_settings",
+            "value": "الإعدادات"
+        },
+        {
+            "name": "yt_option_group_general",
+            "value": "عام"
+        },
+        {
+            "name": "yt_option_group_personalization",
+            "value": "التخصيص"
+        },
+        {
+            "name": "yt_option_group_others",
+            "value": "أخرى"
+        },
+        {
+            "name": "yt_option_language",
+            "value": "اللغة"
+        },
+        {
+            "name": "yt_option_color",
+            "value": "اللون"
+        },
+        {
+            "name": "yt_option_color_subtitle",
+            "value": "ألوان السمة والتأكيد"
+        },
+        {
+            "name": "yt_option_appearance",
+            "value": "المظهر"
+        },
+        {
+            "name": "yt_dark_mode_title",
+            "value": "الوضع الداكن"
+        },
+        {
+            "name": "yt_dark_mode_system",
+            "value": "اتباع النظام"
+        },
+        {
+            "name": "yt_dark_mode_system_subtitle",
+            "value": "التبديل التلقائي وفقًا لإعدادات النظام"
+        },
+        {
+            "name": "yt_dark_mode_light",
+            "value": "السمة الفاتحة"
+        },
+        {
+            "name": "yt_dark_mode_light_subtitle",
+            "value": "استخدام السمة الفاتحة دائمًا"
+        },
+        {
+            "name": "yt_dark_mode_dark",
+            "value": "السمة الداكنة"
+        },
+        {
+            "name": "yt_dark_mode_dark_subtitle",
+            "value": "استخدام السمة الداكنة دائمًا"
+        },
+        {
+            "name": "yt_option_log",
+            "value": "السجلات"
+        },
+        {
+            "name": "yt_option_log_subtitle",
+            "value": "عرض السجلات الأخيرة"
+        },
+        {
+            "name": "yt_action_close",
+            "value": "إغلاق"
+        },
+        {
+            "name": "yt_log_title",
+            "value": "السجلات"
+        },
+        {
+            "name": "yt_log_enable",
+            "value": "تفعيل تسجيل السجلات"
+        },
+        {
+            "name": "yt_log_enable_subtitle",
+            "value": "تسجيل السجلات بعد التشغيل"
+        },
+        {
+            "name": "yt_log_disabled_hint",
+            "value": "تسجيل السجلات معطل\nقم بتفعيل المفتاح أعلاه للبدء"
+        },
+        {
+            "name": "yt_log_empty",
+            "value": "لا توجد سجلات"
+        },
+        {
+            "name": "yt_log_session_active",
+            "value": "جارٍ التسجيل"
+        },
+        {
+            "name": "yt_log_session_saved",
+            "value": "تم الحفظ"
+        },
+        {
+            "name": "yt_log_no_sessions",
+            "value": "لا توجد جلسات سجلات"
+        },
+        {
+            "name": "yt_log_delete_all_confirm",
+            "value": "حذف جميع السجلات؟"
+        },
+        {
+            "name": "yt_log_delete_confirm_yes",
+            "value": "حذف"
+        },
+        {
+            "name": "yt_log_delete_confirm_no",
+            "value": "إلغاء"
+        },
+        {
+            "name": "yt_option_about",
+            "value": "حول"
+        },
+        {
+            "name": "yt_option_about_subtitle",
+            "value": "الإصدار والإشادات"
+        },
+        {
+            "name": "yt_option_in_development",
+            "value": "قيد التطوير"
+        },
+        {
+            "name": "yt_option_in_development_color",
+            "value": "خيارات سمة اللون ستظهر هنا"
+        },
+        {
+            "name": "yt_lang_follow_system",
+            "value": "اتباع النظام"
+        },
+        {
+            "name": "yt_lang_simplified",
+            "value": "الصينية (المبسطة)"
+        },
+        {
+            "name": "yt_lang_simplified_subtitle",
+            "value": "简体中文"
+        },
+        {
+            "name": "yt_lang_traditional_hk",
+            "value": "الصينية (التقليدية، هونغ كونغ)"
+        },
+        {
+            "name": "yt_lang_traditional_hk_subtitle",
+            "value": "繁體中文（香港）"
+        },
+        {
+            "name": "yt_lang_traditional_tw",
+            "value": "الصينية (التقليدية، تايوان)"
+        },
+        {
+            "name": "yt_lang_traditional_tw_subtitle",
+            "value": "繁體中文（台灣）"
+        },
+        {
+            "name": "yt_lang_english",
+            "value": "الإنجليزية"
+        },
+        {
+            "name": "yt_lang_english_subtitle",
+            "value": "English"
+        },
+        {
+            "name": "internet_reason",
+            "value": "طلب بيانات الشبكة"
+        },
+        {
+            "name": "reason_background",
+            "value": "إبقاء تشغيل الفيديو في الخلفية"
+        },
+        {
+            "name": "video_name0",
+            "value": "@Cat"
+        },
+        {
+            "name": "video_name1",
+            "value": "@Mountaineer"
+        },
+        {
+            "name": "video_name2",
+            "value": "@Nice To Meet You"
+        },
+        {
+            "name": "video_name3",
+            "value": "@Tick"
+        },
+        {
+            "name": "video_name4",
+            "value": "@Faery"
+        },
+        {
+            "name": "video_description0",
+            "value": "#1 #فيديو محلي #عالم مليء بالألوان، الحياة ليست مجرد ما هو أمامنا، بل أيضًا الشعر والبعيد"
+        },
+        {
+            "name": "video_description1",
+            "value": "#2 #فيديو عبر الإنترنت #حلم"
+        },
+        {
+            "name": "video_description3",
+            "value": "#4 #فيديو عبر الإنترنت #عالم مليء بالألوان، الحياة ليست مجرد ما هو أمامنا، بل أيضًا الشعر والبعيد"
+        },
+        {
+            "name": "video_description4",
+            "value": "#5 #فيديو عبر الإنترنت #عالم مليء بالألوان، الحياة ليست مجرد ما هو أمامنا، بل أيضًا الشعر والبعيد"
+        },
+        {
+            "name": "yt_section_language_region",
+            "value": "اللغة والمنطقة"
+        },
+        {
+            "name": "yt_section_playback",
+            "value": "التشغيل"
+        },
+        {
+            "name": "yt_section_language",
+            "value": "إعدادات اللغة"
+        },
+        {
+            "name": "yt_section_content_translation",
+            "value": "ترجمة المحتوى"
+        },
+        {
+            "name": "yt_setting_translation_language",
+            "value": "الترجمة إلى"
+        },
+        {
+            "name": "yt_follow_app_language",
+            "value": "اتباع لغة التطبيق"
+        },
+        {
+            "name": "yt_setting_subtitle_translate_language",
+            "value": "ترجمة الترجمات تلقائيًا إلى"
+        },
+        {
+            "name": "yt_follow_translation_language",
+            "value": "اتباع لغة الترجمة"
+        },
+        {
+            "name": "yt_setting_ui_language",
+            "value": "لغة التطبيق"
+        },
+        {
+            "name": "yt_setting_content_language",
+            "value": "لغة المحتوى"
+        },
+        {
+            "name": "yt_setting_content_region",
+            "value": "منطقة المحتوى"
+        },
+        {
+            "name": "yt_section_video",
+            "value": "إعدادات الفيديو"
+        },
+        {
+            "name": "yt_setting_default_quality",
+            "value": "جودة الفيديو الافتراضية"
+        },
+        {
+            "name": "yt_setting_live_quality_cap",
+            "value": "الحد الأقصى لجودة البث المباشر"
+        },
+        {
+            "name": "yt_setting_show_high_res",
+            "value": "عرض الدقة العالية (1440p / 4K)"
+        },
+        {
+            "name": "yt_setting_show_high_res_subtitle",
+            "value": "عرض خيار 4K في محدد الجودة، يتطلب أداءً عاليًا"
+        },
+        {
+            "name": "yt_setting_video_codec",
+            "value": "ترميز الفيديو"
+        },
+        {
+            "name": "yt_section_audio",
+            "value": "إعدادات الصوت"
+        },
+        {
+            "name": "yt_setting_audio_quality",
+            "value": "الحد الأقصى لجودة الصوت"
+        },
+        {
+            "name": "yt_section_decoder",
+            "value": "إعدادات فك التشفير"
+        },
+        {
+            "name": "yt_setting_hwdec_mode",
+            "value": "وضع فك التشفير بالأجهزة"
+        },
+        {
+            "name": "yt_setting_decoder_fallback",
+            "value": "الرجوع إلى فك التشفير البرمجي"
+        },
+        {
+            "name": "yt_setting_decoder_fallback_subtitle",
+            "value": "الرجوع التلقائي إلى فك التشفير البرمجي عند فشل الأجهزة"
+        },
+        {
+            "name": "yt_section_buffer",
+            "value": "استراتيجية التخزين المؤقت"
+        },
+        {
+            "name": "yt_setting_readahead",
+            "value": "مدة التخزين المؤقت المسبق"
+        },
+        {
+            "name": "yt_setting_cache_pause",
+            "value": "وقت الانتظار عند نقص التخزين المؤقت"
+        },
+        {
+            "name": "yt_setting_max_back_bytes",
+            "value": "حجم التخزين المؤقت الخلفي (لا إعادة التحميل عند التراجع)"
+        },
+        {
+            "name": "yt_quality_best",
+            "value": "أفضل جودة"
+        },
+        {
+            "name": "yt_quality_auto",
+            "value": "تلقائي"
+        },
+        {
+            "name": "yt_codec_h264_first",
+            "value": "تلقائي (H.264 أولوية)"
+        },
+        {
+            "name": "yt_codec_force_h264",
+            "value": "إجبار H.264"
+        },
+        {
+            "name": "yt_audio_high",
+            "value": "الحد الأقصى (≈256 كيلوبت/ث AAC)"
+        },
+        {
+            "name": "yt_audio_medium",
+            "value": "متوسطة (≈128 كيلوبت/ث AAC)"
+        },
+        {
+            "name": "yt_audio_low",
+            "value": "توفير البيانات (≈48 كيلوبت/ث)"
+        },
+        {
+            "name": "yt_hwdec_auto",
+            "value": "تلقائي (موصى به)"
+        },
+        {
+            "name": "yt_hwdec_auto_safe",
+            "value": "إجبار الأجهزة"
+        },
+        {
+            "name": "yt_hwdec_no",
+            "value": "برمجي فقط"
+        },
+        {
+            "name": "yt_recommended_suffix",
+            "value": " (موصى به)"
+        },
+        {
+            "name": "yt_unit_seconds",
+            "value": "ثانية"
+        },
+        {
+            "name": "yt_unit_mb",
+            "value": "ميغابايت"
+        },
+        {
+            "name": "yt_placeholder_search",
+            "value": "بحث..."
+        },
+        {
+            "name": "yt_action_favorite",
+            "value": "إضافة إلى المفضلة"
+        },
+        {
+            "name": "yt_action_unfavorite",
+            "value": "إزالة من المفضلة"
+        },
+        {
+            "name": "yt_action_subscribe",
+            "value": "اشتراك"
+        },
+        {
+            "name": "yt_action_unsubscribe",
+            "value": "إلغاء الاشتراك"
+        },
+        {
+            "name": "yt_action_share",
+            "value": "مشاركة"
+        },
+        {
+            "name": "yt_action_retry",
+            "value": "إعادة المحاولة"
+        },
+        {
+            "name": "yt_action_cancel",
+            "value": "إلغاء"
+        },
+        {
+            "name": "yt_action_confirm",
+            "value": "تأكيد"
+        },
+        {
+            "name": "yt_action_delete",
+            "value": "حذف"
+        },
+        {
+            "name": "yt_action_clear",
+            "value": "مسح"
+        },
+        {
+            "name": "yt_action_view_author",
+            "value": "عرض المؤلف"
+        },
+        {
+            "name": "yt_action_clear_all",
+            "value": "مسح الكل"
+        },
+        {
+            "name": "yt_search_youtube",
+            "value": "البحث في YouTube"
+        },
+        {
+            "name": "yt_search_youtube_music",
+            "value": "البحث في YouTube Music"
+        },
+        {
+            "name": "yt_filter_all",
+            "value": "الكل"
+        },
+        {
+            "name": "yt_filter_videos",
+            "value": "فيديوهات"
+        },
+        {
+            "name": "yt_filter_channels",
+            "value": "قنوات"
+        },
+        {
+            "name": "yt_filter_playlists",
+            "value": "قوائم"
+        },
+        {
+            "name": "yt_filter_songs",
+            "value": "أغاني"
+        },
+        {
+            "name": "yt_filter_albums",
+            "value": "ألبومات"
+        },
+        {
+            "name": "yt_search_history",
+            "value": "سجل البحث"
+        },
+        {
+            "name": "yt_action_clear_search_history",
+            "value": "مسح سجل البحث"
+        },
+        {
+            "name": "yt_empty_no_search_history",
+            "value": "لا يوجد سجل بحث"
+        },
+        {
+            "name": "yt_search_no_results",
+            "value": "لم يتم العثور على نتائج"
+        },
+        {
+            "name": "yt_error_search_failed",
+            "value": "فشل البحث، يرجى المحاولة لاحقًا"
+        },
+        {
+            "name": "yt_dialog_delete_search_record",
+            "value": "حذف سجل البحث"
+        },
+        {
+            "name": "yt_confirm_clear_search_history",
+            "value": "هل تريد مسح كل سجل البحث؟"
+        },
+        {
+            "name": "yt_toast_cleared",
+            "value": "تم المسح"
+        },
+        {
+            "name": "yt_placeholder_search_content",
+            "value": "البحث عن محتوى"
+        },
+        {
+            "name": "yt_empty_no_content",
+            "value": "لا يوجد محتوى"
+        },
+        {
+            "name": "yt_error_invalid_video",
+            "value": "لا توجد معلومات فيديو صالحة"
+        },
+        {
+            "name": "yt_dialog_select_quality",
+            "value": "اختيار الجودة"
+        },
+        {
+            "name": "yt_label_video_track",
+            "value": "مسار الفيديو"
+        },
+        {
+            "name": "yt_warn_high_resolution",
+            "value": "هذه الدقة تتجاوز 1440p، قد تسبب مشاكل في الأداء على بعض الأجهزة"
+        },
+        {
+            "name": "yt_label_audio_quality",
+            "value": "جودة الصوت"
+        },
+        {
+            "name": "yt_player_syncing_buffer",
+            "value": "جارٍ مزامنة التخزين المؤقت المزدوج..."
+        },
+        {
+            "name": "yt_error_playback_failed",
+            "value": "فشل التشغيل"
+        },
+        {
+            "name": "yt_error_load_video_info",
+            "value": "فشل في الحصول على معلومات الفيديو"
+        },
+        {
+            "name": "yt_error_load_video",
+            "value": "فشل في تحميل الفيديو"
+        },
+        {
+            "name": "yt_error_load_exception",
+            "value": "حدث خطأ أثناء التحميل"
+        },
+        {
+            "name": "yt_error_unknown",
+            "value": "خطأ غير معروف"
+        },
+        {
+            "name": "yt_error_invalid_video_id",
+            "value": "معرف الفيديو غير صالح"
+        },
+        {
+            "name": "yt_error_play_error_retry",
+            "value": "خطأ في التشغيل، يرجى إعادة المحاولة"
+        },
+        {
+            "name": "yt_empty_no_comments",
+            "value": "لا توجد تعليقات"
+        },
+        {
+            "name": "yt_label_pinned",
+            "value": "مثبت"
+        },
+        {
+            "name": "yt_error_load_comments",
+            "value": "فشل في تحميل التعليقات"
+        },
+        {
+            "name": "yt_label_reply",
+            "value": "رد"
+        },
+        {
+            "name": "yt_error_load_replies",
+            "value": "فشل في تحميل الردود"
+        },
+        {
+            "name": "yt_label_like",
+            "value": "إعجاب"
+        },
+        {
+            "name": "yt_translate_action",
+            "value": "ترجمة"
+        },
+        {
+            "name": "yt_show_original",
+            "value": "عرض الأصل"
+        },
+        {
+            "name": "yt_translating",
+            "value": "جارٍ الترجمة…"
+        },
+        {
+            "name": "yt_translate_failed",
+            "value": "فشلت الترجمة، انقر لإعادة المحاولة"
+        },
+        {
+            "name": "yt_label_dislike",
+            "value": "عدم إعجاب"
+        },
+        {
+            "name": "yt_tab_videos",
+            "value": "فيديوهات"
+        },
+        {
+            "name": "yt_tab_shorts",
+            "value": "Shorts"
+        },
+        {
+            "name": "yt_tab_live",
+            "value": "بث مباشر"
+        },
+        {
+            "name": "yt_tab_about",
+            "value": "حول"
+        },
+        {
+            "name": "yt_empty_no_videos",
+            "value": "لا توجد فيديوهات"
+        },
+        {
+            "name": "yt_empty_no_shorts",
+            "value": "لا يوجد Shorts"
+        },
+        {
+            "name": "yt_empty_no_live",
+            "value": "لا توجد بثوث مباشرة"
+        },
+        {
+            "name": "yt_channel_info",
+            "value": "معلومات القناة"
+        },
+        {
+            "name": "yt_channel_id",
+            "value": "معرف القناة"
+        },
+        {
+            "name": "yt_channel_subscribers",
+            "value": "المشتركون"
+        },
+        {
+            "name": "yt_channel_video_count",
+            "value": "عدد الفيديوهات"
+        },
+        {
+            "name": "yt_channel_description",
+            "value": "الوصف"
+        },
+        {
+            "name": "yt_error_load_user_videos",
+            "value": "فشل في تحميل فيديوهات المستخدم"
+        },
+        {
+            "name": "yt_error_load_shorts",
+            "value": "فشل في تحميل Shorts"
+        },
+        {
+            "name": "yt_error_load_live",
+            "value": "فشل في تحميل البثوث المباشرة"
+        },
+        {
+            "name": "yt_label_user",
+            "value": "المستخدم"
+        },
+        {
+            "name": "yt_local_history",
+            "value": "سجل المشاهدة"
+        },
+        {
+            "name": "yt_dialog_clear_history",
+            "value": "مسح السجل"
+        },
+        {
+            "name": "yt_confirm_clear_history",
+            "value": "هل تريد مسح كل سجل المشاهدة؟"
+        },
+        {
+            "name": "yt_empty_no_history",
+            "value": "لا يوجد سجل مشاهدة"
+        },
+        {
+            "name": "yt_empty_history_hint",
+            "value": "ستظهر الفيديوهات المشاهدة هنا"
+        },
+        {
+            "name": "yt_time_just_now",
+            "value": "الآن"
+        },
+        {
+            "name": "yt_action_delete_record",
+            "value": "حذف السجل"
+        },
+        {
+            "name": "yt_action_remove_from_queue",
+            "value": "إزالة من قائمة الانتظار"
+        },
+        {
+            "name": "yt_sub_manage_title",
+            "value": "اشتراكاتي"
+        },
+        {
+            "name": "yt_empty_no_subs",
+            "value": "لا توجد اشتراكات"
+        },
+        {
+            "name": "yt_empty_subs_hint",
+            "value": "يرجى الإضافة في \"إدارة الاشتراكات\""
+        },
+        {
+            "name": "yt_empty_subs_hint_alt",
+            "value": "اشترك بمؤلفين مثيرين للاهتمام في صفحة البحث"
+        },
+        {
+            "name": "yt_error_load_subs",
+            "value": "فشل في تحميل الاشتراكات"
+        },
+        {
+            "name": "yt_fav_videos_title",
+            "value": "فيديوهاتي المفضلة"
+        },
+        {
+            "name": "yt_fav_playlists_title",
+            "value": "قوائمي المفضلة"
+        },
+        {
+            "name": "yt_local_playlists_title",
+            "value": "قوائم التشغيل المحلية"
+        },
+        {
+            "name": "yt_local_playlists_tag",
+            "value": "محلي"
+        },
+        {
+            "name": "yt_empty_no_local_playlists",
+            "value": "لا توجد قوائم تشغيل محلية بعد"
+        },
+        {
+            "name": "yt_empty_local_playlists_hint",
+            "value": "احفظ مقاطع الفيديو في قائمة تشغيل محلية من المشغل"
+        },
+        {
+            "name": "yt_empty_no_fav_videos",
+            "value": "لا توجد فيديوهات مفضلة"
+        },
+        {
+            "name": "yt_empty_no_fav_playlists",
+            "value": "لا توجد قوائم مفضلة"
+        },
+        {
+            "name": "yt_empty_fav_playlists_hint",
+            "value": "أضف قوائم إلى المفضلة من صفحة البحث"
+        },
+        {
+            "name": "yt_about_current_version",
+            "value": "الإصدار الحالي"
+        },
+        {
+            "name": "yt_about_description",
+            "value": "عميل YouTube مفتوح المصدر基于 HarmonyOS NEXT\nبدون إعلانات · بدون تتبع · تحليل محلي بالكامل"
+        },
+        {
+            "name": "yt_about_qq_group",
+            "value": "مجموعة QQ"
+        },
+        {
+            "name": "yt_about_tg_group",
+            "value": "مجموعة Telegram"
+        },
+        {
+            "name": "yt_about_github_repo",
+            "value": "مستودع GitHub"
+        },
+        {
+            "name": "yt_about_project_info",
+            "value": "معلومات المشروع"
+        },
+        {
+            "name": "yt_about_open_source",
+            "value": "المشاريع مفتوحة المصدر المستخدمة"
+        },
+        {
+            "name": "yt_about_ai_models",
+            "value": "نماذج الذكاء الاصطناعي للتطوير"
+        },
+        {
+            "name": "yt_about_changelog",
+            "value": "سجل التغييرات"
+        },
+        {
+            "name": "yt_about_check_update",
+            "value": "التحقق من التحديثات"
+        },
+        {
+            "name": "yt_about_check_update_subtitle",
+            "value": "الحصول على أحدث إصدار من GitHub"
+        },
+        {
+            "name": "yt_update_check_failed",
+            "value": "فشل التحقق من التحديثات، حاول مرة أخرى لاحقًا"
+        },
+        {
+            "name": "yt_update_up_to_date",
+            "value": "لديك أحدث إصدار"
+        },
+        {
+            "name": "yt_update_available_title",
+            "value": "يتوفر تحديث جديد"
+        },
+        {
+            "name": "yt_update_open_appgallery",
+            "value": "AppTest"
+        },
+        {
+            "name": "yt_update_open_github",
+            "value": "GitHub"
+        },
+        {
+            "name": "yt_update_checking",
+            "value": "جارٍ التحقق من التحديثات…"
+        },
+        {
+            "name": "yt_update_current_version",
+            "value": "الإصدار الحالي"
+        },
+        {
+            "name": "yt_update_new_version",
+            "value": "الإصدار الجديد"
+        },
+        {
+            "name": "yt_update_release_time",
+            "value": "تاريخ الإصدار"
+        },
+        {
+            "name": "yt_error_load_failed",
+            "value": "فشل التحميل"
+        },
+        {
+            "name": "yt_error_play_failed_title",
+            "value": "فشل التشغيل"
+        },
+        {
+            "name": "yt_label_live",
+            "value": "مباشر"
+        },
+        {
+            "name": "yt_error_load_playlists",
+            "value": "فشل في تحميل القوائم"
+        },
+        {
+            "name": "yt_error_load_channel_info",
+            "value": "فشل في الحصول على معلومات القناة"
+        },
+        {
+            "name": "yt_tab_description",
+            "value": "الوصف"
+        },
+        {
+            "name": "yt_tab_comments",
+            "value": "التعليقات"
+        },
+        {
+            "name": "yt_tab_recommended",
+            "value": "موصى به"
+        },
+        {
+            "name": "yt_home_recommended_error",
+            "value": "فشل تحميل الخلاصة الموصى بها، تم التراجع أو حاول لاحقًا"
+        },
+        {
+            "name": "yt_home_auth_expired_notice",
+            "value": "انتهت صلاحية تسجيل الدخول — يتم عرض توصيات الضيوف. يرجى تسجيل الدخول مرة أخرى."
+        },
+        {
+            "name": "yt_home_kiosk_error",
+            "value": "فشل طلب Kiosk، يرجى المحاولة لاحقًا"
+        },
+        {
+            "name": "yt_home_load_error",
+            "value": "فشل تحميل الصفحة الرئيسية، يرجى المحاولة لاحقًا"
+        },
+        {
+            "name": "yt_player_mode_progressive",
+            "value": "تدريجي"
+        },
+        {
+            "name": "yt_player_mode_hls",
+            "value": "بث HLS"
+        },
+        {
+            "name": "yt_player_mode_dash_manifest",
+            "value": "بث DASH (Manifest)"
+        },
+        {
+            "name": "yt_player_mode_dash_track",
+            "value": "مسارات DASH (فصل الصوت/الفيديو)"
+        },
+        {
+            "name": "yt_player_default",
+            "value": "افتراضي (Default)"
+        },
+        {
+            "name": "yt_player_step1_select_mode",
+            "value": "1. اختر وضع التشغيل"
+        },
+        {
+            "name": "yt_player_step2_select_quality",
+            "value": "2. اختر الجودة"
+        },
+        {
+            "name": "yt_player_video_quality",
+            "value": "جودة الفيديو"
+        },
+        {
+            "name": "yt_player_step2_select_manifest",
+            "value": "2. اختر البيان"
+        },
+        {
+            "name": "yt_player_step2_select_track",
+            "value": "2. اختر المسار"
+        },
+        {
+            "name": "yt_player_audio_language_type",
+            "value": "لغة الصوت / النوع"
+        },
+        {
+            "name": "yt_log_saved_to_downloads",
+            "value": "تم الحفظ في مجلد التنزيلات"
+        },
+        {
+            "name": "yt_error_no_playable_stream",
+            "value": "لم يتم العثور على بثوث قابلة للتشغيل"
+        },
+        {
+            "name": "yt_error_no_supported_stream",
+            "value": "لم يتم العثور على بثوث فيديو مدعومة"
+        },
+        {
+            "name": "new_app_name",
+            "value": "YourPipe"
+        },
+        {
+            "name": "yt_empty_no_playlists",
+            "value": "لا توجد قوائم تشغيل"
+        },
+        {
+            "name": "yt_search_results_from",
+            "value": "نتائج البحث عن \"%s\""
+        },
+        {
+            "name": "yt_setting_stream_buffer",
+            "value": "مخزن تدفق TCP"
+        },
+        {
+            "name": "yt_setting_seek_keyframe",
+            "value": "بحث سريع (Keyframe)"
+        },
+        {
+            "name": "yt_setting_seek_keyframe_subtitle",
+            "value": "الانتقال إلى أقرب إطار رئيسي لاستجابة بحث أسرع"
+        },
+        {
+            "name": "yt_setting_home_feed_after_login",
+            "value": "المحتوى الرئيسي بعد تسجيل الدخول"
+        },
+        {
+            "name": "yt_home_feed_recommended",
+            "value": "موصى به"
+        },
+        {
+            "name": "yt_home_feed_kiosk",
+            "value": "مباشر"
+        },
+        {
+            "name": "yt_option_sync_library_on_launch",
+            "value": "مزامنة المكتبة عند التشغيل"
+        },
+        {
+            "name": "yt_option_sync_library_on_launch_subtitle",
+            "value": "جلب السجل والاشتراكات عند التشغيل"
+        },
+        {
+            "name": "yt_option_auth_session",
+            "value": "تصفح مسجّل الدخول"
+        },
+        {
+            "name": "yt_option_sign_out",
+            "value": "تسجيل الخروج"
+        },
+        {
+            "name": "yt_option_sign_out_subtitle",
+            "value": "مسح تسجيل الدخول"
+        },
+        {
+            "name": "yt_confirm_sign_out",
+            "value": "تسجيل الخروج ومسح بيانات الاعتماد المحفوظة؟"
+        },
+        {
+            "name": "yt_action_audio_only",
+            "value": "صوت فقط"
+        },
+        {
+            "name": "yt_action_audio_only_play",
+            "value": "تشغيل الصوت فقط"
+        },
+        {
+            "name": "yt_player_subtitle_off",
+            "value": "إيقاف الترجمة"
+        },
+{
+    "name": "yt_player_subtitle_auto_translated",
+    "value": "ترجمة تلقائية"
+},
+{
+    "name": "yt_option_ai_translate",
+    "value": "ترجمة الترجمة بالذكاء الاصطناعي"
+},
+{
+    "name": "yt_option_ai_subtitle",
+    "value": "الترجمة بالذكاء الاصطناعي"
+},
+{
+    "name": "yt_ai_translate_engine",
+    "value": "محرك الترجمة"
+},
+{
+    "name": "yt_ai_translate_engine_gtx",
+    "value": "ترجمة Google المجانية"
+},
+{
+    "name": "yt_ai_translate_engine_llm",
+    "value": "نموذج LLM مخصص (متوافق مع OpenAI)"
+},
+{
+    "name": "yt_ai_translate_llm_section",
+    "value": "إعدادات LLM"
+},
+{
+    "name": "yt_ai_translate_base_url",
+    "value": "عنوان الواجهة (Base URL)"
+},
+{
+    "name": "yt_ai_translate_model",
+    "value": "اسم النموذج"
+},
+{
+    "name": "yt_ai_translate_api_key",
+    "value": "API Key"
+},
+{
+    "name": "yt_ai_translate_test",
+    "value": "اختبار الاتصال"
+},
+{
+    "name": "yt_ai_translate_testing",
+    "value": "جارٍ الاختبار…"
+},
+{
+    "name": "yt_ai_translate_test_ok",
+    "value": "تم الاتصال بنجاح"
+},
+{
+    "name": "yt_ai_translate_test_fail",
+    "value": "فشل الاتصال؛ تحقق من الإعدادات"
+},
+{
+    "name": "yt_ai_translate_display_section",
+    "value": "العرض"
+},
+{
+    "name": "yt_ai_translate_bilingual",
+    "value": "ثنائي اللغة"
+},
+{
+    "name": "yt_ai_translate_bilingual_subtitle",
+    "value": "إظهار النص الأصلي والترجمة معًا"
+},
+{
+    "name": "yt_ai_translate_note",
+    "value": "يُرسَل نص الترجمة إلى خدمة الترجمة المحددة. تتبع اللغة المستهدفة \"لغة ترجمة المحتوى\"."
+},
+{
+    "name": "yt_ai_translate_menu",
+    "value": "ترجمة ذكية"
+},
+{
+    "name": "yt_ai_translate_llm_not_configured",
+    "value": "يرجى إعداد LLM في الإعدادات أولًا"
+},
+{
+    "name": "yt_ai_translate_partial_fail",
+    "value": "فشلت ترجمة بعض الأسطر؛ تم الاحتفاظ بالنص الأصلي"
+},
+{
+    "name": "yt_ai_translate_failed",
+    "value": "فشلت ترجمة الترجمة؛ حاول لاحقًا"
+},
+{
+    "name": "yt_setting_system_ai_caption",
+    "value": "الترجمة الذكية للنظام"
+},
+{
+    "name": "yt_setting_system_ai_caption_subtitle",
+    "value": "يتعرف النظام على الصوت الجاري تشغيله في الوقت الفعلي (أجهزة مدعومة فقط، صيني/إنجليزي)"
+},
+{
+    "name": "yt_setting_system_ai_caption_source",
+    "value": "لغة مصدر الترجمة الذكية"
+},
+{
+    "name": "yt_setting_system_ai_caption_source_zh",
+    "value": "الصينية"
+},
+{
+    "name": "yt_asr_menu",
+    "value": "توليد الترجمة بالذكاء الاصطناعي"
+},
+{
+    "name": "yt_asr_phase_model",
+    "value": "تنزيل النموذج"
+},
+{
+    "name": "yt_asr_live_progress",
+    "value": "جارٍ التعرف المباشر…"
+},
+{
+    "name": "yt_asr_failed",
+    "value": "فشل توليد الترجمة؛ حاول لاحقًا"
+},
+{
+    "name": "yt_asr_model_section",
+    "value": "نموذج التعرف على الجهاز"
+},
+{
+    "name": "yt_asr_model_status_ready",
+    "value": "جاهز (تعرف فوري zh/en)"
+},
+{
+    "name": "yt_asr_model_status_none",
+    "value": "لم يتم التنزيل (حوالي 190MB، يُفضل Wi-Fi)"
+},
+{
+    "name": "yt_asr_model_downloading",
+    "value": "جارٍ التنزيل"
+},
+{
+    "name": "yt_asr_model_download",
+    "value": "تنزيل النموذج"
+},
+{
+    "name": "yt_asr_model_delete",
+    "value": "حذف النموذج"
+},
+{
+    "name": "yt_ai_action_cancel",
+    "value": "إلغاء"
+},
+        {
+            "name": "yt_player_chapters",
+            "value": "الفصول"
+        },
+        {
+            "name": "yt_log_count_format",
+            "value": "%d سجلات"
+        },
+        {
+            "name": "yt_log_regex_placeholder",
+            "value": "تصفية Regex، مثال DownloadManager|Task .*failed"
+        },
+        {
+            "name": "yt_label_current",
+            "value": "الحالي"
+        },
+        {
+            "name": "yt_label_autoplay",
+            "value": "تشغيل تلقائي"
+        },
+        {
+            "name": "yt_download_hls_hint",
+            "value": "سيتم تنزيل مقاطع HLS بتنسيقها الأصلي ودمجها في ملف واحد"
+        },
+        {
+            "name": "yt_video_count_format",
+            "value": "%d فيديو"
+        },
+        {
+            "name": "yt_playlist_name_placeholder",
+            "value": "اسم قائمة التشغيل"
+        },
+        {
+            "name": "yt_action_create",
+            "value": "إنشاء"
+        },
+        {
+            "name": "yt_action_new_playlist",
+            "value": "قائمة تشغيل جديدة"
+        },
+        {
+            "name": "yt_action_save_to_playlist",
+            "value": "حفظ في قائمة تشغيل"
+        },
+        {
+            "name": "yt_comments_count_format",
+            "value": "التعليقات (%d)"
+        },
+        {
+            "name": "yt_replies_count_format",
+            "value": "%d ردود"
+        },
+        {
+            "name": "yt_error_no_downloadable_stream",
+            "value": "لا توجد تدفقات متاحة للتنزيل"
+        },
+        {
+            "name": "yt_error_live_not_downloadable",
+            "value": "لا يمكن تنزيل البث المباشر"
+        },
+        {
+            "name": "yt_action_sleep_timer",
+            "value": "مؤقت النوم"
+        },
+        {
+            "name": "yt_stream_info_title",
+            "value": "معلومات التدفق"
+        },
+        {
+            "name": "yt_stream_stats_title",
+            "value": "إحصائيات التشغيل"
+        },
+        {
+            "name": "yt_stats_video_id",
+            "value": "معرّف الفيديو"
+        },
+        {
+            "name": "yt_stats_conn_speed",
+            "value": "سرعة الاتصال"
+        },
+        {
+            "name": "yt_stats_buffer",
+            "value": "طول المخزن المؤقت"
+        },
+        {
+            "name": "yt_stats_dropped",
+            "value": "الإطارات المسقطة"
+        },
+        {
+            "name": "yt_stream_container",
+            "value": "الحاوية"
+        },
+        {
+            "name": "yt_stream_media_title",
+            "value": "عنوان الوسائط"
+        },
+        {
+            "name": "yt_stream_duration",
+            "value": "المدة"
+        },
+        {
+            "name": "yt_stream_file_size",
+            "value": "حجم الملف"
+        },
+        {
+            "name": "yt_stream_video",
+            "value": "الفيديو"
+        },
+        {
+            "name": "yt_stream_audio",
+            "value": "الصوت"
+        },
+        {
+            "name": "yt_stream_resolution",
+            "value": "الدقة"
+        },
+        {
+            "name": "yt_stream_codec",
+            "value": "الترميز"
+        },
+        {
+            "name": "yt_stream_bitrate",
+            "value": "معدل البت"
+        },
+        {
+            "name": "yt_stream_frame_rate",
+            "value": "معدل الإطارات"
+        },
+        {
+            "name": "yt_stream_channels",
+            "value": "القنوات"
+        },
+        {
+            "name": "yt_stream_sample_rate",
+            "value": "معدل العينة"
+        },
+        {
+            "name": "yt_stream_loading",
+            "value": "جارٍ تحميل معلومات التدفق…"
+        },
+        {
+            "name": "yt_sub_sync_sign_in_first",
+            "value": "سجّل الدخول قبل مزامنة الاشتراكات"
+        },
+        {
+            "name": "yt_sub_sync_cloud_empty",
+            "value": "قائمة الاشتراكات السحابية فارغة"
+        },
+        {
+            "name": "yt_sub_sync_result_added",
+            "value": "تمت مزامنة %d اشتراك وإضافة %d"
+        },
+        {
+            "name": "yt_sub_sync_result",
+            "value": "تمت مزامنة %d اشتراك"
+        },
+        {
+            "name": "yt_sub_sync_failed",
+            "value": "تعذرت مزامنة الاشتراكات"
+        },
+        {
+            "name": "yt_refresh_failed",
+            "value": "فشل التحديث"
+        },
+        {
+            "name": "yt_sub_pull_to_sync",
+            "value": "اسحب لأسفل لمزامنة اشتراكات YouTube"
+        },
+        {
+            "name": "yt_sub_signed_in_pull_hint",
+            "value": "تم تسجيل الدخول؛ اسحب لأسفل للمزامنة"
+        },
+        {
+            "name": "yt_auth_subtitle_sign_in",
+            "value": "سجّل الدخول لتغذية مخصصة"
+        },
+        {
+            "name": "yt_auth_subtitle_cookie_active",
+            "value": "مسجّل الدخول (Cookie)"
+        },
+        {
+            "name": "yt_auth_subtitle_active",
+            "value": "مسجّل الدخول"
+        },
+        {
+            "name": "yt_auth_subtitle_incognito",
+            "value": "دخول محفوظ · تصفح خاص"
+        },
+        {
+            "name": "yt_auth_notice_title",
+            "value": "قبل تسجيل الدخول"
+        },
+        {
+            "name": "yt_auth_notice_message",
+            "value": "مرحبًا بك في تسجيل الدخول إلى YouTube. نوفر وصولًا محدودًا إلى محتوى الحساب، ويمكننا الحد بفعالية من مشكلات عدم توفر الوضع المجهول في بعض بيئات الشبكة. قد يؤدي ذلك إلى استهلاك إضافي للشبكة، لذا يُرجى أخذ ذلك في الاعتبار :)"
+        },
+        {
+            "name": "yt_auth_continue_sign_in",
+            "value": "متابعة تسجيل الدخول"
+        },
+        {
+            "name": "yt_cookie_collapse",
+            "value": "إخفاء تسجيل الدخول عبر Cookie"
+        },
+        {
+            "name": "yt_cookie_sign_in",
+            "value": "تسجيل الدخول عبر Cookie"
+        },
+        {
+            "name": "yt_cookie_import_subtitle",
+            "value": "لصق ملفات تعريف الارتباط"
+        },
+        {
+            "name": "yt_cookie_import_help",
+            "value": "يدعم ترويسة Cookie وJSON المصدّر من EditThisCookie أو Cookie-Editor. يلزم SID وSAPISID أو __Secure-3PAPISID."
+        },
+        {
+            "name": "yt_cookie_import_placeholder",
+            "value": "SID=...; SAPISID=... أو Cookie JSON"
+        },
+        {
+            "name": "yt_cookie_verifying",
+            "value": "جارٍ التحقق من Cookie…"
+        },
+        {
+            "name": "yt_cookie_import_confirm",
+            "value": "استيراد وتحقق"
+        },
+        {
+            "name": "yt_cookie_verify_history",
+            "value": "تم التحقق عبر الإنترنت (%d عنصرًا في السجل)"
+        },
+        {
+            "name": "yt_cookie_verify_empty_history",
+            "value": "تم التحقق عبر الإنترنت (السجل فارغ؛ المصادقة ناجحة)"
+        },
+        {
+            "name": "yt_cookie_session_inactive",
+            "value": "الجلسة غير نشطة. استورد ملفات تعريف الارتباط مرة أخرى."
+        },
+        {
+            "name": "yt_cookie_verify_failed",
+            "value": "فشل التحقق عبر الإنترنت: %s"
+        },
+        {
+            "name": "yt_cookie_input_required",
+            "value": "الصق سلسلة Cookie"
+        },
+        {
+            "name": "yt_cookie_parse_failed",
+            "value": "تعذر تحليل ملفات تعريف الارتباط (يدعم العنوان أو JSON من EditThisCookie)"
+        },
+        {
+            "name": "yt_cookie_sid_missing",
+            "value": "فشل التحقق المحلي: لم يتم العثور على SID / SAPISID"
+        },
+        {
+            "name": "yt_cookie_sapisid_missing",
+            "value": "فشل التحقق المحلي: SAPISID (أو __Secure-3PAPISID) غير موجود"
+        },
+        {
+            "name": "yt_auth_module_unavailable",
+            "value": "وحدة المصادقة غير متاحة"
+        },
+        {
+            "name": "yt_cookie_local_validating",
+            "value": "تم قبول التنسيق المحلي. التحقق من YouTube…"
+        },
+        {
+            "name": "yt_google_web_sign_in_subtitle",
+            "value": "تسجيل دخول عبر الويب"
+        },
+        {
+            "name": "yt_google_web_sign_in_title",
+            "value": "تسجيل الدخول إلى YouTube"
+        },
+        {
+            "name": "yt_label_unknown",
+            "value": "غير معروف"
+        },
+        {
+            "name": "yt_label_untitled",
+            "value": "بدون عنوان"
+        },
+        {
+            "name": "yt_option_preferences",
+            "value": "التفضيلات"
+        },
+        {
+            "name": "yt_appearance_theme_color",
+            "value": "لون السمة"
+        },
+        {
+            "name": "yt_playback_pip",
+            "value": "صورة داخل صورة"
+        },
+        {
+            "name": "yt_playback_pip_on_return",
+            "value": "الدخول في صورة داخل صورة عند العودة"
+        },
+        {
+            "name": "yt_playback_pip_on_return_subtitle",
+            "value": "PiP تلقائي عند الرجوع/الرئيسية"
+        },
+        {
+            "name": "yt_playback_player",
+            "value": "المشغل"
+        },
+        {
+            "name": "yt_playback_gestures",
+            "value": "الإيماءات وعناصر التحكم"
+        },
+        {
+            "name": "yt_option_gesture_control_subtitle",
+            "value": "التمرير والضغط المطول وعناصر التحكم الأخرى في التشغيل"
+        },
+        {
+            "name": "yt_playback_gesture_seek",
+            "value": "التمرير للانتقال"
+        },
+        {
+            "name": "yt_playback_gesture_seek_subtitle",
+            "value": "اسحب أفقياً للتقديم"
+        },
+        {
+            "name": "yt_playback_gesture_brightness",
+            "value": "التمرير يساراً للسطوع"
+        },
+        {
+            "name": "yt_playback_gesture_brightness_subtitle",
+            "value": "اليسار: السطوع"
+        },
+        {
+            "name": "yt_playback_gesture_volume",
+            "value": "التمرير يميناً للصوت"
+        },
+        {
+            "name": "yt_playback_gesture_volume_subtitle",
+            "value": "اليمين: الصوت"
+        },
+        {
+            "name": "yt_playback_hold_speed",
+            "value": "اضغط مطولًا للتسريع"
+        },
+        {
+            "name": "yt_playback_hold_speed_subtitle",
+            "value": "يسرّع التشغيل مؤقتًا أثناء الضغط على الشاشة"
+        },
+        {
+            "name": "yt_playback_hold_speed_value",
+            "value": "سرعة الضغط المطول"
+        },
+        {
+            "name": "yt_playback_hold_speed_delay",
+            "value": "تأخير التفعيل"
+        },
+        {
+            "name": "yt_playback_background_audio_only",
+            "value": "صوت فقط في الخلفية"
+        },
+        {
+            "name": "yt_playback_background_audio_only_subtitle",
+            "value": "إيقاف الفيديو في الخلفية لتوفير الطاقة"
+        },
+        {
+            "name": "yt_playback_auto_play_next",
+            "value": "تشغيل الفيديو التالي تلقائيًا"
+        },
+        {
+            "name": "yt_playback_auto_play_next_subtitle",
+            "value": "افتراضي التشغيل التلقائي للطابور عند التشغيل"
+        },
+        {
+            "name": "yt_playback_video_off_delay",
+            "value": "تأخير إيقاف تشغيل الفيديو"
+        },
+        {
+            "name": "yt_playback_hwdec",
+            "value": "فك التشفير بالأجهزة"
+        },
+        {
+            "name": "yt_playback_hwdec_subtitle",
+            "value": "فك تشفير عتادي أوفر للطاقة"
+        },
+        {
+            "name": "yt_playback_gpu_rendering",
+            "value": "العرض عبر GPU"
+        },
+        {
+            "name": "yt_playback_stream_endpoint",
+            "value": "نقطة نهاية التشغيل"
+        },
+        {
+            "name": "yt_playback_guest_player_client",
+            "value": "نقطة نهاية وضع الضيف"
+        },
+        {
+            "name": "yt_playback_auth_player_client",
+            "value": "نقطة نهاية الحساب المسجل"
+        },
+        {
+            "name": "yt_setting_client_visionos",
+            "value": "VisionOS"
+        },
+        {
+            "name": "yt_setting_client_tv_downgraded",
+            "value": "TV Downgraded"
+        },
+        {
+            "name": "yt_setting_client_mweb",
+            "value": "MWEB (SABR)"
+        },
+        {
+            "name": "yt_playback_buffer_network",
+            "value": "الأداء والتخزين المؤقت"
+        },
+        {
+            "name": "yt_option_perf_buffer_subtitle",
+            "value": "فك الترميز والعرض وذاكرة التخزين المؤقت"
+        },
+        {
+            "name": "yt_playback_memory_cache",
+            "value": "ذاكرة التخزين المؤقتة"
+        },
+        {
+            "name": "yt_playback_readahead",
+            "value": "تخزين مؤقت مسبق"
+        },
+        {
+            "name": "yt_playback_buffer_size",
+            "value": "حجم المخزن المؤقت"
+        },
+        {
+            "name": "yt_download_concurrent_tasks",
+            "value": "التنزيلات المتزامنة"
+        },
+        {
+            "name": "yt_toast_login_success",
+            "value": "تم تسجيل الدخول بنجاح"
+        },
+        {
+            "name": "yt_login_extracting_auth",
+            "value": "تم تسجيل الدخول. جارٍ استخراج معلومات المصادقة…"
+        },
+        {
+            "name": "yt_login_skip_pot",
+            "value": "تخطي (لا تستخرج PoToken)"
+        },
+        {
+            "name": "yt_confirm_delete_search_item",
+            "value": "حذف \"%s\"؟"
+        },
+        {
+            "name": "yt_download_saved_to_downloads",
+            "value": "تم الحفظ في مجلد التنزيلات"
+        },
+        {
+            "name": "yt_download_save_failed",
+            "value": "فشل الحفظ"
+        },
+        {
+            "name": "yt_date_today",
+            "value": "اليوم"
+        },
+        {
+            "name": "yt_date_days_ago",
+            "value": "منذ %d يوم"
+        },
+        {
+            "name": "yt_date_weeks_ago",
+            "value": "منذ %d أسبوع"
+        },
+        {
+            "name": "yt_date_months_ago",
+            "value": "منذ %d شهر"
+        },
+        {
+            "name": "yt_date_years_ago",
+            "value": "منذ %d سنة"
+        },
+        {
+            "name": "yt_download_status_waiting",
+            "value": "قيد الانتظار"
+        },
+        {
+            "name": "yt_download_status_video",
+            "value": "تنزيل الفيديو"
+        },
+        {
+            "name": "yt_download_status_audio",
+            "value": "تنزيل الصوت"
+        },
+        {
+            "name": "yt_download_status_merging",
+            "value": "جارٍ الدمج"
+        },
+        {
+            "name": "yt_download_status_completed",
+            "value": "مكتمل"
+        },
+        {
+            "name": "yt_download_status_failed",
+            "value": "فشل التنزيل"
+        },
+        {
+            "name": "yt_download_status_cancelled",
+            "value": "ملغى"
+        },
+        {
+            "name": "yt_download_started_format",
+            "value": "بدأ التنزيل: %s"
+        },
+        {
+            "name": "yt_download_saved_format",
+            "value": "تم الحفظ في التنزيلات: %s"
+        },
+        {
+            "name": "yt_download_completed_format",
+            "value": "اكتمل التنزيل: %s"
+        },
+        {
+            "name": "yt_toast_copied",
+            "value": "تم النسخ"
+        },
+        {
+            "name": "yt_toast_copy_failed",
+            "value": "فشل النسخ"
+        },
+        {
+            "name": "yt_about_package_name",
+            "value": "اسم الحزمة"
+        },
+        {
+            "name": "yt_follow_system",
+            "value": "اتباع النظام"
+        },
+        {
+            "name": "yt_data_account_manage_sign_in",
+            "value": "إدارة البيانات وتسجيل الدخول"
+        },
+        {
+            "name": "yt_data_account_incognito",
+            "value": "تسجيل دخول محفوظ · وضع التصفح الخفي"
+        },
+        {
+            "name": "yt_data_account_cookie",
+            "value": "مسجّل الدخول (Cookie) · إدارة البيانات والحساب"
+        },
+        {
+            "name": "yt_data_account_signed_in",
+            "value": "مسجّل الدخول · إدارة البيانات والحساب"
+        },
+        {
+            "name": "yt_layout_card_mode",
+            "value": "وضع البطاقات"
+        },
+        {
+            "name": "yt_layout_list_mode",
+            "value": "وضع القائمة"
+        },
+        {
+            "name": "yt_pip_playing",
+            "value": "يتم التشغيل في صورة داخل صورة"
+        },
+        {
+            "name": "yt_pip_restore_hint",
+            "value": "انقر على نافذة صورة داخل صورة للاستعادة"
+        },
+        {
+            "name": "yt_google_web_sign_in",
+            "value": "تسجيل الدخول بحساب Google"
+        },
+        {
+            "name": "yt_login_sapisid_failed",
+            "value": "تعذر الحصول على SAPISID. حاول مرة أخرى."
+        },
+        {
+            "name": "yt_time_minutes_ago",
+            "value": "منذ %d دقيقة"
+        },
+        {
+            "name": "yt_time_hours_ago",
+            "value": "منذ %d ساعة"
+        },
+        {
+            "name": "yt_history_sync_sign_in",
+            "value": "سجّل الدخول قبل مزامنة السجل السحابي"
+        },
+        {
+            "name": "yt_history_sync_success",
+            "value": "تمت مزامنة %d عنصرًا من السجل السحابي (الاحتفاظ بالتقدم والأوقات المحلية)"
+        },
+        {
+            "name": "yt_history_sync_empty",
+            "value": "السجل السحابي فارغ"
+        },
+        {
+            "name": "yt_history_sync_failed",
+            "value": "تعذرت مزامنة السجل السحابي"
+        },
+        {
+            "name": "yt_sub_feed_youtube",
+            "value": "خلاصة اشتراكات YouTube"
+        },
+        {
+            "name": "yt_sub_feed_title",
+            "value": "موجز الاشتراكات"
+        },
+        {
+            "name": "yt_sub_feed_entry_title",
+            "value": "موجز الاشتراكات"
+        },
+        {
+            "name": "yt_sub_feed_entry_subtitle",
+            "value": "%d قنوات مشتركة"
+        },
+        {
+            "name": "yt_sub_feed_new_items",
+            "value": "%d فيديوهات جديدة"
+        },
+        {
+            "name": "yt_sub_feed_empty_hint",
+            "value": "اسحب للتحديث للحصول على أحدث الفيديوهات من اشتراكاتك"
+        },
+        {
+            "name": "yt_backup_item_subscription_feed",
+            "value": "ذاكرة موجز الاشتراكات"
+        },
+        {
+            "name": "yt_feed_fast_mode_title",
+            "value": "وضع موجز الاشتراكات السريع (RSS)"
+        },
+        {
+            "name": "yt_feed_fast_mode_subtitle",
+            "value": "جلب عبر RSS خفيف؛ طلبات أقل لكن بيانات غير كاملة"
+        },
+        {
+            "name": "yt_setting_home_layout",
+            "value": "تخطيط الصفحة الرئيسية"
+        },
+        {
+            "name": "yt_layout_grid",
+            "value": "وضع البطاقات"
+        },
+        {
+            "name": "yt_layout_list",
+            "value": "وضع القائمة"
+        },
+        {
+            "name": "yt_setting_card_density",
+            "value": "كثافة البطاقات"
+        },
+        {
+            "name": "yt_density_auto",
+            "value": "تلقائي"
+        },
+        {
+            "name": "yt_density_compact",
+            "value": "مضغوط"
+        },
+        {
+            "name": "yt_density_cozy",
+            "value": "مريح"
+        },
+        {
+            "name": "yt_codec_av1",
+            "value": "AV1"
+        },
+        {
+            "name": "yt_action_open_browser",
+            "value": "فتح في المتصفح"
+        },
+        {
+            "name": "yt_action_show_more",
+            "value": "عرض المزيد"
+        },
+        {
+            "name": "yt_action_show_less",
+            "value": "عرض أقل"
+        },
+        {
+            "name": "yt_label_loading",
+            "value": "جارٍ التحميل…"
+        },
+        {
+            "name": "yt_error_age_restricted",
+            "value": "هذا الفيديو مقيد بالعمر"
+        },
+        {
+            "name": "yt_error_age_restricted_hint",
+            "value": "تحتاج إلى تسجيل الدخول إلى حساب YouTube في المتصفح لمشاهدته"
+        },
+        {
+            "name": "yt_error_geo_restricted",
+            "value": "هذا المحتوى غير متاح في منطقتك"
+        },
+        {
+            "name": "yt_error_geo_restricted_hint",
+            "value": "قام مُحمِّل الفيديو بتقييد مناطق التشغيل"
+        },
+        {
+            "name": "yt_error_paid_content",
+            "value": "هذا محتوى مدفوع"
+        },
+        {
+            "name": "yt_error_paid_content_hint",
+            "value": "تحتاج إلى الشراء أو الاستئجار للمشاهدة"
+        },
+        {
+            "name": "yt_error_premium_content",
+            "value": "هذا المحتوى لأعضاء YouTube Premium فقط"
+        },
+        {
+            "name": "yt_error_premium_content_hint",
+            "value": "تحتاج إلى الاشتراك في YouTube Premium للتشغيل"
+        },
+        {
+            "name": "yt_error_private_content",
+            "value": "هذا فيديو خاص"
+        },
+        {
+            "name": "yt_error_private_content_hint",
+            "value": "يمكن للمستخدمين المصرح لهم فقط مشاهدته"
+        },
+        {
+            "name": "yt_error_login_required",
+            "value": "تسجيل الدخول مطلوب للمشاهدة"
+        },
+        {
+            "name": "yt_error_login_required_hint",
+            "value": "يرجى تسجيل الدخول إلى حساب YouTube في المتصفح"
+        },
+        {
+            "name": "yt_error_account_terminated",
+            "value": "تم إنهاء هذه القناة"
+        },
+        {
+            "name": "yt_error_account_terminated_hint",
+            "value": "تم حظر هذا الحساب لانتهاكه سياسات YouTube"
+        },
+        {
+            "name": "yt_error_live_offline",
+            "value": "انتهت البث المباشر"
+        },
+        {
+            "name": "yt_error_live_offline_hint",
+            "value": "هذا البث غير متصل أو لم يبدأ بعد"
+        },
+        {
+            "name": "yt_error_content_not_supported",
+            "value": "هذا النوع من المحتوى غير مدعوم"
+        },
+        {
+            "name": "yt_error_content_not_supported_hint",
+            "value": "تنسيق الفيديو هذا غير مدعوم للتشغيل"
+        },
+        {
+            "name": "yt_error_network",
+            "value": "فشل الاتصال بالشبكة"
+        },
+        {
+            "name": "yt_error_network_hint",
+            "value": "يرجى التحقق من اتصال الشبكة وإعادة المحاولة"
+        },
+        {
+            "name": "yt_error_timeout",
+            "value": "انتهت مهلة الطلب"
+        },
+        {
+            "name": "yt_error_timeout_hint",
+            "value": "استجابة الخادم بطيئة جدًا، يرجى المحاولة لاحقًا"
+        },
+        {
+            "name": "yt_error_extraction_failed",
+            "value": "فشل تحليل معلومات الفيديو"
+        },
+        {
+            "name": "yt_error_endpoint_hint",
+            "value": "نقطة النهاية الحالية: %s"
+        },
+        {
+            "name": "yt_error_extraction_failed_hint",
+            "value": "تعذر جلب بيانات تشغيل الفيديو"
+        },
+        {
+            "name": "yt_error_cipher_failed",
+            "value": "فشل فك تشفير تدفق الفيديو"
+        },
+        {
+            "name": "yt_error_cipher_failed_hint",
+            "value": "تم تحديث خوارزمية التوقيع، يرجى انتظار تحديث التطبيق"
+        },
+        {
+            "name": "yt_option_group_recovery",
+            "value": "الاستعادة"
+        },
+        {
+            "name": "yt_option_reset_settings",
+            "value": "إعادة تعيين جميع الإعدادات"
+        },
+        {
+            "name": "yt_option_reset_settings_subtitle",
+            "value": "استعادة الإعدادات الافتراضية"
+        },
+        {
+            "name": "yt_option_clear_all_data",
+            "value": "مسح جميع بيانات التطبيق"
+        },
+        {
+            "name": "yt_option_clear_all_data_subtitle",
+            "value": "مسح السجل والذاكرة المؤقتة وكل البيانات"
+        },
+        {
+            "name": "yt_toast_reset_settings_done",
+            "value": "تمت إعادة تعيين الإعدادات إلى الافتراضية"
+        },
+        {
+            "name": "yt_toast_clear_all_data_done",
+            "value": "تم مسح جميع البيانات"
+        },
+        {
+            "name": "yt_option_recovery",
+            "value": "الاستعادة"
+        },
+        {
+            "name": "yt_confirm_reset_settings",
+            "value": "إعادة تعيين جميع الإعدادات إلى الافتراضية؟ لا يمكن التراجع عن هذا الإجراء."
+        },
+        {
+            "name": "yt_confirm_clear_all_data",
+            "value": "مسح جميع بيانات التطبيق؟ سيؤدي ذلك إلى حذف السجل والمفضلات والاشتراكات والإعدادات ومقاطع الفيديو التي تم تنزيلها والملفات المحلية المستوردة. لا يمكن التراجع عن هذا الإجراء."
+        },
+        {
+            "name": "yt_action_download",
+            "value": "تنزيل"
+        },
+        {
+            "name": "yt_label_progressive",
+            "value": "جودة مدمجة"
+        },
+        {
+            "name": "yt_label_premium",
+            "value": "مميز"
+        },
+        {
+            "name": "yt_label_members_only",
+            "value": "الأعضاء"
+        },
+        {
+            "name": "yt_option_data_account",
+            "value": "البيانات والحساب"
+        },
+        {
+            "name": "yt_option_data_account_subtitle",
+            "value": "الحساب والبيانات المحلية"
+        },
+        {
+            "name": "yt_section_account",
+            "value": "الحساب"
+        },
+        {
+            "name": "yt_section_data_management",
+            "value": "إدارة البيانات"
+        },
+        {
+            "name": "yt_option_google_login",
+            "value": "تسجيل الدخول عبر Google"
+        },
+        {
+            "name": "yt_option_export_data",
+            "value": "تصدير البيانات"
+        },
+        {
+            "name": "yt_option_export_data_subtitle",
+            "value": "نسخ البيانات المحلية كـ JSON"
+        },
+        {
+            "name": "yt_option_restore_data",
+            "value": "استعادة البيانات"
+        },
+        {
+            "name": "yt_option_restore_data_subtitle",
+            "value": "استعادة من نسخة JSON"
+        },
+        {
+            "name": "yt_backup_item_settings",
+            "value": "إعدادات التطبيق"
+        },
+        {
+            "name": "yt_backup_item_subscriptions",
+            "value": "الاشتراكات"
+        },
+        {
+            "name": "yt_backup_item_favorites",
+            "value": "الفيديوهات المفضلة"
+        },
+        {
+            "name": "yt_backup_item_playlists",
+            "value": "القوائم المفضلة"
+        },
+        {
+            "name": "yt_backup_item_local_queues",
+            "value": "القوائم المحلية"
+        },
+        {
+            "name": "yt_backup_item_watch_history",
+            "value": "سجل المشاهدة"
+        },
+        {
+            "name": "yt_backup_item_search_history",
+            "value": "سجل البحث"
+        },
+        {
+            "name": "yt_backup_item_auth",
+            "value": "حالة تسجيل الدخول في YouTube"
+        },
+        {
+            "name": "yt_backup_export_title",
+            "value": "حدد العناصر للتصدير"
+        },
+        {
+            "name": "yt_backup_restore_title",
+            "value": "حدد العناصر للاستعادة"
+        },
+        {
+            "name": "yt_backup_confirm_restore",
+            "value": "الاستعادة ستستبدل البيانات المحلية المحددة حاليًا. هل تريد المتابعة؟"
+        },
+        {
+            "name": "yt_backup_export_success",
+            "value": "تم التصدير بنجاح"
+        },
+        {
+            "name": "yt_backup_export_failed",
+            "value": "فشل التصدير"
+        },
+        {
+            "name": "yt_backup_restore_success",
+            "value": "تمت الاستعادة بنجاح"
+        },
+        {
+            "name": "yt_backup_restore_failed",
+            "value": "فشلت الاستعادة"
+        },
+        {
+            "name": "yt_backup_version_unsupported",
+            "value": "إصدار ملف النسخة الاحتياطية غير مدعوم"
+        },
+        {
+            "name": "yt_local_play",
+            "value": "تشغيل"
+        },
+        {
+            "name": "yt_local_file_missing",
+            "value": "الملف غير موجود"
+        },
+        {
+            "name": "yt_download_export",
+            "value": "تصدير إلى التنزيلات"
+        },
+        {
+            "name": "yt_download_title",
+            "value": "تنزيل الفيديو"
+        },
+        {
+            "name": "yt_download_step1_mode",
+            "value": "الخطوة 1: اختر وضع التنزيل"
+        },
+        {
+            "name": "yt_download_step2_quality",
+            "value": "الخطوة 2: اختر الجودة"
+        },
+        {
+            "name": "yt_download_step2_tracks",
+            "value": "الخطوة 2: اختر المسارات"
+        },
+        {
+            "name": "yt_download_mode_progressive",
+            "value": "تدفق مدمج (Progressive)"
+        },
+        {
+            "name": "yt_download_mode_dash",
+            "value": "مسارات منفصلة (DASH)"
+        },
+        {
+            "name": "yt_download_mode_hls",
+            "value": "تدفق HLS"
+        },
+        {
+            "name": "yt_download_mode_sabr",
+            "value": "مسارات SABR"
+        },
+        {
+            "name": "yt_download_progressive_hint",
+            "value": "موصى به: الفيديو والصوت مدمجان بالفعل"
+        },
+        {
+            "name": "yt_download_dash_hint",
+            "value": "يتم تنزيل الفيديو والصوت بشكل منفصل ثم دمجهما"
+        },
+        {
+            "name": "yt_download_sabr_hint",
+            "value": "جلب الصوت والفيديو عبر أجزاء جلسة SABR/UMP ثم الدمج (نفس مكدس التشغيل)"
+        },
+        {
+            "name": "yt_download_estimated_size",
+            "value": "الحجم المتوقع"
+        },
+        {
+            "name": "yt_download_empty",
+            "value": "لا توجد تنزيلات"
+        },
+        {
+            "name": "yt_download_empty_hint",
+            "value": "اضغط على زر التنزيل في صفحة فيديو للبدء"
+        },
+        {
+            "name": "yt_backup_error_no_context",
+            "value": "تعذر الحصول على سياق التطبيق"
+        },
+        {
+            "name": "yt_backup_error_no_save_path",
+            "value": "لم يتم تحديد مسار الحفظ"
+        },
+        {
+            "name": "yt_backup_error_no_file",
+            "value": "لم يتم تحديد ملف"
+        },
+        {
+            "name": "yt_backup_error_format",
+            "value": "خطأ في تنسيق ملف النسخة الاحتياطية"
+        },
+        {
+            "name": "yt_backup_error_wrong_app",
+            "value": "ملف النسخة الاحتياطية لا ينتمي إلى هذا التطبيق"
+        },
+        {
+            "name": "yt_backup_error_version",
+            "value": "إصدار ملف النسخة الاحتياطية غير مدعوم"
+        },
+        {
+            "name": "yt_backup_error_empty",
+            "value": "ملف النسخة الاحتياطية فارغ"
+        },
+        {
+            "name": "yt_backup_error_restore",
+            "value": "فشلت الاستعادة"
+        },
+        {
+            "name": "yt_backup_error_export",
+            "value": "فشل التصدير"
+        },
+        {
+            "name": "yt_subscriptions_feed_local",
+            "value": "اشتراكات RSS المحلية"
+        },
+        {
+            "name": "yt_playlist_video_count",
+            "value": "%d فيديو"
+        },
+        {
+            "name": "yt_history_sync_pull_hint",
+            "value": "اسحب لأسفل لمزامنة سجل مشاهدة YouTube"
+        },
+        {
+            "name": "yt_history_sync_sign_in_hint",
+            "value": "سجّل الدخول لتمكين مزامنة السجل السحابي"
+        },
+        {
+            "name": "yt_history_sync_signed_in_hint",
+            "value": "تم تسجيل الدخول؛ اسحب لأسفل لمزامنة السجل السحابي"
+        },
+        {
+            "name": "yt_subs_sync_signed_in_hint",
+            "value": "تم تسجيل الدخول؛ اسحب لأسفل لمزامنة اشتراكات YouTube"
+        },
+        {
+            "name": "yt_setting_delay_immediate",
+            "value": "فورًا"
+        },
+        {
+            "name": "yt_setting_gpu_auto",
+            "value": "تلقائي"
+        },
+        {
+            "name": "yt_label_opengl",
+            "value": "OpenGL"
+        },
+        {
+            "name": "yt_label_vulkan",
+            "value": "Vulkan"
+        },
+        {
+            "name": "yt_about_oss_newpipe_desc",
+            "value": "عميل YouTube مفتوح المصدر؛ مرجع للتصفح والبحث"
+        },
+        {
+            "name": "yt_about_oss_iplay_desc",
+            "value": "مشغل وسائط متعدد المنصات؛ مرجع لتشغيل المواقع المتعددة"
+        },
+        {
+            "name": "yt_about_oss_ytdlp_desc",
+            "value": "أداة تنزيل بسطر الأوامر؛ مرجع لاختيار الصيغ وسير التنزيل"
+        },
+        {
+            "name": "yt_about_oss_finvideo_desc",
+            "value": "مشغل وسائط HarmonyOS؛ مرجع لواجهة التشغيل ArkTS"
+        },
+        {
+            "name": "yt_about_oss_pipepipe_desc",
+            "value": "فرع NewPipe؛ مرجع لنقاط نهاية التشغيل وقرارات المصادقة"
+        },
+        {
+            "name": "yt_about_oss_mpv_desc",
+            "value": "محرك التشغيل؛ مرجع سلوك وواجهة libmpv"
+        },
+        {
+            "name": "yt_about_oss_smarttube_desc",
+            "value": "عميل YouTube لأندرويد TV؛ مرجع للتفاعل على التلفاز"
+        },
+        {
+            "name": "yt_about_oss_clashbox_desc",
+            "value": "عميل وكيل HarmonyOS؛ مرجع لواجهة إعداد الوكيل"
+        },
+        {
+            "name": "yt_about_oss_tpc_desc",
+            "value": "مشروع نقل C/C++ إلى OpenHarmony؛ مرجع لبناء التبعيات الأصلية"
+        },
+        {
+            "name": "yt_about_oss_vlc_desc",
+            "value": "مشغل متعدد المنصات؛ مرجع لتوافق الترميزات"
+        },
+        {
+            "name": "yt_label_vendors",
+            "value": "مزوّدين"
+        },
+        {
+            "name": "yt_about_tap_to_open",
+            "value": "اضغط على عنصر لفتحه في المتصفح"
+        },
+        {
+            "name": "yt_about_link_unavailable",
+            "value": "لا يوجد رابط متاح لهذا العنصر"
+        },
+        {
+            "name": "yt_about_link_failed",
+            "value": "تعذر فتح الرابط"
+        },
+        {
+            "name": "yt_changelog_0_5_3_1",
+            "value": "تمت إضافة دعم دفق YouTube SABR/UMP، مما أدى إلى تحسين التوافق مع مقاطع الفيديو ذات التنسيق الجديد وعالية الدقة والمقيدة"
+        },
+        {
+            "name": "yt_changelog_0_5_3_2",
+            "value": "إعادة هيكلة استخراج الفيديو واختيار العميل، بما يتماشى مع سلوك طلب PipePipe، واستعادة فك تشفير التوقيع عن بعد، وتقليل استخراج التكرارات وانتظار بدء التشغيل"
+        },
+        {
+            "name": "yt_changelog_0_5_3_3",
+            "value": "وكيل وسائط DASH المحلي المحسّن: مسارات الصوت/الفيديو المنفصلة، وذاكرة التخزين المؤقت المجزأة، والبحث الدقيق، واستعادة انقطاع الدفق، ومعالجة نهاية التشغيل"
+        },
+        {
+            "name": "yt_changelog_0_5_3_4",
+            "value": "تمت إضافة دعم SABR PoToken؛ معلمات التوقيع المحسنة، ورؤوس الطلب، ومعالجة الاستجابة الثنائية، مما يقلل من فشل 403 / غير قادر على التشغيل / التحميل"
+        },
+        {
+            "name": "yt_changelog_0_5_3_5",
+            "value": "تحسين مزامنة حالة المشغل والجودة وتبديل المسار الصوتي وإصلاح التحميل الذي لا نهاية له بعد التشغيل والبحث عن مشكلات قائمة الإزاحة والمسار الصوتي"
+        },
+        {
+            "name": "yt_changelog_0_5_3_6",
+            "value": "ترقية تحليل قائمة التشغيل وترقيم الصفحات، المتوافقة مع هياكل القائمة الجديدة والمحتوى المقفل والاستمرار؛ تحسين تحميل القائمة والتشغيل المستمر"
+        },
+        {
+            "name": "yt_changelog_0_5_3_7",
+            "value": "إعادة تنظيم إدخال إدارة الحساب والبيانات، وتحسين الارتباط بين حالة تسجيل الدخول، وسجل المشاهدة، والصفحة المحلية، وخيارات التنزيل، وتفضيلات التشغيل"
+        },
+        {
+            "name": "yt_changelog_0_5_3_8",
+            "value": "تحسين التوصيات المنزلية وبطاقات الفيديو ولون السمة والصورة داخل الصورة وجلسة وسائط النظام؛ تم إصلاح العديد من مشكلات واجهة المستخدم واستقرار التشغيل"
+        },
+        {
+            "name": "yt_changelog_0_5_2_1",
+            "value": "تضيف صفحة المشغل الصوت فقط: قم بإيقاف تشغيل الفيديو واستمع إلى الصوت، ويحل الغلاف محل الصورة، ولا يزال التقدم وعناصر التحكم متاحة"
+        },
+        {
+            "name": "yt_changelog_0_5_2_2",
+            "value": "في وضع الصوت فقط، لا توجد صورة داخل صورة؛ العودة إلى المقدمة تحافظ على الصوت فقط، ويلزم استئناف يدوي"
+        },
+        {
+            "name": "yt_changelog_0_5_2_3",
+            "value": "يمكن للخلفية تأخير إيقاف تشغيل الفيديو لتوفير الطاقة (قابل للتعديل في إعدادات التشغيل)"
+        },
+        {
+            "name": "yt_changelog_0_5_2_4",
+            "value": "انقطاع بث النظام الثابت: تقليل حجم البطة بشكل صحيح، وتجنب الضغط الثانوي الذي يسبب الصمت"
+        },
+        {
+            "name": "yt_changelog_0_5_2_5",
+            "value": "تشغيل أفقي/عمودي أكثر سلاسة، وملء الشاشة، والنوافذ، وتقليل الشاشة السوداء والتعتيم"
+        },
+        {
+            "name": "yt_changelog_0_5_2_6",
+            "value": "الصفحة الرئيسية بعد تسجيل الدخول تتطابق بشكل أفضل مع حالة الحساب، ويمكنها مزامنة سجل المشاهدة السحابية والاشتراكات"
+        },
+        {
+            "name": "yt_changelog_0_5_2_7",
+            "value": "بطاقات فيديو أكثر وضوحًا وشارات حية وعرض المنطقة الآمنة للصفحة"
+        },
+        {
+            "name": "yt_changelog_0_5_2_8",
+            "value": "دعم تسليم التطبيق وروابط الفيديو انقر لمشاركة"
+        },
+        {
+            "name": "yt_changelog_0_5_1_1",
+            "value": "إصلاح بعض الخلل المعروفة"
+        },
+        {
+            "name": "yt_changelog_0_5_1_2",
+            "value": "تتماشى مع مشاكل PipePipe"
+        },
+        {
+            "name": "yt_changelog_0_5_1_3",
+            "value": "تم إصلاح عدم القدرة على المشاهدة بعد تسجيل الدخول"
+        },
+        {
+            "name": "yt_changelog_0_5_1_4",
+            "value": "تم إصلاح ظهور شريط المعلومات بشكل غير صحيح في الوضع الأفقي"
+        },
+        {
+            "name": "yt_changelog_0_5_1_5",
+            "value": "واجهة مستخدم صفحة الإعدادات المحسنة"
+        },
+        {
+            "name": "yt_changelog_0_5_1_6",
+            "value": "تم الانتهاء من التحقق من منطق فك التشفير المحلي، وهو جاهز للنشر"
+        },
+        {
+            "name": "yt_changelog_0_5_0_1",
+            "value": "تم استبدال محرك تشغيل النظام وFFMpeg التابع لجهة خارجية بـ MPVPlayer"
+        },
+        {
+            "name": "yt_changelog_0_5_0_2",
+            "value": "تمت استعادة ميزات التشغيل والترجمة عالية الدقة"
+        },
+        {
+            "name": "yt_changelog_0_5_0_3",
+            "value": "دعم فك تشفير الأجهزة HEVC/H.264؛ على API 23+، حاول فك تشفير الأجهزة VP9/AV1"
+        },
+        {
+            "name": "yt_changelog_0_5_0_4",
+            "value": "تمت إضافة شاشة HDR حقيقية"
+        },
+        {
+            "name": "yt_changelog_0_5_0_5",
+            "value": "تحسين إمكانات مكتبة نقل الشبكة في حالة عدم تسجيل الدخول"
+        },
+        {
+            "name": "yt_changelog_0_5_0_6",
+            "value": "عرض الخطأ الأمثل"
+        },
+        {
+            "name": "yt_changelog_0_5_0_7",
+            "value": "تحسين واجهة المستخدم وخيارات الإعدادات"
+        },
+        {
+            "name": "yt_changelog_0_5_0_8",
+            "value": "تم تطبيق تصحيحات الإصدار الأحدث من PipePipe"
+        },
+        {
+            "name": "yt_changelog_0_4_1_1",
+            "value": "تحسين سرعة تحميل الفيديو"
+        },
+        {
+            "name": "yt_changelog_0_4_1_2",
+            "value": "تطبيق Pipepipe 5.1.1 بقع"
+        },
+        {
+            "name": "yt_changelog_0_4_1_3",
+            "value": "تم السماح بتسجيل الدخول إلى Google، مما أدى بشكل أساسي إلى التخلص من مشكلات حماية الروبوتات"
+        },
+        {
+            "name": "yt_changelog_0_4_1_4",
+            "value": "التفاعل الأمثل بملء الشاشة لمختلف الأجهزة"
+        },
+        {
+            "name": "yt_changelog_0_4_1_5",
+            "value": "تم تطوير وحدات متعددة لصفحة اللاعب"
+        },
+        {
+            "name": "yt_changelog_0_4_1_6",
+            "value": "اكتملت ميزة التنزيل الأولية"
+        },
+        {
+            "name": "yt_changelog_0_4_1_7",
+            "value": "ميزة قائمة التشغيل كاملة"
+        },
+        {
+            "name": "yt_changelog_0_4_1_8",
+            "value": "النظام المتكامل وإدخال فريق التمثيل، والتسليم التجريبي للتطبيق الأولي"
+        },
+        {
+            "name": "yt_changelog_0_4_0_1",
+            "value": "تم الانتهاء بشكل أساسي من تحليل النظام البيئي yt-dlp وواجهة التكامل"
+        },
+        {
+            "name": "yt_changelog_0_4_0_2",
+            "value": "تم السماح بتسجيل الدخول إلى Google، مما أدى بشكل أساسي إلى التخلص من مشكلات حماية الروبوتات"
+        },
+        {
+            "name": "yt_changelog_0_4_0_3",
+            "value": "آلية التشغيل الأمثل"
+        },
+        {
+            "name": "yt_changelog_0_4_0_4",
+            "value": "يستخدم فك التشفير السحابي بدلاً من فك التشفير المحلي، وهو أكثر استقرارًا"
+        },
+        {
+            "name": "yt_changelog_0_3_1_1",
+            "value": "تحسين مكدس الصفحات وتشغيل النافذة المصغرة"
+        },
+        {
+            "name": "yt_changelog_0_3_1_2",
+            "value": "تمت إضافة ذاكرة التخزين المؤقت للخادم لتشغيل أكثر سلاسة"
+        },
+        {
+            "name": "yt_changelog_0_3_1_3",
+            "value": "تحسين واجهة المستخدم والتفاعل"
+        },
+        {
+            "name": "yt_changelog_0_3_1_4",
+            "value": "المزيد من التكيف مع الصفحة والحجم"
+        },
+        {
+            "name": "yt_changelog_0_3_1_5",
+            "value": "استمر في تبسيط التعليمات البرمجية السابقة لمنع الأخطاء"
+        },
+        {
+            "name": "yt_changelog_0_3_1_6",
+            "value": "التطوير الأولي لتسجيل الدخول إلى Google، والتحقق من إمكانية تسجيل الدخول عبر الأنابيب"
+        },
+        {
+            "name": "yt_changelog_0_3_1_7",
+            "value": "تحسين استقرار تشغيل الخلفية"
+        },
+        {
+            "name": "yt_changelog_0_3_0_1",
+            "value": "الاختيار التجريبي النهائي لحل خادم HTTP للترحيل"
+        },
+        {
+            "name": "yt_changelog_0_3_0_2",
+            "value": "تمت العودة إلى المشغل على مستوى النظام لتحسين دورة الحياة"
+        },
+        {
+            "name": "yt_changelog_0_3_0_3",
+            "value": "تحسين واجهة المستخدم والتفاعل"
+        },
+        {
+            "name": "yt_changelog_0_3_0_4",
+            "value": "المزيد من التكيف مع الصفحة والحجم"
+        },
+        {
+            "name": "yt_changelog_0_3_0_5",
+            "value": "تمت إزالة العديد من المكتبات والرؤوس السابقة، وتم تبسيطها لمنع الأخطاء"
+        },
+        {
+            "name": "yt_changelog_0_3_0_6",
+            "value": "التطوير الأولي لتسجيل الدخول إلى Google، والتحقق من جدوى Smarttube"
+        },
+        {
+            "name": "yt_changelog_0_3_0_7",
+            "value": "تحسين استقرار تشغيل الخلفية"
+        },
+        {
+            "name": "yt_changelog_0_2_0_1",
+            "value": "كود المشروع المعاد تشكيله، وإدارة دورة الحياة المحسنة وسرعة التطوير، وبداية جديدة"
+        },
+        {
+            "name": "yt_changelog_0_2_0_2",
+            "value": "التشغيل الأمثل والبث المباشر، وبث مباشر أكثر سلاسة، وتدفئة أقل"
+        },
+        {
+            "name": "yt_changelog_0_2_0_3",
+            "value": "المزيد من الخيارات، خيارات التشغيل القابلة للتخصيص"
+        },
+        {
+            "name": "yt_changelog_0_2_0_4",
+            "value": "رسائل خطأ وإدارة سجل أكثر ثراءً"
+        },
+        {
+            "name": "yt_changelog_0_2_0_5",
+            "value": "وأضاف التحسين متعدد اللغات"
+        },
+        {
+            "name": "yt_changelog_0_2_0_6",
+            "value": "تم تحديث الكود الأساسي لـ NewPipe، واتصال الشبكة وفك التشفير الأمثل، وأكثر استقرارًا"
+        },
+        {
+            "name": "yt_changelog_0_2_0_7",
+            "value": "تحسين استقرار تشغيل الخلفية"
+        },
+        {
+            "name": "yt_changelog_0_2_0_8",
+            "value": "تشغيل AVPlayer على مستوى النظام، وتحسين الاستقرار والطاقة"
+        },
+        {
+            "name": "yt_changelog_0_1_2_1",
+            "value": "تم إصلاح تجميد واجهة المستخدم عند تبديل لغة واجهة المستخدم الخاصة بالتطبيق"
+        },
+        {
+            "name": "yt_changelog_0_1_2_2",
+            "value": "عرض محسّن لقائمة لغات المحتوى باللغة الصينية (المبسطة / التقليدية في هونج كونج / TW التقليدية)"
+        },
+        {
+            "name": "yt_changelog_0_1_2_3",
+            "value": "إظهار تلميح مسار الحفظ بعد اكتمال تنزيل السجل"
+        },
+        {
+            "name": "yt_changelog_0_1_2_4",
+            "value": "تمت إضافة صفحة حول"
+        },
+        {
+            "name": "yt_changelog_0_1_2_5",
+            "value": "تم إصلاح خيار تعطيل الدقة العالية الذي لا يعمل"
+        },
+        {
+            "name": "yt_changelog_0_1_2_6",
+            "value": "نمط مرئي موحد عبر وحدات صفحة الإعدادات"
+        },
+        {
+            "name": "yt_changelog_0_1_1_1",
+            "value": "قلب تشغيل MPV مدمج، يدعم فك تشفير الأجهزة والفيديو عالي الدقة"
+        },
+        {
+            "name": "yt_changelog_0_1_1_2",
+            "value": "تم تنفيذ تشغيل الخلفية وتكامل عناصر التحكم في وسائط النظام"
+        },
+        {
+            "name": "yt_changelog_0_1_1_3",
+            "value": "إعدادات اللغة والمنطقة المكتملة، تدعم تبديل لغة المحتوى/المنطقة"
+        },
+        {
+            "name": "yt_changelog_0_1_1_4",
+            "value": "تمت إضافة نظام سجل وقت التشغيل، ويدعم تصدير الجلسة"
+        },
+        {
+            "name": "yt_changelog_0_1_1_5",
+            "value": "تحسين تخطيط مشغل المناظر الطبيعية للكمبيوتر اللوحي"
+        },
+        {
+            "name": "yt_changelog_0_1_0_1",
+            "value": "الإصدار الأولي: تصفح الفيديو الأساسي والبحث فيه على YouTube"
+        },
+        {
+            "name": "yt_changelog_0_1_0_2",
+            "value": "محرك NewPipe Extractor المتكامل"
+        },
+        {
+            "name": "yt_changelog_0_1_0_3",
+            "value": "دعم اشتراكات القنوات والمفضلة وإدارة قوائم التشغيل"
+        },
+        {
+            "name": "yt_changelog_0_1_0_4",
+            "value": "دعم تشغيل البث المباشر"
+        },
+        {
+            "name": "yt_changelog_0_1_0_5",
+            "value": "قائمة التعليقات وصفحة القناة"
+        },
+        {
+            "name": "yt_label_version_format",
+            "value": "الإصدار"
+        },
+        {
+            "name": "yt_label_projects",
+            "value": "مشاريع"
+        },
+        {
+            "name": "yt_label_latest_version",
+            "value": "أحدث v"
+        },
+        {
+            "name": "yt_label_videos",
+            "value": "فيديو"
+        },
+        {
+            "name": "yt_label_videos_alt",
+            "value": "فيديو"
+        },
+        {
+            "name": "yt_label_favorites_videos",
+            "value": "فيديو"
+        },
+        {
+            "name": "yt_label_seconds_short",
+            "value": "ثانية"
+        },
+        {
+            "name": "yt_label_mb_short",
+            "value": "ميغابايت"
+        },
+        {
+            "name": "yt_setting_delay_5",
+            "value": "5 ثانية"
+        },
+        {
+            "name": "yt_setting_delay_15",
+            "value": "15 ثانية"
+        },
+        {
+            "name": "yt_setting_delay_30",
+            "value": "30 ثانية"
+        },
+        {
+            "name": "yt_setting_delay_60",
+            "value": "60 ثانية"
+        },
+        {
+            "name": "yt_setting_cache_secs_5",
+            "value": "5 ثانية"
+        },
+        {
+            "name": "yt_setting_cache_secs_10",
+            "value": "10 ثانية"
+        },
+        {
+            "name": "yt_setting_cache_secs_20",
+            "value": "20 ثانية"
+        },
+        {
+            "name": "yt_setting_cache_secs_30",
+            "value": "30 ثانية"
+        },
+        {
+            "name": "yt_setting_cache_secs_60",
+            "value": "60 ثانية"
+        },
+        {
+            "name": "yt_setting_readahead_5",
+            "value": "5 ثانية"
+        },
+        {
+            "name": "yt_setting_readahead_8",
+            "value": "8 ثانية"
+        },
+        {
+            "name": "yt_setting_readahead_15",
+            "value": "15 ثانية"
+        },
+        {
+            "name": "yt_setting_readahead_30",
+            "value": "30 ثانية"
+        },
+        {
+            "name": "yt_setting_readahead_60",
+            "value": "60 ثانية"
+        },
+        {
+            "name": "yt_setting_max_bytes_10",
+            "value": "10 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_20",
+            "value": "20 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_50",
+            "value": "50 MB"
+        },
+        {
+            "name": "yt_setting_max_bytes_100",
+            "value": "100 MB"
+        },
+        {
+            "name": "yt_changelog_0_5_4_1",
+            "value": "تحسين فك تشفير توقيعات JS محليًا مع ذاكرة تخزين على القرص وتسخين عند التشغيل البارد والرجوع عند الفشل، مما يقلل الانتظار والأعطال عند الحاجة إلى فك التشفير عن بُعد"
+        },
+        {
+            "name": "yt_changelog_0_5_4_2",
+            "value": "استكمال بيانات مسارات الصوت في DASH (xtags/acont) واختيار المسار الافتراضي حسب لغة المحتوى / تفضيل الأصلي، لتقليل اختيار الدبلجة الخاطئة في الفيديوهات متعددة اللغات"
+        },
+        {
+            "name": "yt_changelog_0_5_4_3",
+            "value": "مؤقّت نوم في صفحة المشغّل يوقف التشغيل ويخرج عند الانتهاء؛ تنسيق عدد الإعجابات/المشاهدات حسب اللغة وتحسين ألوان منطقة المعلومات"
+        },
+        {
+            "name": "yt_changelog_0_5_4_4",
+            "value": "مواءمة مفاتيح نصوص الواجهة في كل اللغات، وإصلاح تسميات [object Object] في الإعدادات وحول التطبيق، وإكمال موارد الصينية المبسّطة"
+        },
+        {
+            "name": "yt_changelog_0_5_4_5",
+            "value": "تغيير لون التمييز الافتراضي للسمة إلى الأحمر وإضافة خلفيات منطقة التحكم/المعلومات في المشغّل لتحسين التباين"
+        },
+        {
+            "name": "yt_changelog_0_5_4_6",
+            "value": "السحب للتحديث في الصفحة الرئيسية؛ عند مسح كل بيانات التطبيق تُمسح أيضًا تفضيلات المصادقة وذاكرة الصور المصغّرة وذاكرة التشفير (مع الإبقاء على التنزيلات)"
+        },
+        {
+            "name": "yt_changelog_0_5_4_7",
+            "value": "تحسين سجلات طلبات الشبكة وتشخيصات الاستخراج لتسهيل تحديد أعطال التحميل ومشاكل المصادقة"
+        },
+        {
+            "name": "yt_changelog_0_5_4_8",
+            "value": "تحديث مكتبة MPV المضمّنة وإصلاح عدة مشاكل في استقرار التشغيل والواجهة"
+        },
+        {
+            "name": "yt_secure_shield_title",
+            "value": "وضع Secure Shield مفعّل"
+        },
+        {
+            "name": "yt_secure_shield_content",
+            "value": "فعّل النظام وضع Secure Shield وعطّل JIT. فك تشفير التوقيع المحلي غير متاح، وسيُستخدم فك التشفير عن بُعد وقد يكون بدء الفيديو أبطأ."
+        },
+        {
+            "name": "yt_secure_shield_dont_show",
+            "value": "عدم الإظهار مجددًا"
+        },
+        {
+            "name": "yt_action_got_it",
+            "value": "حسنًا"
+        },
+        {
+            "name": "yt_option_auth_use_for_user_data",
+            "value": "استخدام تسجيل الدخول لبيانات المستخدم"
+        },
+        {
+            "name": "yt_option_auth_use_for_user_data_subtitle",
+            "value": "الخلاصة والاشتراكات والسجل والبحث"
+        },
+        {
+            "name": "yt_option_auth_use_for_playback",
+            "value": "استخدام تسجيل الدخول للتشغيل"
+        },
+        {
+            "name": "yt_changelog_0_5_5_1",
+            "value": "اكتشاف قيود Secure Shield وJIT عند التشغيل وتوضيح وقت استخدام فك توقيع الفيديو عن بُعد"
+        },
+        {
+            "name": "yt_changelog_0_5_5_2",
+            "value": "إعادة بناء بطاقات الصفحة الرئيسية والاشتراكات بعد السحب للتحديث حتى عند بقاء معرّفات العناصر دون تغيير"
+        },
+        {
+            "name": "yt_changelog_0_5_5_3",
+            "value": "إضافة مفاتيح دائمة ومنفصلة لتسجيل الدخول وبيانات المستخدم والتشغيل للتحكم المستقل في الحساب"
+        },
+        {
+            "name": "yt_changelog_0_5_5_4",
+            "value": "عند تعطيل الحساب لبيانات المستخدم تنتقل الصفحة الرئيسية والخلاصات إلى الوضع المجهول أو المحلي بدل الظهور فارغة"
+        },
+        {
+            "name": "yt_changelog_0_5_5_5",
+            "value": "عند تعطيل الحساب للتشغيل تُستخدم عملاء مجهولة ولا ترسل تنزيلات SABR بيانات اعتماد الحساب"
+        },
+        {
+            "name": "yt_changelog_0_5_5_6",
+            "value": "تستخدم توصيات المشغل استجابة YouTube next المجهولة والثابتة لإصلاح قائمة الانتظار الفارغة بعد تسجيل الدخول"
+        },
+        {
+            "name": "yt_changelog_0_5_5_7",
+            "value": "تحسين اختيار عميل التشغيل المسجل ومعالجة LOGIN_REQUIRED لمقاطع الفيديو المقيّدة"
+        },
+        {
+            "name": "yt_changelog_0_5_5_8",
+            "value": "استخدام طابع التوقيع من صفحة المشاهدة أولاً والرجوع إلى خدمة المشغل البعيدة عند الفشل فقط"
+        },
+        {
+            "name": "yt_changelog_0_5_5_9",
+            "value": "تخزين بيانات المشغل وتقليل مهلة فك التشفير البعيد لمنع الخدمات البطيئة من حجب التشغيل طويلاً"
+        },
+        {
+            "name": "yt_changelog_0_5_5_10",
+            "value": "إضافة PoToken بصيغة base64url قابل للتخزين إلى روابط DASH لتقليل أخطاء googlevideo 403 دون إيقاف التشغيل عند فشله"
+        },
+        {
+            "name": "yt_changelog_0_5_5_11",
+            "value": "إصلاح لوحات الحفظ في قائمة والتدفق ومؤقت النوم عبر توحيد روابط الأوراق السفلية المتعارضة"
+        },
+        {
+            "name": "yt_changelog_0_5_5_12",
+            "value": "تحسين تصفح قوائم التشغيل ومكتبة المستخدم بالحساب مع إبقاء البديل المجهول أو المحلي عند تعطيله"
+        },
+        {
+            "name": "yt_changelog_0_5_5_13",
+            "value": "يخفي التصفح الخاص استخدام الحساب للبيانات والتشغيل دون حذف بيانات الاعتماد المحفوظة مع سهولة العودة إلى وضع الدخول"
+        },
+        {
+            "name": "yt_changelog_0_5_5_14",
+            "value": "يؤدي تغيير مفتاح الدخول العام أو التشغيل إلى اختيار العميل المجهول أو المسجل الصحيح فوراً"
+        },
+        {
+            "name": "yt_changelog_0_5_5_15",
+            "value": "تتبع مزامنة السجل والاشتراكات مفتاح بيانات المستخدم مع إبقاء السجل والاشتراكات المحلية متاحة"
+        },
+        {
+            "name": "yt_changelog_0_5_5_16",
+            "value": "يمكن لتصفح قوائم التشغيل استخدام الحساب عند الحاجة لتحسين تحميل القوائم الخاصة أو المقيّدة"
+        },
+        {
+            "name": "yt_changelog_0_5_5_17",
+            "value": "يستخدم إنشاء PoToken إصدار عميل YouTube Web الحالي بدلاً من إصدار ثابت قديم"
+        },
+        {
+            "name": "yt_changelog_0_5_5_18",
+            "value": "تحويل بايتات PoToken إلى base64 آمن للروابط وتخزينها لكل فيديو لمدة خمس دقائق"
+        },
+        {
+            "name": "yt_changelog_0_5_5_19",
+            "value": "تضيف طلبات البيانات والتشغيل بيانات الاعتماد ضمن النطاق المحدد فقط لتقليل كشف ملفات Cookie"
+        },
+        {
+            "name": "yt_changelog_0_5_5_20",
+            "value": "توسيع تشخيص التشغيل والدخول والرموز والتحديث والبدائل دون تسجيل Cookie الحساسة أو الروابط الموقعة"
+        },
+        {
+            "name": "yt_changelog_0_6_0_1",
+            "value": "إعادة بناء نظام الترجمة: عرض طبقي مع تخصيص حجم الخط واللون والخلفية والموضع والتأخير"
+        },
+        {
+            "name": "yt_changelog_0_6_0_2",
+            "value": "ترجمة تلقائية للترجمة النصية بالذكاء الاصطناعي: يمكن ترجمة أي مسار فورًا إلى اللغة المختارة"
+        },
+        {
+            "name": "yt_changelog_0_6_0_3",
+            "value": "إيماءات تشغيل جديدة: نقر مزدوج ±15 ثانية، ضغط مطول للسرعة، تكبير وتحريك بإصبعين، تبديل نسبة العرض"
+        },
+        {
+            "name": "yt_changelog_0_6_0_4",
+            "value": "لوحة معلومات المشغل الجديدة: الوصف والتعليقات وقائمة التشغيل في مكان واحد، مع لوحة جانبية تلقائية على الشاشات العريضة"
+        },
+        {
+            "name": "yt_changelog_0_6_0_5",
+            "value": "تصميم جديد للبطاقات وقوائم موحدة للضغط المطول وإمكانية تنزيل الفيديو مباشرة من البطاقة"
+        },
+        {
+            "name": "yt_changelog_0_6_0_6",
+            "value": "دعم بروكسي SOCKS5؛ استئناف سريع للتشغيل بعد التبديل بين Wi-Fi والشبكة الخلوية"
+        },
+        {
+            "name": "yt_changelog_0_6_0_7",
+            "value": "رفع حد الجودة إلى 2K/4K/8K؛ لغات واجهة جديدة: اليابانية/الكورية/الإيطالية/البرتغالية"
+        },
+        {
+            "name": "yt_changelog_0_6_0_8",
+            "value": "إعادة تنظيم صفحة الإعدادات؛ تثبيت البث المباشر على السرعة العادية"
+        },
+        {
+            "name": "yt_changelog_0_5_9_1",
+            "value": "صفحات الخلاصات تستخدم الآن شبكات/قوائم بالتحميل الكسول: تمرير أكثر سلاسة في الرئيسية والبحث وقوائم التشغيل والقنوات والاشتراكات"
+        },
+        {
+            "name": "yt_changelog_0_5_9_2",
+            "value": "إصلاح تعطل عند الإقلاع البارد على بعض الأجهزة (ربط @BuilderParam)"
+        },
+        {
+            "name": "yt_changelog_0_5_9_3",
+            "value": "إصلاح معالجة انتهاء تسجيل الدخول: تُمرَّر الأخطاء الآن ويظهر إشعار بإعادة تسجيل الدخول"
+        },
+        {
+            "name": "yt_changelog_0_5_9_4",
+            "value": "أيقونات الخيارات وأزرار الإجراءات الخطيرة تتبع الآن لون السمة (إزالة الأحمر الثابت)"
+        },
+        {
+            "name": "yt_changelog_0_5_9_5",
+            "value": "ترميز النص وBase64 وتحليل URL تستخدم الآن تطبيقات النظام الرسمية"
+        },
+        {
+            "name": "yt_changelog_0_5_9_6",
+            "value": "إزالة التعليمات البرمجية الميتة مثل روابط البث واستطلاع الحالة لتقليل حجم الحزمة"
+        },
+        {
+            "name": "yt_changelog_0_5_9_7",
+            "value": "إصلاحات استقرار لربط الجلب المسبق وحارس المهام في الخلفية"
+        },
+        {
+            "name": "yt_changelog_0_5_8_1",
+            "value": "ترجمة التعليقات: زر «ترجمة» أسفل كل تعليق (محرك Google Translate)، تظهر الترجمة في مكانها ويمكن العودة للأصل بنقرة واحدة"
+        },
+        {
+            "name": "yt_changelog_0_5_8_2",
+            "value": "مجموعة جديدة «ترجمة المحتوى» في اللغة والمنطقة: لغة الترجمة تتبع لغة التطبيق افتراضيًا ويمكن اختيارها يدويًا"
+        },
+        {
+            "name": "yt_changelog_0_5_8_3",
+            "value": "بدء تشغيل أسرع بمحاذاة PipePipe: بدون تسجيل يُستخدم عميل visionos للبث المباشر (بدون PoToken)، ومع تسجيل الدخول tv_downgraded"
+        },
+        {
+            "name": "yt_changelog_0_5_8_4",
+            "value": "إصلاح التحميل اللانهائي للبث المباشر: تصحيح تصنيف البث ليعمل التشغيل بشكل طبيعي"
+        },
+        {
+            "name": "yt_changelog_0_5_8_5",
+            "value": "إصلاح مسارات تسجيل الدخول: عزل هويتي cookie وOAuth بحيث لا تختلط بيانات الاعتماد في طلبات الويب"
+        },
+        {
+            "name": "yt_changelog_0_5_8_6",
+            "value": "عناصر التحكم في الوسائط بالنظام تعرض عنوان الفيديو الحالي وصاحبه: إصلاح بيانات AVSession الوصفية"
+        },
+        {
+            "name": "yt_changelog_0_5_8_7",
+            "value": "إصلاحات واجهة: تحديث تمييز علامات التبويب، تخطيط الدليل على الأجهزة اللوحية، التمرير المتداخل في وضع بطاقات القنوات"
+        },
+        {
+            "name": "yt_changelog_0_5_7_1",
+            "value": "صفحة \"حول\" تضيف \"التحقق من التحديثات\": تقارن رقم البناء لأحدث إصدار على GitHub وتوفر الانتقال بنقرة واحدة إلى التثبيت التجريبي من AppGallery أو صفحة الإصدار على GitHub"
+        },
+        {
+            "name": "yt_changelog_0_5_7_2",
+            "value": "صفحة اشتراكات جديدة: تجمع تحديثات القنوات حسب الوقت؛ قوائم التشغيل تسجل سجل المشاهدة مع شارات التقدم؛ القوائم تتكيف مع الشاشات العريضة"
+        },
+        {
+            "name": "yt_changelog_0_5_7_3",
+            "value": "إعداد جديد \"التشغيل التلقائي للفيديو التالي\"؛ شعارات المشاريع مفتوحة المصدر في صفحة \"حول\"؛ طلبات بيانات الوسائط يمكن أن تمر عبر وكيل HTTP"
+        },
+        {
+            "name": "yt_changelog_0_5_7_4",
+            "value": "بدء تشغيل أسرع: استخراج مسبق للفيديو التالي في القائمة أثناء التشغيل، وتهيئة BotGuard مسبقًا عند الإقلاع، وإعادة استخدام بيانات STS/إصدار العميل من القرص"
+        },
+        {
+            "name": "yt_changelog_0_5_7_5",
+            "value": "البث المباشر يدعم خيارات جودة HLS مع التبديل؛ جلب مسبق لفهرس SIDX عند البدء؛ تثبيت visitorData على مستوى الجلسة يقلل تكرار الاستخراج"
+        },
+        {
+            "name": "yt_changelog_0_5_7_6",
+            "value": "استقرار SABR: توليد PoToken بمهلة وقاطع تيار، وPoToken فوري عند الاستجابات الفارغة، وتحرير صحيح للحجز عند فشل إنشاء الجلسة"
+        },
+        {
+            "name": "yt_changelog_0_5_7_7",
+            "value": "إصلاح تكرار الانتقال التلقائي وتعارضات تبديل المصدر (إرسال المصدر أصبح من كاتب واحد)؛ إصلاح تسريبات إغلاق/استعادة PiP وترتيب دمج سجل المشاهدة"
+        },
+        {
+            "name": "yt_changelog_0_5_7_8",
+            "value": "إصلاح الشاشة السوداء على HarmonyOS 6 (تمرير OHNativeWindow مباشرة إلى mpv)؛ قدرات فك التشفير بالعتاد تُكتشف الآن حسب الجهاز"
+        },
+        {
+            "name": "yt_changelog_0_5_6_1",
+            "value": "تسجيل دخول بجهاز عبر رمز QR بأسلوب SmartTube لـ YouTube OAuth؛ يمكن أن يتعايش مع تسجيل الدخول بملفات Cookie"
+        },
+        {
+            "name": "yt_changelog_0_5_6_2",
+            "value": "مصادقة مزدوجة Cookie/WEB وOAuth/TV للرئيسية والسجل والاشتراكات والمكتبة؛ تبقى البثوث العامة على mweb وقد يعود المحتوى المقيد إلى TV"
+        },
+        {
+            "name": "yt_changelog_0_5_6_3",
+            "value": "إعدادات وكيل HTTP للمستخرج وSABR وطلبات الوسائط (تشغيل الحلقة المحلية يبقى مباشراً)"
+        },
+        {
+            "name": "yt_changelog_0_5_6_4",
+            "value": "فصول الفيديو في المشغّل مع الانتقال للفصل وتمييز الفصل الحالي"
+        },
+        {
+            "name": "yt_changelog_0_5_6_5",
+            "value": "سلوك أفضل لتقسيم الشاشة والنوافذ العائمة؛ طي أدوات أعلى المشغّل في قائمة المزيد عند ضيق المساحة"
+        },
+        {
+            "name": "yt_changelog_0_5_6_6",
+            "value": "إعادة بناء دورة حياة وسائط التشغيل لبدء وتبديل مصدر واستخدام متعدد النوافذ أكثر موثوقية"
+        },
+        {
+            "name": "yt_changelog_0_5_6_7",
+            "value": "إظهار التحميل/التخزين المؤقت فوراً عند تغيير الجودة"
+        },
+        {
+            "name": "yt_changelog_0_5_6_8",
+            "value": "إعادة تصميم قائمة التنزيلات وحركات الدخول؛ تحسين حزم SABR دون اتصال؛ إخفاء دخول تنزيل البث المباشر"
+        },
+        {
+            "name": "yt_option_auth_use_for_playback_subtitle",
+            "value": "واجهة المشغّل ومصادقة البث"
+        },
+        {
+            "name": "yt_player_more_tools",
+            "value": "المزيد"
+        },
+        {
+            "name": "yt_player_subtitles",
+            "value": "الترجمة"
+        },
+        {
+            "name": "yt_player_info_panel",
+            "value": "معلومات الفيديو"
+        },
+        {
+            "name": "yt_player_audio_track",
+            "value": "المسار الصوتي"
+        },
+        {
+            "name": "yt_player_playback_speed",
+            "value": "سرعة التشغيل"
+        },
+        {
+            "name": "yt_option_network",
+            "value": "Network"
+        },
+        {
+            "name": "yt_proxy_off",
+            "value": "Proxy off"
+        },
+        {
+            "name": "yt_proxy_incomplete",
+            "value": "Incomplete settings"
+        },
+        {
+            "name": "yt_proxy_enable",
+            "value": "Use proxy"
+        },
+        {
+            "name": "yt_proxy_enable_subtitle",
+            "value": "توجيه YouTube عبر الوكيل أدناه"
+        },
+        {
+            "name": "yt_proxy_type",
+            "value": "Proxy type"
+        },
+        {
+            "name": "yt_proxy_type_http",
+            "value": "HTTP"
+        },
+        {
+            "name": "yt_proxy_type_http_subtitle",
+            "value": "وكيل HTTP CONNECT"
+        },
+        {
+            "name": "yt_proxy_type_socks5",
+            "value": "SOCKS5"
+        },
+        {
+            "name": "yt_proxy_type_socks5_subtitle",
+            "value": "SOCKS5 CONNECT"
+        },
+        {
+            "name": "yt_proxy_server",
+            "value": "Server"
+        },
+        {
+            "name": "yt_proxy_host",
+            "value": "Host"
+        },
+        {
+            "name": "yt_proxy_host_placeholder",
+            "value": "e.g. 127.0.0.1"
+        },
+        {
+            "name": "yt_proxy_port",
+            "value": "Port"
+        },
+        {
+            "name": "yt_proxy_auth_optional",
+            "value": "Authentication (optional)"
+        },
+        {
+            "name": "yt_proxy_username",
+            "value": "Username"
+        },
+        {
+            "name": "yt_proxy_password",
+            "value": "Password"
+        },
+        {
+            "name": "yt_proxy_optional_placeholder",
+            "value": "Optional"
+        },
+        {
+            "name": "yt_proxy_test",
+            "value": "Test connection"
+        },
+        {
+            "name": "yt_proxy_testing",
+            "value": "Testing…"
+        },
+        {
+            "name": "yt_proxy_test_ok",
+            "value": "Proxy reachable"
+        },
+        {
+            "name": "yt_proxy_test_failed",
+            "value": "Proxy test failed"
+        },
+        {
+            "name": "yt_proxy_test_http_error",
+            "value": "Unexpected HTTP status"
+        },
+        {
+            "name": "yt_proxy_test_auth_failed",
+            "value": "فشل مصادقة الوكيل — تحقق من اسم المستخدم وكلمة المرور"
+        },
+        {
+            "name": "yt_proxy_test_disabled",
+            "value": "Enable proxy first"
+        },
+        {
+            "name": "yt_proxy_loopback_note",
+            "value": "Local playback proxy (127.0.0.1) never uses this setting."
+        },
+        {
+            "name": "yt_proxy_bridge_unavailable",
+            "value": "SOCKS5 proxy bridge disconnected — re-save proxy settings to reconnect."
+        },
+        {
+            "name": "yt_device_qr_sign_in",
+            "value": "QR / TV code sign-in"
+        },
+        {
+            "name": "yt_device_qr_sign_in_subtitle",
+            "value": "امسح أو افتح youtube.com/activate"
+        },
+        {
+            "name": "yt_device_login_help",
+            "value": "On another device, open the link or scan the QR code, then enter the code below to authorize this app."
+        },
+        {
+            "name": "yt_device_login_requesting",
+            "value": "Requesting device code…"
+        },
+        {
+            "name": "yt_device_login_waiting",
+            "value": "Waiting for authorization…"
+        },
+        {
+            "name": "yt_device_login_polling",
+            "value": "Checking authorization status"
+        },
+        {
+            "name": "yt_device_login_success",
+            "value": "Signed in"
+        },
+        {
+            "name": "yt_device_login_failed",
+            "value": "Sign-in failed"
+        },
+        {
+            "name": "yt_device_login_retry",
+            "value": "Try again"
+        },
+        {
+            "name": "yt_option_help",
+            "value": "مساعدة"
+        },
+        {
+            "name": "yt_option_help_subtitle",
+            "value": "دليل سريع وأساسيات الاستخدام"
+        },
+        {
+            "name": "yt_guide_skip",
+            "value": "تخطي"
+        },
+        {
+            "name": "yt_guide_next",
+            "value": "التالي"
+        },
+        {
+            "name": "yt_guide_done",
+            "value": "تم"
+        },
+        {
+            "name": "yt_guide_p1_desc",
+            "value": "تطبيق YouTube مفتوح المصدر مع تشغيل MPV محلي وبدون إعلانات — تبقى بياناتك على جهازك الخاص."
+        },
+        {
+            "name": "yt_guide_p2_title",
+            "value": "تسجيل الدخول إلى YouTube"
+        },
+        {
+            "name": "yt_guide_p2_desc",
+            "value": "سجّل الدخول عبر صفحة ويب أو رمز QR ضمن «الإعدادات → البيانات والحساب». بعد تسجيل الدخول يمكنك الاطلاع على اشتراكاتك وقوائم التشغيل وغيرها من محتويات الحساب؛ كما يعمل وضع الضيف دون تسجيل الدخول."
+        },
+        {
+            "name": "yt_guide_p3_title",
+            "value": "إدارة بيانات الحساب"
+        },
+        {
+            "name": "yt_guide_p3_desc",
+            "value": "تُحفظ بيانات اعتمادك على هذا الجهاز فقط ولا تُرفع أبدًا إلى أي خوادم خارجية. يمكنك في أي وقت تسجيل الخروج أو تفعيل وضع التصفح الخفي ضمن «البيانات والحساب»؛ ويؤدي تسجيل الخروج إلى مسح بيانات حسابك."
+        },
+        {
+            "name": "yt_guide_p3_user_data",
+            "value": "لبيانات المستخدم: يجلب الاشتراكات وقوائم التشغيل والسجل وعمليات البحث وغيرها من بيانات الحساب."
+        },
+        {
+            "name": "yt_guide_p3_playback",
+            "value": "للتشغيل: يطلب عناوين URL للتشغيل بهوية الحساب المسجّل لتجنب اعتباره روبوتًا."
+        },
+        {
+            "name": "yt_guide_p4_title",
+            "value": "وكيل الشبكة"
+        },
+        {
+            "name": "yt_guide_p4_desc",
+            "value": "عند تقييد الشبكة، فعّل وكيلاً من نوع HTTP أو SOCKS5 ضمن «الإعدادات ← الشبكة»، ثم أدخل عنوان الخادم والمنفذ. يُستخدم الوكيل للطلبات الخارجية فقط، وتتجاوزه عناوين الاسترجاع المحلي للتشغيل."
+        },
+        {
+            "name": "yt_guide_p5_title",
+            "value": "الجودة والتخزين المؤقت"
+        },
+        {
+            "name": "yt_guide_p5_desc",
+            "value": "ضمن «الإعدادات → التشغيل» يمكنك ضبط الجودة الافتراضية وجودة شبكة الجوال ومدة التخزين المؤقت — وفّر البيانات أو ارفع الجودة حسب رغبتك."
+        },
+        {
+            "name": "yt_guide_p6_title",
+            "value": "التنزيلات والملفات المحلية"
+        },
+        {
+            "name": "yt_guide_p6_desc",
+            "value": "يمكن تنزيل الفيديوهات لمشاهدتها دون اتصال وتُدار في علامة التبويب «محلي». لا يؤدي «مسح جميع بيانات التطبيق» أبدًا إلى حذف ملفاتك المنزّلة."
+        },
+        {
+            "name": "yt_option_subtitle_style_subtitle",
+            "value": "الحجم واللون والخلفية والترجمة التلقائية"
+        },
+        {
+            "name": "yt_setting_subtitle_size",
+            "value": "حجم الترجمة"
+        },
+        {
+            "name": "yt_setting_subtitle_bottom_margin",
+            "value": "الهامش السفلي للترجمة"
+        },
+        {
+            "name": "yt_setting_subtitle_color",
+            "value": "لون الترجمة"
+        },
+        {
+            "name": "yt_setting_subtitle_background",
+            "value": "خلفية الترجمة"
+        },
+        {
+            "name": "yt_setting_subtitle_offset",
+            "value": "تأخير الترجمة"
+        },
+        {
+            "name": "yt_subtitle_color_white",
+            "value": "أبيض"
+        },
+        {
+            "name": "yt_subtitle_color_yellow",
+            "value": "أصفر"
+        },
+        {
+            "name": "yt_subtitle_color_green",
+            "value": "أخضر"
+        },
+        {
+            "name": "yt_subtitle_color_cyan",
+            "value": "سماوي"
+        },
+        {
+            "name": "yt_subtitle_bg_none",
+            "value": "بدون"
+        },
+        {
+            "name": "yt_subtitle_bg_semi",
+            "value": "شبه شفاف"
+        },
+        {
+            "name": "yt_subtitle_bg_solid",
+            "value": "معتم"
+        },
+        {
+            "name": "yt_player_aspect_mode",
+            "value": "نسبة العرض"
+        },
+        {
+            "name": "yt_aspect_fit",
+            "value": "ملاءمة"
+        },
+        {
+            "name": "yt_aspect_fill",
+            "value": "ملء"
+        },
+        {
+            "name": "yt_aspect_stretch",
+            "value": "تمديد"
+        },
+        {
+            "name": "yt_aspect_reset",
+            "value": "إعادة تعيين التكبير"
+        },
+        {
+            "name": "yt_gesture_scheme_title",
+            "value": "نظام التفاعل"
+        },
+        {
+            "name": "yt_gesture_scheme_label",
+            "value": "إعداد الإيماءات"
+        },
+        {
+            "name": "yt_gesture_scheme_enhanced",
+            "value": "مشغّل محسّن"
+        },
+        {
+            "name": "yt_gesture_scheme_youtube",
+            "value": "YouTube الكلاسيكي"
+        },
+        {
+            "name": "yt_gesture_scheme_custom",
+            "value": "مخصص"
+        },
+        {
+            "name": "yt_gesture_scheme_subtitle",
+            "value": "تُغيّر الإعدادات المسبقة كل شيء دفعة واحدة؛ أي تعديل يصبح «مخصصًا»"
+        },
+        {
+            "name": "yt_gesture_double_tap",
+            "value": "النقر المزدوج"
+        },
+        {
+            "name": "yt_gesture_double_tap_seek",
+            "value": "ترجيع / تقديم"
+        },
+        {
+            "name": "yt_gesture_double_tap_playpause",
+            "value": "تشغيل / إيقاف مؤقت"
+        },
+        {
+            "name": "yt_gesture_double_tap_off",
+            "value": "بلا إجراء"
+        },
+        {
+            "name": "yt_gesture_double_tap_seek_seconds",
+            "value": "خطوة النقر المزدوج"
+        },
+        {
+            "name": "yt_gesture_help_title",
+            "value": "دليل الإيماءات"
+        },
+        {
+            "name": "yt_gesture_help_single_tap",
+            "value": "نقرة واحدة"
+        },
+        {
+            "name": "yt_gesture_help_single_tap_value",
+            "value": "يعرض عناصر التحكم (تُخفى تلقائيًا بعد 3 ثوانٍ)"
+        },
+        {
+            "name": "yt_gesture_help_swipe_horizontal",
+            "value": "السحب أفقيًا"
+        },
+        {
+            "name": "yt_gesture_help_swipe_left",
+            "value": "السحب على اليسار"
+        },
+        {
+            "name": "yt_gesture_help_swipe_right",
+            "value": "السحب على اليمين"
+        },
+        {
+            "name": "yt_gesture_help_hold",
+            "value": "الضغط المطوّل"
+        },
+        {
+            "name": "yt_gesture_help_brightness",
+            "value": "السطوع"
+        },
+        {
+            "name": "yt_gesture_help_volume",
+            "value": "مستوى الصوت"
+        },
+        {
+            "name": "yt_gesture_help_off",
+            "value": "معطّل"
+        },
+        {
+            "name": "yt_section_privacy",
+            "value": "الخصوصية"
+        },
+        {
+            "name": "yt_option_record_history",
+            "value": "تسجيل سجل المشاهدة"
+        },
+        {
+            "name": "yt_option_record_history_subtitle",
+            "value": "عند التعطيل لن يُكتب سجل جديد (تبقى السجلات الحالية)"
+        },
+        {
+            "name": "yt_option_clear_history",
+            "value": "مسح سجل المشاهدة"
+        },
+        {
+            "name": "yt_option_clear_history_subtitle",
+            "value": "حذف كل سجل المشاهدة المحلي والتقدّم"
+        },
+
+        {
+            "name": "yt_toast_history_cleared",
+            "value": "تم مسح سجل المشاهدة"
+        },
+        {
+            "name": "yt_option_start_in_subs",
+            "value": "البدء على «الاشتراكات»"
+        },
+        {
+            "name": "yt_option_start_in_subs_subtitle",
+            "value": "يفتح التطبيق مباشرة على تبويب الاشتراكات"
+        },
+        {
+            "name": "yt_section_animation",
+            "value": "الحركات"
+        },
+        {
+            "name": "yt_option_interface_animation",
+            "value": "حركات الواجهة"
+        },
+        {
+            "name": "yt_option_interface_animation_subtitle",
+            "value": "يعطّل حركات ظهور القوائم وتأثيرات الأيقونات"
+        },
+        {
+            "name": "yt_gesture_scheme_bilibili",
+            "value": "Bilibili الكلاسيكي"
+        },
+        {
+            "name": "yt_download_timeout_failed",
+            "value": "انتهت مهلة التنزيل"
+        },
+        {
+            "name": "yt_download_retry_failed",
+            "value": "فشلت إعادة المحاولة، حاول مرة أخرى لاحقًا"
+        },
+        {
+            "name": "yt_download_retrying",
+            "value": "جارٍ إعادة المحاولة…"
+        },
+        {
+            "name": "yt_download_timeout_title",
+            "value": "مهلة التنزيل"
+        },
+        {
+            "name": "yt_download_timeout_off",
+            "value": "بلا مهلة"
+        },
+        {
+            "name": "yt_download_timeout_minutes",
+            "value": "%d دقيقة"
+        },
+        {
+            "name": "yt_player_stop_playback",
+            "value": "إيقاف التشغيل"
+        },
+        {
+            "name": "yt_proxy_status_title",
+            "value": "حالة الاتصال"
+        },
+        {
+            "name": "yt_proxy_status_off",
+            "value": "معطّل"
+        },
+        {
+            "name": "yt_proxy_status_ready",
+            "value": "متصل (جسر محلي %d)"
+        },
+        {
+            "name": "yt_proxy_status_direct",
+            "value": "متصل (مباشر بالمصدر)"
+        },
+        {
+            "name": "yt_proxy_status_fuse",
+            "value": "انقطع الجسر، يلزم إعادة التطبيق"
+        },
+        {
+            "name": "yt_proxy_status_failed",
+            "value": "فشل التطبيق"
+        },
+        {
+            "name": "yt_proxy_restart",
+            "value": "إعادة التطبيق والتشغيل"
+        },
+        {
+            "name": "yt_proxy_restart_done",
+            "value": "أُعيد تطبيق الوكيل"
+        },
+        {
+            "name": "yt_proxy_example_hint",
+            "value": "مثال: لحالة HTTP أدخل 127.0.0.1 والمنفذ (مثل 7890)؛ أما SOCKS5 فبنفس الطريقة. مع اسم المستخدم وكلمة المرور يمرّ المرور عبر جسر محلي يفشل بشكل ظاهر بدل التحول إلى الاتصال المباشر."
+        },
+        {
+            "name": "yt_playback_center_play_button",
+            "value": "زر التشغيل في المنتصف"
+        },
+        {
+            "name": "yt_playback_center_play_button_subtitle",
+            "value": "يعرض زر تشغيل كبيرًا في منتصف الإطار أثناء الإيقاف المؤقت. عند إيقافه يبقى الإطار نظيفًا، والتحكم باللمس أو الشريط السفلي."
+        },
+        {
+            "name": "yt_shorts_open",
+            "value": "فتح Shorts"
+        },
+        {
+            "name": "yt_shorts_switch_long",
+            "value": "فيديوهات طويلة"
+        },
+        {
+            "name": "yt_home_mode_short",
+            "value": "Shorts"
+        },
+        {
+            "name": "yt_home_mode_long",
+            "value": "مقاطع طويلة"
+        }
+    ,
+        {
+            "name": "yt_download_pause",
+            "value": "إيقاف مؤقت"
+        },
+        {
+            "name": "yt_download_resume",
+            "value": "متابعة"
+        },
+        {
+            "name": "yt_download_resuming",
+            "value": "جارٍ الاستئناف…"
+        },
+        {
+            "name": "yt_download_stop_delete",
+            "value": "إيقاف وحذف"
+        },
+        {
+            "name": "yt_download_status_paused",
+            "value": "متوقف مؤقتًا"
+        },
+        {
+            "name": "yt_playlist_source_account",
+            "value": "الحساب"
+        },
+        {
+            "name": "yt_playlist_source_favorite",
+            "value": "المفضلة"
+        },
+        {
+            "name": "yt_library_playlists_title",
+            "value": "قوائم تشغيل حسابك"
+        },
+        {
+            "name": "yt_empty_no_library_playlists",
+            "value": "لا توجد قوائم تشغيل في حسابك بعد"
+        },
+        {
+            "name": "yt_tab_live_chat",
+            "value": "الدردشة المباشرة"
+        },
+        {
+            "name": "yt_live_chat_connecting",
+            "value": "جارٍ الاتصال بالدردشة…"
+        },
+        {
+            "name": "yt_live_chat_connected",
+            "value": "متصل"
+        },
+        {
+            "name": "yt_live_chat_unavailable",
+            "value": "الدردشة المباشرة غير متاحة لهذا الفيديو"
+        },
+        {
+            "name": "yt_live_chat_ended",
+            "value": "انتهت الدردشة المباشرة"
+        },
+        {
+            "name": "yt_live_chat_error",
+            "value": "فشل الاتصال بالدردشة"
+        },
+        {
+            "name": "yt_live_chat_empty",
+            "value": "لا توجد رسائل دردشة بعد"
+        },
+        {
+            "name": "yt_live_chat_readonly",
+            "value": "للقراءة فقط"
+        },
+        {
+            "name": "yt_live_chat_member",
+            "value": "عضو"
+        },
+        {
+            "name": "yt_live_chat_owner",
+            "value": "المضيف"
+        },
+        {
+            "name": "yt_live_chat_moderator",
+            "value": "مشرف"
+        },
+        {
+            "name": "yt_local_files",
+            "value": "الملفات المحلية"
+        },
+        {
+            "name": "yt_local_import",
+            "value": "استيراد مقاطع الفيديو"
+        },
+        {
+            "name": "yt_local_importing",
+            "value": "جارٍ الاستيراد…"
+        },
+        {
+            "name": "yt_local_import_success",
+            "value": "تم استيراد %d ملف"
+        },
+        {
+            "name": "yt_local_import_failed",
+            "value": "فشل الاستيراد"
+        },
+        {
+            "name": "yt_local_files_hint",
+            "value": "اختر مقاطع فيديو من ملفات النظام. تُشغَّل المقاطع المستوردة داخل التطبيق."
+        },
+        {
+            "name": "yt_local_delete_title",
+            "value": "حذف الملف المحلي"
+        },
+        {
+            "name": "yt_local_delete_message",
+            "value": "ستتم إزالة الملف من التطبيق ولا يمكن استرداده."
+        },
+        {
+            "name": "yt_local_empty_title",
+            "value": "لا توجد ملفات محلية بعد"
+        },
+        {
+            "name": "yt_local_empty_hint",
+            "value": "اضغط على \"استيراد مقاطع الفيديو\" لاختيار الملفات"
+        },
+        {
+            "name": "yt_local_media",
+            "value": "الوسائط المحلية"
+        },
+        {
+            "name": "yt_local_empty_media",
+            "value": "لا توجد تنزيلات أو ملفات محلية بعد"
+        },
+        {
+            "name": "yt_local_empty_media_hint",
+            "value": "نزّل فيديو أو اضغط على \"استيراد مقاطع الفيديو\""
+        },
+        {
+            "name": "yt_changelog_0_7_0_1",
+            "value": "خفض الحد الأدنى إلى HarmonyOS 6.1.0(23)؛ أصبح SOCKS5 وإعادة استخدام الاتصال والاتصال المسبق RCP مرتبطة بإصدار النظام"
+        },
+        {
+            "name": "yt_changelog_0_7_0_2",
+            "value": "نقطة نهاية الضيف الافتراضية visionos وإزالة Samsung؛ عند الفشل تظهر نقطة النهاية وينتقل SABR إلى روابط مباشرة بدون token"
+        },
+        {
+            "name": "yt_changelog_0_7_0_3",
+            "value": "SABR يفك الترميز أثناء التنزيل ويطابق حقول الطلب مع PipePipe؛ تدوير العقد وإعادة التحميل ومراقبة التوقف تقلل انتظار البدء وانقطاع الفيديوهات الطويلة"
+        },
+        {
+            "name": "yt_changelog_0_7_0_4",
+            "value": "إعادة تصميم إيماءات المشغل وأدواته: إعدادات مسبقة، إجراء النقر المزدوج، الضغط المطول للسرعة، النقر للإيقاف المؤقت، ودليل الإيماءات؛ إصلاح النقرات الخاطئة والنقر المزدوج المتكرر"
+        },
+        {
+            "name": "yt_changelog_0_7_0_5",
+            "value": "تحسين التنزيلات: التشغيل داخل التطبيق، فهرس مهام دائم مع استعادة عند إعادة التشغيل، استئناف النقل، إيقاف/متابعة، إعادة المحاولة، ومراقبة المهلة/عدم التقدم"
+        },
+        {
+            "name": "yt_changelog_0_7_0_6",
+            "value": "الوسائط المحلية: استيراد فيديوهات من ملفات النظام، دمج التنزيلات والاستيراد في قائمة واحدة وقائمة تشغيل مشتركة (التنزيلات أولاً ثم الاستيراد)"
+        },
+        {
+            "name": "yt_changelog_0_7_0_7",
+            "value": "تبويب دردشة مباشرة للقراءة فقط: تعليقات فورية وSuper Chat وشارات الأعضاء؛ الاستعلام فقط عند الظهور ويتوقف في الخلفية"
+        },
+        {
+            "name": "yt_changelog_0_7_0_8",
+            "value": "الصفحة الرئيسية بتبديل الفيديوهات الطويلة/القصيرة وتعبئة Shorts؛ البحث يوسّع الرفوف؛ الطوابع الزمنية في التعليقات والوصف قابلة للنقر"
+        },
+        {
+            "name": "yt_changelog_0_7_0_9",
+            "value": "الإعدادات وتجربة الاستخدام: التكوين التفاعلي يصلح وميض المفاتيح؛ سجل المشاهدة، تبويب الاشتراكات الافتراضي، حركة الواجهة، الشريط السفلي الرسمي وحالة الوكيل/إعادة التطبيق"
+        },
+        {
+            "name": "yt_changelog_0_7_0_10",
+            "value": "إصلاح تسرب حالة تسجيل الدخول، فشل أول تبديل فيديو، PiP فارغ عند الرجوع، وملفات التنزيل المتبقية؛ واستكمال نصوص 14 لغة"
+        },
+        {
+            "name": "yt_option_translation_service",
+            "value": "خدمة الترجمة"
+        },
+        {
+            "name": "yt_translation_engine_mymemory",
+            "value": "MyMemory (مجاني)"
+        },
+        {
+            "name": "yt_translation_engine_lingva",
+            "value": "Lingva (وكيل Google)"
+        },
+        {
+            "name": "yt_translation_engine_libre",
+            "value": "LibreTranslate"
+        },
+        {
+            "name": "yt_translation_engine_deepl",
+            "value": "DeepL"
+        },
+        {
+            "name": "yt_translation_engine_custom",
+            "value": "نقطة نهاية مخصصة"
+        },
+        {
+            "name": "yt_translation_endpoint",
+            "value": "نقطة النهاية"
+        },
+        {
+            "name": "yt_translation_custom_url",
+            "value": "عنوان الطلب"
+        },
+        {
+            "name": "yt_translation_custom_method",
+            "value": "الطريقة"
+        },
+        {
+            "name": "yt_translation_custom_headers",
+            "value": "الرؤوس (JSON أو Key: Value لكل سطر)"
+        },
+        {
+            "name": "yt_translation_custom_body",
+            "value": "قالب نص الطلب"
+        },
+        {
+            "name": "yt_translation_custom_response_path",
+            "value": "مسار حقل الاستجابة"
+        },
+        {
+            "name": "yt_translation_custom_hint",
+            "value": "العناصر النائبة: {text} {target} {source} {apiKey}؛ مثال: data.translations.0.text"
+        },
+        {
+            "name": "yt_translation_note",
+            "value": "تستخدم التعليقات والأوصاف هذه الخدمة؛ تظل الترجمة التلقائية لليوتيوب مستخدمة للترجمة النصية"
+        },
+        {
+            "name": "yt_translation_engine_google",
+            "value": "ترجمة Google Cloud (مفتاح API)"
+        },
+        {
+            "name": "yt_translation_engine_azure",
+            "value": "Microsoft Translator (Azure)"
+        },
+        {
+            "name": "yt_translation_region",
+            "value": "المنطقة"
+        },
+        {
+            "name": "yt_exp_title",
+            "value": "ميزات تجريبية"
+        },
+        {
+            "name": "yt_exp_subtitle",
+            "value": "تحسينات تجريبية مدمجة، معطّلة افتراضيًا"
+        },
+        {
+            "name": "yt_exp_enabled",
+            "value": "مفعّل"
+        },
+        {
+            "name": "yt_exp_disabled",
+            "value": "معطّل"
+        },
+        {
+            "name": "yt_exp_footer",
+            "value": "تعتمد هذه الميزات على خدمات مجتمعية تابعة لجهات خارجية وقد تتغير أو تتوقف في أي وقت."
+        },
+        {
+            "name": "yt_exp_clear_cache",
+            "value": "مسح ذاكرة التخزين المؤقت للإضافة"
+        },
+        {
+            "name": "yt_exp_cache_cleared",
+            "value": "تم مسح ذاكرة التخزين المؤقت"
+        },
+        {
+            "name": "yt_exp_coming_soon",
+            "value": "هذه الميزة قيد التطوير"
+        },
+        {
+            "name": "yt_exp_sb_title",
+            "value": "SponsorBlock"
+        },
+        {
+            "name": "yt_exp_sb_desc",
+            "value": "تخطي مقاطع الرعاية والمقدمة والخاتمة وما شابه تلقائيًا"
+        },
+        {
+            "name": "yt_exp_sb_master",
+            "value": "تفعيل SponsorBlock"
+        },
+        {
+            "name": "yt_exp_sb_categories",
+            "value": "فئات المقاطع"
+        },
+        {
+            "name": "yt_exp_sb_cat_sponsor",
+            "value": "رعاية"
+        },
+        {
+            "name": "yt_exp_sb_cat_selfpromo",
+            "value": "ترويج ذاتي"
+        },
+        {
+            "name": "yt_exp_sb_cat_interaction",
+            "value": "تنبيه تفاعل"
+        },
+        {
+            "name": "yt_exp_sb_cat_intro",
+            "value": "مقدمة"
+        },
+        {
+            "name": "yt_exp_sb_cat_outro",
+            "value": "خاتمة"
+        },
+        {
+            "name": "yt_exp_sb_cat_preview",
+            "value": "معاينة/مراجعة"
+        },
+        {
+            "name": "yt_exp_sb_cat_music",
+            "value": "خارج الموسيقى"
+        },
+        {
+            "name": "yt_exp_sb_cat_filler",
+            "value": "حشو"
+        },
+        {
+            "name": "yt_exp_sb_cat_highlight",
+            "value": "لحظة بارزة"
+        },
+        {
+            "name": "yt_exp_sb_behavior",
+            "value": "سلوك التخطي"
+        },
+        {
+            "name": "yt_exp_sb_behavior_toast",
+            "value": "تخطي مع تنبيه (قابل للتراجع)"
+        },
+        {
+            "name": "yt_exp_sb_behavior_silent",
+            "value": "تخطي بصمت"
+        },
+        {
+            "name": "yt_exp_sb_behavior_manual",
+            "value": "إظهار الزر فقط"
+        },
+        {
+            "name": "yt_exp_sb_unskip",
+            "value": "تنبيه مسبق"
+        },
+        {
+            "name": "yt_exp_sb_unskip_value",
+            "value": "%d ث"
+        },
+        {
+            "name": "yt_exp_sb_privacy",
+            "value": "استعلام خاص"
+        },
+        {
+            "name": "yt_exp_sb_privacy_desc",
+            "value": "إرسال تجزئة الفيديو فقط، دون المعرّف"
+        },
+        {
+            "name": "yt_exp_sb_skipped",
+            "value": "سيتم التخطي قريبًا: %s"
+        },
+        {
+            "name": "yt_exp_sb_undo",
+            "value": "تراجع"
+        },
+        {
+            "name": "yt_exp_sb_no_segments",
+            "value": "لا توجد مقاطع متاحة لهذا الفيديو"
+        },
+        {
+            "name": "yt_exp_sb_categories_count",
+            "value": "%d فئات"
+        },
+        {
+            "name": "yt_exp_da_title",
+            "value": "DeArrow"
+        },
+        {
+            "name": "yt_exp_da_desc",
+            "value": "عناوين وصور مصغرة من المجتمع"
+        },
+        {
+            "name": "yt_exp_ai_title",
+            "value": "AiSList"
+        },
+        {
+            "name": "yt_exp_ai_desc",
+            "value": "تعليم أو إخفاء القنوات ذات المحتوى المولّد بالذكاء الاصطناعي"
+        },
+        {
+            "name": "yt_exp_da_replace_titles",
+            "value": "استبدال العناوين"
+        },
+        {
+            "name": "yt_exp_da_limit",
+            "value": "عدد العناوين لكل صفحة"
+        },
+        {
+            "name": "yt_exp_da_concurrency",
+            "value": "الطلبات المتزامنة"
+        },
+        {
+            "name": "yt_exp_da_footer",
+            "value": "تأتي العناوين من مساهمات مجتمع DeArrow وقد لا تطابق الفيديو تمامًا."
+        },
+        {
+            "name": "yt_exp_da_thumbs",
+            "value": "استبدال الصور المصغرة"
+        },
+        {
+            "name": "yt_exp_da_thumbs_desc",
+            "value": "يستخدم لقطات من الفيديو؛ التحميل أبطأ"
+        },
+        {
+            "name": "yt_exp_ai_mode",
+            "value": "المعالجة"
+        },
+        {
+            "name": "yt_exp_ai_mode_mark",
+            "value": "تعليم فقط"
+        },
+        {
+            "name": "yt_exp_ai_mode_hide",
+            "value": "إخفاء بالكامل"
+        },
+        {
+            "name": "yt_exp_ai_warnlist",
+            "value": "تضمين قائمة الثقة المتوسطة"
+        },
+        {
+            "name": "yt_exp_ai_sync",
+            "value": "تحديث تلقائي"
+        },
+        {
+            "name": "yt_exp_ai_sync_daily",
+            "value": "يوميًا"
+        },
+        {
+            "name": "yt_exp_ai_sync_weekly",
+            "value": "أسبوعيًا"
+        },
+        {
+            "name": "yt_exp_ai_sync_manual",
+            "value": "يدوي فقط"
+        },
+        {
+            "name": "yt_exp_ai_sync_now",
+            "value": "تحديث الآن"
+        },
+        {
+            "name": "yt_exp_ai_status",
+            "value": "آخر مزامنة: %s · %d إدخالاً"
+        },
+        {
+            "name": "yt_exp_ai_never",
+            "value": "لم تتم المزامنة بعد"
+        },
+        {
+            "name": "yt_exp_ai_license",
+            "value": "المصدر: AiSList (CC BY-NC 4.0)"
+        },
+        {
+            "name": "yt_exp_ai_badge",
+            "value": "AI"
+        },
+        {
+            "name": "yt_exp_ai_notice",
+            "value": "هذه القناة موسومة بمحتوى مولّد بالذكاء الاصطناعي"
+        },
+        {
+            "name": "yt_exp_ai_syncing",
+            "value": "جارٍ المزامنة…"
+        },
+        {
+            "name": "yt_exp_ai_sync_failed",
+            "value": "فشلت المزامنة"
+        },
+        {
+            "name": "yt_exp_ai_empty",
+            "value": "القائمة فارغة، حدّثها أولاً"
+        },
+        {
+            "name": "yt_exp_ai_status_label",
+            "value": "حالة القائمة"
+        },
+        {
+            "name": "yt_update_page_title",
+            "value": "التحقق من التحديثات"
+        },
+        {
+            "name": "yt_update_enable",
+            "value": "التحقق من تحديثات GitHub"
+        },
+        {
+            "name": "yt_update_enable_desc",
+            "value": "عند الإيقاف لن يتم التحقق تلقائيًا أو يدويًا"
+        },
+        {
+            "name": "yt_update_on_startup",
+            "value": "التحقق عند بدء التشغيل"
+        },
+        {
+            "name": "yt_update_on_startup_desc",
+            "value": "يعمل بصمت دون تنبيه"
+        },
+        {
+            "name": "yt_update_last_check",
+            "value": "آخر تحقق"
+        },
+        {
+            "name": "yt_update_never_checked",
+            "value": "لم يتم التحقق بعد"
+        },
+        {
+            "name": "yt_update_check_now",
+            "value": "التحقق الآن"
+        },
+        {
+            "name": "yt_update_rate_limited",
+            "value": "GitHub يحدّ من الطلبات، حاول لاحقًا"
+        },
+        {
+            "name": "yt_update_available",
+            "value": "يتوفر إصدار جديد"
+        },
+        {
+            "name": "yt_update_disabled_hint",
+            "value": "فعّل «التحقق من تحديثات GitHub» أولاً"
+        },
+        {
+            "name": "yt_update_links",
+            "value": "روابط"
+        }
+    ]
+}

@@ -1,0 +1,424 @@
+import { PreferencesStore } from './PreferencesStore';
+import { AppLog } from './AppLog';
+
+const logger = AppLog.getInstance('PlaybackConfig');
+
+export type VideoQualityCap = 'best' | '4320p' | '2160p' | '1440p' | '1080p' | '720p' | '480p' | '360p' | '240p' | '144p';
+
+export const VIDEO_QUALITY_CAP_HEIGHT: Record<VideoQualityCap, number> = {
+  'best': 9999,
+  '4320p': 4320,
+  '2160p': 2160,
+  '1440p': 1440,
+  '1080p': 1080,
+  '720p': 720,
+  '480p': 480,
+  '360p': 360,
+  '240p': 240,
+  '144p': 144,
+};
+
+export const VIDEO_QUALITY_CAP_LABELS: VideoQualityCap[] = [
+  'best', '4320p', '2160p', '1440p', '1080p', '720p', '480p', '360p', '240p', '144p'
+];
+
+export const VIDEO_QUALITY_CAP_DISPLAY: Record<VideoQualityCap, string> = {
+  'best': 'best',
+  '4320p': '8K (4320p)',
+  '2160p': '4K (2160p)',
+  '1440p': '2K (1440p)',
+  '1080p': '1080p',
+  '720p': '720p',
+  '480p': '480p',
+  '360p': '360p',
+  '240p': '240p',
+  '144p': '144p',
+};
+
+function normalizeQuality(value: string, fallback: VideoQualityCap): VideoQualityCap {
+  return VIDEO_QUALITY_CAP_LABELS.includes(value as VideoQualityCap) ? value as VideoQualityCap : fallback;
+}
+
+// MPV 播放器配置
+export type CacheSecs = '5' | '10' | '20' | '30' | '60';
+export type DemuxerReadahead = '5' | '8' | '15' | '30' | '60';
+export type DemuxerMaxBytes = '10' | '20' | '50' | '100';
+export type GpuApi = 'auto' | 'opengl' | 'vulkan';
+export type BackgroundVideoOffDelay = '0' | '5' | '15' | '30' | '60';
+
+export const BACKGROUND_VIDEO_OFF_DELAY_LABELS: BackgroundVideoOffDelay[] = ['0', '5', '15', '30', '60'];
+
+export const CACHE_SECS_LABELS: CacheSecs[] = ['5', '10', '20', '30', '60'];
+
+export const DEMUXER_READAHEAD_LABELS: DemuxerReadahead[] = ['5', '8', '15', '30', '60'];
+
+export const DEMUXER_MAX_BYTES_LABELS: DemuxerMaxBytes[] = ['10', '20', '50', '100'];
+
+export const GPU_API_LABELS: GpuApi[] = ['auto', 'opengl', 'vulkan'];
+
+/** 游客态播放端点：visionos（默认，免 token 直链）| mweb（SABR，调试用）。 */
+export type GuestPlayerClient = 'visionos' | 'mweb';
+/** 登录态播放端点（PipePipe per-state allow-list: tv_downgraded | mweb） */
+export type AuthPlayerClient = 'tv_downgraded' | 'mweb';
+
+export const GUEST_PLAYER_CLIENT_LABELS: GuestPlayerClient[] = ['visionos', 'mweb'];
+export const AUTH_PLAYER_CLIENT_LABELS: AuthPlayerClient[] = ['tv_downgraded', 'mweb'];
+
+export function getPlayerClientDisplay(value: string): Resource {
+  if (value === 'tv_downgraded') {
+    return $r('app.string.yt_setting_client_tv_downgraded');
+  }
+  if (value === 'mweb') {
+    return $r('app.string.yt_setting_client_mweb');
+  }
+  return $r('app.string.yt_setting_client_visionos');
+}
+
+/** 长按加速可选倍速档 */
+export const HOLD_SPEED_VALUES: number[] = [1.25, 1.5, 1.75, 2.0, 2.5, 3.0];
+
+/** 长按触发延迟可选档位（毫秒） */
+export const HOLD_SPEED_DELAYS: number[] = [300, 500, 800, 1000];
+
+/** 手势交互方案预设：enhanced=播放器增强（默认）、youtube=YouTube 经典、bilibili=Bilibili 经典、custom=逐项自定义 */
+export type GestureScheme = 'enhanced' | 'youtube' | 'bilibili' | 'custom';
+export const GESTURE_SCHEME_LABELS: GestureScheme[] = ['enhanced', 'youtube', 'bilibili', 'custom'];
+
+/** 双击屏幕的动作（与左右快进退互斥：单选，天然避免手势冲突） */
+export type DoubleTapAction = 'seek' | 'playpause' | 'off';
+export const DOUBLE_TAP_ACTION_LABELS: DoubleTapAction[] = ['seek', 'playpause', 'off'];
+
+/** 双击快退/快进的步长（秒）——对齐 YouTube 可选范围（5–60s） */
+export const DOUBLE_TAP_SEEK_SECONDS: number[] = [5, 10, 15, 20, 30, 60];
+
+export function getGestureSchemeDisplay(value: GestureScheme): Resource {
+  return $r(`app.string.yt_gesture_scheme_${value}`);
+}
+
+export function getDoubleTapActionDisplay(value: DoubleTapAction): Resource {
+  return $r(`app.string.yt_gesture_double_tap_${value}`);
+}
+
+export function getDoubleTapSeekDisplay(value: number): string {
+  return `${value}s`;
+}
+
+/** 覆盖层字幕字号倍率（相对播放器默认 14/18fp） */
+export type SubtitleFontScale = '0.75' | '1' | '1.25' | '1.5';
+export const SUBTITLE_FONT_SCALE_LABELS: SubtitleFontScale[] = ['0.75', '1', '1.25', '1.5'];
+
+/** 覆盖层字幕底部间距（vp） */
+export type SubtitleBottomMargin = '32' | '48' | '64' | '96';
+export const SUBTITLE_BOTTOM_MARGIN_LABELS: SubtitleBottomMargin[] = ['32', '48', '64', '96'];
+
+/** 覆盖层字幕字体颜色 */
+export type SubtitleFontColor = 'white' | 'yellow' | 'green' | 'cyan';
+export const SUBTITLE_FONT_COLOR_LABELS: SubtitleFontColor[] = ['white', 'yellow', 'green', 'cyan'];
+export const SUBTITLE_FONT_COLOR_VALUES: Record<SubtitleFontColor, string> = {
+  'white': '#FFFFFF',
+  'yellow': '#FFEB3B',
+  'green': '#4CAF50',
+  'cyan': '#00E5FF',
+};
+
+/** 覆盖层字幕背景样式 */
+export type SubtitleBackground = 'semi' | 'solid' | 'none';
+export const SUBTITLE_BACKGROUND_LABELS: SubtitleBackground[] = ['semi', 'solid', 'none'];
+export const SUBTITLE_BACKGROUND_VALUES: Record<SubtitleBackground, string> = {
+  'semi': '#80000000',
+  'solid': '#D9000000',
+  'none': '#00000000',
+};
+
+/** 字幕延迟档位（毫秒，正值 = 字幕延后显示，mpv sub-delay 语义） */
+export const SUBTITLE_OFFSET_VALUES: number[] = [-1000, -500, -250, 0, 250, 500, 1000];
+
+export function getSubtitleOffsetDisplay(value: number): string {
+  if (value === 0) return '0s';
+  const sign = value > 0 ? '+' : '-';
+  const abs = Math.abs(value);
+  return `${sign}${abs >= 1000 ? `${abs / 1000}` : `0.${abs / 10}`}s`;
+}
+
+export function getSubtitleFontColorDisplay(value: SubtitleFontColor): Resource {
+  return $r(`app.string.yt_subtitle_color_${value}`);
+}
+
+export function getSubtitleBackgroundDisplay(value: SubtitleBackground): Resource {
+  return $r(`app.string.yt_subtitle_bg_${value}`);
+}
+
+export function getHoldSpeedDelayDisplay(value: number): string {
+  return value >= 1000 ? `${value / 1000}s` : `${value}ms`;
+}
+
+export function getBackgroundVideoOffDelayDisplay(value: BackgroundVideoOffDelay): ResourceStr {
+  if (value === '0') {
+    return $r('app.string.yt_setting_delay_immediate');
+  }
+  return $r(`app.string.yt_setting_delay_${value}`);
+}
+
+export function getCacheSecsDisplay(value: CacheSecs): ResourceStr {
+  return $r(`app.string.yt_setting_cache_secs_${value}`);
+}
+
+export function getDemuxerReadaheadDisplay(value: DemuxerReadahead): ResourceStr {
+  return $r(`app.string.yt_setting_readahead_${value}`);
+}
+
+export function getDemuxerMaxBytesDisplay(value: DemuxerMaxBytes): ResourceStr {
+  return $r(`app.string.yt_setting_max_bytes_${value}`);
+}
+
+export function getGpuApiDisplay(value: GpuApi): Resource {
+  if (value === 'auto') {
+    return $r('app.string.yt_setting_gpu_auto');
+  }
+  return $r(`app.string.yt_label_${value}`);
+}
+
+@Observed
+export class PlaybackConfig {
+  @Track defaultQuality: VideoQualityCap = '480p';
+  @Track mobileQuality: VideoQualityCap = '480p';
+  /** Full-surface swipe shortcuts. Visible controls remain available when disabled. */
+  @Track gestureSeekEnabled: boolean = true;
+  @Track gestureBrightnessEnabled: boolean = true;
+  @Track gestureVolumeEnabled: boolean = true;
+  /** 长按屏幕临时加速（松手恢复原倍速） */
+  @Track holdSpeedEnabled: boolean = true;
+  /** 长按加速的目标倍速 */
+  @Track holdSpeedValue: number = 2.0;
+  /** 长按多久触发加速（毫秒） */
+  @Track holdSpeedDelayMs: number = 500;
+  /** 手势交互方案预设（改任一分项开关后自动变为 custom） */
+  @Track gestureScheme: GestureScheme = 'enhanced';
+  /** 双击屏幕的动作：左右快进退 / 播放暂停 / 关闭 */
+  @Track doubleTapAction: DoubleTapAction = 'seek';
+  /** 双击快进退步长（秒），仅 doubleTapAction='seek' 时生效 */
+  @Track doubleTapSeekSeconds: number = 15;
+  /** 返回键/home 键时是否自动进入画中画（设备不支持时强制 false） */
+  @Track pipOnReturn: boolean = true;
+  /**
+   * 真后台时延迟关闭视频解码，仅保留音频（省电）。
+   * 分享/投屏/PiP 不会关视频。回前台自动恢复。
+   */
+  @Track backgroundAudioOnly: boolean = true;
+  /** 进入后台后多久关视频（秒），0=立即 */
+  @Track backgroundVideoOffDelaySec: BackgroundVideoOffDelay = '15';
+  /** 是否继续播放下一个视频（每次启动时作为队列自动播放会话开关的默认值） */
+  @Track autoPlayNext: boolean = true;
+
+  // MPV 播放器设置
+  /** 硬件解码开关 */
+  @Track hwdecEnabled: boolean = true;
+  /** 内存缓存时长（秒） */
+  @Track cacheSecs: CacheSecs = '10';
+  /** 预读缓冲时长（秒） */
+  @Track demuxerReadaheadSecs: DemuxerReadahead = '8';
+  /** 解封装器最大缓冲区（MB） */
+  @Track demuxerMaxBytes: DemuxerMaxBytes = '20';
+  /** GPU 渲染 API */
+  @Track gpuApi: GpuApi = 'auto';
+  /** 游客（未登录/未启用播放鉴权）时的 YouTube 播放端点 */
+  @Track guestPlayerClient: GuestPlayerClient = 'visionos';
+  /** 登录（且启用播放鉴权）时的 YouTube 播放端点 */
+  @Track authPlayerClient: AuthPlayerClient = 'mweb';
+  /** 覆盖层字幕字号倍率 */
+  @Track subtitleFontScale: SubtitleFontScale = '1';
+  /** 覆盖层字幕底部间距（vp） */
+  @Track subtitleBottomMarginVp: SubtitleBottomMargin = '48';
+  /** 覆盖层字幕字体颜色 */
+  @Track subtitleFontColor: SubtitleFontColor = 'white';
+  /** 覆盖层字幕背景样式 */
+  @Track subtitleBackground: SubtitleBackground = 'semi';
+  /** 字幕延迟（毫秒，正值 = 延后显示） */
+  @Track subtitleOffsetMs: number = 0;
+  /** 系统 AI 字幕（Speech Kit AICaptionComponent 自动捕获应用音频；仅支持的机型/地区生效） */
+  @Track systemAiCaption: boolean = false;
+  /** 系统 AI 字幕源语言（'zh'|'en'；英文源输出中英双语） */
+  @Track systemAiCaptionSource: string = 'en';
+
+  constructor() {}
+
+  /**
+   * 手势方案预设：一次性写回各分项开关（双击单选 + 滑动组 + 长按组）。
+   * enhanced = 播放器增强（现状：双击 ±15s、横滑进度、左亮右音、长按 2x）；
+   * youtube  = YouTube 经典（双击 ±10s、无横滑/亮度/音量滑、长按 2x）；
+   * bilibili = Bilibili 经典（双击播放/暂停、横滑进度、左亮右音、长按加速）；
+   * custom   = 不改变任何开关，仅表示方案选择。
+   */
+  static applyGesturePreset(cfg: PlaybackConfig, scheme: GestureScheme): void {
+    if (scheme === 'enhanced') {
+      cfg.doubleTapAction = 'seek';
+      cfg.doubleTapSeekSeconds = 15;
+      cfg.gestureSeekEnabled = true;
+      cfg.gestureBrightnessEnabled = true;
+      cfg.gestureVolumeEnabled = true;
+      cfg.holdSpeedEnabled = true;
+    } else if (scheme === 'youtube') {
+      cfg.doubleTapAction = 'seek';
+      cfg.doubleTapSeekSeconds = 10;
+      cfg.gestureSeekEnabled = false;
+      cfg.gestureBrightnessEnabled = false;
+      cfg.gestureVolumeEnabled = false;
+      cfg.holdSpeedEnabled = true;
+    } else if (scheme === 'bilibili') {
+      cfg.doubleTapAction = 'playpause';
+      cfg.gestureSeekEnabled = true;
+      cfg.gestureBrightnessEnabled = true;
+      cfg.gestureVolumeEnabled = true;
+      cfg.holdSpeedEnabled = true;
+    }
+    cfg.gestureScheme = scheme;
+  }
+
+  /**
+   * 结构项（双击动作 + 三个滑动开关 + 长按开关）与某预设是否一致。
+   * 参数项（双击步长、长按倍速/触发延迟）不参与判定——它们是预设的可调参数。
+   */
+  private static matchesGesturePreset(cfg: PlaybackConfig, scheme: GestureScheme): boolean {
+    if (scheme === 'enhanced') {
+      return cfg.doubleTapAction === 'seek' && cfg.gestureSeekEnabled
+        && cfg.gestureBrightnessEnabled && cfg.gestureVolumeEnabled && cfg.holdSpeedEnabled;
+    }
+    if (scheme === 'youtube') {
+      return cfg.doubleTapAction === 'seek' && !cfg.gestureSeekEnabled
+        && !cfg.gestureBrightnessEnabled && !cfg.gestureVolumeEnabled && cfg.holdSpeedEnabled;
+    }
+    if (scheme === 'bilibili') {
+      return cfg.doubleTapAction === 'playpause' && cfg.gestureSeekEnabled
+        && cfg.gestureBrightnessEnabled && cfg.gestureVolumeEnabled && cfg.holdSpeedEnabled;
+    }
+    return false;
+  }
+
+  /**
+   * 按当前结构项回推所属方案：与某预设组合一致 → 该预设；都不一致 → custom。
+   * 用于"改动分项开关后重算方案"，程序化改写开关（预设应用时 Toggle 会触发
+   * onChange）也会走这里——组合没变就保持原预设，不会被误判成自定义。
+   */
+  static schemeForGestureConfig(cfg: PlaybackConfig): GestureScheme {
+    if (PlaybackConfig.matchesGesturePreset(cfg, 'enhanced')) {
+      return 'enhanced';
+    }
+    if (PlaybackConfig.matchesGesturePreset(cfg, 'youtube')) {
+      return 'youtube';
+    }
+    if (PlaybackConfig.matchesGesturePreset(cfg, 'bilibili')) {
+      return 'bilibili';
+    }
+    return 'custom';
+  }
+
+  static loadFromPreferences(): PlaybackConfig {
+    const cfg = new PlaybackConfig();
+    cfg.defaultQuality = normalizeQuality(PreferencesStore.getString('cfg_pb_defaultQuality', '480p'), '480p');
+    cfg.mobileQuality = normalizeQuality(PreferencesStore.getString('cfg_pb_mobileQuality', '480p'), '480p');
+    cfg.gestureSeekEnabled = PreferencesStore.getString('cfg_pb_gestureSeekEnabled', 'true') === 'true';
+    cfg.gestureBrightnessEnabled = PreferencesStore.getString('cfg_pb_gestureBrightnessEnabled', 'true') === 'true';
+    cfg.gestureVolumeEnabled = PreferencesStore.getString('cfg_pb_gestureVolumeEnabled', 'true') === 'true';
+    cfg.holdSpeedEnabled = PreferencesStore.getString('cfg_pb_holdSpeedEnabled', 'true') === 'true';
+    const holdSpeedValue = Number(PreferencesStore.getString('cfg_pb_holdSpeedValue', '2'));
+    cfg.holdSpeedValue = HOLD_SPEED_VALUES.includes(holdSpeedValue) ? holdSpeedValue : 2.0;
+    const holdSpeedDelay = Number(PreferencesStore.getString('cfg_pb_holdSpeedDelayMs', '500'));
+    cfg.holdSpeedDelayMs = HOLD_SPEED_DELAYS.includes(holdSpeedDelay) ? holdSpeedDelay : 500;
+    const gestureSchemeRaw = PreferencesStore.getString('cfg_pb_gestureScheme', 'enhanced');
+    // 旧版本存过 'classic'（= 现在的 YouTube 经典），保留映射避免丢配置
+    cfg.gestureScheme = gestureSchemeRaw === 'classic' ? 'youtube'
+      : (GESTURE_SCHEME_LABELS.includes(gestureSchemeRaw as GestureScheme)
+        ? gestureSchemeRaw as GestureScheme : 'enhanced');
+    const doubleTapRaw = PreferencesStore.getString('cfg_pb_doubleTapAction', 'seek');
+    cfg.doubleTapAction = DOUBLE_TAP_ACTION_LABELS.includes(doubleTapRaw as DoubleTapAction)
+      ? doubleTapRaw as DoubleTapAction : 'seek';
+    const doubleTapSecs = Number(PreferencesStore.getString('cfg_pb_doubleTapSeekSeconds', '15'));
+    cfg.doubleTapSeekSeconds = DOUBLE_TAP_SEEK_SECONDS.includes(doubleTapSecs) ? doubleTapSecs : 15;
+    cfg.pipOnReturn = PreferencesStore.getString('cfg_pb_pipOnReturn', 'true') === 'true';
+    cfg.backgroundAudioOnly = PreferencesStore.getString('cfg_pb_backgroundAudioOnly', 'true') === 'true';
+    const delay = PreferencesStore.getString('cfg_pb_backgroundVideoOffDelaySec', '15');
+    cfg.backgroundVideoOffDelaySec = BACKGROUND_VIDEO_OFF_DELAY_LABELS.includes(delay as BackgroundVideoOffDelay)
+      ? delay as BackgroundVideoOffDelay : '15';
+    cfg.autoPlayNext = PreferencesStore.getString('cfg_pb_autoPlayNext', 'true') === 'true';
+
+    // MPV 播放器设置
+    cfg.hwdecEnabled = PreferencesStore.getString('cfg_pb_hwdecEnabled', 'true') === 'true';
+    const cacheSecs = PreferencesStore.getString('cfg_pb_cacheSecs', '10');
+    cfg.cacheSecs = CACHE_SECS_LABELS.includes(cacheSecs as CacheSecs) ? cacheSecs as CacheSecs : '10';
+    const readahead = PreferencesStore.getString('cfg_pb_demuxerReadaheadSecs', '8');
+    cfg.demuxerReadaheadSecs = DEMUXER_READAHEAD_LABELS.includes(readahead as DemuxerReadahead) ? readahead as DemuxerReadahead : '8';
+    const maxBytes = PreferencesStore.getString('cfg_pb_demuxerMaxBytes', '20');
+    cfg.demuxerMaxBytes = DEMUXER_MAX_BYTES_LABELS.includes(maxBytes as DemuxerMaxBytes) ? maxBytes as DemuxerMaxBytes : '20';
+    const gpuApi = PreferencesStore.getString('cfg_pb_gpuApi', 'auto');
+    cfg.gpuApi = GPU_API_LABELS.includes(gpuApi as GpuApi) ? gpuApi as GpuApi : 'auto';
+    // 游客端点只保留 visionos（默认）与 mweb。旧版本可能存过 tv_samsung，
+    // 或存过已被移除的其它值：统一回落到 visionos 并写回，避免下次再读旧值。
+    const guestClient = PreferencesStore.getString('cfg_pb_guestPlayerClient', 'visionos');
+    const resolvedGuestClient = GUEST_PLAYER_CLIENT_LABELS.includes(guestClient as GuestPlayerClient)
+      ? guestClient as GuestPlayerClient : 'visionos';
+    if (resolvedGuestClient !== guestClient) {
+      PreferencesStore.setString('cfg_pb_guestPlayerClient', resolvedGuestClient);
+      logger.info(`guest endpoint migrated ${guestClient} -> ${resolvedGuestClient}`);
+    }
+    cfg.guestPlayerClient = resolvedGuestClient;
+    const authClient = PreferencesStore.getString('cfg_pb_authPlayerClient', 'mweb');
+    cfg.authPlayerClient = AUTH_PLAYER_CLIENT_LABELS.includes(authClient as AuthPlayerClient)
+      ? authClient as AuthPlayerClient : 'mweb';
+    const subScale = PreferencesStore.getString('cfg_pb_subtitleFontScale', '1');
+    cfg.subtitleFontScale = SUBTITLE_FONT_SCALE_LABELS.includes(subScale as SubtitleFontScale)
+      ? subScale as SubtitleFontScale : '1';
+    const subMargin = PreferencesStore.getString('cfg_pb_subtitleBottomMarginVp', '48');
+    cfg.subtitleBottomMarginVp = SUBTITLE_BOTTOM_MARGIN_LABELS.includes(subMargin as SubtitleBottomMargin)
+      ? subMargin as SubtitleBottomMargin : '48';
+    const subColor = PreferencesStore.getString('cfg_pb_subtitleFontColor', 'white');
+    cfg.subtitleFontColor = SUBTITLE_FONT_COLOR_LABELS.includes(subColor as SubtitleFontColor)
+      ? subColor as SubtitleFontColor : 'white';
+    const subBg = PreferencesStore.getString('cfg_pb_subtitleBackground', 'semi');
+    cfg.subtitleBackground = SUBTITLE_BACKGROUND_LABELS.includes(subBg as SubtitleBackground)
+      ? subBg as SubtitleBackground : 'semi';
+    const subOffset = Number(PreferencesStore.getString('cfg_pb_subtitleOffsetMs', '0'));
+    cfg.subtitleOffsetMs = SUBTITLE_OFFSET_VALUES.includes(subOffset) ? subOffset : 0;
+    cfg.systemAiCaption = PreferencesStore.getString('cfg_pb_systemAiCaption', 'false') === 'true';
+    const aiCaptionSrc = PreferencesStore.getString('cfg_pb_systemAiCaptionSource', 'en');
+    cfg.systemAiCaptionSource = (aiCaptionSrc === 'zh' || aiCaptionSrc === 'en') ? aiCaptionSrc : 'en';
+
+    logger.info(`Loaded PlaybackConfig: ${JSON.stringify(cfg)}`);
+    return cfg;
+  }
+
+  static saveToPreferences(cfg: PlaybackConfig): void {
+    PreferencesStore.setString('cfg_pb_defaultQuality', cfg.defaultQuality);
+    PreferencesStore.setString('cfg_pb_mobileQuality', cfg.mobileQuality);
+    PreferencesStore.setString('cfg_pb_gestureSeekEnabled', cfg.gestureSeekEnabled ? 'true' : 'false');
+    PreferencesStore.setString('cfg_pb_gestureBrightnessEnabled', cfg.gestureBrightnessEnabled ? 'true' : 'false');
+    PreferencesStore.setString('cfg_pb_gestureVolumeEnabled', cfg.gestureVolumeEnabled ? 'true' : 'false');
+    PreferencesStore.setString('cfg_pb_holdSpeedEnabled', cfg.holdSpeedEnabled ? 'true' : 'false');
+    PreferencesStore.setString('cfg_pb_holdSpeedValue', String(cfg.holdSpeedValue));
+    PreferencesStore.setString('cfg_pb_holdSpeedDelayMs', String(cfg.holdSpeedDelayMs));
+    PreferencesStore.setString('cfg_pb_gestureScheme', cfg.gestureScheme);
+    PreferencesStore.setString('cfg_pb_doubleTapAction', cfg.doubleTapAction);
+    PreferencesStore.setString('cfg_pb_doubleTapSeekSeconds', String(cfg.doubleTapSeekSeconds));
+    PreferencesStore.setString('cfg_pb_pipOnReturn', cfg.pipOnReturn ? 'true' : 'false');
+    PreferencesStore.setString('cfg_pb_backgroundAudioOnly', cfg.backgroundAudioOnly ? 'true' : 'false');
+    PreferencesStore.setString('cfg_pb_backgroundVideoOffDelaySec', cfg.backgroundVideoOffDelaySec);
+    PreferencesStore.setString('cfg_pb_autoPlayNext', cfg.autoPlayNext ? 'true' : 'false');
+
+    // MPV 播放器设置
+    PreferencesStore.setString('cfg_pb_hwdecEnabled', cfg.hwdecEnabled ? 'true' : 'false');
+    PreferencesStore.setString('cfg_pb_cacheSecs', cfg.cacheSecs);
+    PreferencesStore.setString('cfg_pb_demuxerReadaheadSecs', cfg.demuxerReadaheadSecs);
+    PreferencesStore.setString('cfg_pb_demuxerMaxBytes', cfg.demuxerMaxBytes);
+    PreferencesStore.setString('cfg_pb_gpuApi', cfg.gpuApi);
+    PreferencesStore.setString('cfg_pb_guestPlayerClient', cfg.guestPlayerClient);
+    PreferencesStore.setString('cfg_pb_authPlayerClient', cfg.authPlayerClient);
+    PreferencesStore.setString('cfg_pb_subtitleFontScale', cfg.subtitleFontScale);
+    PreferencesStore.setString('cfg_pb_subtitleBottomMarginVp', cfg.subtitleBottomMarginVp);
+    PreferencesStore.setString('cfg_pb_subtitleFontColor', cfg.subtitleFontColor);
+    PreferencesStore.setString('cfg_pb_subtitleBackground', cfg.subtitleBackground);
+    PreferencesStore.setString('cfg_pb_subtitleOffsetMs', String(cfg.subtitleOffsetMs));
+    PreferencesStore.setString('cfg_pb_systemAiCaption', cfg.systemAiCaption ? 'true' : 'false');
+    PreferencesStore.setString('cfg_pb_systemAiCaptionSource', cfg.systemAiCaptionSource);
+
+    logger.info('Saved PlaybackConfig');
+  }
+}

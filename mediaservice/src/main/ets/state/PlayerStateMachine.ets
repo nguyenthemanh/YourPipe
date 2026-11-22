@@ -1,0 +1,118 @@
+/*
+ * 播放器状态机 —— 播放器生命周期的唯一权威
+ *
+ * 职责：
+ *   1. 持有当前 PlayerState
+ *   2. 校验并执行状态转换
+ *   3. 通知所有订阅者状态变更
+ *
+ * 各子系统（Surface / AVSession / BackgroundTask）通过
+ * addListener / removeListener 订阅状态变更，并自行决定响应策略，
+ * 不再由上层手动编排操作顺序。
+ */
+
+import { PlayerState, isValidTransition, describeState, VALID_TRANSITIONS } from './PlayerState';
+import Logger from '../utils/Logger';
+
+export interface StateChangeListener {
+  onStateChange(from: PlayerState, to: PlayerState): void;
+}
+
+export class PlayerStateMachine {
+  private _currentState: PlayerState = PlayerState.IDLE;
+  private listeners: StateChangeListener[] = [];
+  private debugTag: string = '[PlayerStateMachine]';
+
+  get currentState(): PlayerState {
+    return this._currentState;
+  }
+
+  setDebugTag(tag: string): void {
+    this.debugTag = tag;
+  }
+
+  isOneOf(...states: PlayerState[]): boolean {
+    return states.includes(this._currentState);
+  }
+
+  canPlay(): boolean {
+    return this._currentState === PlayerState.READY
+      || this._currentState === PlayerState.PAUSED
+      || this._currentState === PlayerState.COMPLETED;
+  }
+
+  canLoad(): boolean {
+    return this._currentState === PlayerState.IDLE
+      || this._currentState === PlayerState.READY
+      || this._currentState === PlayerState.ERROR;
+  }
+
+  /**
+   * 尝试状态转换。
+   * @returns true 表示转换成功，false 表示非法转换被拒绝
+   */
+  transition(to: PlayerState): boolean {
+    const from = this._currentState;
+    if (from === to) {
+      return true;
+    }
+    if (!isValidTransition(from, to)) {
+      const allowed = this.getAllowedTransitions(from);
+      if (from === PlayerState.LOADING && to === PlayerState.COMPLETED) {
+        // Known-benign: a stale end-of-media event from the previous source
+        // arriving while the new source is still loading. The rejection is
+        // the intended protection; only log noise, no ERROR.
+        Logger.debug(`${this.debugTag} stale COMPLETED ignored during LOADING (previous media end)`);
+        return false;
+      }
+      Logger.error(
+        `${this.debugTag} Illegal transition: ${describeState(from)} → ${describeState(to)}. ` +
+        `Allowed: [${allowed.map(s => describeState(s)).join(', ')}]`
+      );
+      return false;
+    }
+    this._currentState = to;
+    Logger.info(`${this.debugTag} ${describeState(from)} → ${describeState(to)}`);
+    this.notifyListeners(from, to);
+    return true;
+  }
+
+  /**
+   * 强制转换（跳过校验），仅在特殊场景使用（如引擎层同步重置）
+   */
+  forceTransition(to: PlayerState): void {
+    const from = this._currentState;
+    if (from === to) return;
+    this._currentState = to;
+    Logger.warn(`${this.debugTag} [FORCE] ${describeState(from)} → ${describeState(to)}`);
+    this.notifyListeners(from, to);
+  }
+
+  addListener(listener: StateChangeListener): void {
+    if (!this.listeners.includes(listener)) {
+      this.listeners.push(listener);
+    }
+  }
+
+  removeListener(listener: StateChangeListener): void {
+    this.listeners = this.listeners.filter(l => l !== listener);
+  }
+
+  removeAllListeners(): void {
+    this.listeners = [];
+  }
+
+  private getAllowedTransitions(from: PlayerState): PlayerState[] {
+    return VALID_TRANSITIONS.get(from) ?? [];
+  }
+
+  private notifyListeners(from: PlayerState, to: PlayerState): void {
+    for (const listener of this.listeners) {
+      try {
+        listener.onStateChange(from, to);
+      } catch (e) {
+        Logger.error(`${this.debugTag} Listener error: ${e}`);
+      }
+    }
+  }
+}

@@ -1,0 +1,601 @@
+import { SearchChannelItem, SearchInfoItem, SearchPageResult, SearchPlaylistItem, SearchStreamItem, VideoItem } from 'youtube_core';
+import { ContentCountry, Localization, fetchSearchContinuation, fetchSearchPage } from 'youtube_core';
+import { getLockupChannelId, getLockupDurationText, getLockupPlaylistCoverUrl, getLockupPlaylistId, getLockupPublishedTimeText, getLockupTitle, getLockupUploaderName, getLockupUploaderVerified, getLockupVideoId, getLockupVideoThumbnailUrl, getLockupViewCount, getLockupViewCountExact } from './utils/LockupViewModelParser';
+import { ThumbnailPlaceholder } from '../../common/ThumbnailPlaceholder';
+import { getTextFromRuns } from './utils/TextUtils';
+import { getThumbnailUrlFromThumbnailObject, pickBestThumbUrl } from './utils/ThumbnailUtils';
+import { getContinuationToken } from './utils/ContinuationUtils';
+import { buildVideoItemFromReelRenderer, buildVideoItemFromRenderer, buildVideoItemFromShortsLockupViewModel } from './utils/VideoItemBuilder';
+import { MusicSearchService } from './MusicSearchService';
+import { SearchBuildResult, VideoBuildResult } from './model/FeedResult';
+
+export interface VideoSearchResult {
+  items: Array<VideoItem>;
+  nextPageToken: string | null;
+}
+
+export interface MixedSearchResult {
+  items: Array<SearchInfoItem>;
+  nextPageToken: string | null;
+}
+
+export class SearchService {
+  private localization: Localization;
+  private contentCountry: ContentCountry;
+  private currentFilters: string[] = [];
+  /** 视频搜索解析时的条目 id 游标（递归展开时跨节点连续编号）。 */
+  private videoItemIdCursor: number = 0;
+
+  constructor(localization: Localization, contentCountry: ContentCountry) {
+    this.localization = localization;
+    this.contentCountry = contentCountry;
+  }
+
+  setFilters(filters: string[]): void {
+    this.currentFilters = filters ?? [];
+  }
+
+  async fetchInitial(query: string, startId: number): Promise<VideoSearchResult> {
+    const trimmed = (query || '').trim();
+    if (!trimmed) {
+      return { items: [], nextPageToken: null };
+    }
+    const response = await fetchSearchPage(this.localization, this.contentCountry, trimmed, [], '');
+    if (!response) {
+      throw new Error('Empty search response');
+    }
+    return this.parseVideoInitialResponse(response as Record<string, Object>, startId);
+  }
+
+  async fetchNext(nextPageToken: string, startId: number): Promise<VideoSearchResult> {
+    const trimmed = (nextPageToken || '').trim();
+    if (!trimmed) {
+      return { items: [], nextPageToken: null };
+    }
+    const response = await fetchSearchContinuation(this.localization, this.contentCountry, trimmed);
+    if (!response) {
+      throw new Error('Empty continuation response');
+    }
+    return this.parseVideoContinuationResponse(response as Record<string, Object>, startId);
+  }
+
+  async searchInitial(query: string, startId: number): Promise<MixedSearchResult> {
+    const trimmed = (query || '').trim();
+    if (!trimmed) {
+      return { items: [], nextPageToken: null };
+    }
+    const filters = this.currentFilters;
+    const response = await fetchSearchPage(this.localization, this.contentCountry, trimmed, filters, '');
+    if (!response) {
+      throw new Error('Empty search response');
+    }
+    if (MusicSearchService.isMusicSearch(filters)) {
+      return MusicSearchService.parseInitialMusicSearchResponse(response as Record<string, Object>, startId, filters);
+    }
+    return this.parseMixedInitialResponse(response as Record<string, Object>, startId);
+  }
+
+  async searchNext(nextPageToken: string, startId: number): Promise<MixedSearchResult> {
+    const trimmed = (nextPageToken || '').trim();
+    if (!trimmed) {
+      return { items: [], nextPageToken: null };
+    }
+    const filters = this.currentFilters;
+    const response = await fetchSearchContinuation(this.localization, this.contentCountry, trimmed, filters);
+    if (!response) {
+      throw new Error('Empty continuation response');
+    }
+    if (MusicSearchService.isMusicSearch(filters)) {
+      return MusicSearchService.parseMusicSearchContinuationResponse(response as Record<string, Object>, startId, filters);
+    }
+    return this.parseMixedContinuationResponse(response as Record<string, Object>, startId);
+  }
+
+  private parseVideoInitialResponse(response: Record<string, Object>, startId: number): VideoSearchResult {
+    let items: Array<VideoItem> = [];
+    let nextPageToken: string | null = null;
+
+    const contents = response["contents"] as Record<string, Object>;
+    const twoColumn = contents ? (contents["twoColumnSearchResultsRenderer"] as Record<string, Object>) : undefined;
+    const primaryContents = twoColumn ? (twoColumn["primaryContents"] as Record<string, Object>) : undefined;
+    const sectionList = primaryContents ? (primaryContents["sectionListRenderer"] as Record<string, Object>) : undefined;
+    const sectionContents = sectionList ? (sectionList["contents"] as Array<Record<string, Object>>) : undefined;
+
+    if (sectionContents) {
+      sectionContents.forEach((section) => {
+        const itemSection = section["itemSectionRenderer"] as Record<string, Object>;
+        const sectionItemContents = itemSection ? (itemSection["contents"] as Array<Record<string, Object>>) : undefined;
+        if (sectionItemContents && sectionItemContents.length > 0) {
+          const newItems = this.buildVideoItemsFromContents(sectionItemContents, startId + items.length);
+          items = items.concat(newItems);
+        }
+        const tokenInSection = this.getContinuationTokenFromSection(section);
+        const tokenInContents = this.getContinuationTokenFromContents(sectionItemContents);
+        nextPageToken = tokenInSection || tokenInContents || nextPageToken;
+      });
+    }
+
+    return { items, nextPageToken };
+  }
+
+  private parseVideoContinuationResponse(response: Record<string, Object>, startId: number): VideoSearchResult {
+    let items: Array<VideoItem> = [];
+    let nextPageToken: string | null = null;
+
+    const commands = response["onResponseReceivedCommands"] as Array<Record<string, Object>>;
+    if (commands) {
+      commands.forEach((command) => {
+        const append = command["appendContinuationItemsAction"] as Record<string, Object>;
+        const continuationItems = append ? (append["continuationItems"] as Array<Record<string, Object>>) : undefined;
+        if (!continuationItems) {
+          return;
+        }
+        continuationItems.forEach((continuationItem) => {
+          const itemSection = continuationItem["itemSectionRenderer"] as Record<string, Object>;
+          const sectionContents = itemSection ? (itemSection["contents"] as Array<Record<string, Object>>) : undefined;
+          if (sectionContents && sectionContents.length > 0) {
+            const newItems = this.buildVideoItemsFromContents(sectionContents, startId + items.length);
+            items = items.concat(newItems);
+          }
+          const contRenderer = continuationItem["continuationItemRenderer"] as Record<string, Object>;
+          if (contRenderer) {
+            nextPageToken = getContinuationToken(contRenderer) ?? nextPageToken;
+          }
+        });
+      });
+    }
+
+    return { items, nextPageToken };
+  }
+
+  private parseMixedInitialResponse(response: Record<string, Object>, startId: number): MixedSearchResult {
+    let items: Array<SearchInfoItem> = [];
+    let nextPageToken: string | null = null;
+
+    const contents = response["contents"] as Record<string, Object>;
+    const twoColumn = contents ? (contents["twoColumnSearchResultsRenderer"] as Record<string, Object>) : undefined;
+    const primaryContents = twoColumn ? (twoColumn["primaryContents"] as Record<string, Object>) : undefined;
+    const sectionList = primaryContents ? (primaryContents["sectionListRenderer"] as Record<string, Object>) : undefined;
+    const sectionContents = sectionList ? (sectionList["contents"] as Array<Record<string, Object>>) : undefined;
+
+    if (sectionContents) {
+      sectionContents.forEach((section) => {
+        const itemSection = section["itemSectionRenderer"] as Record<string, Object>;
+        const sectionItemContents = itemSection ? (itemSection["contents"] as Array<Record<string, Object>>) : undefined;
+        if (sectionItemContents && sectionItemContents.length > 0) {
+          const built = this.buildSearchItemsFromContents(sectionItemContents, startId + items.length);
+          items = items.concat(built.items);
+          nextPageToken = built.nextPageToken ?? nextPageToken;
+        }
+        const tokenInSection = this.getContinuationTokenFromSection(section);
+        nextPageToken = tokenInSection ?? nextPageToken;
+      });
+    }
+
+    return { items, nextPageToken };
+  }
+
+  private parseMixedContinuationResponse(response: Record<string, Object>, startId: number): MixedSearchResult {
+    const actions = response["onResponseReceivedCommands"] as Array<Record<string, Object>>;
+    let items: Array<SearchInfoItem> = [];
+    let nextPageToken: string | null = null;
+
+    if (actions && actions.length > 0) {
+      actions.forEach((action) => {
+        const append = action["appendContinuationItemsAction"] as Record<string, Object>;
+        const continuationItems = append ? (append["continuationItems"] as Array<Record<string, Object>>) : undefined;
+        if (!continuationItems) {
+          return;
+        }
+        continuationItems.forEach((continuationItem) => {
+          const itemSection = continuationItem["itemSectionRenderer"] as Record<string, Object>;
+          const sectionContents = itemSection ? (itemSection["contents"] as Array<Record<string, Object>>) : undefined;
+          if (sectionContents && sectionContents.length > 0) {
+            const built = this.buildSearchItemsFromContents(sectionContents, startId + items.length);
+            items = items.concat(built.items);
+          }
+          const contRenderer = continuationItem["continuationItemRenderer"] as Record<string, Object>;
+          if (contRenderer) {
+            nextPageToken = getContinuationToken(contRenderer) ?? nextPageToken;
+          }
+        });
+      });
+    }
+
+    return { items, nextPageToken };
+  }
+
+  private buildVideoItemsFromContents(sectionContents: Array<Record<string, Object>>, startId: number): Array<VideoItem> {
+    const items: Array<VideoItem> = [];
+    sectionContents.forEach((entry) => {
+      const promo = entry["backgroundPromoRenderer"] as Record<string, Object>;
+      if (promo) {
+        const message = getTextFromRuns(promo["bodyText"]) || getContext().resourceManager.getStringSync($r('app.string.yt_search_no_results').id);
+        throw new Error(message);
+      }
+    });
+    this.videoItemIdCursor = startId;
+    this.collectVideoItemsFromContents(sectionContents, items);
+    return items;
+  }
+
+  /**
+   * 递归展开搜索结果里的容器节点（货架 / itemSection / richItem），
+   * 收集叶子条目（videoRenderer / reelItemRenderer / shortsLockupViewModel）。
+   *
+   * 短视频（Shorts）在搜索结果里通常挂在 **货架** 里（richShelfRenderer →
+   * reelItemRenderer），只解析 sectionContents 的直接叶子会整条漏掉 ——
+   * 这正是 Shorts feed 搜索源一条都拿不到的原因。
+   */
+  private collectVideoItemsFromContents(contents: Array<Record<string, Object>> | undefined, out: Array<VideoItem>): void {
+    if (!contents || contents.length === 0) {
+      return;
+    }
+    for (let i = 0; i < contents.length; i++) {
+      const entry = contents[i];
+      if (!entry) {
+        continue;
+      }
+      const richItem = entry["richItemRenderer"] as Record<string, Object>;
+      if (richItem) {
+        const content = richItem["content"] as Record<string, Object>;
+        if (content) {
+          this.collectVideoItemFromNode(content, out);
+        }
+        continue;
+      }
+      // 新版搜索结果用 gridShelfViewModel 承载货架（contents 而不是 items）。
+      const gridShelfNode = entry["gridShelfViewModel"] as Record<string, Object>;
+      if (gridShelfNode) {
+        this.collectVideoItemsFromContents(gridShelfNode["contents"] as Array<Record<string, Object>>, out);
+        continue;
+      }
+      const richShelf = entry["richShelfRenderer"] as Record<string, Object>;
+      if (richShelf) {
+        this.collectVideoItemsFromContents(richShelf["contents"] as Array<Record<string, Object>>, out);
+        continue;
+      }
+      const shelf = entry["shelfRenderer"] as Record<string, Object>;
+      if (shelf) {
+        const shelfContent = shelf["content"] as Record<string, Object>;
+        if (shelfContent) {
+          const grid = shelfContent["gridRenderer"] as Record<string, Object>;
+          if (grid) {
+            this.collectVideoItemsFromContents(grid["items"] as Array<Record<string, Object>>, out);
+            continue;
+          }
+          // 搜索结果里的 Shorts 货架是**横向列表**（horizontalListRenderer），
+          // 不是 gridRenderer —— 漏了它，Shorts feed 的搜索源一条都拿不到。
+          const horizontal = shelfContent["horizontalListRenderer"] as Record<string, Object>;
+          if (horizontal) {
+            this.collectVideoItemsFromContents(horizontal["items"] as Array<Record<string, Object>>, out);
+            continue;
+          }
+          const expanded = shelfContent["expandedShelfContentsRenderer"] as Record<string, Object>;
+          if (expanded) {
+            this.collectVideoItemsFromContents(expanded["items"] as Array<Record<string, Object>>, out);
+          }
+        }
+        continue;
+      }
+      const itemSection = entry["itemSectionRenderer"] as Record<string, Object>;
+      if (itemSection) {
+        this.collectVideoItemsFromContents(itemSection["contents"] as Array<Record<string, Object>>, out);
+        continue;
+      }
+      this.collectVideoItemFromNode(entry, out);
+    }
+  }
+
+  /** 单个叶子节点 → VideoItem。 */
+  private collectVideoItemFromNode(node: Record<string, Object>, out: Array<VideoItem>): void {
+    const video = node["videoRenderer"] as Record<string, Object>;
+    if (video) {
+      // 与混合搜索同走 builder，补齐 publishedTimeText/时长/精确播放数/认证等字段。
+      const videoItem = buildVideoItemFromRenderer(video, this.videoItemIdCursor, '');
+      if (videoItem) {
+        out.push(videoItem);
+        this.videoItemIdCursor += 1;
+      }
+      return;
+    }
+    // 搜索结果里的 Shorts 货架走 reelItemRenderer / shortsLockupViewModel：
+    // 视频搜索路径（fetchInitial/fetchNext）必须和混合搜索路径一样解析它们，
+    // 否则 Shorts feed 的搜索源一条都拿不到。
+    const reelRenderer = node["reelItemRenderer"] as Record<string, Object>;
+    if (reelRenderer) {
+      const videoItem = buildVideoItemFromReelRenderer(reelRenderer, this.videoItemIdCursor);
+      if (videoItem) {
+        out.push(videoItem);
+        this.videoItemIdCursor += 1;
+      }
+      return;
+    }
+    const shortsLockup = node["shortsLockupViewModel"] as Record<string, Object>;
+    if (shortsLockup) {
+      const videoItem = buildVideoItemFromShortsLockupViewModel(shortsLockup, this.videoItemIdCursor);
+      if (videoItem) {
+        out.push(videoItem);
+        this.videoItemIdCursor += 1;
+      }
+    }
+  }
+
+  private buildSearchItemsFromContents(
+    contents: Array<Record<string, Object>>,
+    startId: number
+  ): SearchBuildResult {
+    let idCounter = startId;
+    const items: Array<SearchInfoItem> = [];
+    let nextPageToken: string | null = null;
+
+    contents.forEach((content) => {
+      const videoRenderer = content["videoRenderer"] as Record<string, Object>;
+      if (videoRenderer) {
+        const videoItem = buildVideoItemFromRenderer(videoRenderer, idCounter, '');
+        if (videoItem) {
+          items.push(new SearchStreamItem(videoItem.id, videoItem));
+          idCounter += 1;
+        }
+        return;
+      }
+
+      const reelRenderer = content["reelItemRenderer"] as Record<string, Object>;
+      if (reelRenderer) {
+        const videoItem = buildVideoItemFromReelRenderer(reelRenderer, idCounter);
+        if (videoItem) {
+          items.push(new SearchStreamItem(videoItem.id, videoItem));
+          idCounter += 1;
+        }
+        return;
+      }
+
+      const shortsLockup = content["shortsLockupViewModel"] as Record<string, Object>;
+      if (shortsLockup) {
+        const videoItem = buildVideoItemFromShortsLockupViewModel(shortsLockup, idCounter);
+        if (videoItem) {
+          items.push(new SearchStreamItem(videoItem.id, videoItem));
+          idCounter += 1;
+        }
+        return;
+      }
+
+      const channelRenderer = content["channelRenderer"] as Record<string, Object>;
+      if (channelRenderer) {
+        const channelItem = this.buildChannelItem(channelRenderer, idCounter);
+        if (channelItem) {
+          items.push(channelItem);
+          idCounter += 1;
+        }
+        return;
+      }
+
+      const playlistRenderer = content["playlistRenderer"] as Record<string, Object>;
+      if (playlistRenderer) {
+        const playlistItem = this.buildPlaylistItem(playlistRenderer, idCounter);
+        if (playlistItem) {
+          items.push(playlistItem);
+          idCounter += 1;
+        }
+        return;
+      }
+
+      const lockup = content["lockupViewModel"] as Record<string, Object>;
+      if (lockup) {
+        const contentType = (lockup["contentType"] as string) || "";
+
+        if (contentType === "LOCKUP_CONTENT_TYPE_VIDEO") {
+          const videoId = getLockupVideoId(lockup);
+          const title = getLockupTitle(lockup) || "Untitled";
+          const author = getLockupUploaderName(lockup) || "Unknown";
+          const thumbnailUrl = getLockupVideoThumbnailUrl(lockup);
+          const placeholderColor = ThumbnailPlaceholder.pickColor(videoId || title, idCounter);
+          const channelId = getLockupChannelId(lockup);
+          const videoItem = new VideoItem(idCounter, videoId, title, author, getLockupViewCount(lockup), thumbnailUrl, false, placeholderColor, channelId, "", "", "");
+          videoItem.publishedTimeText = getLockupPublishedTimeText(lockup);
+          videoItem.durationText = getLockupDurationText(lockup);
+          videoItem.viewCountExact = getLockupViewCountExact(lockup);
+          videoItem.uploaderVerified = getLockupUploaderVerified(lockup);
+          items.push(new SearchStreamItem(videoItem.id, videoItem));
+          idCounter += 1;
+          return;
+        }
+
+        if (contentType === "LOCKUP_CONTENT_TYPE_SHORTS") {
+          const videoId = getLockupVideoId(lockup);
+          const title = getLockupTitle(lockup) || "Untitled";
+          const thumbnailUrl = getLockupVideoThumbnailUrl(lockup);
+          const placeholderColor = ThumbnailPlaceholder.pickColor(videoId || title, idCounter);
+          const author = getLockupUploaderName(lockup) || "";
+          const channelId = getLockupChannelId(lockup);
+          const videoItem = new VideoItem(idCounter, videoId, title, author, "", thumbnailUrl, false, placeholderColor, channelId, "", "", "");
+          videoItem.isShort = true;
+          items.push(new SearchStreamItem(videoItem.id, videoItem));
+          idCounter += 1;
+          return;
+        }
+
+        if (contentType === "LOCKUP_CONTENT_TYPE_PLAYLIST" || contentType === "LOCKUP_CONTENT_TYPE_PODCAST") {
+          const playlistId = getLockupPlaylistId(lockup);
+          const name = getLockupTitle(lockup) || "Untitled";
+          const uploaderName = getLockupUploaderName(lockup) || "";
+          const coverUrl = getLockupPlaylistCoverUrl(lockup);
+          const placeholderColor = ThumbnailPlaceholder.pickColor(playlistId || name, idCounter);
+          items.push(new SearchPlaylistItem(idCounter, playlistId, name, uploaderName, "", coverUrl, "", placeholderColor));
+          idCounter += 1;
+          return;
+        }
+
+        if (contentType === "LOCKUP_CONTENT_TYPE_CHANNEL") {
+          const channelId = getLockupChannelId(lockup);
+          const title = getLockupTitle(lockup) || "Untitled";
+          const thumbnailUrl = getThumbnailUrlFromThumbnailObject(lockup["thumbnail"] as Record<string, Object>);
+          const subscriberCount = getLockupUploaderName(lockup) || "";
+          const description = "";
+          const placeholderColor = ThumbnailPlaceholder.pickColor(channelId || title, idCounter);
+          items.push(new SearchChannelItem(idCounter, channelId, title, subscriberCount, "", thumbnailUrl, description, placeholderColor, ""));
+          idCounter += 1;
+          return;
+        }
+      }
+
+      const continuation = content["continuationItemRenderer"] as Record<string, Object>;
+      if (continuation) {
+        nextPageToken = getContinuationToken(continuation) ?? nextPageToken;
+      }
+    });
+
+    return { items, nextPageToken };
+  }
+
+  private buildChannelItem(channelRenderer: Record<string, Object>, idCounter: number): SearchChannelItem | null {
+    const channelId = (channelRenderer["channelId"] as string) || "";
+    const title = getTextFromRuns(channelRenderer["title"]) || "Untitled";
+    const subscriberCount = getTextFromRuns(channelRenderer["subscriberCountText"]) || "";
+    const videoCountText = getTextFromRuns(channelRenderer["videoCountText"]) || "";
+    const descriptionSnippet = getTextFromRuns(channelRenderer["descriptionSnippet"]) || "";
+    const thumbnail = channelRenderer["thumbnail"] as Record<string, Object>;
+    const thumbnailUrl = getThumbnailUrlFromThumbnailObject(thumbnail);
+    const placeholderColor = ThumbnailPlaceholder.pickColor(channelId || title, idCounter);
+    return new SearchChannelItem(idCounter, channelId, title, subscriberCount, videoCountText, thumbnailUrl, descriptionSnippet, placeholderColor, "");
+  }
+
+  private buildPlaylistItem(playlistRenderer: Record<string, Object>, idCounter: number): SearchPlaylistItem | null {
+    const playlistId = (playlistRenderer["playlistId"] as string) || "";
+    const title = getTextFromRuns(playlistRenderer["title"]) || "Untitled";
+    const shortBylineText = playlistRenderer["shortBylineText"] as Record<string, Object>;
+    const uploaderName = getTextFromRuns(shortBylineText) || "Unknown";
+    const videoCount = getTextFromRuns(playlistRenderer["videoCount"]) || "";
+    const thumbnail = playlistRenderer["thumbnails"] as Array<Record<string, Object>>;
+    let coverUrl = "";
+    if (thumbnail && thumbnail.length > 0) {
+      const firstThumbnail = thumbnail[0];
+      const thumbnails = firstThumbnail ? (firstThumbnail["thumbnails"] as Array<Record<string, Object>>) : undefined;
+      if (thumbnails && thumbnails.length > 0) {
+        coverUrl = pickBestThumbUrl(thumbnails);
+      }
+    }
+    const placeholderColor = ThumbnailPlaceholder.pickColor(playlistId || title, idCounter);
+    return new SearchPlaylistItem(idCounter, playlistId, title, uploaderName, videoCount, coverUrl, "", placeholderColor);
+  }
+
+  private getContinuationTokenFromSection(section: Record<string, Object>): string | null {
+    const cont = section["continuationItemRenderer"] as Record<string, Object>;
+    if (!cont) return null;
+    return getContinuationToken(cont);
+  }
+
+  private getContinuationTokenFromContents(contents: Array<Record<string, Object>> | undefined): string | null {
+    if (!contents || contents.length === 0) return null;
+    const last = contents[contents.length - 1];
+    if (!last) return null;
+    const cont = last["continuationItemRenderer"] as Record<string, Object>;
+    if (!cont) return null;
+    return getContinuationToken(cont);
+  }
+
+  private hasLiveBadge(video: Record<string, Object>): boolean {
+    // Keep search in sync with feed/kiosk detection (NewPipe/PipePipe rules).
+    const badges = video["badges"] as Array<Record<string, Object>>;
+    if (badges) {
+      for (const badge of badges) {
+        const badgeRenderer = badge["metadataBadgeRenderer"] as Record<string, Object>;
+        if (!badgeRenderer) {
+          continue;
+        }
+        const style = ((badgeRenderer["style"] as string) || "").toUpperCase();
+        if (style === "BADGE_STYLE_TYPE_LIVE_NOW" || style === "BADGE_STYLE_TYPE_LIVE"
+          || style.indexOf("LIVE") >= 0) {
+          return true;
+        }
+        const label = ((badgeRenderer["label"] as string) || "").toLowerCase();
+        if (label === "live" || label === "live now" || label.indexOf("live") >= 0
+          || ((badgeRenderer["label"] as string) || "").indexOf("直播") >= 0) {
+          return true;
+        }
+      }
+    }
+    const thumbnailOverlays = video["thumbnailOverlays"] as Array<Record<string, Object>>;
+    if (thumbnailOverlays) {
+      for (const overlay of thumbnailOverlays) {
+        const overlayRenderer = overlay["thumbnailOverlayTimeStatusRenderer"] as Record<string, Object>;
+        if (overlayRenderer) {
+          const style = ((overlayRenderer["style"] as string) || "").toUpperCase();
+          if (style === "LIVE") {
+            return true;
+          }
+        }
+      }
+    }
+    // lockup-style overlays nested under contentImage
+    const contentImage = video["contentImage"] as Record<string, Object>;
+    const tvm = contentImage
+      ? (contentImage["thumbnailViewModel"] as Record<string, Object>)
+      : undefined;
+    const overlays = tvm ? (tvm["overlays"] as Array<Record<string, Object>>) : undefined;
+    if (overlays) {
+      for (let i = 0; i < overlays.length; i++) {
+        const overlay = overlays[i];
+        const bottomVm = overlay
+          ? (overlay["thumbnailBottomOverlayViewModel"] as Record<string, Object>)
+          : undefined;
+        const lockupBadges = bottomVm
+          ? (bottomVm["badges"] as Array<Record<string, Object>>)
+          : undefined;
+        if (lockupBadges) {
+          for (let b = 0; b < lockupBadges.length; b++) {
+            const bvm = lockupBadges[b]
+              ? (lockupBadges[b]["thumbnailBadgeViewModel"] as Record<string, Object>)
+              : undefined;
+            const badgeStyle = bvm ? (((bvm["badgeStyle"] as string) || "").toUpperCase()) : "";
+            if (badgeStyle.indexOf("LIVE") >= 0) {
+              return true;
+            }
+          }
+        }
+        const badgeVm = overlay
+          ? (overlay["thumbnailOverlayBadgeViewModel"] as Record<string, Object>)
+          : undefined;
+        const thumbBadges = badgeVm
+          ? (badgeVm["thumbnailBadges"] as Array<Record<string, Object>>)
+          : undefined;
+        if (thumbBadges) {
+          for (let b = 0; b < thumbBadges.length; b++) {
+            const bvm = thumbBadges[b]
+              ? (thumbBadges[b]["thumbnailBadgeViewModel"] as Record<string, Object>)
+              : undefined;
+            const badgeStyle = bvm ? (((bvm["badgeStyle"] as string) || "").toUpperCase()) : "";
+            if (badgeStyle.indexOf("LIVE") >= 0) {
+              return true;
+            }
+          }
+        }
+      }
+    }
+    return false;
+  }
+
+  private getChannelId(video: Record<string, Object>): string {
+    const ownerText = video["ownerText"] as Record<string, Object>;
+    const runs = ownerText ? (ownerText["runs"] as Array<Record<string, Object>>) : undefined;
+    if (runs && runs.length > 0) {
+      const firstRun = runs[0];
+      const navigationEndpoint = firstRun ? (firstRun["navigationEndpoint"] as Record<string, Object>) : undefined;
+      const browseEndpoint = navigationEndpoint ? (navigationEndpoint["browseEndpoint"] as Record<string, Object>) : undefined;
+      if (browseEndpoint) {
+        return (browseEndpoint["browseId"] as string) || "";
+      }
+    }
+    const longBylineText = video["longBylineText"] as Record<string, Object>;
+    const longRuns = longBylineText ? (longBylineText["runs"] as Array<Record<string, Object>>) : undefined;
+    if (longRuns && longRuns.length > 0) {
+      const firstRun = longRuns[0];
+      const navigationEndpoint = firstRun ? (firstRun["navigationEndpoint"] as Record<string, Object>) : undefined;
+      const browseEndpoint = navigationEndpoint ? (navigationEndpoint["browseEndpoint"] as Record<string, Object>) : undefined;
+      if (browseEndpoint) {
+        return (browseEndpoint["browseId"] as string) || "";
+      }
+    }
+    return "";
+  }
+}
